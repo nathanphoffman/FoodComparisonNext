@@ -14,7 +14,7 @@ export async function getDb(): Promise<SqlDatabase> {
       resolve(process.cwd(), 'node_modules/sql.js/dist', file),
   });
 
-  const dbPath = resolve(process.cwd(), 'lib/data/foods.db');
+  const dbPath = resolve(process.cwd(), `lib/data/foods.${process.env.DB_VERSION}.db`);
   const fileBuffer = readFileSync(dbPath);
   db = new SQL.Database(fileBuffer);
   return db;

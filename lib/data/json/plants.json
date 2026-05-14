@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1, "food_id": 1,
+    "yield_kg_ha": 3000, "water_per_kg": 11660, "soil_erosion": 1.5,
+    "pesticide_kg_ha": 8.5, "fertilizer_kg_ha": 200, "emissions_per_kg": 1.2,
+    "tillage_events_per_year": 2, "co2_capture_kg_ha_yr": 5000,
+    "sources": [7, 8]
+  },
+  {
+    "id": 2, "food_id": 3,
+    "yield_kg_ha": 2067, "water_per_kg": 1827, "soil_erosion": 3.0,
+    "pesticide_kg_ha": 1.2, "fertilizer_kg_ha": 120, "emissions_per_kg": 0.5,
+    "tillage_events_per_year": 3, "co2_capture_kg_ha_yr": 2000,
+    "sources": [9]
+  },
+  {
+    "id": 3, "food_id": 4,
+    "yield_kg_ha": 2800, "water_per_kg": 2145, "soil_erosion": 4.5,
+    "pesticide_kg_ha": 1.5, "fertilizer_kg_ha": 80, "emissions_per_kg": 0.7,
+    "tillage_events_per_year": 2, "co2_capture_kg_ha_yr": 1500,
+    "sources": [10]
+  },
+  {
+    "id": 4, "food_id": 6,
+    "yield_kg_ha": 5600, "water_per_kg": 1222, "soil_erosion": 6.7,
+    "pesticide_kg_ha": 2.3, "fertilizer_kg_ha": 160, "emissions_per_kg": 0.4,
+    "tillage_events_per_year": 2, "co2_capture_kg_ha_yr": 3000,
+    "sources": [11, 12]
+  },
+  {
+    "id": 5, "food_id": 7,
+    "yield_kg_ha": 8500, "water_per_kg": 900, "soil_erosion": 0.3,
+    "pesticide_kg_ha": 1.5, "fertilizer_kg_ha": 0, "emissions_per_kg": 0.4,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 4000,
+    "sources": [13, 14]
+  },
+  {
+    "id": 6, "food_id": 8,
+    "yield_kg_ha": 5500, "water_per_kg": 550, "soil_erosion": 0.5,
+    "pesticide_kg_ha": 0.5, "fertilizer_kg_ha": 80, "emissions_per_kg": 0.3,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 3500,
+    "sources": [15]
+  },
+  {
+    "id": 7, "food_id": 9,
+    "yield_kg_ha": 4200, "water_per_kg": 2830, "soil_erosion": 3.0,
+    "pesticide_kg_ha": 0.8, "fertilizer_kg_ha": 100, "emissions_per_kg": 0.3,
+    "tillage_events_per_year": 2, "co2_capture_kg_ha_yr": 2500,
+    "sources": [15, 16]
+  },
+  {
+    "id": 8, "food_id": 10,
+    "yield_kg_ha": 38000, "water_per_kg": 180, "soil_erosion": 2.5,
+    "pesticide_kg_ha": 3.5, "fertilizer_kg_ha": 150, "emissions_per_kg": 0.7,
+    "tillage_events_per_year": 1, "co2_capture_kg_ha_yr": 1500,
+    "sources": [28, 30]
+  },
+  {
+    "id": 9, "food_id": 11,
+    "yield_kg_ha": 35000, "water_per_kg": 240, "soil_erosion": 1.5,
+    "pesticide_kg_ha": 2.0, "fertilizer_kg_ha": 100, "emissions_per_kg": 0.6,
+    "tillage_events_per_year": 1, "co2_capture_kg_ha_yr": 1200,
+    "sources": [33, 30]
+  },
+  {
+    "id": 10, "food_id": 12,
+    "yield_kg_ha": 25000, "water_per_kg": 130, "soil_erosion": 3.0,
+    "pesticide_kg_ha": 2.5, "fertilizer_kg_ha": 120, "emissions_per_kg": 0.4,
+    "tillage_events_per_year": 3, "co2_capture_kg_ha_yr": 800,
+    "sources": [33, 30]
+  },
+  {
+    "id": 11, "food_id": 13,
+    "yield_kg_ha": 4700, "water_per_kg": 2500, "soil_erosion": 1.0,
+    "pesticide_kg_ha": 1.8, "fertilizer_kg_ha": 100, "emissions_per_kg": 1.18,
+    "tillage_events_per_year": 1, "co2_capture_kg_ha_yr": 500,
+    "sources": [29, 30]
+  },
+  {
+    "id": 12, "food_id": 14,
+    "yield_kg_ha": 22000, "water_per_kg": 250, "soil_erosion": 4.5,
+    "pesticide_kg_ha": 4.0, "fertilizer_kg_ha": 130, "emissions_per_kg": 0.5,
+    "tillage_events_per_year": 2, "co2_capture_kg_ha_yr": 1000,
+    "sources": [33, 30]
+  },
+  {
+    "id": 13, "food_id": 18,
+    "yield_kg_ha": 18000, "water_per_kg": 820, "soil_erosion": 1.0,
+    "pesticide_kg_ha": 5.0, "fertilizer_kg_ha": 100, "emissions_per_kg": 0.4,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 4000,
+    "sources": [33, 30]
+  },
+  {
+    "id": 14, "food_id": 19,
+    "yield_kg_ha": 32000, "water_per_kg": 860, "soil_erosion": 3.0,
+    "pesticide_kg_ha": 7.0, "fertilizer_kg_ha": 200, "emissions_per_kg": 0.9,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 2500,
+    "sources": [33, 30]
+  },
+  {
+    "id": 15, "food_id": 20,
+    "yield_kg_ha": 1200, "water_per_kg": 5874, "soil_erosion": 1.5,
+    "pesticide_kg_ha": 0.5, "fertilizer_kg_ha": 0, "emissions_per_kg": 0.9,
+    "tillage_events_per_year": 1, "co2_capture_kg_ha_yr": 1000,
+    "sources": [33, 30]
+  },
+  {
+    "id": 16, "food_id": 21,
+    "yield_kg_ha": 2500, "water_per_kg": 1788, "soil_erosion": 2.0,
+    "pesticide_kg_ha": 0.8, "fertilizer_kg_ha": 80, "emissions_per_kg": 0.5,
+    "tillage_events_per_year": 2, "co2_capture_kg_ha_yr": 1500,
+    "sources": [33, 30]
+  },
+  {
+    "id": 17, "food_id": 22,
+    "yield_kg_ha": 15000, "water_per_kg": 285, "soil_erosion": 2.5,
+    "pesticide_kg_ha": 2.0, "fertilizer_kg_ha": 120, "emissions_per_kg": 0.4,
+    "tillage_events_per_year": 1, "co2_capture_kg_ha_yr": 800,
+    "sources": [33, 30]
+  },
+  {
+    "id": 18, "food_id": 24,
+    "yield_kg_ha": 3500, "water_per_kg": 8512, "soil_erosion": 1.0,
+    "pesticide_kg_ha": 3.0, "fertilizer_kg_ha": 150, "emissions_per_kg": 2.3,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 5000,
+    "sources": [30, 34, 35]
+  },
+  {
+    "id": 19, "food_id": 25,
+    "yield_kg_ha": 700, "water_per_kg": 45914, "soil_erosion": 1.0,
+    "pesticide_kg_ha": 1.5, "fertilizer_kg_ha": 80, "emissions_per_kg": 3.5,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 3000,
+    "sources": [30, 34, 35]
+  },
+  {
+    "id": 20, "food_id": 26,
+    "yield_kg_ha": 1200, "water_per_kg": 11027, "soil_erosion": 1.0,
+    "pesticide_kg_ha": 2.5, "fertilizer_kg_ha": 120, "emissions_per_kg": 2.8,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 3500,
+    "sources": [30, 34, 35]
+  },
+  {
+    "id": 21, "food_id": 27,
+    "yield_kg_ha": 1500, "water_per_kg": 10000, "soil_erosion": 0.8,
+    "pesticide_kg_ha": 3.5, "fertilizer_kg_ha": 130, "emissions_per_kg": 2.0,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 5500,
+    "sources": [35]
+  },
+  {
+    "id": 22, "food_id": 28,
+    "yield_kg_ha": 1700, "water_per_kg": 10159, "soil_erosion": 0.8,
+    "pesticide_kg_ha": 2.0, "fertilizer_kg_ha": 100, "emissions_per_kg": 1.7,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 3000,
+    "sources": [30, 34, 35]
+  },
+  {
+    "id": 23, "food_id": 29,
+    "yield_kg_ha": 2500, "water_per_kg": 8220, "soil_erosion": 0.5,
+    "pesticide_kg_ha": 2.0, "fertilizer_kg_ha": 150, "emissions_per_kg": 3.5,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 6000,
+    "sources": [35]
+  },
+  {
+    "id": 24, "food_id": 30,
+    "yield_kg_ha": 80, "water_per_kg": 2357, "soil_erosion": 0.0,
+    "pesticide_kg_ha": 0.0, "fertilizer_kg_ha": 0, "emissions_per_kg": 0.2,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 50000,
+    "sources": [34, 35]
+  },
+  {
+    "id": 25, "food_id": 31,
+    "yield_kg_ha": 1600, "water_per_kg": 3537, "soil_erosion": 2.0,
+    "pesticide_kg_ha": 1.5, "fertilizer_kg_ha": 0, "emissions_per_kg": 2.5,
+    "tillage_events_per_year": 2, "co2_capture_kg_ha_yr": 1500,
+    "sources": [30, 34, 35]
+  },
+  {
+    "id": 26, "food_id": 32,
+    "yield_kg_ha": 200, "water_per_kg": 9000, "soil_erosion": 0.5,
+    "pesticide_kg_ha": 0.5, "fertilizer_kg_ha": 0, "emissions_per_kg": 5.0,
+    "tillage_events_per_year": 0, "co2_capture_kg_ha_yr": 10000,
+    "sources": [35]
+  }
+]

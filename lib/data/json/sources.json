@@ -1,0 +1,360 @@
+[
+  {
+    "id": 1,
+    "url": "https://fdc.nal.usda.gov/",
+    "title": "USDA FoodData Central",
+    "notes": [
+      "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+    ]
+  },
+  {
+    "id": 2,
+    "url": "https://tools.myfooddata.com/nutrition-facts/170567/wt5",
+    "title": "MyFoodData — Almonds Nutrition Facts",
+    "notes": [
+      "Almonds — nutrition verification: Confirmed caloric and macronutrient values against USDA FoodData Central."
+    ]
+  },
+  {
+    "id": 3,
+    "url": "https://www.recipal.com/ingredients/6898-nutrition-facts-calories-protein-carbs-fat-beef-ground-90-lean-meat-10-fat-raw",
+    "title": "Recipal — Ground Beef Nutrition Facts",
+    "notes": [
+      "Beef — nutrition verification: Confirmed nutritional values for 80% lean raw ground beef against USDA data."
+    ]
+  },
+  {
+    "id": 4,
+    "url": "https://foodstruct.com/food/wheat",
+    "title": "FoodStruct — Wheat Nutrition Facts",
+    "notes": [
+      "Wheat — nutrition verification: Confirmed whole grain wheat nutritional values against USDA data."
+    ]
+  },
+  {
+    "id": 5,
+    "url": "https://foodstruct.com/food/soybean",
+    "title": "FoodStruct — Soybean Nutrition Facts",
+    "notes": [
+      "Soy — nutrition verification: Confirmed cooked soybean nutritional values against USDA data."
+    ]
+  },
+  {
+    "id": 6,
+    "url": "https://foods.fatsecret.com/calories-nutrition/usda/chicken-breast-meat",
+    "title": "FatSecret — Chicken Breast Nutrition Facts (USDA)",
+    "notes": [
+      "Chicken — nutrition verification: Confirmed cooked chicken breast nutritional values against USDA data."
+    ]
+  },
+  {
+    "id": 7,
+    "url": "https://www.sciencedirect.com/science/article/pii/S1470160X17308592",
+    "title": "ScienceDirect — Almond Water Footprint Study",
+    "notes": [
+      "Almonds — water_per_kg: Reports 10,240 L/kg average for California commercial orchards.",
+      "Almonds — water_per_kg averaging: Averaged with Mekonnen & Hoekstra (source 30) value of 13,080 L/kg to produce final value of 11,660 L/kg."
+    ]
+  },
+  {
+    "id": 8,
+    "url": "https://ourworldindata.org/grapher/almond-yields",
+    "title": "Our World in Data — Almond Yields",
+    "notes": [
+      "Almonds — yield_kg_ha: Verified ~3,000 kg/ha for California commercial orchards."
+    ]
+  },
+  {
+    "id": 9,
+    "url": "https://ourworldindata.org/grapher/wheat-yields",
+    "title": "Our World in Data — Wheat Yields",
+    "notes": [
+      "Wheat — yield_kg_ha: Source for global average of 2,067 kg/ha."
+    ]
+  },
+  {
+    "id": 10,
+    "url": "https://ourworldindata.org/grapher/soybean-yields",
+    "title": "Our World in Data — Soybean Yields",
+    "notes": [
+      "Soy — yield_kg_ha: Source for global average of 2,800 kg/ha."
+    ]
+  },
+  {
+    "id": 11,
+    "url": "https://ourworldindata.org/grapher/maize-yields",
+    "title": "Our World in Data — Corn (Maize) Yields",
+    "notes": [
+      "Corn — yield_kg_ha: Source for world average of ~5,600 kg/ha."
+    ]
+  },
+  {
+    "id": 12,
+    "url": "https://www.ers.usda.gov/topics/crops/corn-and-other-feed-grains/feed-grains-sector-at-a-glance",
+    "title": "USDA ERS — Feed Grains Sector at a Glance",
+    "notes": [
+      "Corn — pesticide_kg_ha and fertilizer_kg_ha: Used for US corn agricultural statistics including pesticide and fertilizer application rates."
+    ]
+  },
+  {
+    "id": 13,
+    "url": "https://alfalfa.ucdavis.edu/sites/g/files/dgvnsk12586/files/media/documents/UCAlfalfa8303Livestock-reg.pdf",
+    "title": "UC Davis — Alfalfa for Livestock",
+    "notes": [
+      "Alfalfa — yield_kg_ha: Source for typical yield and agronomic characteristics.",
+      "Alfalfa — water_per_kg: Source for water use as livestock feed.",
+      "Alfalfa — human_food flag: Confirmed primarily a livestock feed crop (human_food = 0)."
+    ]
+  },
+  {
+    "id": 14,
+    "url": "https://www.fao.org/land-water/databases-and-software/crop-information/alfalfa/en/",
+    "title": "FAO — Alfalfa Crop Information",
+    "notes": [
+      "Alfalfa — production statistics: FAO reference for alfalfa yield, water use, and agricultural characteristics."
+    ]
+  },
+  {
+    "id": 15,
+    "url": "https://www.nass.usda.gov/",
+    "title": "USDA National Agricultural Statistics Service (NASS)",
+    "notes": [
+      "Grass hay — yield_kg_ha: Source for US hay yield and acreage data.",
+      "Sorghum — yield_kg_ha: Source for US sorghum acreage and yield data."
+    ]
+  },
+  {
+    "id": 16,
+    "url": "https://www.agmrc.org/commodities-products/grains-oilseeds/sorghum",
+    "title": "AgMRC — Sorghum",
+    "notes": [
+      "Sorghum — yield_kg_ha: Agricultural Marketing Resource Center profile for sorghum yield and production statistics."
+    ]
+  },
+  {
+    "id": 17,
+    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+    "title": "Wikipedia — List of Animals by Number of Neurons",
+    "notes": [
+      "Beef cattle — neuron_count: ~3 billion neurons, based on Herculano-Houzel isotropic fractionator methodology.",
+      "Broiler chicken and layer hen — neuron_count: ~221 million neurons in domestic chicken.",
+      "Pig — neuron_count: ~2.23 billion neurons.",
+      "Tuna — neuron_count: ~30 million neurons."
+    ]
+  },
+  {
+    "id": 18,
+    "url": "https://beef.unl.edu/beefwatch/2020/how-many-pounds-meat-can-we-expect-beef-animal/",
+    "title": "UNL BeefWatch — Pounds of Meat from a Beef Animal",
+    "notes": [
+      "Beef cattle — weight_kg: Source for typical slaughter weight.",
+      "Beef cattle — dressing percentage: 63%, used to convert live-weight FCR to kg feed per kg dressed meat."
+    ]
+  },
+  {
+    "id": 19,
+    "url": "https://www.frontiersin.org/journals/neuroanatomy/articles/10.3389/fnana.2022.1048261/full",
+    "title": "Frontiers in Neuroanatomy — Chicken Neuron Count",
+    "notes": [
+      "Chicken — neuron_count: Peer-reviewed source confirming 221 million neurons in domestic chicken (Red Junglefowl)."
+    ]
+  },
+  {
+    "id": 20,
+    "url": "https://extension.umaine.edu/publications/2223e/",
+    "title": "UMaine Extension — Understanding Poultry Yields",
+    "notes": [
+      "Broiler chicken — dressing percentage: 72–75%, used to convert live-weight FCR to kg feed per kg dressed meat."
+    ]
+  },
+  {
+    "id": 21,
+    "url": "https://www.feedlotmagazine.com/news/feedlot_special/what-s-in-a-feedlot-diet/article_ae9ddd94-fc3b-11ee-95ee-376b58f50b56.html",
+    "title": "Feedlot Magazine — What's In A Feedlot Diet",
+    "notes": [
+      "Beef cattle — feed composition: Source for feedlot finishing ration breakdown including corn, soy, alfalfa, hay, and sorghum percentages."
+    ]
+  },
+  {
+    "id": 22,
+    "url": "https://en.wikipedia.org/wiki/Feed_conversion_ratio",
+    "title": "Wikipedia — Feed Conversion Ratio",
+    "notes": [
+      "Beef cattle — FCR: ~6.0 kg feed per kg live weight gain for feedlot cattle.",
+      "Broiler chicken — FCR: ~1.6 kg feed per kg live weight gain for modern commercial broilers.",
+      "General: Reference for FCR definitions and species-level values."
+    ]
+  },
+  {
+    "id": 23,
+    "url": "https://extension.psu.edu/understanding-beef-carcass-yields-and-losses-during-processing",
+    "title": "Penn State Extension — Beef Carcass Yields and Losses",
+    "notes": [
+      "Beef cattle — dressing percentage: 63%, used to convert FCR to kg feed per kg dressed beef."
+    ]
+  },
+  {
+    "id": 24,
+    "url": "https://www.farmprogress.com/livestock/high-quality-alfalfa-can-be-used-in-growing-finishing-rations",
+    "title": "Farm Progress — Alfalfa in Finishing Rations",
+    "notes": [
+      "Beef cattle — feed composition: Confirmed alfalfa inclusion at ~10–12% of feedlot finishing ration."
+    ]
+  },
+  {
+    "id": 25,
+    "url": "https://www.sorghumcheckoff.com/wp-content/uploads/2021/11/2019_10_01_BeefFeedingGuide_Final.pdf",
+    "title": "Sorghum Checkoff — Beef Feeding Guide",
+    "notes": [
+      "Beef cattle — feed composition: Source for sorghum inclusion rate (~5%) in beef cattle finishing diets."
+    ]
+  },
+  {
+    "id": 26,
+    "url": "https://www.feedstrategy.com/animal-feed-formulations-library/traditional-us-broiler-feed-formulations",
+    "title": "Feed Strategy — Traditional US Broiler Feed Formulations",
+    "notes": [
+      "Broiler chicken — feed composition: Corn 55–65%, soy 20–28%, sorghum 3–6%, varying by growth stage."
+    ]
+  },
+  {
+    "id": 27,
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8143358/",
+    "title": "PMC — Atypical Feed Ingredients for Broiler Chickens",
+    "notes": [
+      "Broiler chicken — feed composition: Peer-reviewed confirmation of typical sorghum inclusion rates in commercial broiler diets."
+    ]
+  },
+  {
+    "id": 28,
+    "url": "https://ourworldindata.org/grapher/tomato-yields",
+    "title": "Our World in Data — Tomato Yields",
+    "notes": [
+      "Tomato — yield_kg_ha: Global average of 38,000 kg/ha based on FAO data."
+    ]
+  },
+  {
+    "id": 29,
+    "url": "https://ourworldindata.org/grapher/rice-yields",
+    "title": "Our World in Data — Rice Yields",
+    "notes": [
+      "Rice — yield_kg_ha: Global average paddy rice yield of 4,700 kg/ha based on FAO data."
+    ]
+  },
+  {
+    "id": 30,
+    "url": "https://www.waterfootprint.org/resources/Report47-WaterFootprintCrops-Vol1.pdf",
+    "title": "Mekonnen & Hoekstra — Water Footprint of Crops (Report 47)",
+    "notes": [
+      "General: Comprehensive peer-reviewed global crop water footprint database; primary source for most water_per_kg values.",
+      "Almonds — water_per_kg: 13,080 L/kg; averaged with ScienceDirect California study (source 7, 10,240 L/kg) → final 11,660 L/kg.",
+      "Walnuts — water_per_kg: 7,744 L/kg; averaged with ScienceDirect tree nuts study (source 34, 9,279 L/kg) → final 8,512 L/kg.",
+      "Pistachios — water_per_kg: 10,697 L/kg; averaged with ScienceDirect tree nuts study (source 34, 11,356 L/kg) → final 11,027 L/kg.",
+      "Hazelnuts — water_per_kg: 9,807 L/kg; averaged with ScienceDirect tree nuts study (source 34, 10,511 L/kg) → final 10,159 L/kg.",
+      "Peanuts — water_per_kg: 3,740 L/kg; averaged with secondary sources → final 3,537 L/kg."
+    ]
+  },
+  {
+    "id": 31,
+    "url": "https://www.pig333.com/pig-glossary/F/feed-conversion-ratio-fcr_147/",
+    "title": "Pig333 — Feed Conversion Ratio in Pigs",
+    "notes": [
+      "Pig — FCR: ~2.8 kg feed per kg live weight gain.",
+      "Pig — dressing percentage: ~73%, used to calculate kg feed per kg dressed pork."
+    ]
+  },
+  {
+    "id": 32,
+    "url": "https://www.seafish.org/responsible-sourcing/aquaculture-farming-seafood/species-farmed-in-aquaculture/aquaculture-profiles/atlantic-salmon/feed/",
+    "title": "Seafish — Atlantic Salmon Feed Profile",
+    "notes": [
+      "Farmed salmon — FCR: ~1.15 kg feed per kg live weight gain.",
+      "Farmed salmon — dressing percentage: ~90%, used to calculate kg feed per kg dressed fillet.",
+      "Farmed salmon — feed composition: Soy ~19%, wheat ~10% of diet by weight."
+    ]
+  },
+  {
+    "id": 33,
+    "url": "https://ourworldindata.org/crop-yields",
+    "title": "Our World in Data — Crop Yields",
+    "notes": [
+      "Cucumber — yield_kg_ha: FAO global average used for yield value.",
+      "Lettuce — yield_kg_ha: FAO global average used for yield value.",
+      "Potato — yield_kg_ha: FAO global average used for yield value.",
+      "Apple — yield_kg_ha: FAO global average used for yield value.",
+      "Banana — yield_kg_ha: FAO global average used for yield value.",
+      "Lentils — yield_kg_ha: FAO global average used for yield value.",
+      "Oats — yield_kg_ha: FAO global average used for yield value.",
+      "Broccoli — yield_kg_ha: FAO global average used for yield value."
+    ]
+  },
+  {
+    "id": 34,
+    "url": "https://www.sciencedirect.com/science/article/pii/S2211912420300109",
+    "title": "ScienceDirect — Tree Nuts and Sustainable Water Use (EAT-Lancet)",
+    "notes": [
+      "Cashews — water_per_kg: 45,914 L/kg (used directly; no conflicting peer-reviewed source found).",
+      "Walnuts — water_per_kg: 9,279 L/kg; averaged with Mekonnen & Hoekstra (source 30, 7,744 L/kg) → final 8,512 L/kg.",
+      "Pistachios — water_per_kg: 11,356 L/kg; averaged with Mekonnen & Hoekstra (source 30, 10,697 L/kg) → final 11,027 L/kg.",
+      "Hazelnuts — water_per_kg: 10,511 L/kg; averaged with Mekonnen & Hoekstra (source 30, 9,807 L/kg) → final 10,159 L/kg."
+    ]
+  },
+  {
+    "id": 35,
+    "url": "https://inc.nutfruit.org/wp-content/uploads/2025/01/Statistical-Yearbook-2024.pdf",
+    "title": "INC — Nuts & Dried Fruits Statistical Yearbook 2024",
+    "notes": [
+      "Walnuts — yield_kg_ha: Industry yield data.",
+      "Cashews — yield_kg_ha: Industry yield data.",
+      "Pistachios — yield_kg_ha: Industry yield data.",
+      "Pecans — yield_kg_ha: Industry yield data.",
+      "Hazelnuts — yield_kg_ha: Industry yield data.",
+      "Macadamia nuts — yield_kg_ha: Industry yield data.",
+      "Brazil nuts — yield_kg_ha: Industry yield data.",
+      "Peanuts — yield_kg_ha: Industry yield data.",
+      "Pine nuts — yield_kg_ha: Industry yield data."
+    ]
+  },
+  {
+    "id": 36,
+    "url": "https://www.champrix.com/articles/maximize-efficiency-and-profits-understanding-and-improving-feed-conversion-ratio-(fcr)-in-layers",
+    "title": "Champrix — Feed Conversion Ratio in Layer Hens",
+    "notes": [
+      "Layer hen — FCR (productive period only): ~2.2 kg feed per kg eggs during the laying phase.",
+      "Layer hen — FCR note: This is the laying-phase baseline only; see source 38 for the full lifetime calculation that also includes chick and pullet phases."
+    ]
+  },
+  {
+    "id": 37,
+    "url": "https://albertamilk.com/ask-dairy-farmer/how-much-feed-does-a-cow-need-to-produce-1-litre-of-milk/",
+    "title": "Alberta Milk — Feed Required per Litre of Milk",
+    "notes": [
+      "Dairy cow — feed ratio (productive period only): ~1.35 kg feed per kg milk during active lactation.",
+      "Dairy cow — feed note: This is the lactation-phase baseline only; see source 39 for the full lifetime calculation that also includes dry periods and heifer rearing."
+    ]
+  },
+  {
+    "id": 38,
+    "url": "https://www.thepoultrysite.com/articles/factors-affecting-egg-production-in-backyard-chicken-flocks",
+    "title": "The Poultry Site — Layer Hen Feed and Production Over Lifetime",
+    "_status": "URL_UNVERIFIED_404",
+    "notes": [
+      "Layer hen — lifetime feed: ~2 kg chick phase + ~9 kg pullet rearing + ~58 kg laying phase = ~69 kg total feed per bird.",
+      "Layer hen — lifetime egg output: ~300 eggs ≈ 17.1 kg eggs per bird over productive life.",
+      "Layer hen — lifetime FCR: 69 ÷ 17.1 ≈ 4.04 kg feed per kg eggs.",
+      "Layer hen — feed split applied: 60% corn / 20% soy → corn 2.42 kg, soy 0.81 kg per kg eggs."
+    ]
+  },
+  {
+    "id": 39,
+    "url": "https://www.dairyglobal.net/dairy-management/nutrition/feed-efficiency-in-dairy-cows-what-is-the-ideal/",
+    "title": "Dairy Global — Feed Efficiency in Dairy Cows",
+    "_status": "URL_UNVERIFIED_404",
+    "notes": [
+      "Dairy cow — lifetime feed breakdown: ~36,450 kg lactation feed (1.35 kg/kg milk × 27,000 kg milk) + ~2,700 kg dry-period feed (3 periods × 60 days × 15 kg/day) + ~5,840 kg heifer rearing (730 days × 8 kg DM/day) = ~44,990 kg total.",
+      "Dairy cow — lifetime milk output: ~27,000 kg per cow over productive life.",
+      "Dairy cow — lifetime FCR: 44,990 ÷ 27,000 ≈ 1.67 kg feed per kg milk.",
+      "Dairy cow — feed split applied: 55% corn / 25% alfalfa / 10% soy / 7% grass hay → corn 0.92, alfalfa 0.42, soy 0.17, hay 0.12 kg per kg milk."
+    ]
+  }
+]

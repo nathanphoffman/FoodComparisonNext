@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1, "slug": "almonds", "name": "Almonds", "type": "plant",
+    "calories": 5.79, "fat": 0.497, "sat_fat": 0.038, "protein": 0.214, "fiber": 0.125,
+    "human_food": 1, "sources": [1, 2]
+  },
+  {
+    "id": 2, "slug": "beef", "name": "Beef", "type": "animal",
+    "calories": 2.54, "fat": 0.175, "sat_fat": 0.067, "protein": 0.176, "fiber": 0.0,
+    "human_food": 1, "sources": [1, 3]
+  },
+  {
+    "id": 3, "slug": "wheat", "name": "Wheat", "type": "plant",
+    "calories": 3.39, "fat": 0.019, "sat_fat": 0.003, "protein": 0.133, "fiber": 0.107,
+    "human_food": 1, "sources": [1, 4]
+  },
+  {
+    "id": 4, "slug": "soy", "name": "Soy", "type": "plant",
+    "calories": 1.73, "fat": 0.09, "sat_fat": 0.013, "protein": 0.169, "fiber": 0.06,
+    "human_food": 1, "sources": [1, 5]
+  },
+  {
+    "id": 5, "slug": "chicken", "name": "Chicken", "type": "animal",
+    "calories": 1.65, "fat": 0.036, "sat_fat": 0.01, "protein": 0.311, "fiber": 0.0,
+    "human_food": 1, "sources": [1, 6]
+  },
+  {
+    "id": 6, "slug": "corn", "name": "Corn", "type": "plant",
+    "calories": 3.65, "fat": 0.047, "sat_fat": 0.007, "protein": 0.091, "fiber": 0.071,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 7, "slug": "alfalfa", "name": "Alfalfa", "type": "plant",
+    "calories": 2.16, "fat": 0.028, "sat_fat": 0.003, "protein": 0.177, "fiber": 0.247,
+    "human_food": 0, "sources": [1]
+  },
+  {
+    "id": 8, "slug": "grass-hay", "name": "Grass Hay", "type": "plant",
+    "calories": 2.89, "fat": 0.031, "sat_fat": 0.005, "protein": 0.088, "fiber": 0.320,
+    "human_food": 0, "sources": [1]
+  },
+  {
+    "id": 9, "slug": "sorghum", "name": "Sorghum", "type": "plant",
+    "calories": 3.39, "fat": 0.035, "sat_fat": 0.005, "protein": 0.111, "fiber": 0.066,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 10, "slug": "tomato", "name": "Tomato", "type": "plant",
+    "calories": 0.18, "fat": 0.002, "sat_fat": 0.0, "protein": 0.009, "fiber": 0.012,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 11, "slug": "cucumber", "name": "Cucumber", "type": "plant",
+    "calories": 0.15, "fat": 0.001, "sat_fat": 0.0, "protein": 0.007, "fiber": 0.005,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 12, "slug": "lettuce", "name": "Lettuce", "type": "plant",
+    "calories": 0.17, "fat": 0.003, "sat_fat": 0.0, "protein": 0.013, "fiber": 0.021,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 13, "slug": "rice", "name": "Rice", "type": "plant",
+    "calories": 1.30, "fat": 0.003, "sat_fat": 0.001, "protein": 0.027, "fiber": 0.004,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 14, "slug": "potato", "name": "Potato", "type": "plant",
+    "calories": 0.77, "fat": 0.001, "sat_fat": 0.0, "protein": 0.020, "fiber": 0.022,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 15, "slug": "pork", "name": "Pork", "type": "animal",
+    "calories": 2.63, "fat": 0.205, "sat_fat": 0.076, "protein": 0.175, "fiber": 0.0,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 16, "slug": "salmon", "name": "Salmon", "type": "animal",
+    "calories": 2.08, "fat": 0.130, "sat_fat": 0.031, "protein": 0.201, "fiber": 0.0,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 17, "slug": "egg", "name": "Egg", "type": "animal",
+    "calories": 1.43, "fat": 0.095, "sat_fat": 0.031, "protein": 0.125, "fiber": 0.0,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 18, "slug": "apple", "name": "Apple", "type": "plant",
+    "calories": 0.52, "fat": 0.002, "sat_fat": 0.0, "protein": 0.003, "fiber": 0.024,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 19, "slug": "banana", "name": "Banana", "type": "plant",
+    "calories": 0.89, "fat": 0.003, "sat_fat": 0.001, "protein": 0.011, "fiber": 0.026,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 20, "slug": "lentils", "name": "Lentils", "type": "plant",
+    "calories": 1.16, "fat": 0.004, "sat_fat": 0.001, "protein": 0.090, "fiber": 0.079,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 21, "slug": "oats", "name": "Oats", "type": "plant",
+    "calories": 3.89, "fat": 0.067, "sat_fat": 0.012, "protein": 0.167, "fiber": 0.105,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 22, "slug": "broccoli", "name": "Broccoli", "type": "plant",
+    "calories": 0.34, "fat": 0.004, "sat_fat": 0.0, "protein": 0.028, "fiber": 0.026,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 23, "slug": "tuna", "name": "Tuna", "type": "animal",
+    "calories": 1.09, "fat": 0.010, "sat_fat": 0.003, "protein": 0.234, "fiber": 0.0,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 24, "slug": "walnuts", "name": "Walnuts", "type": "plant",
+    "calories": 6.54, "fat": 0.654, "sat_fat": 0.061, "protein": 0.151, "fiber": 0.067,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 25, "slug": "cashews", "name": "Cashews", "type": "plant",
+    "calories": 5.53, "fat": 0.439, "sat_fat": 0.078, "protein": 0.182, "fiber": 0.033,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 26, "slug": "pistachios", "name": "Pistachios", "type": "plant",
+    "calories": 5.62, "fat": 0.456, "sat_fat": 0.056, "protein": 0.202, "fiber": 0.103,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 27, "slug": "pecans", "name": "Pecans", "type": "plant",
+    "calories": 6.91, "fat": 0.720, "sat_fat": 0.062, "protein": 0.092, "fiber": 0.096,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 28, "slug": "hazelnuts", "name": "Hazelnuts", "type": "plant",
+    "calories": 6.28, "fat": 0.609, "sat_fat": 0.045, "protein": 0.150, "fiber": 0.099,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 29, "slug": "macadamia-nuts", "name": "Macadamia Nuts", "type": "plant",
+    "calories": 7.18, "fat": 0.759, "sat_fat": 0.121, "protein": 0.079, "fiber": 0.086,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 30, "slug": "brazil-nuts", "name": "Brazil Nuts", "type": "plant",
+    "calories": 6.59, "fat": 0.670, "sat_fat": 0.152, "protein": 0.143, "fiber": 0.075,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 31, "slug": "peanuts", "name": "Peanuts", "type": "plant",
+    "calories": 5.67, "fat": 0.494, "sat_fat": 0.068, "protein": 0.258, "fiber": 0.085,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 32, "slug": "pine-nuts", "name": "Pine Nuts", "type": "plant",
+    "calories": 6.73, "fat": 0.682, "sat_fat": 0.048, "protein": 0.138, "fiber": 0.036,
+    "human_food": 1, "sources": [1]
+  },
+  {
+    "id": 33, "slug": "milk", "name": "Milk", "type": "animal",
+    "calories": 0.61, "fat": 0.033, "sat_fat": 0.021, "protein": 0.032, "fiber": 0.0,
+    "human_food": 1, "sources": [1]
+  }
+]

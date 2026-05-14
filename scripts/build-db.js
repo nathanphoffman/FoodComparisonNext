@@ -9,18 +9,47 @@ function read(filename) {
   return JSON.parse(readFileSync(resolve(dataDir, filename), 'utf8'));
 }
 
-function bumpVersion() {
+function getConfigLines() {
   const configPath = resolve(root, 'next.config.ts');
   const lines = readFileSync(configPath, 'utf8').split('\n');
+  return lines;
+}
+
+function getDBVersion(lines) {
+  // get version from lines
   const idx = lines.findIndex((l) => l.includes('DB_VERSION:'));
   if (idx === -1) throw new Error('DB_VERSION not found in next.config.ts');
   const line = lines[idx];
-  const start = line.indexOf("'v") + 2;
-  const end = line.indexOf("'", start);
-  const next = parseInt(line.slice(start, end), 10) + 1;
-  lines[idx] = line.slice(0, start) + next + line.slice(end);
-  writeFileSync(configPath, lines.join('\n'));
-  return `v${next}`;
+  return line;
+}
+
+function getVersionNumberFromDBVersion(dbVersion) {
+  const start = dbVersion.indexOf("'v") + 2;
+  const end = dbVersion.indexOf("'", start);
+  return parseInt(dbVersion.slice(start, end), 10);
+}
+
+function writeNewVersionNumberToConfig(oldDbVersion, newVersion) {
+
+  const start = oldDbVersion.indexOf("'v") + 2;
+  const end = oldDbVersion.indexOf("'", start);
+
+  const configPath = resolve(root, 'next.config.ts');
+  const configLines = [...getConfigLines()];
+  const idx = configLines.findIndex((l) => l.includes('DB_VERSION:'));
+  configLines[idx] = configLines[idx].slice(0, start) + newVersion + configLines[idx].slice(end);
+  writeFileSync(configPath, configLines.join('\n'));
+}
+
+function bumpVersion() {
+
+  const configLines = getConfigLines();
+  const dbVersion = getDBVersion(configLines); // format is v#
+  const nextDbVersion = getVersionNumberFromDBVersion(dbVersion) + 1;
+
+  writeNewVersionNumberToConfig(dbVersion, nextDbVersion);
+
+  return `v${nextDbVersion}`;
 }
 
 async function main() {
@@ -34,13 +63,13 @@ async function main() {
   const schema = readFileSync(resolve(root, 'lib/data/sql/schema.sql'), 'utf8');
   db.run(schema);
 
-  const sources       = read('sources.json');
-  const foods         = read('foods.json');
-  const animals       = read('animals.json');
-  const plants        = read('plants.json');
-  const animalFeed    = read('animal_feed.json');
-  const pesticides    = read('pesticides.json');
-  const plantKills    = read('plant_animal_kills.json');
+  const sources = read('sources.json');
+  const foods = read('foods.json');
+  const animals = read('animals.json');
+  const plants = read('plants.json');
+  const animalFeed = read('animal_feed.json');
+  const pesticides = read('pesticides.json');
+  const plantKills = read('plant_animal_kills.json');
 
   for (const s of sources) {
     db.run(

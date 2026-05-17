@@ -22,14 +22,15 @@ export default async function FoodPage({ params }: Props) {
 
   let detail: Plant | Animal | null = null;
   if (food.type === 'plant') {
-    const r = db.exec('SELECT * FROM plants WHERE food_id = :id', { ':id': food.id });
-    detail = (rowsToObjects(r)[0] as unknown as Plant) ?? null;
+    const plantQueryResult = db.exec('SELECT * FROM plants WHERE food_id = :id', { ':id': food.id });
+    detail = (rowsToObjects(plantQueryResult)[0] as unknown as Plant) ?? null;
   } else if (food.type === 'animal') {
-    const r = db.exec('SELECT * FROM animals WHERE food_id = :id', { ':id': food.id });
-    detail = (rowsToObjects(r)[0] as unknown as Animal) ?? null;
+    const animalQueryResult = db.exec('SELECT * FROM animals WHERE food_id = :id', { ':id': food.id });
+    detail = (rowsToObjects(animalQueryResult)[0] as unknown as Animal) ?? null;
   }
 
-  const nutrientPer100g = (val: number) => (val * 100).toFixed(1) + 'g';
+  const GRAMS_PER_HUNDRED = 100;
+  const formatNutrientPer100g = (gramsPerGram: number) => (gramsPerGram * GRAMS_PER_HUNDRED).toFixed(1) + 'g';
 
   return (
     <div>
@@ -43,11 +44,11 @@ export default async function FoodPage({ params }: Props) {
       <h2>Nutrition (per 100g)</h2>
       <table>
         <tbody>
-          <tr><td>Calories</td><td>{(food.calories * 100).toFixed(0)} kcal</td></tr>
-          <tr><td>Fat</td><td>{nutrientPer100g(food.fat)}</td></tr>
-          <tr><td>Saturated fat</td><td>{nutrientPer100g(food.sat_fat)}</td></tr>
-          <tr><td>Protein</td><td>{nutrientPer100g(food.protein)}</td></tr>
-          <tr><td>Fiber</td><td>{nutrientPer100g(food.fiber)}</td></tr>
+          <tr><td>Calories</td><td>{(food.calories * GRAMS_PER_HUNDRED).toFixed(0)} kcal</td></tr>
+          <tr><td>Fat</td><td>{formatNutrientPer100g(food.fat)}</td></tr>
+          <tr><td>Saturated fat</td><td>{formatNutrientPer100g(food.sat_fat)}</td></tr>
+          <tr><td>Protein</td><td>{formatNutrientPer100g(food.protein)}</td></tr>
+          <tr><td>Fiber</td><td>{formatNutrientPer100g(food.fiber)}</td></tr>
         </tbody>
       </table>
 

@@ -6,11 +6,11 @@ export const dynamic = 'force-dynamic';
 
 export default async function FoodsPage() {
   const db = await getDb();
-  const result = db.exec('SELECT * FROM foods WHERE human_food = 1 ORDER BY type, name');
-  const foods = rowsToObjects(result) as unknown as Food[];
+  const humanFoodsQueryResult = db.exec('SELECT * FROM foods WHERE human_food = 1 ORDER BY type, name');
+  const foods = rowsToObjects(humanFoodsQueryResult) as unknown as Food[];
 
-  const plants = foods.filter((f) => f.type === 'plant');
-  const animals = foods.filter((f) => f.type === 'animal');
+  const plants = foods.filter((food) => food.type === 'plant');
+  const animals = foods.filter((food) => food.type === 'animal');
 
   return (
     <div>

@@ -1,0 +1,1 @@
+2026-05-17 | audit app/foods/[slug]/page.tsx (spot-check): fix single-letter vars, magic numbers, and forbidden names across all in-scope files

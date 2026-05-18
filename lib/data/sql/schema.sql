@@ -10,11 +10,7 @@ CREATE TABLE IF NOT EXISTS foods (
     slug     TEXT    NOT NULL UNIQUE,
     name     TEXT    NOT NULL,
     type     TEXT    NOT NULL,
-    calories TEXT    NOT NULL,  -- json array of {value: kcal/g, source_id}
-    fat      TEXT    NOT NULL,
-    sat_fat  TEXT    NOT NULL,
-    protein  TEXT    NOT NULL,
-    fiber    TEXT    NOT NULL,
+    nutrition TEXT   NOT NULL,  -- json array of {value: {calories, fat, sat_fat, protein, fiber}, source_id, confidence}
     human_food  INTEGER NOT NULL DEFAULT 1,  -- boolean: 1 = human food, 0 = feed/forage only
     tags        TEXT    NOT NULL DEFAULT '[]' -- json array of string tags, e.g. '["meat","common"]'
 );

@@ -11,11 +11,7 @@ export default async function Home() {
     'name',     f.name,
     'type',     f.type,
     'tags',     json(f.tags),
-    'calories', json(f.calories),
-    'fat',      json(f.fat),
-    'sat_fat',  json(f.sat_fat),
-    'protein',  json(f.protein),
-    'fiber',    json(f.fiber),
+    'nutrition', json(f.nutrition),
 
     'plant', CASE WHEN p.id IS NULL THEN NULL ELSE json_object(
       'yield_kg_ha',             json(p.yield_kg_ha),

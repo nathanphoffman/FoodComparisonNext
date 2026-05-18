@@ -79,8 +79,8 @@ async function main() {
 
   for (const food of foods) {
     db.run(
-      'INSERT INTO foods (id, slug, name, type, calories, fat, sat_fat, protein, fiber, human_food, tags) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-      [food.id, food.slug, food.name, food.type, JSON.stringify(food.calories), JSON.stringify(food.fat), JSON.stringify(food.sat_fat), JSON.stringify(food.protein), JSON.stringify(food.fiber), food.human_food, JSON.stringify(food.tags ?? [])]
+      'INSERT INTO foods (id, slug, name, type, nutrition, human_food, tags) VALUES (?, ?, ?, ?, ?, ?, ?)',
+      [food.id, food.slug, food.name, food.type, JSON.stringify(food.nutrition), food.human_food, JSON.stringify(food.tags ?? [])]
     );
   }
 

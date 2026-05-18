@@ -19,6 +19,7 @@ export default async function FoodPage({ params }: Props) {
   if (!foodResult.length) notFound();
 
   const food = rowsToObjects(foodResult)[0] as unknown as Food;
+  const nutrition = (JSON.parse(food.nutrition as unknown as string) as Food['nutrition'])[0].value;
 
   let detail: Plant | Animal | null = null;
   if (food.type === 'plant') {
@@ -44,11 +45,11 @@ export default async function FoodPage({ params }: Props) {
       <h2>Nutrition (per 100g)</h2>
       <table>
         <tbody>
-          <tr><td>Calories</td><td>{(food.calories * GRAMS_PER_HUNDRED).toFixed(0)} kcal</td></tr>
-          <tr><td>Fat</td><td>{formatNutrientPer100g(food.fat)}</td></tr>
-          <tr><td>Saturated fat</td><td>{formatNutrientPer100g(food.sat_fat)}</td></tr>
-          <tr><td>Protein</td><td>{formatNutrientPer100g(food.protein)}</td></tr>
-          <tr><td>Fiber</td><td>{formatNutrientPer100g(food.fiber)}</td></tr>
+          <tr><td>Calories</td><td>{(nutrition.calories * GRAMS_PER_HUNDRED).toFixed(0)} kcal</td></tr>
+          <tr><td>Fat</td><td>{formatNutrientPer100g(nutrition.fat)}</td></tr>
+          <tr><td>Saturated fat</td><td>{formatNutrientPer100g(nutrition.sat_fat)}</td></tr>
+          <tr><td>Protein</td><td>{formatNutrientPer100g(nutrition.protein)}</td></tr>
+          <tr><td>Fiber</td><td>{formatNutrientPer100g(nutrition.fiber)}</td></tr>
         </tbody>
       </table>
 

@@ -68,6 +68,7 @@ async function main() {
   const animalFeed = readJsonFile('animal_feed.json');
   const pesticides = readJsonFile('pesticides.json');
   const plantKills = readJsonFile('plant_animal_kills.json');
+  const plantPesticides = readJsonFile('plant_pesticides.json');
 
   for (const source of sources) {
     db.run(
@@ -78,8 +79,8 @@ async function main() {
 
   for (const food of foods) {
     db.run(
-      'INSERT INTO foods (id, slug, name, type, calories, fat, sat_fat, protein, fiber, human_food) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-      [food.id, food.slug, food.name, food.type, JSON.stringify(food.calories), JSON.stringify(food.fat), JSON.stringify(food.sat_fat), JSON.stringify(food.protein), JSON.stringify(food.fiber), food.human_food]
+      'INSERT INTO foods (id, slug, name, type, calories, fat, sat_fat, protein, fiber, human_food, tags) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+      [food.id, food.slug, food.name, food.type, JSON.stringify(food.calories), JSON.stringify(food.fat), JSON.stringify(food.sat_fat), JSON.stringify(food.protein), JSON.stringify(food.fiber), food.human_food, JSON.stringify(food.tags ?? [])]
     );
   }
 
@@ -100,14 +101,21 @@ async function main() {
   for (const pesticide of pesticides) {
     db.run(
       'INSERT INTO pesticides (id, name, paf) VALUES (?, ?, ?)',
-      [pesticide.id, pesticide.name, pesticide.paf]
+      [pesticide.id, pesticide.name, JSON.stringify(pesticide.paf)]
     );
   }
 
   for (const plantKill of plantKills) {
     db.run(
       'INSERT INTO plant_animal_kills (id, plant_id, animal_id, kills_per_ha) VALUES (?, ?, ?, ?)',
-      [plantKill.id, plantKill.plant_id, plantKill.animal_id, plantKill.kills_per_ha ?? null]
+      [plantKill.id, plantKill.plant_id, plantKill.animal_id, plantKill.kills_per_ha ? JSON.stringify(plantKill.kills_per_ha) : null]
+    );
+  }
+
+  for (const plantPesticide of plantPesticides) {
+    db.run(
+      'INSERT INTO plant_pesticides (id, plant_id, pesticide_id, kg_ha) VALUES (?, ?, ?, ?)',
+      [plantPesticide.id, plantPesticide.plant_id, plantPesticide.pesticide_id, plantPesticide.kg_ha ? JSON.stringify(plantPesticide.kg_ha) : null]
     );
   }
 

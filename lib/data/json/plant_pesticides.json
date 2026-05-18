@@ -442,5 +442,11 @@
     "plant_id": 25,
     "pesticide_id": 13,
     "kg_ha": [{"value": 0.35, "source_id": 52, "confidence": 3}]
+  },
+  {
+    "id": 75,
+    "plant_id": 26,
+    "pesticide_id": 1,
+    "kg_ha": [{"value": 0.5, "source_id": 52, "confidence": 1}]
   }
 ]

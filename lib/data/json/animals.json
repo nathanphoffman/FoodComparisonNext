@@ -11,15 +11,11 @@
     "weight_kg": [
       {
         "value": 500,
-        "source_id": 17
+        "source_id": 18
       }
     ],
     "bycatch_animal_id": null,
-    "bycatch_amount": null,
-    "sources": [
-      17,
-      18
-    ]
+    "bycatch_amount": null
   },
   {
     "id": 2,
@@ -37,11 +33,7 @@
       }
     ],
     "bycatch_animal_id": null,
-    "bycatch_amount": null,
-    "sources": [
-      19,
-      20
-    ]
+    "bycatch_amount": null
   },
   {
     "id": 3,
@@ -59,11 +51,7 @@
       }
     ],
     "bycatch_animal_id": null,
-    "bycatch_amount": null,
-    "sources": [
-      17,
-      31
-    ]
+    "bycatch_amount": null
   },
   {
     "id": 4,
@@ -81,11 +69,7 @@
       }
     ],
     "bycatch_animal_id": null,
-    "bycatch_amount": null,
-    "sources": [
-      17,
-      32
-    ]
+    "bycatch_amount": null
   },
   {
     "id": 5,
@@ -103,10 +87,7 @@
       }
     ],
     "bycatch_animal_id": null,
-    "bycatch_amount": null,
-    "sources": [
-      17
-    ]
+    "bycatch_amount": null
   },
   {
     "id": 6,
@@ -124,11 +105,7 @@
       }
     ],
     "bycatch_animal_id": null,
-    "bycatch_amount": null,
-    "sources": [
-      17,
-      36
-    ]
+    "bycatch_amount": null
   },
   {
     "id": 7,
@@ -146,10 +123,6 @@
       }
     ],
     "bycatch_animal_id": null,
-    "bycatch_amount": null,
-    "sources": [
-      17,
-      37
-    ]
+    "bycatch_amount": null
   }
 ]

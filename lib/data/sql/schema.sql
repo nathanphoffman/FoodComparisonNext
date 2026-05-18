@@ -15,8 +15,7 @@ CREATE TABLE IF NOT EXISTS foods (
     sat_fat  TEXT    NOT NULL,
     protein  TEXT    NOT NULL,
     fiber    TEXT    NOT NULL,
-    human_food  INTEGER NOT NULL DEFAULT 1,  -- boolean: 1 = human food, 0 = feed/forage only
-    sources     TEXT                         -- json array of source URLs
+    human_food  INTEGER NOT NULL DEFAULT 1   -- boolean: 1 = human food, 0 = feed/forage only
 );
 
 CREATE TABLE IF NOT EXISTS animals (
@@ -25,8 +24,7 @@ CREATE TABLE IF NOT EXISTS animals (
     neuron_count      TEXT,
     weight_kg         TEXT,
     bycatch_animal_id INTEGER REFERENCES animals(id),
-    bycatch_amount    TEXT,
-    sources           TEXT  -- json array of source URLs
+    bycatch_amount    TEXT
 );
 
 CREATE TABLE IF NOT EXISTS plants (
@@ -39,8 +37,7 @@ CREATE TABLE IF NOT EXISTS plants (
     fertilizer_kg_ha        TEXT,  -- json array of {value: kg/ha, source_id}
     emissions_per_kg        TEXT,  -- json array of {value: kg CO2e/kg, source_id}
     tillage_events_per_year TEXT,  -- json array of {value: events/yr, source_id}
-    co2_capture_kg_ha_yr    TEXT,  -- json array of {value: kg CO2/ha/yr, source_id}
-    sources               TEXT   -- json array of source URLs
+    co2_capture_kg_ha_yr    TEXT   -- json array of {value: kg CO2/ha/yr, source_id}
 );
 
 CREATE TABLE IF NOT EXISTS plant_animal_kills (
@@ -54,8 +51,7 @@ CREATE TABLE IF NOT EXISTS animal_feed (
     id                   INTEGER PRIMARY KEY AUTOINCREMENT,
     animal_id            INTEGER NOT NULL REFERENCES animals(id),
     plant_id             INTEGER NOT NULL REFERENCES plants(id),
-    kg_feed_per_kg_output  TEXT    NOT NULL,  -- json array of {value: kg feed/kg output, source_id}
-    sources              TEXT    -- json array of source URLs
+    kg_feed_per_kg_output  TEXT    NOT NULL   -- json array of {value: kg feed/kg output, source_id}
 );
 
 CREATE TABLE IF NOT EXISTS pesticides (

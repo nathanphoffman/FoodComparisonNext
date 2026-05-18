@@ -5,13 +5,17 @@
     "yield_kg_ha": [
       {
         "value": 3000,
-        "source_id": 7
+        "source_id": 8
       }
     ],
     "water_per_kg": [
       {
-        "value": 11660,
+        "value": 10240,
         "source_id": 7
+      },
+      {
+        "value": 13080,
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -49,10 +53,6 @@
         "value": 5000,
         "source_id": 7
       }
-    ],
-    "sources": [
-      7,
-      8
     ]
   },
   {
@@ -105,9 +105,6 @@
         "value": 2000,
         "source_id": 9
       }
-    ],
-    "sources": [
-      9
     ]
   },
   {
@@ -160,9 +157,6 @@
         "value": 1500,
         "source_id": 10
       }
-    ],
-    "sources": [
-      10
     ]
   },
   {
@@ -189,13 +183,13 @@
     "pesticide_kg_ha": [
       {
         "value": 2.3,
-        "source_id": 11
+        "source_id": 12
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 160,
-        "source_id": 11
+        "source_id": 12
       }
     ],
     "emissions_per_kg": [
@@ -215,10 +209,6 @@
         "value": 3000,
         "source_id": 11
       }
-    ],
-    "sources": [
-      11,
-      12
     ]
   },
   {
@@ -271,10 +261,6 @@
         "value": 4000,
         "source_id": 13
       }
-    ],
-    "sources": [
-      13,
-      14
     ]
   },
   {
@@ -327,9 +313,6 @@
         "value": 3500,
         "source_id": 15
       }
-    ],
-    "sources": [
-      15
     ]
   },
   {
@@ -382,10 +365,6 @@
         "value": 2500,
         "source_id": 15
       }
-    ],
-    "sources": [
-      15,
-      16
     ]
   },
   {
@@ -400,7 +379,7 @@
     "water_per_kg": [
       {
         "value": 180,
-        "source_id": 28
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -438,10 +417,6 @@
         "value": 1500,
         "source_id": 28
       }
-    ],
-    "sources": [
-      28,
-      30
     ]
   },
   {
@@ -456,7 +431,7 @@
     "water_per_kg": [
       {
         "value": 240,
-        "source_id": 33
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -494,10 +469,6 @@
         "value": 1200,
         "source_id": 33
       }
-    ],
-    "sources": [
-      33,
-      30
     ]
   },
   {
@@ -512,7 +483,7 @@
     "water_per_kg": [
       {
         "value": 130,
-        "source_id": 33
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -550,10 +521,6 @@
         "value": 800,
         "source_id": 33
       }
-    ],
-    "sources": [
-      33,
-      30
     ]
   },
   {
@@ -568,7 +535,7 @@
     "water_per_kg": [
       {
         "value": 2500,
-        "source_id": 29
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -606,10 +573,6 @@
         "value": 500,
         "source_id": 29
       }
-    ],
-    "sources": [
-      29,
-      30
     ]
   },
   {
@@ -624,7 +587,7 @@
     "water_per_kg": [
       {
         "value": 250,
-        "source_id": 33
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -662,10 +625,6 @@
         "value": 1000,
         "source_id": 33
       }
-    ],
-    "sources": [
-      33,
-      30
     ]
   },
   {
@@ -680,7 +639,7 @@
     "water_per_kg": [
       {
         "value": 820,
-        "source_id": 33
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -718,10 +677,6 @@
         "value": 4000,
         "source_id": 33
       }
-    ],
-    "sources": [
-      33,
-      30
     ]
   },
   {
@@ -736,7 +691,7 @@
     "water_per_kg": [
       {
         "value": 860,
-        "source_id": 33
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -774,10 +729,6 @@
         "value": 2500,
         "source_id": 33
       }
-    ],
-    "sources": [
-      33,
-      30
     ]
   },
   {
@@ -792,7 +743,7 @@
     "water_per_kg": [
       {
         "value": 5874,
-        "source_id": 33
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -830,10 +781,6 @@
         "value": 1000,
         "source_id": 33
       }
-    ],
-    "sources": [
-      33,
-      30
     ]
   },
   {
@@ -848,7 +795,7 @@
     "water_per_kg": [
       {
         "value": 1788,
-        "source_id": 33
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -886,10 +833,6 @@
         "value": 1500,
         "source_id": 33
       }
-    ],
-    "sources": [
-      33,
-      30
     ]
   },
   {
@@ -904,7 +847,7 @@
     "water_per_kg": [
       {
         "value": 285,
-        "source_id": 33
+        "source_id": 30
       }
     ],
     "soil_erosion": [
@@ -942,10 +885,6 @@
         "value": 800,
         "source_id": 33
       }
-    ],
-    "sources": [
-      33,
-      30
     ]
   },
   {
@@ -954,13 +893,17 @@
     "yield_kg_ha": [
       {
         "value": 3500,
-        "source_id": 30
+        "source_id": 35
       }
     ],
     "water_per_kg": [
       {
-        "value": 8512,
+        "value": 7744,
         "source_id": 30
+      },
+      {
+        "value": 9279,
+        "source_id": 34
       }
     ],
     "soil_erosion": [
@@ -998,11 +941,6 @@
         "value": 5000,
         "source_id": 30
       }
-    ],
-    "sources": [
-      30,
-      34,
-      35
     ]
   },
   {
@@ -1011,13 +949,13 @@
     "yield_kg_ha": [
       {
         "value": 700,
-        "source_id": 30
+        "source_id": 35
       }
     ],
     "water_per_kg": [
       {
         "value": 45914,
-        "source_id": 30
+        "source_id": 34
       }
     ],
     "soil_erosion": [
@@ -1055,11 +993,6 @@
         "value": 3000,
         "source_id": 30
       }
-    ],
-    "sources": [
-      30,
-      34,
-      35
     ]
   },
   {
@@ -1068,13 +1001,17 @@
     "yield_kg_ha": [
       {
         "value": 1200,
-        "source_id": 30
+        "source_id": 35
       }
     ],
     "water_per_kg": [
       {
-        "value": 11027,
+        "value": 10697,
         "source_id": 30
+      },
+      {
+        "value": 11356,
+        "source_id": 34
       }
     ],
     "soil_erosion": [
@@ -1112,11 +1049,6 @@
         "value": 3500,
         "source_id": 30
       }
-    ],
-    "sources": [
-      30,
-      34,
-      35
     ]
   },
   {
@@ -1169,9 +1101,6 @@
         "value": 5500,
         "source_id": 35
       }
-    ],
-    "sources": [
-      35
     ]
   },
   {
@@ -1180,13 +1109,17 @@
     "yield_kg_ha": [
       {
         "value": 1700,
-        "source_id": 30
+        "source_id": 35
       }
     ],
     "water_per_kg": [
       {
-        "value": 10159,
+        "value": 9807,
         "source_id": 30
+      },
+      {
+        "value": 10511,
+        "source_id": 34
       }
     ],
     "soil_erosion": [
@@ -1224,11 +1157,6 @@
         "value": 3000,
         "source_id": 30
       }
-    ],
-    "sources": [
-      30,
-      34,
-      35
     ]
   },
   {
@@ -1281,9 +1209,6 @@
         "value": 6000,
         "source_id": 35
       }
-    ],
-    "sources": [
-      35
     ]
   },
   {
@@ -1292,7 +1217,7 @@
     "yield_kg_ha": [
       {
         "value": 80,
-        "source_id": 34
+        "source_id": 35
       }
     ],
     "water_per_kg": [
@@ -1336,10 +1261,6 @@
         "value": 50000,
         "source_id": 34
       }
-    ],
-    "sources": [
-      34,
-      35
     ]
   },
   {
@@ -1348,12 +1269,12 @@
     "yield_kg_ha": [
       {
         "value": 1600,
-        "source_id": 30
+        "source_id": 35
       }
     ],
     "water_per_kg": [
       {
-        "value": 3537,
+        "value": 3740,
         "source_id": 30
       }
     ],
@@ -1392,11 +1313,6 @@
         "value": 1500,
         "source_id": 30
       }
-    ],
-    "sources": [
-      30,
-      34,
-      35
     ]
   },
   {
@@ -1449,9 +1365,6 @@
         "value": 10000,
         "source_id": 35
       }
-    ],
-    "sources": [
-      35
     ]
   }
 ]

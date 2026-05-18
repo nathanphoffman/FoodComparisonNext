@@ -5,13 +5,15 @@
     "neuron_count": [
       {
         "value": 3000000000,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "weight_kg": [
       {
         "value": 500,
-        "source_id": 18
+        "source_id": 18,
+        "confidence": 4
       }
     ],
     "bycatch_animal_id": null,
@@ -23,13 +25,15 @@
     "neuron_count": [
       {
         "value": 221000000,
-        "source_id": 19
+        "source_id": 19,
+        "confidence": 5
       }
     ],
     "weight_kg": [
       {
         "value": 2.5,
-        "source_id": 19
+        "source_id": 19,
+        "confidence": 5
       }
     ],
     "bycatch_animal_id": null,
@@ -41,13 +45,15 @@
     "neuron_count": [
       {
         "value": 2230000000,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "weight_kg": [
       {
         "value": 90,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "bycatch_animal_id": null,
@@ -59,13 +65,20 @@
     "neuron_count": [
       {
         "value": 10000000,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 1
+      },
+      {
+        "value": 130000000,
+        "source_id": 40,
+        "confidence": 2
       }
     ],
     "weight_kg": [
       {
         "value": 4.5,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "bycatch_animal_id": null,
@@ -77,13 +90,15 @@
     "neuron_count": [
       {
         "value": 30000000,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "weight_kg": [
       {
         "value": 60,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "bycatch_animal_id": null,
@@ -95,13 +110,15 @@
     "neuron_count": [
       {
         "value": 221000000,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "weight_kg": [
       {
         "value": 1.8,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "bycatch_animal_id": null,
@@ -113,13 +130,15 @@
     "neuron_count": [
       {
         "value": 3000000000,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "weight_kg": [
       {
         "value": 680,
-        "source_id": 17
+        "source_id": 17,
+        "confidence": 3
       }
     ],
     "bycatch_animal_id": null,

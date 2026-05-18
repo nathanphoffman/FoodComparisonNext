@@ -5,53 +5,62 @@
     "yield_kg_ha": [
       {
         "value": 3000,
-        "source_id": 8
+        "source_id": 8,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 10240,
-        "source_id": 7
+        "source_id": 7,
+        "confidence": 4
       },
       {
         "value": 13080,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 1.5,
-        "source_id": 7
+        "source_id": 7,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 8.5,
-        "source_id": 7
+        "source_id": 7,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 200,
-        "source_id": 7
+        "source_id": 7,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 1.2,
-        "source_id": 7
+        "source_id": 7,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 2,
-        "source_id": 7
+        "source_id": 7,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 5000,
-        "source_id": 7
+        "source_id": 7,
+        "confidence": 4
       }
     ]
   },
@@ -61,49 +70,57 @@
     "yield_kg_ha": [
       {
         "value": 2067,
-        "source_id": 9
+        "source_id": 9,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 1827,
-        "source_id": 9
+        "source_id": 9,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 3,
-        "source_id": 9
+        "source_id": 9,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 1.2,
-        "source_id": 9
+        "source_id": 9,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 120,
-        "source_id": 9
+        "source_id": 9,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.5,
-        "source_id": 9
+        "source_id": 9,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 3,
-        "source_id": 9
+        "source_id": 9,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 2000,
-        "source_id": 9
+        "source_id": 9,
+        "confidence": 4
       }
     ]
   },
@@ -113,49 +130,57 @@
     "yield_kg_ha": [
       {
         "value": 2800,
-        "source_id": 10
+        "source_id": 10,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 2145,
-        "source_id": 10
+        "source_id": 10,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 4.5,
-        "source_id": 10
+        "source_id": 10,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 1.5,
-        "source_id": 10
+        "source_id": 10,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 80,
-        "source_id": 10
+        "source_id": 10,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.7,
-        "source_id": 10
+        "source_id": 10,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 2,
-        "source_id": 10
+        "source_id": 10,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 1500,
-        "source_id": 10
+        "source_id": 10,
+        "confidence": 4
       }
     ]
   },
@@ -165,49 +190,57 @@
     "yield_kg_ha": [
       {
         "value": 5600,
-        "source_id": 11
+        "source_id": 11,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 1222,
-        "source_id": 11
+        "source_id": 11,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 6.7,
-        "source_id": 11
+        "source_id": 11,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 2.3,
-        "source_id": 12
+        "source_id": 12,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 160,
-        "source_id": 12
+        "source_id": 12,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.4,
-        "source_id": 11
+        "source_id": 11,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 2,
-        "source_id": 11
+        "source_id": 11,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 3000,
-        "source_id": 11
+        "source_id": 11,
+        "confidence": 4
       }
     ]
   },
@@ -217,49 +250,57 @@
     "yield_kg_ha": [
       {
         "value": 8500,
-        "source_id": 13
+        "source_id": 13,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 900,
-        "source_id": 13
+        "source_id": 13,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 0.3,
-        "source_id": 13
+        "source_id": 13,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 1.5,
-        "source_id": 13
+        "source_id": 13,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 0,
-        "source_id": 13
+        "source_id": 13,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.4,
-        "source_id": 13
+        "source_id": 13,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 13
+        "source_id": 13,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 4000,
-        "source_id": 13
+        "source_id": 13,
+        "confidence": 4
       }
     ]
   },
@@ -269,49 +310,57 @@
     "yield_kg_ha": [
       {
         "value": 5500,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 550,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 0.5,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 0.5,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 80,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.3,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 3500,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ]
   },
@@ -321,49 +370,57 @@
     "yield_kg_ha": [
       {
         "value": 4200,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 2830,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 3,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 0.8,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 100,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.3,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 2,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 2500,
-        "source_id": 15
+        "source_id": 15,
+        "confidence": 4
       }
     ]
   },
@@ -373,49 +430,57 @@
     "yield_kg_ha": [
       {
         "value": 38000,
-        "source_id": 28
+        "source_id": 28,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 180,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 2.5,
-        "source_id": 28
+        "source_id": 28,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 3.5,
-        "source_id": 28
+        "source_id": 28,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 150,
-        "source_id": 28
+        "source_id": 28,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.7,
-        "source_id": 28
+        "source_id": 28,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 1,
-        "source_id": 28
+        "source_id": 28,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 1500,
-        "source_id": 28
+        "source_id": 28,
+        "confidence": 4
       }
     ]
   },
@@ -425,49 +490,57 @@
     "yield_kg_ha": [
       {
         "value": 35000,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 240,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 1.5,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 2,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 100,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.6,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 1,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 1200,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ]
   },
@@ -477,49 +550,57 @@
     "yield_kg_ha": [
       {
         "value": 25000,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 130,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 3,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 2.5,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 120,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.4,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 3,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 800,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ]
   },
@@ -529,49 +610,57 @@
     "yield_kg_ha": [
       {
         "value": 4700,
-        "source_id": 29
+        "source_id": 29,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 2500,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 1,
-        "source_id": 29
+        "source_id": 29,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 1.8,
-        "source_id": 29
+        "source_id": 29,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 100,
-        "source_id": 29
+        "source_id": 29,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 1.18,
-        "source_id": 29
+        "source_id": 29,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 1,
-        "source_id": 29
+        "source_id": 29,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 500,
-        "source_id": 29
+        "source_id": 29,
+        "confidence": 4
       }
     ]
   },
@@ -581,49 +670,57 @@
     "yield_kg_ha": [
       {
         "value": 22000,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 250,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 4.5,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 4,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 130,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.5,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 2,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 1000,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ]
   },
@@ -633,49 +730,57 @@
     "yield_kg_ha": [
       {
         "value": 18000,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 820,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 1,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 5,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 100,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.4,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 4000,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ]
   },
@@ -685,49 +790,57 @@
     "yield_kg_ha": [
       {
         "value": 32000,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 860,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 3,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 7,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 200,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.9,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 2500,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ]
   },
@@ -737,49 +850,57 @@
     "yield_kg_ha": [
       {
         "value": 1200,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 5874,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 1.5,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 0.5,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 0,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.9,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 1,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 1000,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ]
   },
@@ -789,49 +910,57 @@
     "yield_kg_ha": [
       {
         "value": 2500,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 1788,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 2,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 0.8,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 80,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.5,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 2,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 1500,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ]
   },
@@ -841,49 +970,57 @@
     "yield_kg_ha": [
       {
         "value": 15000,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "water_per_kg": [
       {
         "value": 285,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 2.5,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 2,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 120,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.4,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 1,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 800,
-        "source_id": 33
+        "source_id": 33,
+        "confidence": 4
       }
     ]
   },
@@ -893,53 +1030,62 @@
     "yield_kg_ha": [
       {
         "value": 3500,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "water_per_kg": [
       {
         "value": 7744,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       },
       {
         "value": 9279,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 1,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 3,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 150,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "emissions_per_kg": [
       {
         "value": 2.3,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 5000,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ]
   },
@@ -949,49 +1095,57 @@
     "yield_kg_ha": [
       {
         "value": 700,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "water_per_kg": [
       {
         "value": 45914,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 1,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 1.5,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 80,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "emissions_per_kg": [
       {
         "value": 3.5,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 3000,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ]
   },
@@ -1001,53 +1155,62 @@
     "yield_kg_ha": [
       {
         "value": 1200,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "water_per_kg": [
       {
         "value": 10697,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       },
       {
         "value": 11356,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 1,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 2.5,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 120,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "emissions_per_kg": [
       {
         "value": 2.8,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 3500,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ]
   },
@@ -1057,49 +1220,57 @@
     "yield_kg_ha": [
       {
         "value": 1500,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "water_per_kg": [
       {
         "value": 10000,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
       {
         "value": 0.8,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 3.5,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 130,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "emissions_per_kg": [
       {
         "value": 2,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 5500,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ]
   },
@@ -1109,53 +1280,62 @@
     "yield_kg_ha": [
       {
         "value": 1700,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "water_per_kg": [
       {
         "value": 9807,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       },
       {
         "value": 10511,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 0.8,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 2,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 100,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "emissions_per_kg": [
       {
         "value": 1.7,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 3000,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ]
   },
@@ -1165,49 +1345,57 @@
     "yield_kg_ha": [
       {
         "value": 2500,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "water_per_kg": [
       {
         "value": 8220,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
       {
         "value": 0.5,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 2,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 150,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "emissions_per_kg": [
       {
         "value": 3.5,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 6000,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ]
   },
@@ -1217,49 +1405,57 @@
     "yield_kg_ha": [
       {
         "value": 80,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "water_per_kg": [
       {
         "value": 2357,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "soil_erosion": [
       {
         "value": 0,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 0,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 0,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "emissions_per_kg": [
       {
         "value": 0.2,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 50000,
-        "source_id": 34
+        "source_id": 34,
+        "confidence": 4
       }
     ]
   },
@@ -1269,49 +1465,57 @@
     "yield_kg_ha": [
       {
         "value": 1600,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "water_per_kg": [
       {
         "value": 3740,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "soil_erosion": [
       {
         "value": 2,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 1.5,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 0,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "emissions_per_kg": [
       {
         "value": 2.5,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 2,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 1500,
-        "source_id": 30
+        "source_id": 30,
+        "confidence": 5
       }
     ]
   },
@@ -1321,49 +1525,57 @@
     "yield_kg_ha": [
       {
         "value": 200,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "water_per_kg": [
       {
         "value": 9000,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
       {
         "value": 0.5,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "pesticide_kg_ha": [
       {
         "value": 0.5,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "fertilizer_kg_ha": [
       {
         "value": 0,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "emissions_per_kg": [
       {
         "value": 5,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "tillage_events_per_year": [
       {
         "value": 0,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ],
     "co2_capture_kg_ha_yr": [
       {
         "value": 10000,
-        "source_id": 35
+        "source_id": 35,
+        "confidence": 3
       }
     ]
   }

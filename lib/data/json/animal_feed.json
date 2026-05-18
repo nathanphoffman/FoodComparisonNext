@@ -6,7 +6,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 5.71,
-        "source_id": 21
+        "source_id": 21,
+        "confidence": 3
       }
     ]
   },
@@ -17,7 +18,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.76,
-        "source_id": 21
+        "source_id": 21,
+        "confidence": 3
       }
     ]
   },
@@ -28,7 +30,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 1.14,
-        "source_id": 21
+        "source_id": 21,
+        "confidence": 3
       }
     ]
   },
@@ -39,7 +42,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.29,
-        "source_id": 21
+        "source_id": 21,
+        "confidence": 3
       }
     ]
   },
@@ -50,7 +54,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.48,
-        "source_id": 21
+        "source_id": 21,
+        "confidence": 3
       }
     ]
   },
@@ -61,7 +66,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 1.22,
-        "source_id": 22
+        "source_id": 22,
+        "confidence": 3
       }
     ]
   },
@@ -72,7 +78,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.57,
-        "source_id": 22
+        "source_id": 22,
+        "confidence": 3
       }
     ]
   },
@@ -83,7 +90,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.09,
-        "source_id": 26
+        "source_id": 26,
+        "confidence": 3
       }
     ]
   },
@@ -94,7 +102,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 2.5,
-        "source_id": 31
+        "source_id": 31,
+        "confidence": 3
       }
     ]
   },
@@ -105,7 +114,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.77,
-        "source_id": 31
+        "source_id": 31,
+        "confidence": 3
       }
     ]
   },
@@ -116,7 +126,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.24,
-        "source_id": 32
+        "source_id": 32,
+        "confidence": 4
       }
     ]
   },
@@ -127,7 +138,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.13,
-        "source_id": 32
+        "source_id": 32,
+        "confidence": 4
       }
     ]
   },
@@ -138,7 +150,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 2.42,
-        "source_id": 36
+        "source_id": 36,
+        "confidence": 3
       }
     ]
   },
@@ -149,7 +162,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.81,
-        "source_id": 36
+        "source_id": 36,
+        "confidence": 3
       }
     ]
   },
@@ -160,7 +174,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.92,
-        "source_id": 37
+        "source_id": 37,
+        "confidence": 3
       }
     ]
   },
@@ -171,7 +186,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.42,
-        "source_id": 37
+        "source_id": 37,
+        "confidence": 3
       }
     ]
   },
@@ -182,7 +198,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.17,
-        "source_id": 37
+        "source_id": 37,
+        "confidence": 3
       }
     ]
   },
@@ -193,7 +210,8 @@
     "kg_feed_per_kg_output": [
       {
         "value": 0.12,
-        "source_id": 37
+        "source_id": 37,
+        "confidence": 3
       }
     ]
   }

@@ -356,5 +356,17 @@
       "Dairy cow — lifetime FCR: 44,990 ÷ 27,000 ≈ 1.67 kg feed per kg milk.",
       "Dairy cow — feed split applied: 55% corn / 25% alfalfa / 10% soy / 7% grass hay → corn 0.92, alfalfa 0.42, soy 0.17, hay 0.12 kg per kg milk."
     ]
+  },
+  {
+    "id": 40,
+    "url": "https://forum.effectivealtruism.org/posts/4SpYcqZvuyZ8JyiCK/neuron-count-based-measures-may-currently-underweight",
+    "title": "EA Forum — Neuron Count Measures May Underweight Suffering in Farmed Fish",
+    "notes": [
+      "Atlantic salmon — neuron_count: value used is 130,000,000 (130 million), derived as follows.",
+      "The commonly cited figure of 10 million neurons for salmon originates from an empirical count of a 0.75g zebrafish. Applying this to a ~3,000g Atlantic salmon is biologically indefensible — the figure does not scale with body or brain size.",
+      "Bruns & Davies (2022) ran a Monte Carlo simulation estimating 8–64 million neurons for salmon-sized fish, but this range was derived from data on fish under 4g and extrapolated across a >750× weight gap, so the uncertainty is substantial.",
+      "A scaling-adjusted estimate: applying Invincible Wellbeing's vertebrate curve-fitting formula to a 3,000g salmon yields ~1.9 billion neurons, but fish brains are roughly 1/15th the relative size of mammals and birds at equivalent body weight. Dividing by 15 gives ~130 million, which is the value used here.",
+      "All estimates carry significant uncertainty. The 130M figure is the most biologically grounded available estimate given the absence of direct neurological counts for Atlantic salmon at commercial harvest size."
+    ]
   }
 ]

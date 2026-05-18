@@ -555,5 +555,19 @@
       "Sardines: 0.75 (whole to edible flesh). Confidence 3.",
       "Lamb: 0.45 (live to retail edible, similar structure to beef but lower yield). Confidence 3."
     ]
+  },
+  {
+    "id": 55,
+    "url": "https://science.sciencemag.org/content/360/6392/987",
+    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+    "notes": [
+      "Animals — pasture_ha_per_kg_output and native_fraction: Land use values derived from Poore & Nemecek (2018) meta-analysis of 38,700 farms across 119 countries, combined with FAO Livestock's Long Shadow (2006) and Our World in Data land use estimates.",
+      "Beef pasture: ~0.015 ha per kg live weight output (global median, mix of extensive grass-fed and intensive feedlot systems). Confidence 2 — highly variable by region and production system.",
+      "Lamb pasture: ~0.020 ha per kg live weight output (global average, predominantly extensive grazing). Confidence 2.",
+      "Milk pasture: ~0.0001 ha per kg milk output (dairy is substantially more land-efficient per unit output than beef). Confidence 2.",
+      "Beef native_fraction: 0.65 — approximately 35% of global beef pasture involves some degree of ecosystem conversion, concentrated in tropical regions (Brazil accounts for ~24% of tropical deforestation from cattle ranching). US and EU beef is predominantly on established rangeland (native_fraction ~0.90); Brazilian beef ~0.40-0.50.",
+      "Lamb native_fraction: 0.85 — lamb production concentrated in NZ, UK, and Australia on long-established temperate grassland with minimal ongoing conversion.",
+      "Milk native_fraction: 0.80 — dairy farming predominantly on established agricultural land near infrastructure."
+    ]
   }
 ]

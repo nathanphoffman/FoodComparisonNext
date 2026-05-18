@@ -30,6 +30,8 @@ export interface Animal {
   bycatch_animal_id: number | null;
   bycatch_amount: Sourced<number>[] | null;
   yield_fraction: Sourced<number>[] | null;
+  pasture_ha_per_kg_output: Sourced<number>[] | null;
+  native_fraction: Sourced<number>[] | null;
 }
 
 export interface Plant {

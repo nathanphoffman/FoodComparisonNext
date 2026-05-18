@@ -45,9 +45,11 @@ export default async function Home() {
     ) END,
 
     'animal', CASE WHEN a.id IS NULL THEN NULL ELSE json_object(
-      'neuron_count',    json(a.neuron_count),
-      'weight_kg',       json(a.weight_kg),
-      'yield_fraction',  json(a.yield_fraction),
+      'neuron_count',             json(a.neuron_count),
+      'weight_kg',                json(a.weight_kg),
+      'yield_fraction',           json(a.yield_fraction),
+      'pasture_ha_per_kg_output', json(a.pasture_ha_per_kg_output),
+      'native_fraction',          json(a.native_fraction),
       'bycatch', CASE WHEN a.bycatch_animal_id IS NULL THEN NULL ELSE json_object(
         'animal', (
           SELECT f2.name FROM animals a2

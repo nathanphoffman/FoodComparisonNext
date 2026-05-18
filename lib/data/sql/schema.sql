@@ -20,9 +20,11 @@ CREATE TABLE IF NOT EXISTS animals (
     food_id           INTEGER REFERENCES foods(id),
     neuron_count      TEXT,
     weight_kg         TEXT,
-    bycatch_animal_id INTEGER REFERENCES animals(id),
-    bycatch_amount    TEXT,
-    yield_fraction    TEXT   -- json array of {value: 0-1, source_id, confidence}
+    bycatch_animal_id        INTEGER REFERENCES animals(id),
+    bycatch_amount           TEXT,
+    yield_fraction           TEXT,  -- json array of {value: 0-1, source_id, confidence}
+    pasture_ha_per_kg_output TEXT,  -- json array of {value: ha/kg, source_id, confidence}
+    native_fraction          TEXT   -- json array of {value: 0-1, source_id, confidence} — fraction of pasture on pre-existing native land
 );
 
 CREATE TABLE IF NOT EXISTS plants (

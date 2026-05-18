@@ -24,6 +24,20 @@
         "source_id": 54,
         "confidence": 3
       }
+    ],
+    "pasture_ha_per_kg_output": [
+      {
+        "value": 0.015,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "native_fraction": [
+      {
+        "value": 0.65,
+        "source_id": 55,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -51,7 +65,9 @@
         "source_id": 54,
         "confidence": 4
       }
-    ]
+    ],
+    "pasture_ha_per_kg_output": null,
+    "native_fraction": null
   },
   {
     "id": 3,
@@ -78,7 +94,9 @@
         "source_id": 54,
         "confidence": 4
       }
-    ]
+    ],
+    "pasture_ha_per_kg_output": null,
+    "native_fraction": null
   },
   {
     "id": 4,
@@ -110,7 +128,9 @@
         "source_id": 54,
         "confidence": 3
       }
-    ]
+    ],
+    "pasture_ha_per_kg_output": null,
+    "native_fraction": null
   },
   {
     "id": 5,
@@ -137,7 +157,9 @@
         "source_id": 54,
         "confidence": 2
       }
-    ]
+    ],
+    "pasture_ha_per_kg_output": null,
+    "native_fraction": null
   },
   {
     "id": 6,
@@ -164,7 +186,9 @@
         "source_id": 54,
         "confidence": 5
       }
-    ]
+    ],
+    "pasture_ha_per_kg_output": null,
+    "native_fraction": null
   },
   {
     "id": 7,
@@ -190,6 +214,20 @@
         "value": 1,
         "source_id": 54,
         "confidence": 5
+      }
+    ],
+    "pasture_ha_per_kg_output": [
+      {
+        "value": 0.0001,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "native_fraction": [
+      {
+        "value": 0.8,
+        "source_id": 55,
+        "confidence": 2
       }
     ]
   },
@@ -218,7 +256,9 @@
         "source_id": 54,
         "confidence": 4
       }
-    ]
+    ],
+    "pasture_ha_per_kg_output": null,
+    "native_fraction": null
   },
   {
     "id": 9,
@@ -245,7 +285,9 @@
         "source_id": 54,
         "confidence": 3
       }
-    ]
+    ],
+    "pasture_ha_per_kg_output": null,
+    "native_fraction": null
   },
   {
     "id": 10,
@@ -272,7 +314,9 @@
         "source_id": 54,
         "confidence": 3
       }
-    ]
+    ],
+    "pasture_ha_per_kg_output": null,
+    "native_fraction": null
   },
   {
     "id": 11,
@@ -297,6 +341,20 @@
       {
         "value": 0.45,
         "source_id": 54,
+        "confidence": 3
+      }
+    ],
+    "pasture_ha_per_kg_output": [
+      {
+        "value": 0.02,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "native_fraction": [
+      {
+        "value": 0.85,
+        "source_id": 55,
         "confidence": 3
       }
     ]

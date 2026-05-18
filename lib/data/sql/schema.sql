@@ -21,7 +21,8 @@ CREATE TABLE IF NOT EXISTS animals (
     neuron_count      TEXT,
     weight_kg         TEXT,
     bycatch_animal_id INTEGER REFERENCES animals(id),
-    bycatch_amount    TEXT
+    bycatch_amount    TEXT,
+    yield_fraction    TEXT   -- json array of {value: 0-1, source_id, confidence}
 );
 
 CREATE TABLE IF NOT EXISTS plants (

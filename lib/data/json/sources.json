@@ -536,5 +536,24 @@
       "Rice — lower pesticide use overall compared to other staple crops globally; values consistent with FAO and NASS data.",
       "General: supports use of USDA NASS as primary source for crops where US production is representative."
     ]
+  },
+  {
+    "id": 54,
+    "url": "https://www.fao.org/uploads/media/bognar_bfe-r-02-03.pdf",
+    "title": "FAO/BfR — Tables on Weight Yield of Food and Retention Factors",
+    "notes": [
+      "Animals — yield_fraction: Live weight to edible output conversion factors used to normalize feed conversion ratios to per-kg-food-eaten basis.",
+      "Beef: 0.43 (dressing ~62% of live weight × retail cut yield ~70% of carcass). Confidence 3.",
+      "Chicken: 0.75 (whole live bird to dressed edible, standard broiler). Confidence 4.",
+      "Pork: 0.70 (live to retail edible cuts). Confidence 4.",
+      "Salmon: 0.65 (whole fish to fillet). Confidence 3.",
+      "Tuna: 0.60 (whole fish to edible loin). Confidence 2.",
+      "Egg: 1.0 (feed conversion already expressed per kg egg output). Confidence 5.",
+      "Milk: 1.0 (feed conversion already expressed per kg milk output). Confidence 5.",
+      "Turkey: 0.80 (live to dressed edible). Confidence 4.",
+      "Shrimp: 0.60 (whole to peeled edible). Confidence 3.",
+      "Sardines: 0.75 (whole to edible flesh). Confidence 3.",
+      "Lamb: 0.45 (live to retail edible, similar structure to beef but lower yield). Confidence 3."
+    ]
   }
 ]

@@ -29,6 +29,7 @@ export interface Animal {
   weight_kg: Sourced<number>[] | null;
   bycatch_animal_id: number | null;
   bycatch_amount: Sourced<number>[] | null;
+  yield_fraction: Sourced<number>[] | null;
 }
 
 export interface Plant {

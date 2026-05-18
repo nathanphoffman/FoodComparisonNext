@@ -86,8 +86,8 @@ async function main() {
 
   for (const animal of animals) {
     db.run(
-      'INSERT INTO animals (id, food_id, neuron_count, weight_kg, bycatch_animal_id, bycatch_amount) VALUES (?, ?, ?, ?, ?, ?)',
-      [animal.id, animal.food_id, animal.neuron_count ? JSON.stringify(animal.neuron_count) : null, animal.weight_kg ? JSON.stringify(animal.weight_kg) : null, animal.bycatch_animal_id ?? null, animal.bycatch_amount ? JSON.stringify(animal.bycatch_amount) : null]
+      'INSERT INTO animals (id, food_id, neuron_count, weight_kg, bycatch_animal_id, bycatch_amount, yield_fraction) VALUES (?, ?, ?, ?, ?, ?, ?)',
+      [animal.id, animal.food_id, animal.neuron_count ? JSON.stringify(animal.neuron_count) : null, animal.weight_kg ? JSON.stringify(animal.weight_kg) : null, animal.bycatch_animal_id ?? null, animal.bycatch_amount ? JSON.stringify(animal.bycatch_amount) : null, animal.yield_fraction ? JSON.stringify(animal.yield_fraction) : null]
     );
   }
 

@@ -39,7 +39,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 2,
@@ -81,7 +82,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["meat", "common"]
   },
   {
     "id": 3,
@@ -123,7 +125,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["common"]
   },
   {
     "id": 4,
@@ -165,7 +168,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["common"]
   },
   {
     "id": 5,
@@ -207,7 +211,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["meat", "common"]
   },
   {
     "id": 6,
@@ -249,7 +254,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 7,
@@ -291,7 +297,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 0
+    "human_food": 0,
+    "tags": []
   },
   {
     "id": 8,
@@ -333,7 +340,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 0
+    "human_food": 0,
+    "tags": []
   },
   {
     "id": 9,
@@ -375,7 +383,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 10,
@@ -417,7 +426,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["common"]
   },
   {
     "id": 11,
@@ -459,7 +469,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 12,
@@ -501,7 +512,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 13,
@@ -543,7 +555,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["common"]
   },
   {
     "id": 14,
@@ -585,7 +598,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["common"]
   },
   {
     "id": 15,
@@ -627,7 +641,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["meat"]
   },
   {
     "id": 16,
@@ -669,7 +684,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["fish", "common"]
   },
   {
     "id": 17,
@@ -711,7 +727,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["common"]
   },
   {
     "id": 18,
@@ -753,7 +770,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 19,
@@ -795,7 +813,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 20,
@@ -837,7 +856,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 21,
@@ -879,7 +899,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 22,
@@ -921,7 +942,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["common"]
   },
   {
     "id": 23,
@@ -963,7 +985,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["fish", "common"]
   },
   {
     "id": 24,
@@ -1005,7 +1028,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 25,
@@ -1047,7 +1071,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 26,
@@ -1089,7 +1114,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 27,
@@ -1131,7 +1157,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 28,
@@ -1173,7 +1200,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 29,
@@ -1215,7 +1243,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 30,
@@ -1257,7 +1286,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 31,
@@ -1299,7 +1329,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 32,
@@ -1341,7 +1372,8 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": []
   },
   {
     "id": 33,
@@ -1383,6 +1415,7 @@
         "confidence": 5
       }
     ],
-    "human_food": 1
+    "human_food": 1,
+    "tags": ["dairy"]
   }
 ]

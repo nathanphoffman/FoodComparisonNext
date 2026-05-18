@@ -15,7 +15,8 @@ CREATE TABLE IF NOT EXISTS foods (
     sat_fat  TEXT    NOT NULL,
     protein  TEXT    NOT NULL,
     fiber    TEXT    NOT NULL,
-    human_food  INTEGER NOT NULL DEFAULT 1   -- boolean: 1 = human food, 0 = feed/forage only
+    human_food  INTEGER NOT NULL DEFAULT 1,  -- boolean: 1 = human food, 0 = feed/forage only
+    tags        TEXT    NOT NULL DEFAULT '[]' -- json array of string tags, e.g. '["meat","common"]'
 );
 
 CREATE TABLE IF NOT EXISTS animals (

@@ -79,21 +79,21 @@ async function main() {
   for (const food of foods) {
     db.run(
       'INSERT INTO foods (id, slug, name, type, calories, fat, sat_fat, protein, fiber, human_food, sources) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-      [food.id, food.slug, food.name, food.type, food.calories, food.fat, food.sat_fat, food.protein, food.fiber, food.human_food, food.sources ? JSON.stringify(food.sources) : null]
+      [food.id, food.slug, food.name, food.type, JSON.stringify(food.calories), JSON.stringify(food.fat), JSON.stringify(food.sat_fat), JSON.stringify(food.protein), JSON.stringify(food.fiber), food.human_food, food.sources ? JSON.stringify(food.sources) : null]
     );
   }
 
   for (const animal of animals) {
     db.run(
       'INSERT INTO animals (id, food_id, neuron_count, weight_kg, bycatch_animal_id, bycatch_amount, sources) VALUES (?, ?, ?, ?, ?, ?, ?)',
-      [animal.id, animal.food_id, animal.neuron_count ?? null, animal.weight_kg ?? null, animal.bycatch_animal_id ?? null, animal.bycatch_amount ?? null, animal.sources ? JSON.stringify(animal.sources) : null]
+      [animal.id, animal.food_id, animal.neuron_count ? JSON.stringify(animal.neuron_count) : null, animal.weight_kg ? JSON.stringify(animal.weight_kg) : null, animal.bycatch_animal_id ?? null, animal.bycatch_amount ? JSON.stringify(animal.bycatch_amount) : null, animal.sources ? JSON.stringify(animal.sources) : null]
     );
   }
 
   for (const plant of plants) {
     db.run(
       'INSERT INTO plants (id, food_id, yield_kg_ha, water_per_kg, soil_erosion, pesticide_kg_ha, fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr, sources) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-      [plant.id, plant.food_id, plant.yield_kg_ha ?? null, plant.water_per_kg ?? null, plant.soil_erosion ?? null, plant.pesticide_kg_ha ?? null, plant.fertilizer_kg_ha ?? null, plant.emissions_per_kg ?? null, plant.tillage_events_per_year ?? null, plant.co2_capture_kg_ha_yr ?? null, plant.sources ? JSON.stringify(plant.sources) : null]
+      [plant.id, plant.food_id, plant.yield_kg_ha ? JSON.stringify(plant.yield_kg_ha) : null, plant.water_per_kg ? JSON.stringify(plant.water_per_kg) : null, plant.soil_erosion ? JSON.stringify(plant.soil_erosion) : null, plant.pesticide_kg_ha ? JSON.stringify(plant.pesticide_kg_ha) : null, plant.fertilizer_kg_ha ? JSON.stringify(plant.fertilizer_kg_ha) : null, plant.emissions_per_kg ? JSON.stringify(plant.emissions_per_kg) : null, plant.tillage_events_per_year ? JSON.stringify(plant.tillage_events_per_year) : null, plant.co2_capture_kg_ha_yr ? JSON.stringify(plant.co2_capture_kg_ha_yr) : null, plant.sources ? JSON.stringify(plant.sources) : null]
     );
   }
 
@@ -114,7 +114,7 @@ async function main() {
   for (const animalFeedEntry of animalFeed) {
     db.run(
       'INSERT INTO animal_feed (id, animal_id, plant_id, kg_feed_per_kg_output, sources) VALUES (?, ?, ?, ?, ?)',
-      [animalFeedEntry.id, animalFeedEntry.animal_id, animalFeedEntry.plant_id, animalFeedEntry.kg_feed_per_kg_output, animalFeedEntry.sources ? JSON.stringify(animalFeedEntry.sources) : null]
+      [animalFeedEntry.id, animalFeedEntry.animal_id, animalFeedEntry.plant_id, JSON.stringify(animalFeedEntry.kg_feed_per_kg_output), animalFeedEntry.sources ? JSON.stringify(animalFeedEntry.sources) : null]
     );
   }
 

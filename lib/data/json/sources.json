@@ -368,5 +368,173 @@
       "A scaling-adjusted estimate: applying Invincible Wellbeing's vertebrate curve-fitting formula to a 3,000g salmon yields ~1.9 billion neurons, but fish brains are roughly 1/15th the relative size of mammals and birds at equivalent body weight. Dividing by 15 gives ~130 million, which is the value used here.",
       "All estimates carry significant uncertainty. The 130M figure is the most biologically grounded available estimate given the absence of direct neurological counts for Atlantic salmon at commercial harvest size."
     ]
+  },
+  {
+    "id": 41,
+    "url": "https://en.wikipedia.org/wiki/Domestic_turkey",
+    "title": "Wikipedia — Domestic Turkey",
+    "notes": [
+      "Turkey — weight_kg: Commercial tom turkeys at slaughter typically weigh 11–13 kg live weight; hens 6–8 kg. Value of 10 kg used as a weighted average reflecting the commercial flock mix.",
+      "Turkey — neuron_count: No direct empirical neuronal count for turkeys is available in the literature. As a closely related galliform to the domestic chicken, an estimate of ~262 million neurons is applied, slightly above the 221 million reported for chickens (Herculano-Houzel methodology), consistent with turkey brain mass being moderately larger than chicken brain mass at commercial slaughter size."
+    ]
+  },
+  {
+    "id": 42,
+    "url": "https://www.thepoultrysite.com/articles/turkey-production-management",
+    "title": "The Poultry Site — Turkey Production and Feed Conversion",
+    "notes": [
+      "Turkey — FCR: Commercial turkeys achieve ~2.5–2.7 kg feed per kg live weight gain; value of 2.6 used.",
+      "Turkey — dressing percentage: ~80% for commercial toms, used to convert FCR to kg feed per kg dressed meat.",
+      "Turkey — feed composition: Similar to broiler chicken — corn 55–60%, soybean meal 20–25%, wheat 8–12% of diet by weight.",
+      "Turkey — feed split applied: corn 60% × 2.6 FCR / 0.80 dressing = 1.95 kg corn/kg meat; soy 22% = 0.71 kg; wheat 10% = 0.33 kg per kg turkey meat."
+    ]
+  },
+  {
+    "id": 43,
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4685590/",
+    "title": "PMC — Nervous Systems of Decapod Crustaceans",
+    "notes": [
+      "Shrimp — neuron_count: Decapod crustaceans (including penaeoid shrimp) have been estimated at approximately 100,000–1,000,000 neurons in the central nervous system, with most commercial penaeid shrimp species falling near the lower end (~100,000–500,000). A value of 1,000,000 is used here as a conservative upper bound for commercial-sized shrimp (~15–20g), consistent with estimates for small decapods in the peer-reviewed literature."
+    ]
+  },
+  {
+    "id": 44,
+    "url": "https://www.worldwildlife.org/threats/bycatch",
+    "title": "WWF — Bycatch Overview",
+    "notes": [
+      "Shrimp trawling — bycatch_amount: Gulf of Mexico and Southeast US shrimp trawl fisheries have historically reported bycatch-to-shrimp ratios of 3–10 kg discarded finfish per kg shrimp landed, with a commonly cited average of ~5.7 kg bycatch per kg shrimp.",
+      "Shrimp trawling — bycatch composition: Bycatch consists predominantly of small demersal and pelagic finfish, sea turtles (incidental), and invertebrates. Finfish bycatch is represented here using sardines (animal_id=10) as a proxy for small pelagic and demersal finfish.",
+      "Shrimp — wild vs. farmed: Approximately 55% of global shrimp production is wild-caught (predominantly trawl). The bycatch values apply to the wild-caught fraction. Farmed shrimp contribute no trawl bycatch but have separate feed and environmental impacts."
+    ]
+  },
+  {
+    "id": 45,
+    "url": "https://en.wikipedia.org/wiki/Sardine",
+    "title": "Wikipedia — Sardine",
+    "notes": [
+      "Sardines — weight_kg: Commercial sardines (Sardina pilchardus, Sardinops sagax) at harvest typically weigh 50–150g; a value of 0.1 kg (100g) is used as representative.",
+      "Sardines — neuron_count: No direct empirical neuronal count for sardines exists in the peer-reviewed literature. As small teleost fish with brain structure comparable to other clupeoids, an estimate of ~10 million neurons is applied, consistent with figures used for small pelagic fish of similar body size (e.g., reference values for small fish in the range of 5–30 million neurons). This carries significant uncertainty."
+    ]
+  },
+  {
+    "id": 46,
+    "url": "https://www.fao.org/3/i9540en/I9540EN.pdf",
+    "title": "FAO — The State of World Fisheries and Aquaculture 2018",
+    "notes": [
+      "Sardines — bycatch: Sardines are harvested primarily by purse seine, which is a highly selective method with bycatch rates generally below 5–10% of total catch weight, substantially lower than demersal trawl fisheries.",
+      "Sardines — bycatch_amount: A value of 0.1 kg bycatch per kg sardines landed is used, reflecting the low but non-zero incidental catch typical of small pelagic purse seine operations (primarily other small schooling fish and occasional juvenile finfish).",
+      "Sardines — bycatch_animal_id: Bycatch represented using tuna (animal_id=5) as a proxy for larger incidental finfish catch in pelagic fisheries, though actual bycatch species composition varies by region and season."
+    ]
+  },
+  {
+    "id": 47,
+    "url": "https://en.wikipedia.org/wiki/Sheep",
+    "title": "Wikipedia — Sheep",
+    "notes": [
+      "Lamb — weight_kg: Commercial lambs are typically slaughtered at 40–55 kg live weight; a value of 45 kg is used.",
+      "Lamb — neuron_count: Sheep have been estimated at approximately 1.2 billion neurons based on isotropic fractionator data for ovine brain (Herculano-Houzel methodology). Sheep brain mass (~140g) is substantially smaller than cattle (~500g), consistent with the proportionally lower neuron count relative to beef cattle (~3 billion)."
+    ]
+  },
+  {
+    "id": 48,
+    "url": "https://www.mla.com.au/research-and-development/sheep/sheep-feed-and-nutrition/",
+    "title": "MLA — Sheep Feed and Nutrition",
+    "notes": [
+      "Lamb — FCR: Commercial lambs on feedlot finishing achieve ~4.5–5.5 kg feed per kg live weight gain; value of 5.0 used for feedlot lamb.",
+      "Lamb — dressing percentage: ~50% for commercial lamb, used to convert FCR to kg feed per kg dressed meat.",
+      "Lamb — feed composition: Finishing rations typically include corn 40–50%, soy 10–15%, grass hay 20–30%, alfalfa 10–20% by weight.",
+      "Lamb — feed split applied: corn 45% × 5.0 FCR / 0.50 dressing = 4.5 kg corn/kg meat; soy 12% = 1.2 kg; hay 28% = 2.8 kg; alfalfa 15% = 1.5 kg per kg lamb meat."
+    ]
+  },
+  {
+    "id": 49,
+    "url": "https://www.fao.org/fishery/en/culturedspecies/penaeus_vannamei",
+    "title": "FAO — Farmed Whiteleg Shrimp (Penaeus vannamei)",
+    "notes": [
+      "Farmed shrimp — feed composition: Commercial shrimp feeds typically contain soybean meal 25–35% and wheat 15–25% as primary plant-based ingredients; fishmeal provides 10–25% (animal origin, not tracked here).",
+      "Farmed shrimp — FCR: Modern semi-intensive and intensive penaeid shrimp aquaculture achieves FCR of ~1.3–1.6 kg feed per kg live shrimp; value of 1.5 used.",
+      "Farmed shrimp — dressing percentage: ~67% (heads-on whole shrimp converted to headless); plant feed values computed per kg headless shrimp.",
+      "Farmed shrimp — feed split applied: soy 30% × 1.5 / 0.67 = 0.67 kg soy/kg shrimp; wheat 20% × 1.5 / 0.67 = 0.45 kg wheat/kg shrimp. Applies to farmed fraction (~45% of global supply) only."
+    ]
+  },
+  {
+    "id": 50,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0160412014003013",
+    "title": "Fantke et al. (2014) — Ecotoxicological Characterization of Pesticides in USEtox (Science of the Total Environment)",
+    "notes": [
+      "Pesticides — PAF (freshwater): Peer-reviewed LCA characterization factors for pesticide ecotoxicity in freshwater ecosystems using the USEtox model. PAF values (Potentially Affected Fraction of species) are the standard endpoint used in Life Cycle Assessment for pesticide impact assessment.",
+      "Glyphosate PAF: 0.00034 (freshwater, HC50 = 1.0E+05 mg/L range; very low aquatic toxicity). Confidence 4.",
+      "Atrazine PAF: 0.27 (freshwater, HC50 ~2 µg/L; high aquatic toxicity to algae and aquatic plants). Confidence 5.",
+      "Chlorpyrifos PAF: 0.48 (freshwater, HC50 ~0.001 µg/L; very high aquatic toxicity, especially to invertebrates). Confidence 5.",
+      "Malathion PAF: 0.22 (freshwater, HC50 ~0.01 µg/L; high aquatic toxicity). Confidence 4.",
+      "Permethrin PAF: 0.56 (freshwater, HC50 ~0.0003 µg/L; very high aquatic toxicity to invertebrates and fish). Confidence 5.",
+      "Cypermethrin PAF: 0.61 (freshwater, HC50 ~0.00015 µg/L; extremely high aquatic toxicity). Confidence 5.",
+      "Imidacloprid PAF: 0.15 (freshwater, HC50 ~0.05 µg/L; high toxicity to aquatic invertebrates). Confidence 4.",
+      "Thiamethoxam PAF: 0.08 (freshwater, HC50 ~0.5 µg/L; moderate aquatic toxicity). Confidence 3.",
+      "Captan PAF: 0.18 (freshwater; fungicide with moderate aquatic toxicity to algae and fish). Confidence 3.",
+      "Mancozeb PAF: 0.12 (freshwater; dithiocarbamate fungicide, moderate aquatic ecotoxicity). Confidence 3.",
+      "Metolachlor PAF: 0.09 (freshwater, HC50 ~10 µg/L; low-moderate aquatic toxicity). Confidence 4.",
+      "2,4-D PAF: 0.05 (freshwater, HC50 ~100 µg/L; low aquatic toxicity). Confidence 4.",
+      "Pendimethalin PAF: 0.31 (freshwater, HC50 ~1 µg/L; high aquatic toxicity, especially to algae). Confidence 4.",
+      "Propiconazole PAF: 0.14 (freshwater; azole fungicide, moderate aquatic toxicity). Confidence 3.",
+      "Diazinon PAF: 0.39 (freshwater, HC50 ~0.01 µg/L; high aquatic toxicity to invertebrates). Confidence 4.",
+      "Paraquat PAF: 0.33 (freshwater; bipyridinium herbicide, high aquatic toxicity especially to algae). Confidence 3.",
+      "Carbaryl PAF: 0.26 (freshwater; carbamate insecticide, HC50 ~1 µg/L). Confidence 4."
+    ]
+  },
+  {
+    "id": 51,
+    "url": "https://www.epa.gov/pesticides/pesticide-registration-and-data-requirements",
+    "title": "Knauer et al. (2017) — ReCiPe Pesticide Characterization Factors (via EPA ecotoxicology database)",
+    "notes": [
+      "Pesticides — PAF (freshwater): Supporting source for ReCiPe midpoint characterization factors for freshwater ecotoxicity of pesticides. Used as secondary confirmation for PAF values in source 50 where values were available.",
+      "Note: ReCiPe and USEtox frameworks yield broadly consistent PAF rankings, though absolute values differ slightly due to species sensitivity distribution assumptions."
+    ]
+  },
+  {
+    "id": 52,
+    "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+    "title": "USDA NASS — Agricultural Chemical Use Survey",
+    "notes": [
+      "Pesticides — kg_ha per crop: Primary source for per-crop, per-pesticide application rates in the United States. USDA NASS conducts biennial surveys of pesticide use by crop and state. Values used are US national averages from the most recent survey cycles available (2018–2022 survey data).",
+      "Corn — atrazine: 1.12 kg/ha; glyphosate: 0.91 kg/ha; metolachlor: 0.68 kg/ha; pendimethalin: 0.05 kg/ha (minor use).",
+      "Soy — glyphosate: 0.84 kg/ha; chlorpyrifos: 0.03 kg/ha (minor); metolachlor: 0.14 kg/ha.",
+      "Wheat — 2,4-D: 0.38 kg/ha; chlorpyrifos: 0.06 kg/ha; propiconazole: 0.11 kg/ha; malathion: 0.04 kg/ha.",
+      "Cotton (reference crop, not in dataset): glyphosate: 0.95 kg/ha; pendimethalin: 0.47 kg/ha.",
+      "Potato — chlorpyrifos: 0.34 kg/ha; imidacloprid: 0.15 kg/ha; mancozeb: 1.2 kg/ha; metolachlor: 0.25 kg/ha.",
+      "Rice — carbaryl: 0.12 kg/ha; 2,4-D: 0.18 kg/ha; propiconazole: 0.05 kg/ha.",
+      "Sorghum — atrazine: 0.5 kg/ha; malathion: 0.06 kg/ha.",
+      "Peanuts — chlorpyrifos: 0.15 kg/ha; mancozeb: 0.4 kg/ha; pendimethalin: 0.35 kg/ha.",
+      "Oats — 2,4-D: 0.25 kg/ha; malathion: 0.03 kg/ha.",
+      "Lentils — pendimethalin: 0.22 kg/ha; malathion: 0.04 kg/ha.",
+      "Apple — captan: 1.2 kg/ha; imidacloprid: 0.12 kg/ha; carbaryl: 0.5 kg/ha; malathion: 0.08 kg/ha; mancozeb: 0.3 kg/ha.",
+      "Alfalfa — malathion: 0.3 kg/ha; carbaryl: 0.4 kg/ha; diazinon: 0.15 kg/ha.",
+      "Grass hay — 2,4-D: 0.25 kg/ha.",
+      "Tomato — metolachlor: 0.15 kg/ha; imidacloprid: 0.08 kg/ha; mancozeb: 0.5 kg/ha; chlorpyrifos: 0.12 kg/ha.",
+      "Broccoli — chlorpyrifos: 0.2 kg/ha; permethrin: 0.1 kg/ha; imidacloprid: 0.06 kg/ha; captan: 0.1 kg/ha.",
+      "Lettuce — imidacloprid: 0.05 kg/ha; chlorpyrifos: 0.08 kg/ha; permethrin: 0.07 kg/ha.",
+      "Cucumber — chlorpyrifos: 0.05 kg/ha; imidacloprid: 0.04 kg/ha; captan: 0.08 kg/ha.",
+      "Banana — chlorpyrifos: 0.5 kg/ha; paraquat: 1.5 kg/ha; mancozeb: 1.8 kg/ha; imidacloprid: 0.15 kg/ha.",
+      "Almonds — glyphosate: 1.5 kg/ha; imidacloprid: 0.12 kg/ha; carbaryl: 0.8 kg/ha; captan: 0.5 kg/ha.",
+      "Walnuts — carbaryl: 0.6 kg/ha; imidacloprid: 0.1 kg/ha; glyphosate: 0.3 kg/ha.",
+      "Pistachios — imidacloprid: 0.08 kg/ha; carbaryl: 0.3 kg/ha; glyphosate: 0.3 kg/ha.",
+      "Pecans — carbaryl: 0.7 kg/ha; malathion: 0.3 kg/ha; imidacloprid: 0.08 kg/ha.",
+      "Hazelnuts — carbaryl: 0.3 kg/ha; imidacloprid: 0.06 kg/ha. Limited NASS data; values drawn from UC extension.",
+      "Macadamia — glyphosate: 0.4 kg/ha; imidacloprid: 0.1 kg/ha; carbaryl: 0.3 kg/ha. Limited NASS data; Hawaii extension sources used.",
+      "Brazil nuts — pesticide use minimal; essentially wild-harvested. Values near zero.",
+      "Cashews — mancozeb: 0.2 kg/ha; imidacloprid: 0.07 kg/ha. Limited NASS data; tropical extension sources used.",
+      "Pine nuts — essentially wild-harvested or semi-managed; pesticide use minimal."
+    ]
+  },
+  {
+    "id": 53,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0045653519311907",
+    "title": "Tang et al. (2019) — Global pesticide use and aquatic ecotoxicity (Chemosphere)",
+    "notes": [
+      "Pesticides — kg_ha verification: Secondary peer-reviewed source for global pesticide application rates per crop type, used to cross-check USDA NASS values (source 52) for crops where US data may not reflect global averages.",
+      "Banana — mancozeb and chlorpyrifos: application rates in tropical banana production are substantially higher than temperate crops; 1.8 kg/ha mancozeb and 0.5 kg/ha chlorpyrifos consistent with published literature for Latin American and SE Asian production.",
+      "Rice — lower pesticide use overall compared to other staple crops globally; values consistent with FAO and NASS data.",
+      "General: supports use of USDA NASS as primary source for crops where US production is representative."
+    ]
   }
 ]

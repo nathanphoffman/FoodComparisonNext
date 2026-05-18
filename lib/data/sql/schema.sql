@@ -58,11 +58,12 @@ CREATE TABLE IF NOT EXISTS animal_feed (
 CREATE TABLE IF NOT EXISTS pesticides (
     id   INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT    NOT NULL UNIQUE,
-    paf  TEXT    NOT NULL  -- json array of {value: 0-1, source_id}
+    paf  TEXT    NOT NULL  -- json array of {value: 0-1, source_id, confidence}
 );
 
 CREATE TABLE IF NOT EXISTS plant_pesticides (
     id            INTEGER PRIMARY KEY AUTOINCREMENT,
     plant_id      INTEGER NOT NULL REFERENCES plants(id),
-    pesticide_id  INTEGER NOT NULL REFERENCES pesticides(id)
+    pesticide_id  INTEGER NOT NULL REFERENCES pesticides(id),
+    kg_ha         TEXT    -- json array of {value: kg/ha, source_id, confidence}
 );

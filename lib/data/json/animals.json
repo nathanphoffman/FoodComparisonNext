@@ -143,5 +143,85 @@
     ],
     "bycatch_animal_id": null,
     "bycatch_amount": null
+  },
+  {
+    "id": 8,
+    "food_id": 34,
+    "neuron_count": [
+      {
+        "value": 262000000,
+        "source_id": 41,
+        "confidence": 2
+      }
+    ],
+    "weight_kg": [
+      {
+        "value": 10,
+        "source_id": 41,
+        "confidence": 4
+      }
+    ],
+    "bycatch_animal_id": null,
+    "bycatch_amount": null
+  },
+  {
+    "id": 9,
+    "food_id": 35,
+    "neuron_count": [
+      {
+        "value": 1000000,
+        "source_id": 43,
+        "confidence": 2
+      }
+    ],
+    "weight_kg": [
+      {
+        "value": 0.018,
+        "source_id": 43,
+        "confidence": 3
+      }
+    ],
+    "bycatch_animal_id": 10,
+    "bycatch_amount": 5.7
+  },
+  {
+    "id": 10,
+    "food_id": 36,
+    "neuron_count": [
+      {
+        "value": 10000000,
+        "source_id": 45,
+        "confidence": 2
+      }
+    ],
+    "weight_kg": [
+      {
+        "value": 0.1,
+        "source_id": 45,
+        "confidence": 3
+      }
+    ],
+    "bycatch_animal_id": 5,
+    "bycatch_amount": 0.1
+  },
+  {
+    "id": 11,
+    "food_id": 37,
+    "neuron_count": [
+      {
+        "value": 1200000000,
+        "source_id": 47,
+        "confidence": 3
+      }
+    ],
+    "weight_kg": [
+      {
+        "value": 45,
+        "source_id": 47,
+        "confidence": 4
+      }
+    ],
+    "bycatch_animal_id": null,
+    "bycatch_amount": null
   }
 ]

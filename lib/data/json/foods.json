@@ -1417,5 +1417,865 @@
     ],
     "human_food": 1,
     "tags": ["dairy"]
+  },
+  {
+    "id": 34,
+    "slug": "turkey",
+    "name": "Turkey",
+    "type": "animal",
+    "calories": [
+      {
+        "value": 1.89,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.079,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.022,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.293,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["meat", "common"]
+  },
+  {
+    "id": 35,
+    "slug": "shrimp",
+    "name": "Shrimp",
+    "type": "animal",
+    "calories": [
+      {
+        "value": 0.85,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.009,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.002,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.202,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["seafood", "common"]
+  },
+  {
+    "id": 36,
+    "slug": "sardines",
+    "name": "Sardines",
+    "type": "animal",
+    "calories": [
+      {
+        "value": 2.08,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.114,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.015,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.245,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["fish", "seafood"]
+  },
+  {
+    "id": 37,
+    "slug": "lamb",
+    "name": "Lamb",
+    "type": "animal",
+    "calories": [
+      {
+        "value": 2.94,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.21,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.088,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.256,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["meat"]
+  },
+  {
+    "id": 38,
+    "slug": "yogurt",
+    "name": "Yogurt",
+    "type": "animal",
+    "calories": [
+      {
+        "value": 0.59,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.033,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.021,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.035,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["dairy"]
+  },
+  {
+    "id": 39,
+    "slug": "sweet-potato",
+    "name": "Sweet Potato",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 0.86,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.001,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.016,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.03,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["common"]
+  },
+  {
+    "id": 40,
+    "slug": "chickpeas",
+    "name": "Chickpeas",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 1.64,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.026,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.003,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.089,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.078,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["legume", "common"]
+  },
+  {
+    "id": 41,
+    "slug": "black-beans",
+    "name": "Black Beans",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 1.32,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.005,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.001,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.087,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.089,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["legume"]
+  },
+  {
+    "id": 42,
+    "slug": "quinoa",
+    "name": "Quinoa",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 1.2,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.019,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.002,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.044,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.028,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["grain"]
+  },
+  {
+    "id": 43,
+    "slug": "spinach",
+    "name": "Spinach",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 0.23,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.004,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.001,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.029,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.022,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["common"]
+  },
+  {
+    "id": 44,
+    "slug": "avocado",
+    "name": "Avocado",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 1.6,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.147,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.021,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.02,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.067,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["common"]
+  },
+  {
+    "id": 45,
+    "slug": "olive-oil",
+    "name": "Olive Oil",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 8.84,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.138,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["common"]
+  },
+  {
+    "id": 46,
+    "slug": "coconut",
+    "name": "Coconut",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 3.54,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.333,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.296,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.033,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.09,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": []
+  },
+  {
+    "id": 47,
+    "slug": "sunflower-seeds",
+    "name": "Sunflower Seeds",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 5.84,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.515,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.054,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.209,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.088,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": []
+  },
+  {
+    "id": 48,
+    "slug": "flaxseed",
+    "name": "Flaxseed",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 5.34,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.424,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.037,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.184,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.274,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": []
+  },
+  {
+    "id": 49,
+    "slug": "barley",
+    "name": "Barley",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 3.54,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.024,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.005,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.122,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.17,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["grain"]
+  },
+  {
+    "id": 50,
+    "slug": "mango",
+    "name": "Mango",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 0.6,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.004,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.001,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.008,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.016,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["common"]
+  },
+  {
+    "id": 51,
+    "slug": "orange",
+    "name": "Orange",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 0.47,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.001,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.009,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.024,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["common"]
+  },
+  {
+    "id": 52,
+    "slug": "garlic",
+    "name": "Garlic",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 1.49,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.005,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.001,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.064,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.021,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["common"]
+  },
+  {
+    "id": 53,
+    "slug": "kale",
+    "name": "Kale",
+    "type": "plant",
+    "calories": [
+      {
+        "value": 0.49,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fat": [
+      {
+        "value": 0.009,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "sat_fat": [
+      {
+        "value": 0.001,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "protein": [
+      {
+        "value": 0.043,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "fiber": [
+      {
+        "value": 0.036,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
+    "human_food": 1,
+    "tags": ["common"]
   }
 ]

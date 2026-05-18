@@ -214,5 +214,113 @@
         "confidence": 3
       }
     ]
+  },
+  {
+    "id": 19,
+    "animal_id": 8,
+    "plant_id": 4,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 1.95,
+        "source_id": 42,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "animal_id": 8,
+    "plant_id": 3,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 0.71,
+        "source_id": 42,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "animal_id": 8,
+    "plant_id": 2,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 0.33,
+        "source_id": 42,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "animal_id": 9,
+    "plant_id": 3,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 0.67,
+        "source_id": 49,
+        "confidence": 2
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "animal_id": 9,
+    "plant_id": 2,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 0.45,
+        "source_id": 49,
+        "confidence": 2
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "animal_id": 11,
+    "plant_id": 4,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 4.5,
+        "source_id": 48,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "animal_id": 11,
+    "plant_id": 3,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 1.2,
+        "source_id": 48,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "animal_id": 11,
+    "plant_id": 6,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 2.8,
+        "source_id": 48,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "animal_id": 11,
+    "plant_id": 5,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 1.5,
+        "source_id": 48,
+        "confidence": 3
+      }
+    ]
   }
 ]

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Table } from './components/Table';
+import { FoodTable } from './components/FoodTable';
 import { getNormalizedDb, rowsToObjects } from '@/lib/db';
 
 export default async function Home() {
@@ -41,7 +41,7 @@ export default async function Home() {
         and the ethical dimensions of how they are produced.
       </p>
       <Link href="/foods">Browse all foods &rarr;</Link>
-      <Table></Table>
+      <FoodTable />
     </div>
   );
 }

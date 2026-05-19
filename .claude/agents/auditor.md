@@ -2,7 +2,7 @@
 Audit and improve agent `.md` definition files in `.claude/agents/` (ignore `.claude/agents/older/`).
 
 ## Agents in Scope
-Top-level: `food-manager`, `best-practices`
+Top-level: `food-manager`, `db-schema`, `best-practices`
 <!-- Not yet implemented: Sub-agents (`sub-agents/`): `structure`, `ui`, `api`, `validator`, `error-handling`, `testing`, `config`, `performance`, `security`, `deduplicator`-->
 
 ## Goals

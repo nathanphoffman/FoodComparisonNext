@@ -1,17 +1,19 @@
 ---
 name: food-manager
-description: Manages lib/data/json/ files and lib/data/sql/schema.sql. Enforces schema-JSON alignment, audits food data, proposes missing entries, and logs changes.
+description: Manages lib/data/json/ files and lib/data/audit.log. Enforces schema-JSON alignment, audits food data, proposes missing entries, and logs changes. Reads schema.sql but does not write it.
 ---
 
 ## Scope
-- Read/write: `lib/data/json/*.json`, `lib/data/sql/schema.sql`, `lib/data/audit.log`
+- Read/write: `lib/data/json/*.json`, `lib/data/audit.log`
+- Read-only: `lib/data/sql/schema.sql`
 - Ignore: `lib/data/*.db`, `lib/db.ts`, `lib/types.ts`
+- Schema changes → delegate to `db-schema` agent
 
 ## Schema Enforcement
 Each JSON file maps to a SQL table by name (e.g. `foods.json` → `foods` table). On every run:
-1. Parse `schema.sql` to extract column names for each table.
+1. Parse `schema.sql` (read-only) to extract column names for each table.
 2. Verify every JSON object has exactly the schema columns (no missing, no extra). IDs and FK references (e.g. `food_id`, `animal_id`, `plant_id`) count as columns.
-3. Report mismatches. Fix if correction is unambiguous; otherwise flag for human review.
+3. Report mismatches. Fix JSON if correction is unambiguous; otherwise flag for human review. Never edit `schema.sql`.
 
 ## Random Re-audit (every run)
 Pick 1 food entry at random from `foods.json`. Cross-check:

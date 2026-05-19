@@ -1,22 +1,47 @@
+type Header = {
+  label: string
+  align?: 'left' | 'right'
+  sorted?: 'asc' | 'desc'
+  onSort?: () => void
+}
 
-'use client'
+export function Table({ headers = [], children }: { headers?: Header[], children?: React.ReactNode }) {
+  return (
+    <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm">
+      <table className="w-full border-collapse">
+        <thead>
+          <tr className="bg-neutral-50 border-b border-neutral-200">
+            {headers.map((h, i) => (
+              <th
+                key={i}
+                onClick={h.onSort}
+                className={[
+                  'px-4 py-3 text-xs font-semibold uppercase tracking-wider transition-colors',
+                  h.align === 'right' ? 'text-right' : 'text-left',
+                  h.sorted ? 'text-neutral-800' : 'text-neutral-500',
+                  h.onSort ? 'cursor-pointer select-none hover:bg-neutral-100' : '',
+                ].join(' ')}
+              >
+                {h.onSort ? (
+                  <span className="inline-flex items-center gap-1.5">
+                    {h.label}
+                    <SortIcon dir={h.sorted} />
+                  </span>
+                ) : h.label}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>{children}</tbody>
+      </table>
+    </div>
+  )
+}
 
-import { useEffect } from 'react'
-import { Row } from './Row';
-
-export function Table() {
-
-
-    const sampleData = [{ calories: 1, yo: 5 }, { calories: 2, yo: 6 }];
-
-    type SampleDataType = typeof sampleData[number];
-    type KeyOfSampleData = (keyof typeof sampleData[number])[];
-
-    const columnOrder: KeyOfSampleData = ["calories","yo"];
-
-    const rows = sampleData.map(row => (<Row<SampleDataType, KeyOfSampleData>
-        data={row} columnOrder={columnOrder}></Row>));
-
-    return <table>{rows}</table>
-
+function SortIcon({ dir }: { dir?: 'asc' | 'desc' }) {
+  return (
+    <span className={`transition-opacity ${dir ? 'opacity-100' : 'opacity-30'}`}>
+      {dir === 'desc' ? '↓' : '↑'}
+    </span>
+  )
 }

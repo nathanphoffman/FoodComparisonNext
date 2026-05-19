@@ -1,19 +1,7 @@
-import { Cell } from './Cell';
-
-export type RowProps<DataType, DataTypeProps> = { data: DataType, columnOrder: DataTypeProps, children?: React.ReactElement[] };
-
-export function Row<DataType, DataTypeProps extends (keyof DataType)[]>(
-    { data, columnOrder, children }:
-        RowProps<DataType, DataTypeProps>) {
-
-    if (children) return (<tr>{children}</tr>);
-
-    const jsxCells = columnOrder.map((column) => {
-
-        if (!data[column]) throw new Error("There is a mismatch of row data to column/key entry.", { cause: { data, column } });
-        else return <Cell>{String(data[column])}</Cell>
-    });
-
-    return (<tr>{jsxCells}</tr>)
-
+export function Row({ children }: { children: React.ReactNode }) {
+  return (
+    <tr className="border-t border-neutral-100 hover:bg-neutral-50 transition-colors">
+      {children}
+    </tr>
+  )
 }

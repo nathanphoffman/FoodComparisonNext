@@ -1,12 +1,26 @@
 import Link from 'next/link';
-import { getDb, rowsToObjects } from '@/lib/db';
+import { getDb, getNormalizedDb, rowsToObjects } from '@/lib/db';
 import type { Food } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
 export default async function FoodsPage() {
-  const db = await getDb();
-  const humanFoodsQueryResult = db.exec('SELECT * FROM foods WHERE human_food = 1 ORDER BY type, name');
+  const db = await getNormalizedDb();
+
+  const humanFoodsQueryResult = db.exec(`SELECT food_id, is_feed, slug, name, type, tags, human_food,
+         calories, fat, sat_fat, protein, fiber,
+         yield_kg_ha, water_per_kg, soil_erosion, pesticide_kg_ha,
+         fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr,
+         pesticide_weighted_paf, pesticide_kg_per_kg_food,
+         neuron_count, weight_kg, yield_fraction, pasture_ha_per_kg_output,
+         native_fraction, bycatch_amount,
+         ch4_kg_per_kg_output, n2o_kg_per_kg_output, co2_kg_per_kg_output
+  FROM   foods_normalized
+  WHERE  is_feed = 0
+  AND    EXISTS (
+    SELECT 1 FROM json_each(tags) WHERE value = 'common'
+`);
+
   const foods = rowsToObjects(humanFoodsQueryResult) as unknown as Food[];
 
   const plants = foods.filter((food) => food.type === 'plant');

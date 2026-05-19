@@ -39,14 +39,14 @@ CREATE TABLE IF NOT EXISTS animals (
 CREATE TABLE IF NOT EXISTS plants (
     id               INTEGER PRIMARY KEY AUTOINCREMENT,
     food_id          INTEGER REFERENCES foods(id),
-    yield_kg_ha             TEXT,  -- json array of {value: kg/ha, source_id}
-    water_per_kg            TEXT,  -- json array of {value: liters/kg, source_id}
-    soil_erosion            TEXT,  -- json array of {value: tons/ha/yr, source_id}
-    pesticide_kg_ha         TEXT,  -- json array of {value: kg/ha, source_id}
-    fertilizer_kg_ha        TEXT,  -- json array of {value: kg/ha, source_id}
-    emissions_per_kg        TEXT,  -- json array of {value: kg CO2e/kg, source_id}
-    tillage_events_per_year TEXT,  -- json array of {value: events/yr, source_id}
-    co2_capture_kg_ha_yr    TEXT   -- json array of {value: kg CO2/ha/yr, source_id}
+    yield_kg_ha             TEXT,  -- json array of {value: kg/ha, source_id, confidence}
+    water_per_kg            TEXT,  -- json array of {value: liters/kg, source_id, confidence}
+    soil_erosion            TEXT,  -- json array of {value: tons/ha/yr, source_id, confidence}
+    pesticide_kg_ha         TEXT,  -- json array of {value: kg/ha, source_id, confidence}
+    fertilizer_kg_ha        TEXT,  -- json array of {value: kg/ha, source_id, confidence}
+    emissions_per_kg        TEXT,  -- json array of {value: kg CO2e/kg, source_id, confidence}
+    tillage_events_per_year TEXT,  -- json array of {value: events/yr, source_id, confidence}
+    co2_capture_kg_ha_yr    TEXT   -- json array of {value: kg CO2/ha/yr, source_id, confidence}
 );
 
 CREATE TABLE IF NOT EXISTS plant_animal_kills (

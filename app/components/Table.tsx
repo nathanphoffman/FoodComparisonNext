@@ -1,6 +1,7 @@
+import { SortIcon } from './SortIcon'
+
 type Header = {
   label: string
-  align?: 'left' | 'right'
   sorted?: 'asc' | 'desc'
   onSort?: () => void
 }
@@ -16,8 +17,7 @@ export function Table({ headers = [], children }: { headers?: Header[], children
                 key={i}
                 onClick={h.onSort}
                 className={[
-                  'px-4 py-3 text-xs font-semibold uppercase tracking-wider transition-colors',
-                  h.align === 'right' ? 'text-right' : 'text-left',
+                  'px-4 py-3 text-xs font-semibold uppercase tracking-wider transition-colors text-left',
                   h.sorted ? 'text-neutral-800' : 'text-neutral-500',
                   h.onSort ? 'cursor-pointer select-none hover:bg-neutral-100' : '',
                 ].join(' ')}
@@ -38,10 +38,3 @@ export function Table({ headers = [], children }: { headers?: Header[], children
   )
 }
 
-function SortIcon({ dir }: { dir?: 'asc' | 'desc' }) {
-  return (
-    <span className={`transition-opacity ${dir ? 'opacity-100' : 'opacity-30'}`}>
-      {dir === 'desc' ? '↓' : '↑'}
-    </span>
-  )
-}

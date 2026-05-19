@@ -5,19 +5,29 @@ import initSqlJs from 'sql.js';
 type SqlDatabase = Awaited<ReturnType<typeof initSqlJs>>['Database']['prototype'];
 
 let db: SqlDatabase | null = null;
+let normalizedDb: SqlDatabase | null = null;
 
-export async function getDb(): Promise<SqlDatabase> {
-  if (db) return db;
-
-  const SQL = await initSqlJs({
+async function initSql(): Promise<Awaited<ReturnType<typeof initSqlJs>>> {
+  return initSqlJs({
     locateFile: (file: string) =>
       resolve(process.cwd(), 'node_modules/sql.js/dist', file),
   });
+}
 
+export async function getDb(): Promise<SqlDatabase> {
+  if (db) return db;
+  const SQL = await initSql();
   const dbPath = resolve(process.cwd(), `lib/data/foods.${process.env.DB_VERSION}.db`);
-  const fileBuffer = readFileSync(dbPath);
-  db = new SQL.Database(fileBuffer);
+  db = new SQL.Database(readFileSync(dbPath));
   return db;
+}
+
+export async function getNormalizedDb(): Promise<SqlDatabase> {
+  if (normalizedDb) return normalizedDb;
+  const SQL = await initSql();
+  const dbPath = resolve(process.cwd(), `lib/data/foods-normalized.${process.env.DB_VERSION}.db`);
+  normalizedDb = new SQL.Database(readFileSync(dbPath));
+  return normalizedDb;
 }
 
 export function rowsToObjects(

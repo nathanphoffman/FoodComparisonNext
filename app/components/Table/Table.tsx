@@ -37,4 +37,3 @@ export function Table({ headers = [], children }: { headers?: Header[], children
     </div>
   )
 }
-

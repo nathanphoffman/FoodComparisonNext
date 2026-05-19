@@ -2,14 +2,11 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Table } from './Table'
-import { Row } from './Row'
-import { Cell } from './Cell'
-import { Tooltip } from './Tooltip'
-import { EmissionsBadge } from './EmissionsBadge'
-import { WaterValue } from './WaterValue'
-import { NeuronValue } from './NeuronValue'
-import { EmissionsTooltip, type EmissionsBreakdown } from './EmissionsTooltip'
+import { Table } from '../Table/Table'
+import { Row } from '../Table/Row'
+import { Cell } from '../Table/Cell'
+import { Tooltip } from '../Table/Tooltip'
+import { EmissionsBadge, WaterValue, NeuronValue, EmissionsTooltip, type EmissionsBreakdown } from './FoodTableFields'
 
 export type FoodEthics = {
   name: string

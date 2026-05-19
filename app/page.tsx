@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FoodTable } from './components/FoodTable';
+import { FoodTable } from './components/FoodTable/FoodTable';
 import { getNormalizedDb, rowsToObjects } from '@/lib/db';
 
 export default async function Home() {

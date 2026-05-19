@@ -557,6 +557,20 @@
     ]
   },
   {
+    "id": 56,
+    "url": "https://www.fao.org/gleam/en/",
+    "title": "FAO GLEAM — Global Livestock Environmental Assessment Model",
+    "notes": [
+      "Animals — ch4_kg_per_kg_output, n2o_kg_per_kg_output, co2_kg_per_kg_output: FAO GLEAM v3.0 provides species-level GHG intensities from the on-farm livestock system boundary (enteric fermentation + manure management for CH4/N2O; on-farm energy for CO2). Land use change and feed production emissions are excluded. Values are global weighted averages across production systems.",
+      "Beef cattle CH4: ~8.2 kg CH4/kg retail beef; N2O: ~0.10 kg/kg; CO2 (on-farm): ~0.55 kg/kg.",
+      "Dairy cow CH4: ~0.22 kg CH4/kg milk; N2O: ~0.004 kg/kg; CO2: ~0.07 kg/kg.",
+      "Pig CH4: ~0.20 kg CH4/kg pork; N2O: ~0.022 kg/kg; CO2: ~0.50 kg/kg.",
+      "Broiler chicken CH4: ~0.035 kg CH4/kg meat; N2O: ~0.016 kg/kg; CO2: ~0.42 kg/kg.",
+      "Layer hen CH4: ~0.045 kg CH4/kg eggs; N2O: ~0.011 kg/kg; CO2: ~0.32 kg/kg.",
+      "Lamb/sheep CH4: ~6.5 kg CH4/kg retail lamb; N2O: ~0.12 kg/kg; CO2: ~0.45 kg/kg."
+    ]
+  },
+  {
     "id": 55,
     "url": "https://science.sciencemag.org/content/360/6392/987",
     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",

@@ -38,6 +38,42 @@
         "source_id": 55,
         "confidence": 2
       }
+    ],
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 8.7,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 8.2,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.11,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.10,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.60,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.55,
+        "source_id": 56,
+        "confidence": 3
+      }
     ]
   },
   {
@@ -67,7 +103,43 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
-    "native_fraction": null
+    "native_fraction": null,
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.04,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.035,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.018,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.016,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.45,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.42,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ]
   },
   {
     "id": 3,
@@ -96,7 +168,43 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
-    "native_fraction": null
+    "native_fraction": null,
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.22,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.20,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.025,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.022,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.55,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.50,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ]
   },
   {
     "id": 4,
@@ -130,7 +238,28 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
-    "native_fraction": null
+    "native_fraction": null,
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.01,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.005,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.60,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ]
   },
   {
     "id": 5,
@@ -159,7 +288,28 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
-    "native_fraction": null
+    "native_fraction": null,
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.0,
+        "source_id": 55,
+        "confidence": 3
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.001,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.80,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ]
   },
   {
     "id": 6,
@@ -188,7 +338,43 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
-    "native_fraction": null
+    "native_fraction": null,
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.05,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.045,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.012,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.011,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.35,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.32,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ]
   },
   {
     "id": 7,
@@ -229,6 +415,42 @@
         "source_id": 55,
         "confidence": 2
       }
+    ],
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.24,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.22,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.004,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.004,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.08,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.07,
+        "source_id": 56,
+        "confidence": 3
+      }
     ]
   },
   {
@@ -258,7 +480,28 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
-    "native_fraction": null
+    "native_fraction": null,
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.05,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.020,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.40,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ]
   },
   {
     "id": 9,
@@ -287,7 +530,28 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
-    "native_fraction": null
+    "native_fraction": null,
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.03,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.008,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.70,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ]
   },
   {
     "id": 10,
@@ -316,7 +580,28 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
-    "native_fraction": null
+    "native_fraction": null,
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.0,
+        "source_id": 55,
+        "confidence": 3
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.001,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.35,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ]
   },
   {
     "id": 11,
@@ -355,6 +640,42 @@
       {
         "value": 0.85,
         "source_id": 55,
+        "confidence": 3
+      }
+    ],
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 7.0,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 6.5,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.13,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.12,
+        "source_id": 56,
+        "confidence": 3
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.50,
+        "source_id": 55,
+        "confidence": 3
+      },
+      {
+        "value": 0.45,
+        "source_id": 56,
         "confidence": 3
       }
     ]

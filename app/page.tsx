@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { Table } from './components/Table';
 import { getDb, rowsToObjects } from '@/lib/db';
+import { FoodQueryResult } from './types/FoodQueryResult';
 
 export default async function Home() {
-
 
   const query = `SELECT json_object(
     'id',       f.id,
@@ -83,10 +83,22 @@ export default async function Home() {
 
   const db = await getDb();
   const humanFoodsQueryResult = db.exec(query);
-  const foods = rowsToObjects(humanFoodsQueryResult) as any;
+  const foods = rowsToObjects(humanFoodsQueryResult).map(
+    (r) => JSON.parse(r.food as string) as FoodQueryResult
+  );
 
   console.log(foods[0]);
 
+  // want to use a food type here
+  const foodTable = foods.map((food: FoodQueryResult)=>{
+    return {
+      name: food.name
+    }
+  });
+
+  const headers = [
+    "Name", 
+  ];
 
   return (
     <div>

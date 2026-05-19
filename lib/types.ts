@@ -1,4 +1,4 @@
-interface Sourced<T> {
+export interface ISourced<T> {
   value: T;
   source_id: number;
   confidence: number;

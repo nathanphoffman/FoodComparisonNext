@@ -9,6 +9,12 @@ function readJsonFile(filename) {
   return JSON.parse(readFileSync(resolve(dataDir, filename), 'utf8'));
 }
 
+function assertSourcedArray(value, label) {
+  if (Array.isArray(value) && value.length === 0) {
+    throw new Error(`Empty SourcedNumberArray detected: ${label}`);
+  }
+}
+
 function getConfigLines() {
   const configPath = resolve(root, 'next.config.ts');
   const lines = readFileSync(configPath, 'utf8').split('\n');
@@ -85,6 +91,13 @@ async function main() {
   }
 
   for (const animal of animals) {
+    const id = `animal ${animal.id}`;
+    assertSourcedArray(animal.neuron_count, `${id}.neuron_count`);
+    assertSourcedArray(animal.weight_kg, `${id}.weight_kg`);
+    assertSourcedArray(animal.bycatch_amount, `${id}.bycatch_amount`);
+    assertSourcedArray(animal.yield_fraction, `${id}.yield_fraction`);
+    assertSourcedArray(animal.pasture_ha_per_kg_output, `${id}.pasture_ha_per_kg_output`);
+    assertSourcedArray(animal.native_fraction, `${id}.native_fraction`);
     db.run(
       'INSERT INTO animals (id, food_id, neuron_count, weight_kg, bycatch_animal_id, bycatch_amount, yield_fraction, pasture_ha_per_kg_output, native_fraction) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
       [animal.id, animal.food_id, animal.neuron_count ? JSON.stringify(animal.neuron_count) : null, animal.weight_kg ? JSON.stringify(animal.weight_kg) : null, animal.bycatch_animal_id ?? null, animal.bycatch_amount ? JSON.stringify(animal.bycatch_amount) : null, animal.yield_fraction ? JSON.stringify(animal.yield_fraction) : null, animal.pasture_ha_per_kg_output ? JSON.stringify(animal.pasture_ha_per_kg_output) : null, animal.native_fraction ? JSON.stringify(animal.native_fraction) : null]
@@ -92,6 +105,15 @@ async function main() {
   }
 
   for (const plant of plants) {
+    const id = `plant ${plant.id}`;
+    assertSourcedArray(plant.yield_kg_ha, `${id}.yield_kg_ha`);
+    assertSourcedArray(plant.water_per_kg, `${id}.water_per_kg`);
+    assertSourcedArray(plant.soil_erosion, `${id}.soil_erosion`);
+    assertSourcedArray(plant.pesticide_kg_ha, `${id}.pesticide_kg_ha`);
+    assertSourcedArray(plant.fertilizer_kg_ha, `${id}.fertilizer_kg_ha`);
+    assertSourcedArray(plant.emissions_per_kg, `${id}.emissions_per_kg`);
+    assertSourcedArray(plant.tillage_events_per_year, `${id}.tillage_events_per_year`);
+    assertSourcedArray(plant.co2_capture_kg_ha_yr, `${id}.co2_capture_kg_ha_yr`);
     db.run(
       'INSERT INTO plants (id, food_id, yield_kg_ha, water_per_kg, soil_erosion, pesticide_kg_ha, fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
       [plant.id, plant.food_id, plant.yield_kg_ha ? JSON.stringify(plant.yield_kg_ha) : null, plant.water_per_kg ? JSON.stringify(plant.water_per_kg) : null, plant.soil_erosion ? JSON.stringify(plant.soil_erosion) : null, plant.pesticide_kg_ha ? JSON.stringify(plant.pesticide_kg_ha) : null, plant.fertilizer_kg_ha ? JSON.stringify(plant.fertilizer_kg_ha) : null, plant.emissions_per_kg ? JSON.stringify(plant.emissions_per_kg) : null, plant.tillage_events_per_year ? JSON.stringify(plant.tillage_events_per_year) : null, plant.co2_capture_kg_ha_yr ? JSON.stringify(plant.co2_capture_kg_ha_yr) : null]
@@ -106,6 +128,7 @@ async function main() {
   }
 
   for (const plantKill of plantKills) {
+    assertSourcedArray(plantKill.kills_per_ha, `plant_animal_kill ${plantKill.id}.kills_per_ha`);
     db.run(
       'INSERT INTO plant_animal_kills (id, plant_id, animal_id, kills_per_ha) VALUES (?, ?, ?, ?)',
       [plantKill.id, plantKill.plant_id, plantKill.animal_id, plantKill.kills_per_ha ? JSON.stringify(plantKill.kills_per_ha) : null]
@@ -113,6 +136,7 @@ async function main() {
   }
 
   for (const plantPesticide of plantPesticides) {
+    assertSourcedArray(plantPesticide.kg_ha, `plant_pesticide ${plantPesticide.id}.kg_ha`);
     db.run(
       'INSERT INTO plant_pesticides (id, plant_id, pesticide_id, kg_ha) VALUES (?, ?, ?, ?)',
       [plantPesticide.id, plantPesticide.plant_id, plantPesticide.pesticide_id, plantPesticide.kg_ha ? JSON.stringify(plantPesticide.kg_ha) : null]

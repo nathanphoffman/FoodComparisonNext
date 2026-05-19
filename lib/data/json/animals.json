@@ -278,7 +278,7 @@
       }
     ],
     "bycatch_animal_id": 10,
-    "bycatch_amount": 5.7,
+    "bycatch_amount": [{ "value": 5.7, "source_id": 44, "confidence": 2 }],
     "yield_fraction": [
       {
         "value": 0.6,
@@ -307,7 +307,7 @@
       }
     ],
     "bycatch_animal_id": 5,
-    "bycatch_amount": 0.1,
+    "bycatch_amount": [{ "value": 0.1, "source_id": 44, "confidence": 2 }],
     "yield_fraction": [
       {
         "value": 0.75,

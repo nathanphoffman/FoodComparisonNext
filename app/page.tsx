@@ -87,13 +87,14 @@ export default async function Home() {
     (r) => new FoodQueryResult(JSON.parse(r.food as string))
   );
 
-  console.log(foods[0]);
+  console.log(JSON.stringify(foods[0]));
 
+  
   // want to use a food type here
   const foodTable = foods.map((food: FoodQueryResult)=>{
     return {
       name: food.name,
-      f: food.nutrition.
+      calories: food.nutrition.weightedAverage(),
     }
   });
 

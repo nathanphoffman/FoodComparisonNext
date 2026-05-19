@@ -48,7 +48,7 @@ export class SourcedNutritionalValueArray extends Array<SourcedNutritionalValue>
                 fiber: prev.fiber + curr.value.fiber * curr.confidence
             };
 
-        }, {} as NutritionValue);
+        }, { calories: 0, fat: 0, sat_fat: 0, protein: 0, fiber: 0 });
 
         const confidenceTotal = this.reduce((prev, curr) => prev + curr.confidence, 0);
 

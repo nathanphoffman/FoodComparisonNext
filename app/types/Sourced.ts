@@ -10,7 +10,7 @@ export class Sourced<T> implements ISourced<T> {
     }
 }
 
-export class SourcedNumber implements ISourced<number> {
+export class SourcedNumber implements Sourced<number> {
     value!: number;
     source_id!: number;
     confidence!: number;

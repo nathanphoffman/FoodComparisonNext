@@ -84,7 +84,7 @@ export default async function Home() {
   const db = await getDb();
   const humanFoodsQueryResult = db.exec(query);
   const foods = rowsToObjects(humanFoodsQueryResult).map(
-    (r) => JSON.parse(r.food as string) as FoodQueryResult
+    (r) => new FoodQueryResult(JSON.parse(r.food as string))
   );
 
   console.log(foods[0]);
@@ -92,7 +92,8 @@ export default async function Home() {
   // want to use a food type here
   const foodTable = foods.map((food: FoodQueryResult)=>{
     return {
-      name: food.name
+      name: food.name,
+      f: food.nutrition.
     }
   });
 

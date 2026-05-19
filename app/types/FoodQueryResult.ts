@@ -1,14 +1,7 @@
 import { SourcedArray } from './Sourced';
 import { FoodQueryPlant } from './FoodQueryPlant';
 import { FoodQueryAnimal } from './FoodQueryAnimal';
-
-interface NutritionValue {
-    calories: number;
-    fat: number;
-    sat_fat: number;
-    protein: number;
-    fiber: number;
-}
+import { NutritionValue } from './NutritionValue';
 
 export interface IFoodQueryResult {
     id: number;

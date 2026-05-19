@@ -14,6 +14,7 @@ const nullPlantFields: PlantNormalizedFields = {
 const nullAnimalFields: AnimalNormalizedFields = {
   neuron_count: null, weight_kg: null, yield_fraction: null,
   pasture_ha_per_kg_output: null, native_fraction: null, bycatch_amount: null,
+  ch4_kg_per_kg_output: null, n2o_kg_per_kg_output: null, co2_kg_per_kg_output: null,
 };
 
 export class RawFood {

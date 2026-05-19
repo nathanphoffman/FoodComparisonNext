@@ -32,6 +32,9 @@ export interface Animal {
   yield_fraction: ISourced<number>[] | null;
   pasture_ha_per_kg_output: ISourced<number>[] | null;
   native_fraction: ISourced<number>[] | null;
+  ch4_kg_per_kg_output: ISourced<number>[] | null;
+  n2o_kg_per_kg_output: ISourced<number>[] | null;
+  co2_kg_per_kg_output: ISourced<number>[] | null;
 }
 
 export interface Plant {

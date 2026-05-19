@@ -18,8 +18,9 @@ const SQL = `INSERT INTO foods_normalized (
   fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr,
   pesticide_weighted_paf, pesticide_kg_per_kg_food,
   neuron_count, weight_kg, yield_fraction, pasture_ha_per_kg_output,
-  native_fraction, bycatch_amount
-) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+  native_fraction, bycatch_amount,
+  ch4_kg_per_kg_output, n2o_kg_per_kg_output, co2_kg_per_kg_output
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
 
 export function insert(db: Database, { foods, plants, animals, plantPesticides, pesticides, animalFeed }: NormalizedInsertData): void {
   const plantByFoodId = new Map(plants.map(p => [p.food_id, p]));

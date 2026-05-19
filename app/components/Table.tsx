@@ -12,7 +12,7 @@ export function Table() {
     type SampleDataType = typeof sampleData[number];
     type KeyOfSampleData = (keyof typeof sampleData[number])[];
 
-    const columnOrder: KeyOfSampleData = ["calories"];
+    const columnOrder: KeyOfSampleData = ["calories","yo"];
 
     const rows = sampleData.map(row => (<Row<SampleDataType, KeyOfSampleData>
         data={row} columnOrder={columnOrder}></Row>));

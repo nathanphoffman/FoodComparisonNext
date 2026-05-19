@@ -24,7 +24,16 @@ CREATE TABLE IF NOT EXISTS animals (
     bycatch_amount           TEXT,
     yield_fraction           TEXT,  -- json array of {value: 0-1, source_id, confidence}
     pasture_ha_per_kg_output TEXT,  -- json array of {value: ha/kg, source_id, confidence}
-    native_fraction          TEXT   -- json array of {value: 0-1, source_id, confidence} — fraction of pasture on pre-existing native land
+    native_fraction          TEXT,  -- json array of {value: 0-1, source_id, confidence} — fraction of pasture on pre-existing native land
+    ch4_kg_per_kg_output     TEXT,  -- json array of {value: kg CH4/kg output, source_id, confidence}
+                                    --   includes: enteric fermentation, manure management
+                                    --   excludes: land use change, feed production
+    n2o_kg_per_kg_output     TEXT,  -- json array of {value: kg N2O/kg output, source_id, confidence}
+                                    --   includes: manure management (direct + indirect)
+                                    --   excludes: land use change, feed crop fertilizer
+    co2_kg_per_kg_output     TEXT   -- json array of {value: kg CO2/kg output, source_id, confidence}
+                                    --   includes: on-farm energy use, processing, transport
+                                    --   excludes: land use change, feed production
 );
 
 CREATE TABLE IF NOT EXISTS plants (

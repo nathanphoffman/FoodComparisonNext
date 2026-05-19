@@ -16,6 +16,9 @@ export class RawAnimal {
   readonly pasture_ha_per_kg_output: SourcedNumberArray;
   readonly native_fraction: SourcedNumberArray;
   readonly bycatch_amount: SourcedNumberArray;
+  readonly ch4_kg_per_kg_output: SourcedNumberArray;
+  readonly n2o_kg_per_kg_output: SourcedNumberArray;
+  readonly co2_kg_per_kg_output: SourcedNumberArray;
 
   constructor(data: Animal, private feedEntries: FeedEntry[]) {
     this.neuron_count = new SourcedNumberArray(data.neuron_count ?? []);
@@ -24,6 +27,9 @@ export class RawAnimal {
     this.pasture_ha_per_kg_output = new SourcedNumberArray(data.pasture_ha_per_kg_output ?? []);
     this.native_fraction = new SourcedNumberArray(data.native_fraction ?? []);
     this.bycatch_amount = new SourcedNumberArray(data.bycatch_amount ?? []);
+    this.ch4_kg_per_kg_output = new SourcedNumberArray(data.ch4_kg_per_kg_output ?? []);
+    this.n2o_kg_per_kg_output = new SourcedNumberArray(data.n2o_kg_per_kg_output ?? []);
+    this.co2_kg_per_kg_output = new SourcedNumberArray(data.co2_kg_per_kg_output ?? []);
   }
 
   normalizedFields(): AnimalNormalizedFields {
@@ -34,6 +40,9 @@ export class RawAnimal {
       pasture_ha_per_kg_output: this.pasture_ha_per_kg_output.weightedAverage(),
       native_fraction: this.native_fraction.weightedAverage(),
       bycatch_amount: this.bycatch_amount.weightedAverage(),
+      ch4_kg_per_kg_output: this.ch4_kg_per_kg_output.weightedAverage(),
+      n2o_kg_per_kg_output: this.n2o_kg_per_kg_output.weightedAverage(),
+      co2_kg_per_kg_output: this.co2_kg_per_kg_output.weightedAverage(),
     };
   }
 

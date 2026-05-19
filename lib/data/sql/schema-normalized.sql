@@ -34,6 +34,9 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     pasture_ha_per_kg_output REAL,
     native_fraction          REAL,
     bycatch_amount           REAL,
+    ch4_kg_per_kg_output     REAL,  -- enteric fermentation + manure; excludes land use + feed
+    n2o_kg_per_kg_output     REAL,  -- manure management; excludes land use + feed crop fertilizer
+    co2_kg_per_kg_output     REAL,  -- on-farm energy, processing, transport; excludes land use + feed
 
     PRIMARY KEY (food_id, is_feed)
 );

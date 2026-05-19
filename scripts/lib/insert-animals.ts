@@ -12,7 +12,11 @@ export function insert(db: Database, animals: Animal[]): void {
     assertSourcedArray(animal.pasture_ha_per_kg_output, `${id}.pasture_ha_per_kg_output`);
     assertSourcedArray(animal.native_fraction, `${id}.native_fraction`);
     db.run(
-      'INSERT INTO animals (id, food_id, neuron_count, weight_kg, bycatch_animal_id, bycatch_amount, yield_fraction, pasture_ha_per_kg_output, native_fraction) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+      `INSERT INTO animals (
+        id, food_id, neuron_count, weight_kg, bycatch_animal_id, bycatch_amount,
+        yield_fraction, pasture_ha_per_kg_output, native_fraction,
+        ch4_kg_per_kg_output, n2o_kg_per_kg_output, co2_kg_per_kg_output
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [
         animal.id, animal.food_id,
         animal.neuron_count ? JSON.stringify(animal.neuron_count) : null,
@@ -22,6 +26,9 @@ export function insert(db: Database, animals: Animal[]): void {
         animal.yield_fraction ? JSON.stringify(animal.yield_fraction) : null,
         animal.pasture_ha_per_kg_output ? JSON.stringify(animal.pasture_ha_per_kg_output) : null,
         animal.native_fraction ? JSON.stringify(animal.native_fraction) : null,
+        animal.ch4_kg_per_kg_output ? JSON.stringify(animal.ch4_kg_per_kg_output) : null,
+        animal.n2o_kg_per_kg_output ? JSON.stringify(animal.n2o_kg_per_kg_output) : null,
+        animal.co2_kg_per_kg_output ? JSON.stringify(animal.co2_kg_per_kg_output) : null,
       ]
     );
   }

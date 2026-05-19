@@ -30,6 +30,9 @@ export interface IFoodNormalized {
   pasture_ha_per_kg_output: number | null;
   native_fraction: number | null;
   bycatch_amount: number | null;
+  ch4_kg_per_kg_output: number | null;
+  n2o_kg_per_kg_output: number | null;
+  co2_kg_per_kg_output: number | null;
 }
 
 export type PlantNormalizedFields = Pick<IFoodNormalized,
@@ -41,6 +44,7 @@ export type PlantNormalizedFields = Pick<IFoodNormalized,
 export type AnimalNormalizedFields = Pick<IFoodNormalized,
   | 'neuron_count' | 'weight_kg' | 'yield_fraction' | 'pasture_ha_per_kg_output'
   | 'native_fraction' | 'bycatch_amount'
+  | 'ch4_kg_per_kg_output' | 'n2o_kg_per_kg_output' | 'co2_kg_per_kg_output'
 >;
 
 export class FoodNormalized implements IFoodNormalized {
@@ -72,6 +76,9 @@ export class FoodNormalized implements IFoodNormalized {
   pasture_ha_per_kg_output!: number | null;
   native_fraction!: number | null;
   bycatch_amount!: number | null;
+  ch4_kg_per_kg_output!: number | null;
+  n2o_kg_per_kg_output!: number | null;
+  co2_kg_per_kg_output!: number | null;
 
   constructor(data: IFoodNormalized) {
     Object.assign(this, data);
@@ -88,6 +95,7 @@ export class FoodNormalized implements IFoodNormalized {
       this.co2_capture_kg_ha_yr, this.pesticide_weighted_paf, this.pesticide_kg_per_kg_food,
       this.neuron_count, this.weight_kg, this.yield_fraction,
       this.pasture_ha_per_kg_output, this.native_fraction, this.bycatch_amount,
+      this.ch4_kg_per_kg_output, this.n2o_kg_per_kg_output, this.co2_kg_per_kg_output,
     ];
   }
 }

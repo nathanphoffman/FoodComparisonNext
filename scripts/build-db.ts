@@ -83,7 +83,7 @@ async function main(): Promise<void> {
   insertPlantPesticides(sourceDb, plantPesticides);
   insertAnimalFeed(sourceDb, animalFeed);
   // Tier 5 — normalized DB, must be last
-  insertFoodsNormalized(normalizedDb, { foods, plants, animals, plantPesticides, pesticides });
+  insertFoodsNormalized(normalizedDb, { foods, plants, animals, plantPesticides, pesticides, animalFeed });
 
   const dataPath = resolve(root, 'lib/data');
   deleteOldDbs(dataPath, 'foods.v');

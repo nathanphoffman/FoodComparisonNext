@@ -1,19 +1,21 @@
 CREATE TABLE IF NOT EXISTS foods_normalized (
-    id                       INTEGER PRIMARY KEY,
-    slug                     TEXT    NOT NULL UNIQUE,
-    name                     TEXT    NOT NULL,
-    type                     TEXT    NOT NULL,   -- 'plant' | 'animal'
-    tags                     TEXT    NOT NULL,   -- json array of strings
-    human_food               INTEGER NOT NULL,   -- boolean
+    food_id   INTEGER NOT NULL,
+    is_feed   INTEGER NOT NULL DEFAULT 0,  -- 0 = food itself, 1 = feed crop aggregate
 
-    -- nutrition averages (all foods)
+    slug       TEXT    NOT NULL,
+    name       TEXT    NOT NULL,
+    type       TEXT    NOT NULL,            -- 'plant' | 'animal'
+    tags       TEXT    NOT NULL,            -- json array of strings
+    human_food INTEGER NOT NULL,            -- boolean
+
+    -- nutrition averages (NULL for feed rows)
     calories                 REAL,
     fat                      REAL,
     sat_fat                  REAL,
     protein                  REAL,
     fiber                    REAL,
 
-    -- plant averages (NULL for animal foods)
+    -- plant metrics (NULL for animal foods; populated for plant foods AND feed rows)
     yield_kg_ha              REAL,
     water_per_kg             REAL,
     soil_erosion             REAL,
@@ -22,14 +24,16 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     emissions_per_kg         REAL,
     tillage_events_per_year  REAL,
     co2_capture_kg_ha_yr     REAL,
-    pesticide_weighted_paf   REAL,   -- sum(avg_kg_ha[p] * avg_paf[p]) / sum(avg_kg_ha[p])
-    pesticide_kg_per_kg_food REAL,   -- avg(pesticide_kg_ha) / avg(yield_kg_ha)
+    pesticide_weighted_paf   REAL,
+    pesticide_kg_per_kg_food REAL,
 
-    -- animal averages (NULL for plant foods)
+    -- animal metrics (NULL for plant foods and feed rows)
     neuron_count             REAL,
     weight_kg                REAL,
     yield_fraction           REAL,
     pasture_ha_per_kg_output REAL,
     native_fraction          REAL,
-    bycatch_amount           REAL
+    bycatch_amount           REAL,
+
+    PRIMARY KEY (food_id, is_feed)
 );

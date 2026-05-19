@@ -1,5 +1,5 @@
 import { Plant } from '../../../lib/types';
-import { weightedAverage } from '../weighted-average';
+import { SourcedNumberArray } from './SourcedNumberArray';
 import { PlantNormalizedFields } from './IFoodNormalized';
 import { RawPesticide } from './RawPesticide';
 import { RawPlantPesticide } from './RawPlantPesticide';
@@ -10,35 +10,37 @@ export interface PesticideAssociation {
 }
 
 export class RawPlant {
-  constructor(
-    private data: Plant,
-    private associations: PesticideAssociation[],
-  ) {}
+  readonly id: number;
+  readonly food_id: number;
+  readonly yield_kg_ha: SourcedNumberArray;
+  readonly water_per_kg: SourcedNumberArray;
+  readonly soil_erosion: SourcedNumberArray;
+  readonly pesticide_kg_ha: SourcedNumberArray;
+  readonly fertilizer_kg_ha: SourcedNumberArray;
+  readonly emissions_per_kg: SourcedNumberArray;
+  readonly tillage_events_per_year: SourcedNumberArray;
+  readonly co2_capture_kg_ha_yr: SourcedNumberArray;
 
-  get id(): number { return this.data.id; }
-
-  normalizedFields(): PlantNormalizedFields {
-    return {
-      yield_kg_ha: weightedAverage(this.data.yield_kg_ha),
-      water_per_kg: weightedAverage(this.data.water_per_kg),
-      soil_erosion: weightedAverage(this.data.soil_erosion),
-      pesticide_kg_ha: weightedAverage(this.data.pesticide_kg_ha),
-      fertilizer_kg_ha: weightedAverage(this.data.fertilizer_kg_ha),
-      emissions_per_kg: weightedAverage(this.data.emissions_per_kg),
-      tillage_events_per_year: weightedAverage(this.data.tillage_events_per_year),
-      co2_capture_kg_ha_yr: weightedAverage(this.data.co2_capture_kg_ha_yr),
-      pesticide_weighted_paf: this.pesticideWeightedPaf(),
-      pesticide_kg_per_kg_food: this.pesticideKgPerKgFood(),
-    };
+  constructor(data: Plant, private associations: PesticideAssociation[]) {
+    this.id = data.id;
+    this.food_id = data.food_id;
+    this.yield_kg_ha = new SourcedNumberArray(data.yield_kg_ha ?? []);
+    this.water_per_kg = new SourcedNumberArray(data.water_per_kg ?? []);
+    this.soil_erosion = new SourcedNumberArray(data.soil_erosion ?? []);
+    this.pesticide_kg_ha = new SourcedNumberArray(data.pesticide_kg_ha ?? []);
+    this.fertilizer_kg_ha = new SourcedNumberArray(data.fertilizer_kg_ha ?? []);
+    this.emissions_per_kg = new SourcedNumberArray(data.emissions_per_kg ?? []);
+    this.tillage_events_per_year = new SourcedNumberArray(data.tillage_events_per_year ?? []);
+    this.co2_capture_kg_ha_yr = new SourcedNumberArray(data.co2_capture_kg_ha_yr ?? []);
   }
 
-  private pesticideWeightedPaf(): number | null {
+  get avgPesticideWeightedPaf(): number | null {
     if (this.associations.length === 0) return null;
     let totalKgHa = 0;
     let weightedPafSum = 0;
     for (const { pp, pesticide } of this.associations) {
-      const avgKgHa = weightedAverage(pp.data.kg_ha);
-      const avgPaf = weightedAverage(pesticide.data.paf);
+      const avgKgHa = pp.kg_ha?.weightedAverage() ?? null;
+      const avgPaf = pesticide.paf.weightedAverage();
       if (avgKgHa != null && avgPaf != null) {
         weightedPafSum += avgKgHa * avgPaf;
         totalKgHa += avgKgHa;
@@ -47,10 +49,25 @@ export class RawPlant {
     return totalKgHa > 0 ? weightedPafSum / totalKgHa : null;
   }
 
-  private pesticideKgPerKgFood(): number | null {
-    const avgPesticideKgHa = weightedAverage(this.data.pesticide_kg_ha);
-    const avgYield = weightedAverage(this.data.yield_kg_ha);
+  get avgPesticideKgPerKgFood(): number | null {
+    const avgPesticideKgHa = this.pesticide_kg_ha.weightedAverage();
+    const avgYield = this.yield_kg_ha.weightedAverage();
     if (avgPesticideKgHa == null || avgYield == null || avgYield === 0) return null;
     return avgPesticideKgHa / avgYield;
+  }
+
+  normalizedFields(): PlantNormalizedFields {
+    return {
+      yield_kg_ha: this.yield_kg_ha.weightedAverage(),
+      water_per_kg: this.water_per_kg.weightedAverage(),
+      soil_erosion: this.soil_erosion.weightedAverage(),
+      pesticide_kg_ha: this.pesticide_kg_ha.weightedAverage(),
+      fertilizer_kg_ha: this.fertilizer_kg_ha.weightedAverage(),
+      emissions_per_kg: this.emissions_per_kg.weightedAverage(),
+      tillage_events_per_year: this.tillage_events_per_year.weightedAverage(),
+      co2_capture_kg_ha_yr: this.co2_capture_kg_ha_yr.weightedAverage(),
+      pesticide_weighted_paf: this.avgPesticideWeightedPaf,
+      pesticide_kg_per_kg_food: this.avgPesticideKgPerKgFood,
+    };
   }
 }

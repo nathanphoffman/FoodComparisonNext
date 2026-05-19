@@ -4,7 +4,7 @@ export interface ISourced<T> {
   confidence: number;
 }
 
-interface NutritionValue {
+export interface NutritionValue {
   calories: number;
   fat: number;
   sat_fat: number;

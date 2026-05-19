@@ -1,6 +1,6 @@
 import { Cell } from './Cell';
 
-export type RowProps<DataType, DataTypeProps> = { data: DataType, columnOrder: DataTypeProps, children: React.ReactElement[] };
+export type RowProps<DataType, DataTypeProps> = { data: DataType, columnOrder: DataTypeProps, children?: React.ReactElement[] };
 
 export function Row<DataType, DataTypeProps extends (keyof DataType)[]>(
     { data, columnOrder, children }:

@@ -1,17 +1,18 @@
 export interface IFoodNormalized {
-  id: number;
+  food_id: number;
+  is_feed: 0 | 1;
   slug: string;
   name: string;
   type: 'plant' | 'animal';
   tags: string[];
   human_food: 0 | 1;
-  // nutrition
+  // nutrition (NULL for feed rows)
   calories: number | null;
   fat: number | null;
   sat_fat: number | null;
   protein: number | null;
   fiber: number | null;
-  // plant averages (null for animal foods)
+  // plant metrics (NULL for animal foods; populated for plants AND feed rows)
   yield_kg_ha: number | null;
   water_per_kg: number | null;
   soil_erosion: number | null;
@@ -22,7 +23,7 @@ export interface IFoodNormalized {
   co2_capture_kg_ha_yr: number | null;
   pesticide_weighted_paf: number | null;
   pesticide_kg_per_kg_food: number | null;
-  // animal averages (null for plant foods)
+  // animal metrics (NULL for plant foods and feed rows)
   neuron_count: number | null;
   weight_kg: number | null;
   yield_fraction: number | null;
@@ -43,7 +44,8 @@ export type AnimalNormalizedFields = Pick<IFoodNormalized,
 >;
 
 export class FoodNormalized implements IFoodNormalized {
-  id!: number;
+  food_id!: number;
+  is_feed!: 0 | 1;
   slug!: string;
   name!: string;
   type!: 'plant' | 'animal';
@@ -77,7 +79,8 @@ export class FoodNormalized implements IFoodNormalized {
 
   toDbParams(): (string | number | null)[] {
     return [
-      this.id, this.slug, this.name, this.type,
+      this.food_id, this.is_feed,
+      this.slug, this.name, this.type,
       JSON.stringify(this.tags), this.human_food,
       this.calories, this.fat, this.sat_fat, this.protein, this.fiber,
       this.yield_kg_ha, this.water_per_kg, this.soil_erosion, this.pesticide_kg_ha,

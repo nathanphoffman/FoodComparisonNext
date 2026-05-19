@@ -1,5 +1,5 @@
 import { Food } from '../../../lib/types';
-import { weightedAverageNutrition } from '../weighted-average';
+import { SourcedNutritionalValueArray } from './SourcedNutritionalValueArray';
 import { FoodNormalized, PlantNormalizedFields, AnimalNormalizedFields } from './IFoodNormalized';
 import { RawPlant } from './RawPlant';
 import { RawAnimal } from './RawAnimal';
@@ -17,16 +17,21 @@ const nullAnimalFields: AnimalNormalizedFields = {
 };
 
 export class RawFood {
+  readonly nutrition: SourcedNutritionalValueArray;
+
   constructor(
     private data: Food,
     private plant: RawPlant | null,
     private animal: RawAnimal | null,
-  ) {}
+  ) {
+    this.nutrition = new SourcedNutritionalValueArray(data.nutrition);
+  }
 
   toNormalized(): FoodNormalized {
-    const n = weightedAverageNutrition(this.data.nutrition);
+    const n = this.nutrition.weightedAverage();
     return new FoodNormalized({
-      id: this.data.id,
+      food_id: this.data.id,
+      is_feed: 0,
       slug: this.data.slug,
       name: this.data.name,
       type: this.data.type,
@@ -39,6 +44,25 @@ export class RawFood {
       fiber: n?.fiber ?? null,
       ...(this.plant?.normalizedFields() ?? nullPlantFields),
       ...(this.animal?.normalizedFields() ?? nullAnimalFields),
+    });
+  }
+
+  toFeedNormalized(): FoodNormalized | null {
+    if (!this.animal) return null;
+    const feedFields = this.animal.feedNormalizedFields();
+    if (!feedFields) return null;
+
+    return new FoodNormalized({
+      food_id: this.data.id,
+      is_feed: 1,
+      slug: `${this.data.slug}-feed`,
+      name: `${this.data.name} (Feed)`,
+      type: this.data.type,
+      tags: this.data.tags,
+      human_food: this.data.human_food,
+      calories: null, fat: null, sat_fat: null, protein: null, fiber: null,
+      ...feedFields,
+      ...nullAnimalFields,
     });
   }
 }

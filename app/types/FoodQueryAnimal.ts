@@ -22,5 +22,12 @@ export class FoodQueryAnimal implements IFoodQueryAnimal {
 
     constructor(data: IFoodQueryAnimal) {
         Object.assign(this, data);
+        this.neuron_count = data.neuron_count === null ? null : new SourcedNumberArray(data.neuron_count);
+        this.weight_kg = data.weight_kg === null ? null : new SourcedNumberArray(data.weight_kg);
+        this.yield_fraction = data.yield_fraction === null ? null : new SourcedNumberArray(data.yield_fraction);
+        this.pasture_ha_per_kg_output = data.pasture_ha_per_kg_output === null ? null : new SourcedNumberArray(data.pasture_ha_per_kg_output);
+        this.native_fraction = data.native_fraction === null ? null : new SourcedNumberArray(data.native_fraction);
+        this.bycatch = data.bycatch === null ? null : { animal: data.bycatch.animal, amount: new SourcedNumberArray(data.bycatch.amount) };
+        this.feed = data.feed === null ? null : data.feed.map(f => new FoodQueryFeedEntry(f));
     }
 }

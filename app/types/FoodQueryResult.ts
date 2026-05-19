@@ -33,5 +33,8 @@ export class FoodQueryResult implements IFoodQueryResult {
 
     constructor(data: IFoodQueryResult) {
         Object.assign(this, data);
+        this.nutrition = new SourcedArray<NutritionValue>(data.nutrition);
+        this.plant = data.plant === null  ? null : new FoodQueryPlant(data.plant);
+        this.animal = data.animal === null  ? null : new FoodQueryAnimal(data.animal);
     }
 }

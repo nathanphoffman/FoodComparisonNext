@@ -15,12 +15,17 @@ export class SourcedNumber implements ISourced<number> {
     source_id!: number;
     confidence!: number;
 
-    constructor(data: ISourced<T>) {
+    constructor(data: ISourced<number>) {
         Object.assign(this, data);
     }
 }
 
 export class SourcedNumberArray extends Array<SourcedNumber> {
+
+    constructor(data: Array<SourcedNumber>) {
+        super(...data);
+    }
+
     weightedAverage(): number {
         const weightedTotal = this.reduce((prev, curr) => prev + curr.value * curr.confidence, 0);
         const confidenceTotal = this.reduce((prev, curr) => prev + curr.confidence, 0);
@@ -31,11 +36,7 @@ export class SourcedNumberArray extends Array<SourcedNumber> {
 
 export class SourcedArray<T> extends Array<Sourced<T>> {
 
-    // placeholder
-
-    /*
-        weightedAverage(): number {
-            this.reduce((prev, curr) => prev + curr.value * curr.confidence, 0)
-        }
-            */
+    constructor(data: Array<Sourced<T>>) {
+        super(...data);
+    }
 }

@@ -13,5 +13,7 @@ export class FoodQueryPesticide implements IFoodQueryPesticide {
 
     constructor(data: IFoodQueryPesticide) {
         Object.assign(this, data);
+        this.paf = new SourcedNumberArray(data.paf);
+        this.kg_ha = data.kg_ha === null ? null : new SourcedNumberArray(data.kg_ha);
     }
 }

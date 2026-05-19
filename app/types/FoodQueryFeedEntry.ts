@@ -11,5 +11,6 @@ export class FoodQueryFeedEntry implements IFoodQueryFeedEntry {
 
     constructor(data: IFoodQueryFeedEntry) {
         Object.assign(this, data);
+        this.kg_feed_per_kg_output = new SourcedNumberArray(data.kg_feed_per_kg_output);
     }
 }

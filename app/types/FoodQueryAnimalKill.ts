@@ -11,5 +11,6 @@ export class FoodQueryAnimalKill implements IFoodQueryAnimalKill {
 
     constructor(data: IFoodQueryAnimalKill) {
         Object.assign(this, data);
+        this.kills_per_ha = data.kills_per_ha === null ? null : new SourcedNumberArray(data.kills_per_ha);
     }
 }

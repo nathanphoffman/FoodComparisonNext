@@ -1,6 +1,14 @@
-import { Sourced } from './Sourced';
+import { SourcedArray } from './Sourced';
 import { FoodQueryPlant } from './FoodQueryPlant';
 import { FoodQueryAnimal } from './FoodQueryAnimal';
+
+interface NutritionValue {
+    calories: number;
+    fat: number;
+    sat_fat: number;
+    protein: number;
+    fiber: number;
+}
 
 export interface IFoodQueryResult {
     id: number;
@@ -8,7 +16,7 @@ export interface IFoodQueryResult {
     name: string;
     type: 'plant' | 'animal';
     tags: string[];
-    nutrition: Sourced<{ calories: number; fat: number; sat_fat: number; protein: number; fiber: number }>[];
+    nutrition: SourcedArray<NutritionValue>;
     plant: FoodQueryPlant | null;
     animal: FoodQueryAnimal | null;
 }
@@ -19,7 +27,7 @@ export class FoodQueryResult implements IFoodQueryResult {
     name!: string;
     type!: 'plant' | 'animal';
     tags!: string[];
-    nutrition!: Sourced<{ calories: number; fat: number; sat_fat: number; protein: number; fiber: number }>[];
+    nutrition!: SourcedArray<NutritionValue>;
     plant!: FoodQueryPlant | null;
     animal!: FoodQueryAnimal | null;
 

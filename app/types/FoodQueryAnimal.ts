@@ -1,23 +1,23 @@
-import { Sourced } from './Sourced';
+import { SourcedArray } from './Sourced';
 import { FoodQueryFeedEntry } from './FoodQueryFeedEntry';
 
 export interface IFoodQueryAnimal {
-    neuron_count: Sourced<number>[] | null;
-    weight_kg: Sourced<number>[] | null;
-    yield_fraction: Sourced<number>[] | null;
-    pasture_ha_per_kg_output: Sourced<number>[] | null;
-    native_fraction: Sourced<number>[] | null;
-    bycatch: { animal: string; amount: Sourced<number>[] } | null;
+    neuron_count: SourcedArray<number> | null;
+    weight_kg: SourcedArray<number> | null;
+    yield_fraction: SourcedArray<number> | null;
+    pasture_ha_per_kg_output: SourcedArray<number> | null;
+    native_fraction: SourcedArray<number> | null;
+    bycatch: { animal: string; amount: SourcedArray<number> } | null;
     feed: FoodQueryFeedEntry[] | null;
 }
 
 export class FoodQueryAnimal implements IFoodQueryAnimal {
-    neuron_count!: Sourced<number>[] | null;
-    weight_kg!: Sourced<number>[] | null;
-    yield_fraction!: Sourced<number>[] | null;
-    pasture_ha_per_kg_output!: Sourced<number>[] | null;
-    native_fraction!: Sourced<number>[] | null;
-    bycatch!: { animal: string; amount: Sourced<number>[] } | null;
+    neuron_count!: SourcedArray<number> | null;
+    weight_kg!: SourcedArray<number> | null;
+    yield_fraction!: SourcedArray<number> | null;
+    pasture_ha_per_kg_output!: SourcedArray<number> | null;
+    native_fraction!: SourcedArray<number> | null;
+    bycatch!: { animal: string; amount: SourcedArray<number> } | null;
     feed!: FoodQueryFeedEntry[] | null;
 
     constructor(data: IFoodQueryAnimal) {

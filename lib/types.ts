@@ -76,6 +76,7 @@ export interface Pesticide {
   name: string;
   freshwater_paf: ISourced<number>[];
   terrestrial_paf: ISourced<number>[] | null;
+  insect_paf: ISourced<number>[] | null;
   bee_ld50: ISourced<number>[] | null;
 }
 

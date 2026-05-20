@@ -24,10 +24,12 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     emissions_per_kg         REAL,
     tillage_events_per_year  REAL,
     co2_capture_kg_ha_yr     REAL,
-    pesticide_freshwater_paf REAL,
-    pesticide_terrestrial_paf REAL,
-    pesticide_bee_hazard     REAL,
-    pesticide_kg_per_kg_food REAL,
+    pesticide_freshwater_paf  REAL,  -- application-weighted average USEtox freshwater PAF (0-1) across all pesticides used on this crop
+    pesticide_terrestrial_paf REAL,  -- application-weighted average USEtox terrestrial PAF (0-1), soil organisms
+    pesticide_insect_paf      REAL,  -- application-weighted average ECOTOX non-target arthropod PAF (0-1), general insect community
+    pesticide_bee_hazard      REAL,  -- application-weighted bee hazard score derived from bee_ld50 via inverse-weighted formula (higher = more hazardous);
+                                     --   NOT a PAF and NOT an LD50 — it is a unitless relative hazard index computed as sum(kg_ha / bee_ld50) / total_kg_ha
+    pesticide_kg_per_kg_food REAL,   -- total pesticide application intensity in kg active ingredient per kg food output (pesticide_kg_ha / yield_kg_ha)
 
     -- animal metrics (NULL for plant foods and feed rows)
     neuron_count             REAL,

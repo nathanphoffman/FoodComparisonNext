@@ -53,6 +53,7 @@ export class RawAnimal {
     let fertilizerKgHa = 0, tillage = 0, co2Capture = 0, pesticideKgPerKg = 0;
     let potentiallyAffectedFractionNumerator = 0, potentiallyAffectedFractionDenominator = 0;
     let terrestrialPafNumerator = 0, terrestrialPafDenominator = 0;
+    let insectPafNumerator = 0, insectPafDenominator = 0;
     let beeHazardNumerator = 0, beeHazardDenominator = 0;
 
     for (const { feed, plant } of this.feedEntries) {
@@ -69,6 +70,7 @@ export class RawAnimal {
       const avgPesticideKgPerKg = plant.avgPesticideKgPerKgFood;
       const avgPotentiallyAffectedFraction = plant.avgPesticideWeightedFreshwaterPaf;
       const avgTerrestrialPaf = plant.avgPesticideWeightedTerrestrialPaf;
+      const avgInsectPaf = plant.avgPesticideWeightedInsectPaf;
       const avgBeeHazard = plant.avgPesticideWeightedBeeHazard;
 
       if (avgEmissions != null) emissions += feedRatio * avgEmissions;
@@ -91,6 +93,10 @@ export class RawAnimal {
           terrestrialPafNumerator += feedRatio * avgPesticideKgPerKg * avgTerrestrialPaf;
           terrestrialPafDenominator += feedRatio * avgPesticideKgPerKg;
         }
+        if (avgInsectPaf != null) {
+          insectPafNumerator += feedRatio * avgPesticideKgPerKg * avgInsectPaf;
+          insectPafDenominator += feedRatio * avgPesticideKgPerKg;
+        }
         if (avgBeeHazard != null) {
           beeHazardNumerator += feedRatio * avgPesticideKgPerKg * avgBeeHazard;
           beeHazardDenominator += feedRatio * avgPesticideKgPerKg;
@@ -109,6 +115,7 @@ export class RawAnimal {
       co2_capture_kg_ha_yr: co2Capture || null,
       pesticide_freshwater_paf: potentiallyAffectedFractionDenominator > 0 ? potentiallyAffectedFractionNumerator / potentiallyAffectedFractionDenominator : null,
       pesticide_terrestrial_paf: terrestrialPafDenominator > 0 ? terrestrialPafNumerator / terrestrialPafDenominator : null,
+      pesticide_insect_paf: insectPafDenominator > 0 ? insectPafNumerator / insectPafDenominator : null,
       pesticide_bee_hazard: beeHazardDenominator > 0 ? beeHazardNumerator / beeHazardDenominator : null,
       pesticide_kg_per_kg_food: pesticideKgPerKg || null,
     };

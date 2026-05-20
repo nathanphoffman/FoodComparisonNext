@@ -6,6 +6,7 @@ export class RawPesticide {
   readonly name: string;
   readonly freshwaterPaf: SourcedNumberArray;
   readonly terrestrialPaf: SourcedNumberArray;
+  readonly insectPaf: SourcedNumberArray;
   readonly beeLd50: SourcedNumberArray;
 
   constructor(data: Pesticide) {
@@ -13,6 +14,7 @@ export class RawPesticide {
     this.name = data.name;
     this.freshwaterPaf = new SourcedNumberArray(data.freshwater_paf);
     this.terrestrialPaf = new SourcedNumberArray(data.terrestrial_paf ?? []);
+    this.insectPaf = new SourcedNumberArray(data.insect_paf ?? []);
     this.beeLd50 = new SourcedNumberArray(data.bee_ld50 ?? []);
   }
 }

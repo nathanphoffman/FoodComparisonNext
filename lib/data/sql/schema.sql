@@ -1,3 +1,33 @@
+/*
+ * Food Comparison Database — Raw Schema
+ *
+ * PURPOSE
+ * -------
+ * Stores per-source environmental, nutritional, and toxicological data for
+ * plant and animal foods. Every quantitative value is wrapped in a JSON array
+ * of {value, source_id, confidence} objects so multiple sources can disagree
+ * on the same metric without data loss.
+ *
+ * KEY DESIGN DECISIONS
+ * --------------------
+ * - JSON value arrays: columns typed TEXT hold arrays of
+ *   {value: <number>, source_id: <int>, confidence: <0-1>} objects.
+ *   This avoids a fully-normalised EAV schema while still tracking provenance
+ *   and uncertainty for every data point.
+ * - No migrations: the database is rebuilt from scratch on every run via
+ *   scripts/build-db.ts. ALTER TABLE is never used; changes go directly in
+ *   this file.
+ * - Separate plant/animal tables: plants and animals have mostly disjoint
+ *   metric sets; a single "foods" table with many NULLs would be noisier.
+ * - Junction tables for feeds and kills: animal_feed and plant_animal_kills
+ *   are many-to-many; storing them as junction rows keeps the per-food rows
+ *   clean and allows multiple feed crops per animal.
+ * - Pesticide toxicity is stored once per active ingredient (pesticides table)
+ *   and linked to plants via plant_pesticides. The per-plant PAF/hazard values
+ *   in foods_normalized are computed at build time by aggregating over
+ *   plant_pesticides + pesticides weighted by kg_ha application rates.
+ */
+
 CREATE TABLE IF NOT EXISTS sources (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
     url   TEXT NOT NULL UNIQUE,
@@ -66,9 +96,11 @@ CREATE TABLE IF NOT EXISTS animal_feed (
 CREATE TABLE IF NOT EXISTS pesticides (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     name            TEXT    NOT NULL UNIQUE,
-    freshwater_paf  TEXT    NOT NULL,  -- json array of {value: 0-1, source_id, confidence}
-    terrestrial_paf TEXT,              -- json array of {value: 0-1, source_id, confidence}
-    bee_ld50        TEXT               -- json array of {value: µg a.i./bee, source_id, confidence}
+    freshwater_paf  TEXT    NOT NULL,  -- json array of {value: 0-1, source_id, confidence}; USEtox potentially affected fraction, aquatic freshwater organisms
+    terrestrial_paf TEXT,              -- json array of {value: 0-1, source_id, confidence}; USEtox potentially affected fraction, soil organisms
+    insect_paf      TEXT,              -- json array of {value: 0-1, source_id, confidence}; ECOTOX potentially affected fraction, non-target arthropod (general insect) community
+    bee_ld50        TEXT               -- json array of {value: µg a.i./bee, source_id, confidence}; PPDB acute oral LD50 for honeybee; lower = more toxic
+                                       -- NOTE: this is a raw toxicity endpoint, NOT a PAF; see pesticide_bee_hazard in foods_normalized for the derived hazard score
 );
 
 CREATE TABLE IF NOT EXISTS plant_pesticides (

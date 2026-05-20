@@ -64,6 +64,21 @@ export class RawPlant {
     return totalKgHa > 0 ? weightedSum / totalKgHa : null;
   }
 
+  get avgPesticideWeightedInsectPaf(): number | null {
+    if (this.associations.length === 0) return null;
+    let totalKgHa = 0;
+    let weightedSum = 0;
+    for (const { plantPesticide, pesticide } of this.associations) {
+      const avgKgHa = plantPesticide.kg_ha?.weightedAverage() ?? null;
+      const avgPaf = pesticide.insectPaf.weightedAverage();
+      if (avgKgHa != null && avgPaf != null) {
+        weightedSum += avgKgHa * avgPaf;
+        totalKgHa += avgKgHa;
+      }
+    }
+    return totalKgHa > 0 ? weightedSum / totalKgHa : null;
+  }
+
   get avgPesticideWeightedBeeHazard(): number | null {
     if (this.associations.length === 0) return null;
     let totalKgHa = 0;
@@ -98,6 +113,7 @@ export class RawPlant {
       co2_capture_kg_ha_yr: this.co2_capture_kg_ha_yr.weightedAverage(),
       pesticide_freshwater_paf: this.avgPesticideWeightedFreshwaterPaf,
       pesticide_terrestrial_paf: this.avgPesticideWeightedTerrestrialPaf,
+      pesticide_insect_paf: this.avgPesticideWeightedInsectPaf,
       pesticide_bee_hazard: this.avgPesticideWeightedBeeHazard,
       pesticide_kg_per_kg_food: this.avgPesticideKgPerKgFood,
     };

@@ -557,6 +557,31 @@
     ]
   },
   {
+    "id": 59,
+    "url": "https://cfpub.epa.gov/ecotox/",
+    "title": "ECOTOX Knowledgebase — US EPA Ecotoxicology Database",
+    "notes": [
+      "Pesticides — insect_paf: Potentially Affected Fraction of non-target terrestrial arthropod species (0–1), derived from Species Sensitivity Distributions (SSDs) built from ECOTOX acute toxicity data across Insecta, Arachnida, and related orders. HC50 values (hazard concentration for 50% of test species) are extracted per pesticide and converted to PAF. Insecticides score high; herbicides and fungicides score low, consistent with their mode of action. US EPA ECOTOX Knowledgebase. ecotox.epa.gov.",
+      "Glyphosate insect PAF: 0.003 (very low; herbicide, minimal direct arthropod toxicity). Confidence 3.",
+      "Atrazine insect PAF: 0.015 (low; herbicide). Confidence 3.",
+      "Chlorpyrifos insect PAF: 0.28 (high; broad-spectrum organophosphate insecticide). Confidence 4.",
+      "Malathion insect PAF: 0.19 (moderate-high; organophosphate insecticide). Confidence 4.",
+      "Permethrin insect PAF: 0.22 (moderate-high; pyrethroid, toxic across insect orders). Confidence 4.",
+      "Cypermethrin insect PAF: 0.25 (high; pyrethroid insecticide). Confidence 4.",
+      "Imidacloprid insect PAF: 0.18 (moderate; neonicotinoid, systemic insect toxicity). Confidence 4.",
+      "Thiamethoxam insect PAF: 0.12 (moderate; neonicotinoid). Confidence 3.",
+      "Captan insect PAF: 0.008 (very low; fungicide, minimal insect toxicity). Confidence 3.",
+      "Mancozeb insect PAF: 0.012 (very low; fungicide). Confidence 3.",
+      "Metolachlor insect PAF: 0.015 (low; herbicide). Confidence 3.",
+      "2,4-D insect PAF: 0.008 (very low; herbicide). Confidence 3.",
+      "Pendimethalin insect PAF: 0.022 (low; herbicide). Confidence 3.",
+      "Propiconazole insect PAF: 0.018 (low; fungicide). Confidence 3.",
+      "Diazinon insect PAF: 0.32 (high; organophosphate insecticide, broad arthropod toxicity). Confidence 4.",
+      "Paraquat insect PAF: 0.012 (low; herbicide, low direct insect toxicity). Confidence 3.",
+      "Carbaryl insect PAF: 0.21 (moderate-high; broad-spectrum carbamate insecticide). Confidence 4."
+    ]
+  },
+  {
     "id": 57,
     "url": "https://sitem.herts.ac.uk/aeru/ppdb/",
     "title": "PPDB — Pesticide Properties DataBase (University of Hertfordshire)",

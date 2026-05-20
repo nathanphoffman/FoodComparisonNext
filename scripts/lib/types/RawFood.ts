@@ -9,7 +9,7 @@ const nullPlantFields: PlantNormalizedFields = {
   pesticide_kg_ha: null, fertilizer_kg_ha: null, emissions_per_kg: null,
   tillage_events_per_year: null, co2_capture_kg_ha_yr: null,
   pesticide_freshwater_paf: null, pesticide_terrestrial_paf: null,
-  pesticide_bee_hazard: null, pesticide_kg_per_kg_food: null,
+  pesticide_insect_paf: null, pesticide_bee_hazard: null, pesticide_kg_per_kg_food: null,
 };
 
 const nullAnimalFields: AnimalNormalizedFields = {

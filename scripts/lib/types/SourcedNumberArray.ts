@@ -6,12 +6,9 @@ export class SourcedNumberArray extends Array<ISourced<number>> {
   }
 
   weightedAverage(): number | null {
-
     if (this.length === 0) return null;
-    const totalWeight = this.reduce((acc, curr) => acc + curr.confidence, 0);
-
+    const totalWeight = this.reduce((sum, entry) => sum + entry.confidence, 0);
     if (totalWeight === 0) return null;
-    return this.reduce((acc, curr) => acc + curr.value * curr.confidence, 0) / totalWeight;
-    
+    return this.reduce((sum, entry) => sum + entry.value * entry.confidence, 0) / totalWeight;
   }
 }

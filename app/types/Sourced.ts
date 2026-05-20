@@ -27,8 +27,8 @@ export class SourcedNumberArray extends Array<SourcedNumber> {
     }
 
     weightedAverage(): number {
-        const weightedTotal = this.reduce((prev, curr) => prev + curr.value * curr.confidence, 0);
-        const confidenceTotal = this.reduce((prev, curr) => prev + curr.confidence, 0);
+        const weightedTotal = this.reduce((sum, entry) => sum + entry.value * entry.confidence, 0);
+        const confidenceTotal = this.reduce((sum, entry) => sum + entry.confidence, 0);
 
         return weightedTotal / confidenceTotal;
     }

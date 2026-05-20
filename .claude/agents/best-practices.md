@@ -23,7 +23,7 @@ description: Audits source code for best practice violations and recommends new 
 ### File and Function Size
 - **No large functions.** Functions over ~30 lines should be broken into smaller named helpers.
 - **No large files.** Files over ~150 lines should be split by responsibility.
-- **One component per file.** Each file exports exactly one React component.
+- **One component per file.** Each file exports exactly one React component. Exception: a file may export multiple components when they are all tiny, tightly related, and constitute a cohesive set (e.g. per-column cell components in a table field file like `FoodTableFields`).
 
 ### TypeScript
 - **Prefer `const` over `let`.** Use `const` by default; only use `let` when reassignment is necessary.

@@ -1,10 +1,10 @@
-import { SortIcon } from './SortIcon'
+import { SortIcon } from './SortIcon';
 
 type Header = {
-  label: string
-  sorted?: 'asc' | 'desc'
-  onSort?: () => void
-}
+  label: string;
+  sorted?: 'asc' | 'desc';
+  onSort?: () => void;
+};
 
 export function Table({ headers = [], children }: { headers?: Header[], children?: React.ReactNode }) {
   return (
@@ -12,22 +12,22 @@ export function Table({ headers = [], children }: { headers?: Header[], children
       <table className="w-full border-collapse">
         <thead>
           <tr className="bg-neutral-50 border-b border-neutral-200">
-            {headers.map((h, i) => (
+            {headers.map((header, i) => (
               <th
                 key={i}
-                onClick={h.onSort}
+                onClick={header.onSort}
                 className={[
                   'px-4 py-3 text-xs font-semibold uppercase tracking-wider transition-colors text-left',
-                  h.sorted ? 'text-neutral-800' : 'text-neutral-500',
-                  h.onSort ? 'cursor-pointer select-none hover:bg-neutral-100' : '',
+                  header.sorted ? 'text-neutral-800' : 'text-neutral-500',
+                  header.onSort ? 'cursor-pointer select-none hover:bg-neutral-100' : '',
                 ].join(' ')}
               >
-                {h.onSort ? (
+                {header.onSort ? (
                   <span className="inline-flex items-center gap-1.5">
-                    {h.label}
-                    <SortIcon dir={h.sorted} />
+                    {header.label}
+                    <SortIcon dir={header.sorted} />
                   </span>
-                ) : h.label}
+                ) : header.label}
               </th>
             ))}
           </tr>
@@ -35,5 +35,5 @@ export function Table({ headers = [], children }: { headers?: Header[], children
         <tbody>{children}</tbody>
       </table>
     </div>
-  )
+  );
 }

@@ -5,7 +5,7 @@ import { RawPesticide } from './RawPesticide';
 import { RawPlantPesticide } from './RawPlantPesticide';
 
 export interface PesticideAssociation {
-  pp: RawPlantPesticide;
+  plantPesticide: RawPlantPesticide;
   pesticide: RawPesticide;
 }
 
@@ -37,16 +37,16 @@ export class RawPlant {
   get avgPesticideWeightedPaf(): number | null {
     if (this.associations.length === 0) return null;
     let totalKgHa = 0;
-    let weightedPafSum = 0;
-    for (const { pp, pesticide } of this.associations) {
-      const avgKgHa = pp.kg_ha?.weightedAverage() ?? null;
-      const avgPaf = pesticide.paf.weightedAverage();
-      if (avgKgHa != null && avgPaf != null) {
-        weightedPafSum += avgKgHa * avgPaf;
+    let weightedPotentiallyAffectedFractionSum = 0;
+    for (const { plantPesticide, pesticide } of this.associations) {
+      const avgKgHa = plantPesticide.kg_ha?.weightedAverage() ?? null;
+      const avgPotentiallyAffectedFraction = pesticide.paf.weightedAverage();
+      if (avgKgHa != null && avgPotentiallyAffectedFraction != null) {
+        weightedPotentiallyAffectedFractionSum += avgKgHa * avgPotentiallyAffectedFraction;
         totalKgHa += avgKgHa;
       }
     }
-    return totalKgHa > 0 ? weightedPafSum / totalKgHa : null;
+    return totalKgHa > 0 ? weightedPotentiallyAffectedFractionSum / totalKgHa : null;
   }
 
   get avgPesticideKgPerKgFood(): number | null {

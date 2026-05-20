@@ -1,5 +1,5 @@
-import { ISourced } from "@/lib/types";
-import { Sourced } from "./Sourced";
+import { ISourced } from '@/lib/types';
+import { Sourced } from './Sourced';
 
 export interface INutritionValue {
     calories: number;
@@ -39,18 +39,18 @@ export class SourcedNutritionalValueArray extends Array<SourcedNutritionalValue>
     }
 
     weightedAverage(): NutritionValue {
-        const weightedTotal = this.reduce((prev, curr) => {
+        const weightedTotal = this.reduce((totals, entry) => {
             return {
-                calories: prev.calories + curr.value.calories * curr.confidence,
-                fat: prev.fat + curr.value.fat * curr.confidence,
-                sat_fat: prev.sat_fat + curr.value.sat_fat * curr.confidence,
-                protein: prev.protein + curr.value.protein * curr.confidence,
-                fiber: prev.fiber + curr.value.fiber * curr.confidence
+                calories: totals.calories + entry.value.calories * entry.confidence,
+                fat: totals.fat + entry.value.fat * entry.confidence,
+                sat_fat: totals.sat_fat + entry.value.sat_fat * entry.confidence,
+                protein: totals.protein + entry.value.protein * entry.confidence,
+                fiber: totals.fiber + entry.value.fiber * entry.confidence
             };
 
         }, { calories: 0, fat: 0, sat_fat: 0, protein: 0, fiber: 0 });
 
-        const confidenceTotal = this.reduce((prev, curr) => prev + curr.confidence, 0);
+        const confidenceTotal = this.reduce((sum, entry) => sum + entry.confidence, 0);
 
         return {
             calories: weightedTotal.calories / confidenceTotal,

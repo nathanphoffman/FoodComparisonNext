@@ -23,29 +23,29 @@ const SQL = `INSERT INTO foods_normalized (
 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
 
 export function insert(db: Database, { foods, plants, animals, plantPesticides, pesticides, animalFeed }: NormalizedInsertData): void {
-  const plantByFoodId = new Map(plants.map(p => [p.food_id, p]));
-  const plantByPlantId = new Map(plants.map(p => [p.id, p]));
-  const animalByFoodId = new Map(animals.map(a => [a.food_id, a]));
-  const pesticideById = new Map(pesticides.map(p => [p.id, new RawPesticide(p)]));
+  const plantByFoodId = new Map(plants.map(plant => [plant.food_id, plant]));
+  const plantByPlantId = new Map(plants.map(plant => [plant.id, plant]));
+  const animalByFoodId = new Map(animals.map(animal => [animal.food_id, animal]));
+  const pesticideById = new Map(pesticides.map(pesticide => [pesticide.id, new RawPesticide(pesticide)]));
 
   const plantPesticidesByPlantId = new Map<number, RawPlantPesticide[]>();
-  for (const pp of plantPesticides) {
-    const list = plantPesticidesByPlantId.get(pp.plant_id) ?? [];
-    list.push(new RawPlantPesticide(pp));
-    plantPesticidesByPlantId.set(pp.plant_id, list);
+  for (const plantPesticide of plantPesticides) {
+    const list = plantPesticidesByPlantId.get(plantPesticide.plant_id) ?? [];
+    list.push(new RawPlantPesticide(plantPesticide));
+    plantPesticidesByPlantId.set(plantPesticide.plant_id, list);
   }
 
   const feedByAnimalId = new Map<number, RawAnimalFeed[]>();
-  for (const entry of animalFeed) {
-    const list = feedByAnimalId.get(entry.animal_id) ?? [];
-    list.push(new RawAnimalFeed(entry));
-    feedByAnimalId.set(entry.animal_id, list);
+  for (const feedEntry of animalFeed) {
+    const list = feedByAnimalId.get(feedEntry.animal_id) ?? [];
+    list.push(new RawAnimalFeed(feedEntry));
+    feedByAnimalId.set(feedEntry.animal_id, list);
   }
 
   const buildRawPlant = (plantData: Plant): RawPlant =>
-    new RawPlant(plantData, (plantPesticidesByPlantId.get(plantData.id) ?? []).map(pp => ({
-      pp,
-      pesticide: pesticideById.get(pp.pesticide_id)!,
+    new RawPlant(plantData, (plantPesticidesByPlantId.get(plantData.id) ?? []).map(plantPesticide => ({
+      plantPesticide,
+      pesticide: pesticideById.get(plantPesticide.pesticide_id)!,
     })));
 
   for (const food of foods) {
@@ -55,9 +55,9 @@ export function insert(db: Database, { foods, plants, animals, plantPesticides, 
     const rawPlant = plantData ? buildRawPlant(plantData) : null;
 
     const rawAnimal = animalData
-      ? new RawAnimal(animalData, (feedByAnimalId.get(animalData.id) ?? []).map(feed => ({
-          feed,
-          plant: buildRawPlant(plantByPlantId.get(feed.plant_id)!),
+      ? new RawAnimal(animalData, (feedByAnimalId.get(animalData.id) ?? []).map(feedEntry => ({
+          feed: feedEntry,
+          plant: buildRawPlant(plantByPlantId.get(feedEntry.plant_id)!),
         })))
       : null;
 

@@ -11,5 +11,5 @@ export function Tooltip({ children, content }: { children: React.ReactNode, cont
         <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-neutral-900" />
       </div>
     </span>
-  )
+  );
 }

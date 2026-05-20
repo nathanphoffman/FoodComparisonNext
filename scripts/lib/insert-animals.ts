@@ -4,13 +4,13 @@ import { assertSourcedArray } from './validate';
 
 export function insert(db: Database, animals: Animal[]): void {
   for (const animal of animals) {
-    const id = `animal ${animal.id}`;
-    assertSourcedArray(animal.neuron_count, `${id}.neuron_count`);
-    assertSourcedArray(animal.weight_kg, `${id}.weight_kg`);
-    assertSourcedArray(animal.bycatch_amount, `${id}.bycatch_amount`);
-    assertSourcedArray(animal.yield_fraction, `${id}.yield_fraction`);
-    assertSourcedArray(animal.pasture_ha_per_kg_output, `${id}.pasture_ha_per_kg_output`);
-    assertSourcedArray(animal.native_fraction, `${id}.native_fraction`);
+    const label = `animal ${animal.id}`;
+    assertSourcedArray(animal.neuron_count, `${label}.neuron_count`);
+    assertSourcedArray(animal.weight_kg, `${label}.weight_kg`);
+    assertSourcedArray(animal.bycatch_amount, `${label}.bycatch_amount`);
+    assertSourcedArray(animal.yield_fraction, `${label}.yield_fraction`);
+    assertSourcedArray(animal.pasture_ha_per_kg_output, `${label}.pasture_ha_per_kg_output`);
+    assertSourcedArray(animal.native_fraction, `${label}.native_fraction`);
     db.run(
       `INSERT INTO animals (
         id, food_id, neuron_count, weight_kg, bycatch_animal_id, bycatch_amount,

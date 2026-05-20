@@ -4,15 +4,15 @@ import { assertSourcedArray } from './validate';
 
 export function insert(db: Database, plants: Plant[]): void {
   for (const plant of plants) {
-    const id = `plant ${plant.id}`;
-    assertSourcedArray(plant.yield_kg_ha, `${id}.yield_kg_ha`);
-    assertSourcedArray(plant.water_per_kg, `${id}.water_per_kg`);
-    assertSourcedArray(plant.soil_erosion, `${id}.soil_erosion`);
-    assertSourcedArray(plant.pesticide_kg_ha, `${id}.pesticide_kg_ha`);
-    assertSourcedArray(plant.fertilizer_kg_ha, `${id}.fertilizer_kg_ha`);
-    assertSourcedArray(plant.emissions_per_kg, `${id}.emissions_per_kg`);
-    assertSourcedArray(plant.tillage_events_per_year, `${id}.tillage_events_per_year`);
-    assertSourcedArray(plant.co2_capture_kg_ha_yr, `${id}.co2_capture_kg_ha_yr`);
+    const label = `plant ${plant.id}`;
+    assertSourcedArray(plant.yield_kg_ha, `${label}.yield_kg_ha`);
+    assertSourcedArray(plant.water_per_kg, `${label}.water_per_kg`);
+    assertSourcedArray(plant.soil_erosion, `${label}.soil_erosion`);
+    assertSourcedArray(plant.pesticide_kg_ha, `${label}.pesticide_kg_ha`);
+    assertSourcedArray(plant.fertilizer_kg_ha, `${label}.fertilizer_kg_ha`);
+    assertSourcedArray(plant.emissions_per_kg, `${label}.emissions_per_kg`);
+    assertSourcedArray(plant.tillage_events_per_year, `${label}.tillage_events_per_year`);
+    assertSourcedArray(plant.co2_capture_kg_ha_yr, `${label}.co2_capture_kg_ha_yr`);
     db.run(
       'INSERT INTO plants (id, food_id, yield_kg_ha, water_per_kg, soil_erosion, pesticide_kg_ha, fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
       [

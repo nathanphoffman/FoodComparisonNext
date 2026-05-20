@@ -37,7 +37,7 @@ export class FoodQueryPlant implements IFoodQueryPlant {
         this.emissions_per_kg = data.emissions_per_kg === null ? null : new SourcedNumberArray(data.emissions_per_kg);
         this.tillage_events_per_year = data.tillage_events_per_year === null ? null : new SourcedNumberArray(data.tillage_events_per_year);
         this.co2_capture_kg_ha_yr = data.co2_capture_kg_ha_yr === null ? null : new SourcedNumberArray(data.co2_capture_kg_ha_yr);
-        this.pesticides = data.pesticides === null ? null : data.pesticides.map(p => new FoodQueryPesticide(p));
-        this.animal_kills = data.animal_kills === null ? null : data.animal_kills.map(k => new FoodQueryAnimalKill(k));
+        this.pesticides = data.pesticides === null ? null : data.pesticides.map(pesticide => new FoodQueryPesticide(pesticide));
+        this.animal_kills = data.animal_kills === null ? null : data.animal_kills.map(kill => new FoodQueryAnimalKill(kill));
     }
 }

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getDb, getNormalizedDb, rowsToObjects } from '@/lib/db';
+import { getNormalizedDb, rowsToObjects } from '@/lib/db';
 import type { Food } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
@@ -19,6 +19,7 @@ export default async function FoodsPage() {
   WHERE  is_feed = 0
   AND    EXISTS (
     SELECT 1 FROM json_each(tags) WHERE value = 'common'
+  )
 `);
 
   const foods = rowsToObjects(humanFoodsQueryResult) as unknown as Food[];

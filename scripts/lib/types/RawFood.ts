@@ -29,7 +29,7 @@ export class RawFood {
   }
 
   toNormalized(): FoodNormalized {
-    const n = this.nutrition.weightedAverage();
+    const averageNutrition = this.nutrition.weightedAverage();
     return new FoodNormalized({
       food_id: this.data.id,
       is_feed: 0,
@@ -38,11 +38,11 @@ export class RawFood {
       type: this.data.type,
       tags: this.data.tags,
       human_food: this.data.human_food,
-      calories: n?.calories ?? null,
-      fat: n?.fat ?? null,
-      sat_fat: n?.sat_fat ?? null,
-      protein: n?.protein ?? null,
-      fiber: n?.fiber ?? null,
+      calories: averageNutrition?.calories ?? null,
+      fat: averageNutrition?.fat ?? null,
+      sat_fat: averageNutrition?.sat_fat ?? null,
+      protein: averageNutrition?.protein ?? null,
+      fiber: averageNutrition?.fiber ?? null,
       ...(this.plant?.normalizedFields() ?? nullPlantFields),
       ...(this.animal?.normalizedFields() ?? nullAnimalFields),
     });

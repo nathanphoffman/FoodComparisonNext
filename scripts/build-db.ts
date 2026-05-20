@@ -26,15 +26,15 @@ function getConfigLines(): string[] {
 
 function bumpVersion(): string {
   const configLines = getConfigLines();
-  const idx = configLines.findIndex((line) => line.includes('DB_VERSION:'));
-  if (idx === -1) throw new Error('DB_VERSION not found in next.config.ts');
+  const index = configLines.findIndex((line) => line.includes('DB_VERSION:'));
+  if (index === -1) throw new Error('DB_VERSION not found in next.config.ts');
 
-  const line = configLines[idx];
+  const line = configLines[index];
   const start = line.indexOf("'v") + 2;
   const end = line.indexOf("'", start);
   const nextVersion = parseInt(line.slice(start, end), 10) + 1;
 
-  configLines[idx] = line.slice(0, start) + nextVersion + line.slice(end);
+  configLines[index] = line.slice(0, start) + nextVersion + line.slice(end);
   writeFileSync(resolve(root, 'next.config.ts'), configLines.join('\n'));
 
   return `v${nextVersion}`;

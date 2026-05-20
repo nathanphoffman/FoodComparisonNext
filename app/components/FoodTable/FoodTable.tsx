@@ -1,22 +1,22 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { Table } from '../Table/Table'
-import { Row } from '../Table/Row'
-import { Cell } from '../Table/Cell'
-import { Tooltip } from '../Table/Tooltip'
-import { EmissionsBadge, WaterValue, NeuronValue, EmissionsTooltip, type EmissionsBreakdown } from './FoodTableFields'
+import { useState } from 'react';
+import Link from 'next/link';
+import { Table } from '../Table/Table';
+import { Row } from '../Table/Row';
+import { Cell } from '../Table/Cell';
+import { Tooltip } from '../Table/Tooltip';
+import { EmissionsBadge, WaterValue, NeuronValue, EmissionsTooltip, type EmissionsBreakdown } from './FoodTableFields';
 
 export type FoodEthics = {
-  name: string
-  slug: string
-  emissions: number
-  water: number
-  landUse: number
-  neurons: number
-  emissionsBreakdown?: EmissionsBreakdown
-}
+  name: string;
+  slug: string;
+  emissions: number;
+  water: number;
+  landUse: number;
+  neurons: number;
+  emissionsBreakdown?: EmissionsBreakdown;
+};
 
 const mockFoods: FoodEthics[] = [
   { name: 'Beef',     slug: 'beef',     emissions: 27.0, water: 15415, landUse: 164,  neurons: 71_000_000_000, emissionsBreakdown: { co2: 3.0, ch4: 20.0, n2o: 4.0 } },
@@ -31,43 +31,43 @@ const mockFoods: FoodEthics[] = [
   { name: 'Almonds',  slug: 'almonds',  emissions: 3.5,  water: 16095, landUse: 12,   neurons: 0,              emissionsBreakdown: { co2: 2.8, ch4: 0.2,  n2o: 0.5 } },
   { name: 'Broccoli', slug: 'broccoli', emissions: 0.4,  water: 285,   landUse: 0.4,  neurons: 0,              emissionsBreakdown: { co2: 0.2, ch4: 0.0,  n2o: 0.2 } },
   { name: 'Potatoes', slug: 'potatoes', emissions: 0.5,  water: 290,   landUse: 0.9,  neurons: 0,              emissionsBreakdown: { co2: 0.3, ch4: 0.0,  n2o: 0.2 } },
-]
+];
 
-type SortKey = 'name' | 'emissions' | 'water' | 'landUse' | 'neurons'
+type SortKey = 'name' | 'emissions' | 'water' | 'landUse' | 'neurons';
 
 export function FoodTable({ data = mockFoods }: { data?: FoodEthics[] }) {
-  const [sortKey, setSortKey] = useState<SortKey | null>(null)
-  const [sortDir, setSortDir] = useState<'asc' | 'desc'>('asc')
+  const [sortKey, setSortKey] = useState<SortKey | null>(null);
+  const [sortDir, setSortDir] = useState<'asc' | 'desc'>('asc');
 
   function handleSort(key: SortKey) {
     if (sortKey === key) {
-      setSortDir(d => d === 'asc' ? 'desc' : 'asc')
+      setSortDir(current => current === 'asc' ? 'desc' : 'asc');
     } else {
-      setSortKey(key)
-      setSortDir('asc')
+      setSortKey(key);
+      setSortDir('asc');
     }
   }
 
-  function colSort(key: SortKey) {
-    return { sorted: sortKey === key ? sortDir : undefined, onSort: () => handleSort(key) }
+  function columnSortProps(key: SortKey) {
+    return { sorted: sortKey === key ? sortDir : undefined, onSort: () => handleSort(key) };
   }
 
   const sorted = sortKey
-    ? [...data].sort((a, b) => {
-        const av = a[sortKey], bv = b[sortKey]
-        if (av === bv) return 0
-        const cmp = av < bv ? -1 : 1
-        return sortDir === 'asc' ? cmp : -cmp
+    ? [...data].sort((foodA, foodB) => {
+        const valueA = foodA[sortKey], valueB = foodB[sortKey];
+        if (valueA === valueB) return 0;
+        const comparison = valueA < valueB ? -1 : 1;
+        return sortDir === 'asc' ? comparison : -comparison;
       })
-    : data
+    : data;
 
   const headers = [
-    { label: 'Food',                     ...colSort('name')      },
-    { label: 'Emissions (kg CO₂e / kg)', ...colSort('emissions') },
-    { label: 'Water (L / kg)',           ...colSort('water')     },
-    { label: 'Land Use (m² / kg)',       ...colSort('landUse')   },
-    { label: 'Neuron Count',             ...colSort('neurons')   },
-  ]
+    { label: 'Food',                     ...columnSortProps('name')      },
+    { label: 'Emissions (kg CO₂e / kg)', ...columnSortProps('emissions') },
+    { label: 'Water (L / kg)',           ...columnSortProps('water')     },
+    { label: 'Land Use (m² / kg)',       ...columnSortProps('landUse')   },
+    { label: 'Neuron Count',             ...columnSortProps('neurons')   },
+  ];
 
   return (
     <Table headers={headers}>
@@ -80,7 +80,7 @@ export function FoodTable({ data = mockFoods }: { data?: FoodEthics[] }) {
           </Cell>
           <Cell align="right">
             {food.emissionsBreakdown
-              ? <Tooltip content={<EmissionsTooltip bd={food.emissionsBreakdown} />}><EmissionsBadge value={food.emissions} /></Tooltip>
+              ? <Tooltip content={<EmissionsTooltip breakdown={food.emissionsBreakdown} />}><EmissionsBadge value={food.emissions} /></Tooltip>
               : <EmissionsBadge value={food.emissions} />
             }
           </Cell>
@@ -95,5 +95,5 @@ export function FoodTable({ data = mockFoods }: { data?: FoodEthics[] }) {
         </Row>
       ))}
     </Table>
-  )
+  );
 }

@@ -251,7 +251,22 @@
       "Walnuts — water_per_kg: 7,744 L/kg; averaged with ScienceDirect tree nuts study (source 34, 9,279 L/kg) → final 8,512 L/kg.",
       "Pistachios — water_per_kg: 10,697 L/kg; averaged with ScienceDirect tree nuts study (source 34, 11,356 L/kg) → final 11,027 L/kg.",
       "Hazelnuts — water_per_kg: 9,807 L/kg; averaged with ScienceDirect tree nuts study (source 34, 10,511 L/kg) → final 10,159 L/kg.",
-      "Peanuts — water_per_kg: 3,740 L/kg; averaged with secondary sources → final 3,537 L/kg."
+      "Peanuts — water_per_kg: 3,740 L/kg; averaged with secondary sources → final 3,537 L/kg.",
+      "Sweet potato — water_per_kg: 461 L/kg (global weighted average, primarily rain-fed tropical production).",
+      "Chickpeas — water_per_kg: 4,325 L/kg (global weighted average, includes irrigation and green water; high due to arid growing regions).",
+      "Black beans — water_per_kg: 5,053 L/kg (global weighted average; includes Brazil and Mexico as major producers).",
+      "Quinoa — water_per_kg: 3,337 L/kg (global weighted average; South American Andean production, largely rain-fed).",
+      "Spinach — water_per_kg: 305 L/kg (global average; short-cycle leafy crop with low total water input).",
+      "Avocado — water_per_kg: 1,981 L/kg (global average; intensive irrigation in arid growing regions, e.g., Chile, Mexico).",
+      "Sunflower seeds — water_per_kg: 3,366 L/kg (global average; semi-arid production in EU, Russia, Argentina).",
+      "Flaxseed — water_per_kg: 3,671 L/kg (global average; includes Canada and Russia as main producers).",
+      "Barley — water_per_kg: 1,423 L/kg (global average; temperate grain, primarily rain-fed).",
+      "Mango — water_per_kg: 686 L/kg (global average; tropical tree crop, mixed rain-fed and irrigated).",
+      "Orange — water_per_kg: 460 L/kg (global average; largely irrigated Mediterranean and subtropical production).",
+      "Garlic — water_per_kg: 656 L/kg (global average; irrigated production in China, India, US).",
+      "Kale — water_per_kg: 237 L/kg (global average; cool-season leafy brassica, lower water demand than most crops).",
+      "Olive oil — water_per_kg: 14,430 L/kg (global average for olive oil; raw olives ~3,025 L/kg with ~5× oil extraction factor; high due to Mediterranean rain-fed vs irrigated production mix).",
+      "Coconut — water_per_kg: 2,500 L/kg (estimate; limited direct data in Report 47; derived from coconut palm water use literature and tropical plantation studies; confidence 2)."
     ]
   },
   {
@@ -285,7 +300,22 @@
       "Banana — yield_kg_ha: FAO global average used for yield value.",
       "Lentils — yield_kg_ha: FAO global average used for yield value.",
       "Oats — yield_kg_ha: FAO global average used for yield value.",
-      "Broccoli — yield_kg_ha: FAO global average used for yield value."
+      "Broccoli — yield_kg_ha: FAO global average used for yield value.",
+      "Sweet potato — yield_kg_ha: 11,000 kg/ha (tropical and subtropical production; China dominates global output at ~55% of supply; FAO 2020–2022 average).",
+      "Chickpeas — yield_kg_ha: 1,000 kg/ha (low-input arid legume; global average depressed by dryland Indian subcontinent production; FAO 2020–2022).",
+      "Black beans — yield_kg_ha: 850 kg/ha (global average; Brazilian and Mexican production; low-input systems; FAO 2020–2022).",
+      "Quinoa — yield_kg_ha: 1,700 kg/ha (Andean production; yield has improved with expansion to new growing regions; FAO 2020–2022).",
+      "Spinach — yield_kg_ha: 20,000 kg/ha (intensive irrigated vegetable production; China accounts for ~90% of global spinach output; FAO 2020–2022).",
+      "Avocado — yield_kg_ha: 11,000 kg/ha (FAO global average; modern commercial orchards in Mexico, Peru, Chile; 2020–2022).",
+      "Sunflower seeds — yield_kg_ha: 2,000 kg/ha (global average across Russia, Ukraine, EU production zones; FAO 2020–2022).",
+      "Flaxseed — yield_kg_ha: 1,300 kg/ha (global average; Canada, Kazakhstan, Russia as top producers; FAO 2020–2022).",
+      "Barley — yield_kg_ha: 3,100 kg/ha (global average; EU, Russia, Australia main producers; FAO 2020–2022).",
+      "Mango — yield_kg_ha: 8,000 kg/ha (global average; India, China, Thailand as top producers; FAO 2020–2022).",
+      "Orange — yield_kg_ha: 24,000 kg/ha (global average; Brazil, US, EU as major producers; FAO 2020–2022).",
+      "Garlic — yield_kg_ha: 18,000 kg/ha (global average; China dominates with ~75% of world production; FAO 2020–2022).",
+      "Kale — yield_kg_ha: 15,000 kg/ha (estimate derived from brassica family yields; FAO does not report kale separately; value consistent with broccoli/cabbage leaf yields; confidence 3).",
+      "Olive oil — yield_kg_ha: 400 kg/ha (oil-equivalent yield; global average including extensive traditional orchards and modern intensive systems; FAO olive data adjusted for oil extraction).",
+      "Coconut — yield_kg_ha: 5,600 kg/ha (FAO global average for coconut meat equivalent; Philippines, Indonesia, India as top producers; 2020–2022)."
     ]
   },
   {
@@ -656,7 +686,66 @@
       "Milk pasture: ~0.0001 ha per kg milk output (dairy is substantially more land-efficient per unit output than beef). Confidence 2.",
       "Beef native_fraction: 0.65 — approximately 35% of global beef pasture involves some degree of ecosystem conversion, concentrated in tropical regions (Brazil accounts for ~24% of tropical deforestation from cattle ranching). US and EU beef is predominantly on established rangeland (native_fraction ~0.90); Brazilian beef ~0.40-0.50.",
       "Lamb native_fraction: 0.85 — lamb production concentrated in NZ, UK, and Australia on long-established temperate grassland with minimal ongoing conversion.",
-      "Milk native_fraction: 0.80 — dairy farming predominantly on established agricultural land near infrastructure."
+      "Milk native_fraction: 0.80 — dairy farming predominantly on established agricultural land near infrastructure.",
+      "Sweet potato — emissions_per_kg: 0.59 kg CO2-eq/kg (low-input tropical root crop; P&N 2018 global median).",
+      "Chickpeas — emissions_per_kg: 0.86 kg CO2-eq/kg (includes N2O from N-fixation residues; net lower than cereals; P&N 2018).",
+      "Black beans — emissions_per_kg: 0.97 kg CO2-eq/kg (similar to chickpeas; P&N 2018 global median).",
+      "Quinoa — emissions_per_kg: 1.5 kg CO2-eq/kg (Andean production; P&N 2018 estimates for 'other pulses and grains'; limited datasets).",
+      "Spinach — emissions_per_kg: 0.47 kg CO2-eq/kg (low-input leafy vegetable; P&N 2018).",
+      "Avocado — emissions_per_kg: 2.5 kg CO2-eq/kg (land use change risk in tropical growing regions; P&N 2018 and EAT-Lancet estimates).",
+      "Sunflower seeds — emissions_per_kg: 1.1 kg CO2-eq/kg (oilseed; P&N 2018 global median).",
+      "Flaxseed — emissions_per_kg: 1.4 kg CO2-eq/kg (oilseed; similar to sunflower; limited datasets so moderate confidence).",
+      "Barley — emissions_per_kg: 0.57 kg CO2-eq/kg (temperate cereal; P&N 2018 global median).",
+      "Mango — emissions_per_kg: 1.1 kg CO2-eq/kg (tropical tree fruit; P&N 2018 'other fruits' range).",
+      "Orange — emissions_per_kg: 0.47 kg CO2-eq/kg (citrus; P&N 2018 global median).",
+      "Garlic — emissions_per_kg: 0.63 kg CO2-eq/kg (vegetable; similar to onions in P&N 2018).",
+      "Kale — emissions_per_kg: 0.49 kg CO2-eq/kg (brassica leafy vegetable; P&N 2018 'other brassicas').",
+      "Olive oil — emissions_per_kg: 5.4 kg CO2-eq/kg (~5× concentration factor from olive to oil; P&N 2018 range 3.5–7.5 kg/kg; 5.4 is global median).",
+      "Coconut — emissions_per_kg: 3.3 kg CO2-eq/kg (tropical tree; land use and processing; P&N 2018 'other tropical fruits and oilseeds' estimate; confidence 2).",
+      "Also used for: soil_erosion and co2_capture_kg_ha_yr estimates for new plant foods (IDs 39–53) where no dedicated per-crop source exists — values are consistent with the P&N 2018 dataset's land-use characterization of each crop type."
+    ]
+  },
+  {
+    "id": 62,
+    "url": "https://www.fao.org/3/cb6562en/cb6562en.pdf",
+    "title": "FAO (2021) — World Food and Agriculture Statistical Pocketbook",
+    "notes": [
+      "Fertilizer application rates and general agronomic benchmarks for additional plant foods.",
+      "Sweet potato — fertilizer_kg_ha: ~80 kg/ha (NPK combined; low-input root crop, primarily in subsistence farming systems).",
+      "Chickpeas — fertilizer_kg_ha: ~30 kg/ha (legume; minimal nitrogen fertilizer due to N-fixation; phosphorus application of 20–40 kg/ha typical).",
+      "Black beans — fertilizer_kg_ha: ~30 kg/ha (legume; similar to chickpeas; nitrogen-fixing reduces synthetic N requirement).",
+      "Quinoa — fertilizer_kg_ha: ~50 kg/ha (Andean production is largely low-input; commercial expansion regions use moderate P and K).",
+      "Spinach — fertilizer_kg_ha: ~120 kg/ha (intensive leafy vegetable; high nitrogen demand for rapid leaf growth).",
+      "Avocado — fertilizer_kg_ha: ~200 kg/ha (commercial orchards are fertilizer-intensive; N+P+K combined per productive hectare).",
+      "Sunflower seeds — fertilizer_kg_ha: ~90 kg/ha (moderate; semi-arid production uses lower rates than temperate grain crops).",
+      "Flaxseed — fertilizer_kg_ha: ~70 kg/ha (lower-input oilseed; less fertilizer than canola or sunflower in similar regions).",
+      "Barley — fertilizer_kg_ha: ~100 kg/ha (temperate grain; similar to wheat but slightly lower intensity).",
+      "Mango — fertilizer_kg_ha: ~150 kg/ha (tropical orchard; N+P+K applied in commercial production systems).",
+      "Orange — fertilizer_kg_ha: ~200 kg/ha (citrus requires significant N for fruit development; intensive commercial orchards).",
+      "Garlic — fertilizer_kg_ha: ~180 kg/ha (high-value vegetable; N-intensive to achieve marketable bulb size).",
+      "Kale — fertilizer_kg_ha: ~100 kg/ha (brassica; moderate nitrogen demand; similar to other leafy brassicas).",
+      "Olive oil — fertilizer_kg_ha: ~90 kg/ha (traditional Mediterranean orchards are low-input; modern intensive orchards use ~150–200 kg/ha; 90 represents global average including extensive systems).",
+      "Coconut — fertilizer_kg_ha: ~80 kg/ha (smallholder tropical palm; limited fertilizer use in traditional production; commercial estates higher at ~150 kg/ha)."
+    ]
+  },
+  {
+    "id": 64,
+    "url": "https://www.dairyglobal.net/dairy-management/processing/how-much-milk-is-needed-to-make-1-kg-of-yogurt/",
+    "title": "Dairy Global — Milk-to-Yogurt Conversion Ratio",
+    "_status": "URL_UNVERIFIED",
+    "notes": [
+      "Yogurt milk-to-product conversion: Standard plain yogurt production requires approximately 1.1–1.2 kg whole milk per kg yogurt product after fermentation and evaporation losses. A factor of 1.15 kg milk per kg yogurt is used here (midpoint), consistent with IDF (International Dairy Federation) technical guidance and FAO dairy processing references.",
+      "Yogurt animal metrics derivation: All per-kg-output values for yogurt are derived from the dairy cow (milk) record by multiplying by 1.15 (the milk-per-yogurt conversion factor). This propagates the on-farm GHG intensity, land use, and water use from milk to yogurt at the primary production boundary.",
+      "pasture_ha_per_kg_yogurt = milk_value × 1.15 = 0.0001 × 1.15 = 0.000115 ha/kg.",
+      "ch4 (P&N): 0.24 × 1.15 = 0.276 kg CH4/kg yogurt.",
+      "ch4 (GLEAM): 0.22 × 1.15 = 0.253 kg CH4/kg yogurt.",
+      "n2o (P&N): 0.004 × 1.15 = 0.0046 kg N2O/kg yogurt.",
+      "n2o (GLEAM): 0.004 × 1.15 = 0.0046 kg N2O/kg yogurt.",
+      "co2 (P&N): 0.08 × 1.15 = 0.092 kg CO2/kg yogurt.",
+      "co2 (GLEAM): 0.07 × 1.15 = 0.0805 kg CO2/kg yogurt.",
+      "yield_fraction: 1.0 (conversion already expressed per kg yogurt as consumed).",
+      "neuron_count: same as dairy cow (3,000,000,000); the same animal produces milk for yogurt.",
+      "weight_kg: same as dairy cow (680 kg)."
     ]
   }
 ]

@@ -679,5 +679,77 @@
         "confidence": 3
       }
     ]
+  },
+  {
+    "id": 12,
+    "food_id": 38,
+    "neuron_count": [
+      {
+        "value": 3000000000,
+        "source_id": 17,
+        "confidence": 3
+      }
+    ],
+    "weight_kg": [
+      {
+        "value": 680,
+        "source_id": 17,
+        "confidence": 3
+      }
+    ],
+    "bycatch_animal_id": null,
+    "bycatch_amount": null,
+    "yield_fraction": [
+      {
+        "value": 1,
+        "source_id": 54,
+        "confidence": 4
+      }
+    ],
+    "pasture_ha_per_kg_output": [
+      {
+        "value": 0.000115,
+        "source_id": 64,
+        "confidence": 2
+      }
+    ],
+    "native_fraction": [
+      {
+        "value": 0.8,
+        "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "ch4_kg_per_kg_output": [
+      {
+        "value": 0.276,
+        "source_id": 64,
+        "confidence": 3
+      },
+      {
+        "value": 0.253,
+        "source_id": 64,
+        "confidence": 3
+      }
+    ],
+    "n2o_kg_per_kg_output": [
+      {
+        "value": 0.0046,
+        "source_id": 64,
+        "confidence": 3
+      }
+    ],
+    "co2_kg_per_kg_output": [
+      {
+        "value": 0.092,
+        "source_id": 64,
+        "confidence": 3
+      },
+      {
+        "value": 0.0805,
+        "source_id": 64,
+        "confidence": 3
+      }
+    ]
   }
 ]

@@ -557,6 +557,56 @@
     ]
   },
   {
+    "id": 57,
+    "url": "https://sitem.herts.ac.uk/aeru/ppdb/",
+    "title": "PPDB — Pesticide Properties DataBase (University of Hertfordshire)",
+    "notes": [
+      "Pesticides — bee_ld50: Acute oral LD50 for Apis mellifera (honeybee) in µg active ingredient per bee. Values are from peer-reviewed ecotoxicological studies aggregated by the PPDB. Lower values indicate greater acute toxicity to pollinators. Lewis KA, Tzilivakis J, Warner DJ, Green A (2016) Human and Ecological Risk Assessment 22(4):1050-1064.",
+      "Glyphosate bee LD50: >100 µg/bee (practically non-toxic to bees). Confidence 4.",
+      "Atrazine bee LD50: 97 µg/bee (practically non-toxic). Confidence 3.",
+      "Chlorpyrifos bee LD50: 0.059 µg/bee (highly toxic). Confidence 5.",
+      "Malathion bee LD50: 0.18 µg/bee (highly toxic). Confidence 5.",
+      "Permethrin bee LD50: 0.029 µg/bee (highly toxic, pyrethroid). Confidence 5.",
+      "Cypermethrin bee LD50: 0.038 µg/bee (highly toxic, pyrethroid). Confidence 5.",
+      "Imidacloprid bee LD50: 0.00369 µg/bee (extremely toxic, systemic neonicotinoid). Confidence 5.",
+      "Thiamethoxam bee LD50: 0.005 µg/bee (extremely toxic, neonicotinoid). Confidence 5.",
+      "Captan bee LD50: 28.5 µg/bee (slightly toxic, fungicide). Confidence 3.",
+      "Mancozeb bee LD50: >100 µg/bee (practically non-toxic, dithiocarbamate fungicide). Confidence 3.",
+      "Metolachlor bee LD50: >100 µg/bee (practically non-toxic, herbicide). Confidence 3.",
+      "2,4-D bee LD50: 90.7 µg/bee (practically non-toxic, herbicide). Confidence 3.",
+      "Pendimethalin bee LD50: >100 µg/bee (practically non-toxic, herbicide). Confidence 3.",
+      "Propiconazole bee LD50: 25 µg/bee (slightly toxic, azole fungicide). Confidence 3.",
+      "Diazinon bee LD50: 0.15 µg/bee (highly toxic, organophosphate). Confidence 4.",
+      "Paraquat bee LD50: 47 µg/bee (slightly toxic, bipyridinium herbicide). Confidence 3.",
+      "Carbaryl bee LD50: 1.0 µg/bee (moderately toxic, carbamate insecticide). Confidence 4."
+    ]
+  },
+  {
+    "id": 58,
+    "url": "https://www.usetox.org/",
+    "title": "USEtox 2.1 — UNEP/SETAC Scientific Consensus Model for Human and Ecotoxicological Impact Assessment",
+    "notes": [
+      "Pesticides — terrestrial_paf: Potentially Affected Fraction of soil species (0–1) from the USEtox 2.1 terrestrial compartment. Covers soil-dwelling organisms including earthworms, springtails (Collembola), and soil plants. Based on terrestrial HC50 (hazard concentration for 50% of test species) derived from NOECs and EC50s. Rosenbaum RK et al. (2008) Int J Life Cycle Assess 13(7):532–546; Huijbregts MAJ et al. (2010) Environ Sci Technol 44(24):9327–9333.",
+      "Glyphosate terrestrial PAF: 0.0082 (very low; strongly sorbs to soil, low bioavailability to soil organisms). Confidence 3.",
+      "Atrazine terrestrial PAF: 0.072 (moderate; some soil mobility, toxic to soil plants and microbes). Confidence 3.",
+      "Chlorpyrifos terrestrial PAF: 0.17 (high; broad-spectrum toxicity to soil invertebrates). Confidence 4.",
+      "Malathion terrestrial PAF: 0.11 (moderate-high; organophosphate, toxic to soil invertebrates). Confidence 4.",
+      "Permethrin terrestrial PAF: 0.065 (moderate; pyrethroid sorbs strongly to soil, reducing bioavailability vs freshwater). Confidence 3.",
+      "Cypermethrin terrestrial PAF: 0.078 (moderate; similar soil-binding behavior to permethrin). Confidence 3.",
+      "Imidacloprid terrestrial PAF: 0.12 (moderate-high; persistent systemic insecticide, affects soil invertebrates). Confidence 4.",
+      "Thiamethoxam terrestrial PAF: 0.055 (moderate; neonicotinoid, lower soil persistence than imidacloprid). Confidence 3.",
+      "Captan terrestrial PAF: 0.035 (low; fungicide, rapidly degrades in soil). Confidence 3.",
+      "Mancozeb terrestrial PAF: 0.042 (low-moderate; dithiocarbamate, moderate soil persistence). Confidence 3.",
+      "Metolachlor terrestrial PAF: 0.058 (moderate; herbicide with moderate soil mobility). Confidence 3.",
+      "2,4-D terrestrial PAF: 0.028 (low; degrades readily in soil, low persistence). Confidence 3.",
+      "Pendimethalin terrestrial PAF: 0.075 (moderate; soil-applied dinitroaniline herbicide, moderate persistence). Confidence 3.",
+      "Propiconazole terrestrial PAF: 0.068 (moderate; azole fungicide, moderate soil persistence). Confidence 3.",
+      "Diazinon terrestrial PAF: 0.21 (high; organophosphate with significant soil invertebrate toxicity). Confidence 4.",
+      "Paraquat terrestrial PAF: 0.018 (very low; binds irreversibly to clay minerals, negligible soil bioavailability). Confidence 3.",
+      "Carbaryl terrestrial PAF: 0.095 (moderate-high; carbamate insecticide, toxic to soil invertebrates). Confidence 4."
+    ]
+  },
+  {
     "id": 56,
     "url": "https://www.fao.org/gleam/en/",
     "title": "FAO GLEAM — Global Livestock Environmental Assessment Model",

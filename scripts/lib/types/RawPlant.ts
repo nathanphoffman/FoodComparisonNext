@@ -34,19 +34,49 @@ export class RawPlant {
     this.co2_capture_kg_ha_yr = new SourcedNumberArray(data.co2_capture_kg_ha_yr ?? []);
   }
 
-  get avgPesticideWeightedPaf(): number | null {
+  get avgPesticideWeightedFreshwaterPaf(): number | null {
     if (this.associations.length === 0) return null;
     let totalKgHa = 0;
-    let weightedPotentiallyAffectedFractionSum = 0;
+    let weightedSum = 0;
     for (const { plantPesticide, pesticide } of this.associations) {
       const avgKgHa = plantPesticide.kg_ha?.weightedAverage() ?? null;
-      const avgPotentiallyAffectedFraction = pesticide.paf.weightedAverage();
-      if (avgKgHa != null && avgPotentiallyAffectedFraction != null) {
-        weightedPotentiallyAffectedFractionSum += avgKgHa * avgPotentiallyAffectedFraction;
+      const avgPaf = pesticide.freshwaterPaf.weightedAverage();
+      if (avgKgHa != null && avgPaf != null) {
+        weightedSum += avgKgHa * avgPaf;
         totalKgHa += avgKgHa;
       }
     }
-    return totalKgHa > 0 ? weightedPotentiallyAffectedFractionSum / totalKgHa : null;
+    return totalKgHa > 0 ? weightedSum / totalKgHa : null;
+  }
+
+  get avgPesticideWeightedTerrestrialPaf(): number | null {
+    if (this.associations.length === 0) return null;
+    let totalKgHa = 0;
+    let weightedSum = 0;
+    for (const { plantPesticide, pesticide } of this.associations) {
+      const avgKgHa = plantPesticide.kg_ha?.weightedAverage() ?? null;
+      const avgPaf = pesticide.terrestrialPaf.weightedAverage();
+      if (avgKgHa != null && avgPaf != null) {
+        weightedSum += avgKgHa * avgPaf;
+        totalKgHa += avgKgHa;
+      }
+    }
+    return totalKgHa > 0 ? weightedSum / totalKgHa : null;
+  }
+
+  get avgPesticideWeightedBeeHazard(): number | null {
+    if (this.associations.length === 0) return null;
+    let totalKgHa = 0;
+    let weightedSum = 0;
+    for (const { plantPesticide, pesticide } of this.associations) {
+      const avgKgHa = plantPesticide.kg_ha?.weightedAverage() ?? null;
+      const avgLd50 = pesticide.beeLd50.weightedAverage();
+      if (avgKgHa != null && avgLd50 != null && avgLd50 > 0) {
+        weightedSum += avgKgHa * (1 / avgLd50);
+        totalKgHa += avgKgHa;
+      }
+    }
+    return totalKgHa > 0 ? weightedSum / totalKgHa : null;
   }
 
   get avgPesticideKgPerKgFood(): number | null {
@@ -66,7 +96,9 @@ export class RawPlant {
       emissions_per_kg: this.emissions_per_kg.weightedAverage(),
       tillage_events_per_year: this.tillage_events_per_year.weightedAverage(),
       co2_capture_kg_ha_yr: this.co2_capture_kg_ha_yr.weightedAverage(),
-      pesticide_weighted_paf: this.avgPesticideWeightedPaf,
+      pesticide_freshwater_paf: this.avgPesticideWeightedFreshwaterPaf,
+      pesticide_terrestrial_paf: this.avgPesticideWeightedTerrestrialPaf,
+      pesticide_bee_hazard: this.avgPesticideWeightedBeeHazard,
       pesticide_kg_per_kg_food: this.avgPesticideKgPerKgFood,
     };
   }

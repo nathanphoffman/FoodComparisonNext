@@ -21,7 +21,9 @@ export interface IFoodNormalized {
   emissions_per_kg: number | null;
   tillage_events_per_year: number | null;
   co2_capture_kg_ha_yr: number | null;
-  pesticide_weighted_paf: number | null;
+  pesticide_freshwater_paf: number | null;
+  pesticide_terrestrial_paf: number | null;
+  pesticide_bee_hazard: number | null;
   pesticide_kg_per_kg_food: number | null;
   // animal metrics (NULL for plant foods and feed rows)
   neuron_count: number | null;
@@ -38,7 +40,8 @@ export interface IFoodNormalized {
 export type PlantNormalizedFields = Pick<IFoodNormalized,
   | 'yield_kg_ha' | 'water_per_kg' | 'soil_erosion' | 'pesticide_kg_ha'
   | 'fertilizer_kg_ha' | 'emissions_per_kg' | 'tillage_events_per_year'
-  | 'co2_capture_kg_ha_yr' | 'pesticide_weighted_paf' | 'pesticide_kg_per_kg_food'
+  | 'co2_capture_kg_ha_yr' | 'pesticide_freshwater_paf' | 'pesticide_terrestrial_paf'
+  | 'pesticide_bee_hazard' | 'pesticide_kg_per_kg_food'
 >;
 
 export type AnimalNormalizedFields = Pick<IFoodNormalized,
@@ -68,7 +71,9 @@ export class FoodNormalized implements IFoodNormalized {
   emissions_per_kg!: number | null;
   tillage_events_per_year!: number | null;
   co2_capture_kg_ha_yr!: number | null;
-  pesticide_weighted_paf!: number | null;
+  pesticide_freshwater_paf!: number | null;
+  pesticide_terrestrial_paf!: number | null;
+  pesticide_bee_hazard!: number | null;
   pesticide_kg_per_kg_food!: number | null;
   neuron_count!: number | null;
   weight_kg!: number | null;
@@ -92,7 +97,8 @@ export class FoodNormalized implements IFoodNormalized {
       this.calories, this.fat, this.sat_fat, this.protein, this.fiber,
       this.yield_kg_ha, this.water_per_kg, this.soil_erosion, this.pesticide_kg_ha,
       this.fertilizer_kg_ha, this.emissions_per_kg, this.tillage_events_per_year,
-      this.co2_capture_kg_ha_yr, this.pesticide_weighted_paf, this.pesticide_kg_per_kg_food,
+      this.co2_capture_kg_ha_yr, this.pesticide_freshwater_paf, this.pesticide_terrestrial_paf,
+      this.pesticide_bee_hazard, this.pesticide_kg_per_kg_food,
       this.neuron_count, this.weight_kg, this.yield_fraction,
       this.pasture_ha_per_kg_output, this.native_fraction, this.bycatch_amount,
       this.ch4_kg_per_kg_output, this.n2o_kg_per_kg_output, this.co2_kg_per_kg_output,

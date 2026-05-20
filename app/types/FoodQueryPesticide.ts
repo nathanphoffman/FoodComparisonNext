@@ -2,18 +2,18 @@ import { SourcedNumberArray } from './Sourced';
 
 export interface IFoodQueryPesticide {
     name: string;
-    paf: SourcedNumberArray;
+    freshwater_paf: SourcedNumberArray;
     kg_ha: SourcedNumberArray | null;
 }
 
 export class FoodQueryPesticide implements IFoodQueryPesticide {
     name!: string;
-    paf!: SourcedNumberArray;
+    freshwater_paf!: SourcedNumberArray;
     kg_ha!: SourcedNumberArray | null;
 
     constructor(data: IFoodQueryPesticide) {
         Object.assign(this, data);
-        this.paf = new SourcedNumberArray(data.paf);
+        this.freshwater_paf = new SourcedNumberArray(data.freshwater_paf);
         this.kg_ha = data.kg_ha === null ? null : new SourcedNumberArray(data.kg_ha);
     }
 }

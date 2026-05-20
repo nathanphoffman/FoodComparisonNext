@@ -64,9 +64,11 @@ CREATE TABLE IF NOT EXISTS animal_feed (
 );
 
 CREATE TABLE IF NOT EXISTS pesticides (
-    id   INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT    NOT NULL UNIQUE,
-    paf  TEXT    NOT NULL  -- json array of {value: 0-1, source_id, confidence}
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    name            TEXT    NOT NULL UNIQUE,
+    freshwater_paf  TEXT    NOT NULL,  -- json array of {value: 0-1, source_id, confidence}
+    terrestrial_paf TEXT,              -- json array of {value: 0-1, source_id, confidence}
+    bee_ld50        TEXT               -- json array of {value: µg a.i./bee, source_id, confidence}
 );
 
 CREATE TABLE IF NOT EXISTS plant_pesticides (

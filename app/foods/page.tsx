@@ -11,7 +11,7 @@ export default async function FoodsPage() {
          calories, fat, sat_fat, protein, fiber,
          yield_kg_ha, water_per_kg, soil_erosion, pesticide_kg_ha,
          fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr,
-         pesticide_weighted_paf, pesticide_kg_per_kg_food,
+         pesticide_freshwater_paf, pesticide_terrestrial_paf, pesticide_bee_hazard, pesticide_kg_per_kg_food,
          neuron_count, weight_kg, yield_fraction, pasture_ha_per_kg_output,
          native_fraction, bycatch_amount,
          ch4_kg_per_kg_output, n2o_kg_per_kg_output, co2_kg_per_kg_output

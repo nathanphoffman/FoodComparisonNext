@@ -74,7 +74,9 @@ export interface PlantAnimalKill {
 export interface Pesticide {
   id: number;
   name: string;
-  paf: ISourced<number>[];
+  freshwater_paf: ISourced<number>[];
+  terrestrial_paf: ISourced<number>[] | null;
+  bee_ld50: ISourced<number>[] | null;
 }
 
 export interface PlantPesticide {

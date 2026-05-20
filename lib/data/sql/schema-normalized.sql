@@ -24,7 +24,9 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     emissions_per_kg         REAL,
     tillage_events_per_year  REAL,
     co2_capture_kg_ha_yr     REAL,
-    pesticide_weighted_paf   REAL,
+    pesticide_freshwater_paf REAL,
+    pesticide_terrestrial_paf REAL,
+    pesticide_bee_hazard     REAL,
     pesticide_kg_per_kg_food REAL,
 
     -- animal metrics (NULL for plant foods and feed rows)

@@ -52,6 +52,8 @@ export class RawAnimal {
     let emissions = 0, water = 0, soilErosion = 0;
     let fertilizerKgHa = 0, tillage = 0, co2Capture = 0, pesticideKgPerKg = 0;
     let potentiallyAffectedFractionNumerator = 0, potentiallyAffectedFractionDenominator = 0;
+    let terrestrialPafNumerator = 0, terrestrialPafDenominator = 0;
+    let beeHazardNumerator = 0, beeHazardDenominator = 0;
 
     for (const { feed, plant } of this.feedEntries) {
       const feedRatio = feed.kg_feed_per_kg_output.weightedAverage();
@@ -65,7 +67,9 @@ export class RawAnimal {
       const avgTillage = plant.tillage_events_per_year.weightedAverage();
       const avgCo2 = plant.co2_capture_kg_ha_yr.weightedAverage();
       const avgPesticideKgPerKg = plant.avgPesticideKgPerKgFood;
-      const avgPotentiallyAffectedFraction = plant.avgPesticideWeightedPaf;
+      const avgPotentiallyAffectedFraction = plant.avgPesticideWeightedFreshwaterPaf;
+      const avgTerrestrialPaf = plant.avgPesticideWeightedTerrestrialPaf;
+      const avgBeeHazard = plant.avgPesticideWeightedBeeHazard;
 
       if (avgEmissions != null) emissions += feedRatio * avgEmissions;
       if (avgWater != null) water += feedRatio * avgWater;
@@ -83,6 +87,14 @@ export class RawAnimal {
           potentiallyAffectedFractionNumerator += feedRatio * avgPesticideKgPerKg * avgPotentiallyAffectedFraction;
           potentiallyAffectedFractionDenominator += feedRatio * avgPesticideKgPerKg;
         }
+        if (avgTerrestrialPaf != null) {
+          terrestrialPafNumerator += feedRatio * avgPesticideKgPerKg * avgTerrestrialPaf;
+          terrestrialPafDenominator += feedRatio * avgPesticideKgPerKg;
+        }
+        if (avgBeeHazard != null) {
+          beeHazardNumerator += feedRatio * avgPesticideKgPerKg * avgBeeHazard;
+          beeHazardDenominator += feedRatio * avgPesticideKgPerKg;
+        }
       }
     }
 
@@ -95,7 +107,9 @@ export class RawAnimal {
       emissions_per_kg: emissions || null,
       tillage_events_per_year: tillage || null,
       co2_capture_kg_ha_yr: co2Capture || null,
-      pesticide_weighted_paf: potentiallyAffectedFractionDenominator > 0 ? potentiallyAffectedFractionNumerator / potentiallyAffectedFractionDenominator : null,
+      pesticide_freshwater_paf: potentiallyAffectedFractionDenominator > 0 ? potentiallyAffectedFractionNumerator / potentiallyAffectedFractionDenominator : null,
+      pesticide_terrestrial_paf: terrestrialPafDenominator > 0 ? terrestrialPafNumerator / terrestrialPafDenominator : null,
+      pesticide_bee_hazard: beeHazardDenominator > 0 ? beeHazardNumerator / beeHazardDenominator : null,
       pesticide_kg_per_kg_food: pesticideKgPerKg || null,
     };
   }

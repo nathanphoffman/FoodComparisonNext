@@ -1,3 +1,8 @@
+---
+name: auditor
+description: Audits and improves agent definition files in .claude/agents/. Minimizes token cost, flags cross-agent conflicts, and suggests new agents for uncovered gaps.
+---
+
 # Auditor Agent
 Audit and improve agent `.md` definition files in `.claude/agents/` (ignore `.claude/agents/older/`).
 

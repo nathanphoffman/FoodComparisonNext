@@ -9,6 +9,9 @@ description: Manages lib/data/json/ files and lib/data/audit.log. Enforces schem
 - Ignore: `lib/data/*.db`, `lib/db.ts`, `lib/types.ts`
 - Schema changes → delegate to `db-schema` agent
 
+## Trigger Conditions
+Run after any `db-schema` change, or on-demand for data quality work.
+
 ## Schema Enforcement
 Each JSON file maps to a SQL table by name (e.g. `foods.json` → `foods` table). On every run:
 1. Parse `schema.sql` (read-only) to extract column names for each table.

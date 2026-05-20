@@ -1,150 +1,156 @@
+'use client';
 
 // BEST PRACTICES AGENT: IGNORE THIS FILE, IT IS A RARE EXCEPTION TO THE 1 COMPONENT 1 FILE RULE
-export type EmissionsBreakdown = { co2: number; ch4: number; n2o: number };
-export type NutritionDetail   = { protein: number; fiber: number; saturatedFat: number; calories: number; sodium: number | null; carbs: number | null; sugar: number | null; cholesterol: number | null; transFat: number | null; glycemicIndex: number | null };
-export type LandUseDetail     = { type: 'plant' | 'animal'; yieldKilogramsPerHectare: number | null; pastureHectaresPerKilogram: number | null };
-export type IntelligenceDetail = { neuronCount: number; weightKg: number | null; yieldFraction: number | null };
 
-// ─── Emissions ───────────────────────────────────────────────────────────────
+import Link from 'next/link';
+import { Cell } from '../Table/Cell';
+import { Tooltip } from '../Table/Tooltip';
+import {
+  type EmissionsBreakdown,
+  type NutritionDetail,
+  type LandUseDetail,
+  type IntelligenceDetail,
+  ONE_BILLION,
+  formatNeurons,
+  formatIntelligenceValue,
+  getIntelligenceColor,
+  getEmissionsColor,
+  getWaterColor,
+  getNutritionScoreColor,
+  getLandUseColor,
+} from './FoodTableCalculations';
+import {
+  EmissionsTooltip,
+  NutritionTooltip,
+  LandUseTooltip,
+  IntelligenceTooltip,
+} from './FoodTableTooltips';
+
+export type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail };
+
+// ─── Name ─────────────────────────────────────────────────────────────────────
+
+export function NameCell({ name, slug }: { name: string; slug: string }) {
+  return (
+    <Cell key="name">
+      <Link href={`/foods/${slug}`} className="font-medium text-neutral-900 hover:text-blue-600 transition-colors">
+        {name}
+      </Link>
+    </Cell>
+  );
+}
+
+// ─── Emissions ────────────────────────────────────────────────────────────────
 
 export function EmissionsBadge({ value }: { value: number }) {
-  const color = value < 2  ? 'bg-green-100 text-green-700'
-    : value < 10 ? 'bg-yellow-100 text-yellow-700'
-    :              'bg-red-100 text-red-700';
   return (
-    <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${color}`}>
+    <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${getEmissionsColor(value)}`}>
       {value.toFixed(1)}
     </span>
   );
 }
 
-export function EmissionsTooltip({ breakdown }: { breakdown: EmissionsBreakdown }) {
+export function EmissionsCell({ value, breakdown }: { value: number | null; breakdown?: EmissionsBreakdown }) {
   return (
-    <div className="space-y-1">
-      <div className="font-semibold text-neutral-300 mb-1.5">Emissions breakdown</div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">CO₂</span><span>{breakdown.co2.toFixed(1)} kg</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">CH₄ (as CO₂e)</span><span>{breakdown.ch4.toFixed(1)} kg</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">N₂O (as CO₂e)</span><span>{breakdown.n2o.toFixed(1)} kg</span></div>
-    </div>
+    <Cell key="emissions" align="right">
+      {value != null
+        ? breakdown
+          ? <Tooltip content={<EmissionsTooltip breakdown={breakdown} />}><EmissionsBadge value={value} /></Tooltip>
+          : <EmissionsBadge value={value} />
+        : <span className="text-neutral-400">—</span>
+      }
+    </Cell>
   );
 }
 
-// ─── Water ───────────────────────────────────────────────────────────────────
+// ─── Water ────────────────────────────────────────────────────────────────────
 
 export function WaterValue({ value }: { value: number }) {
-  const color = value < 2000 ? 'text-sky-600' : value < 8000 ? 'text-amber-600' : 'text-red-600';
-  return <span className={color}>{value.toLocaleString()}</span>;
+  return <span className={getWaterColor(value)}>{value.toLocaleString()}</span>;
 }
 
-// ─── Nutrition ───────────────────────────────────────────────────────────────
-
-export function NutritionTooltip({ detail }: { detail: NutritionDetail }) {
-  const scale = detail.calories > 0 ? 100 / detail.calories : 0;
+export function WaterCell({ value }: { value: number | null }) {
   return (
-    <div className="space-y-1">
-      <div className="font-semibold text-neutral-300 mb-1.5">Nutrition (per 100 cal)</div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Protein</span><span>{(detail.protein * scale).toFixed(1)} g</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Fiber</span><span>{(detail.fiber * scale).toFixed(1)} g</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Sat. fat</span><span>{(detail.saturatedFat * scale).toFixed(1)} g</span></div>
-      {detail.transFat != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Trans fat</span><span>{(detail.transFat * scale).toFixed(1)} g</span></div>}
-      {detail.carbs != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Carbs</span><span>{(detail.carbs * scale).toFixed(1)} g</span></div>}
-      {detail.sugar != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sugar</span><span>{(detail.sugar * scale).toFixed(1)} g</span></div>}
-      {detail.sodium != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sodium</span><span>{(detail.sodium * scale * 1000).toFixed(0)} mg</span></div>}
-      {detail.cholesterol != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Cholesterol</span><span>{(detail.cholesterol * scale * 1000).toFixed(0)} mg</span></div>}
-      {detail.glycemicIndex != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Glycemic index</span><span>{detail.glycemicIndex.toFixed(0)}</span></div>}
-    </div>
+    <Cell key="water" align="right">
+      {value != null
+        ? <WaterValue value={value} />
+        : <span className="text-neutral-400">—</span>
+      }
+    </Cell>
   );
 }
 
+// ─── Nutrition ────────────────────────────────────────────────────────────────
+
 export function NutritionScore({ score }: { score: number }) {
-  const color = score > 3 ? 'bg-green-100 text-green-700'
-    : score > 1 ? 'bg-yellow-100 text-yellow-700'
-    :             'bg-red-100 text-red-700';
   return (
-    <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${color}`}>
+    <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${getNutritionScoreColor(score)}`}>
       {score.toFixed(1)}
     </span>
   );
 }
 
-// ─── Land Use ────────────────────────────────────────────────────────────────
-
-export function LandUseTooltip({ detail }: { detail: LandUseDetail }) {
+export function NutritionScoreCell({ score, detail }: { score: number | null; detail: NutritionDetail }) {
   return (
-    <div className="space-y-1">
-      <div className="font-semibold text-neutral-300 mb-1.5">Land use</div>
-      {detail.type === 'plant' && detail.yieldKilogramsPerHectare != null && (
-        <div className="flex justify-between gap-6"><span className="text-neutral-400">Crop yield</span><span>{detail.yieldKilogramsPerHectare.toLocaleString()} kg/ha</span></div>
-      )}
-      {detail.type === 'animal' && detail.pastureHectaresPerKilogram != null && (
-        <div className="flex justify-between gap-6"><span className="text-neutral-400">Pasture</span><span>{detail.pastureHectaresPerKilogram.toFixed(3)} ha/kg</span></div>
-      )}
-    </div>
+    <Cell key="nutritionScore" align="right">
+      {score != null
+        ? <Tooltip content={<NutritionTooltip detail={detail} />}><NutritionScore score={score} /></Tooltip>
+        : <span className="text-neutral-400">—</span>
+      }
+    </Cell>
   );
 }
 
+// ─── Land Use ─────────────────────────────────────────────────────────────────
+
 export function LandUseValue({ value }: { value: number | null }) {
   if (value === null) return <span className="text-neutral-400">—</span>;
-  const color = value < 5 ? 'text-green-600' : value < 50 ? 'text-amber-600' : 'text-red-600';
-  return <span className={color}>{value.toFixed(1)}</span>;
+  return <span className={getLandUseColor(value)}>{value.toFixed(1)}</span>;
+}
+
+export function LandUseCell({ value, detail }: { value: number | null; detail: LandUseDetail }) {
+  return (
+    <Cell key="landUse" align="right">
+      {value != null
+        ? <Tooltip content={<LandUseTooltip detail={detail} />}><LandUseValue value={value} /></Tooltip>
+        : <LandUseValue value={null} />
+      }
+    </Cell>
+  );
 }
 
 // ─── Intelligence ─────────────────────────────────────────────────────────────
 
-const ONE_BILLION  = 1_000_000_000;
-const ONE_MILLION  = 1_000_000;
-const ONE_THOUSAND = 1_000;
-
-function formatNeurons(neuronCount: number): string {
-  if (neuronCount >= ONE_BILLION)  return `${(neuronCount / ONE_BILLION).toFixed(0)}B`;
-  if (neuronCount >= ONE_MILLION)  return `${(neuronCount / ONE_MILLION).toFixed(0)}M`;
-  if (neuronCount >= ONE_THOUSAND) return `${(neuronCount / ONE_THOUSAND).toFixed(0)}K`;
-  return String(neuronCount);
+export function IntelligenceValue({ value }: { value: number | null }) {
+  if (value === null || value === 0) return <span className="text-neutral-400">—</span>;
+  return <span className={getIntelligenceColor(value)}>{formatIntelligenceValue(value)}</span>;
 }
 
-export function IntelligenceTooltip({ detail }: { detail: IntelligenceDetail }) {
+export function IntelligenceCell({ value, detail }: { value: number | null; detail: IntelligenceDetail }) {
   return (
-    <div className="space-y-1">
-      <div className="font-semibold text-neutral-300 mb-1.5">Intelligence score</div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Neuron count</span><span>{formatNeurons(detail.neuronCount)}</span></div>
-      {detail.weightKg != null && (
-        <div className="flex justify-between gap-6"><span className="text-neutral-400">Animal weight</span><span>{detail.weightKg} kg</span></div>
-      )}
-      {detail.yieldFraction != null && (
-        <div className="flex justify-between gap-6"><span className="text-neutral-400">Yield fraction</span><span>{(detail.yieldFraction * 100).toFixed(0)}%</span></div>
-      )}
-      <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">^1.5 scaling applied to reflect neural interconnectivity</div>
-    </div>
+    <Cell key="intelligence" align="right">
+      {value != null
+        ? <Tooltip content={<IntelligenceTooltip detail={detail} />}><IntelligenceValue value={value} /></Tooltip>
+        : <IntelligenceValue value={null} />
+      }
+    </Cell>
   );
 }
 
-const ONE_QUADRILLION  = 1e15;
-const ONE_TRILLION     = 1e12;
-const TEN_TRILLION     = 1e13;
-const ONE_GIGAUNIT     = 1e9;
+// ─── Dummy ────────────────────────────────────────────────────────────────────
 
-export function IntelligenceValue({ value }: { value: number | null }) {
-  if (value === null || value === 0) return <span className="text-neutral-400">—</span>;
-
-  let formatted: string;
-  if      (value >= ONE_QUADRILLION) formatted = `${(value / ONE_QUADRILLION).toFixed(1)}P`;
-  else if (value >= ONE_TRILLION)    formatted = `${(value / ONE_TRILLION).toFixed(1)}T`;
-  else if (value >= ONE_GIGAUNIT)    formatted = `${(value / ONE_GIGAUNIT).toFixed(1)}G`;
-  else if (value >= ONE_MILLION)     formatted = `${(value / ONE_MILLION).toFixed(1)}M`;
-  else                               formatted = value.toFixed(0);
-
-  const color = value >= TEN_TRILLION  ? 'text-red-600 font-medium'
-    : value >= ONE_TRILLION ? 'text-orange-600 font-medium'
-    : 'text-amber-600 font-medium';
-
-  return <span className={color}>{formatted}</span>;
+export function DummyCell() {
+  return (
+    <Cell key="dummy" align="right">
+      <span className="text-neutral-300 text-xs">test</span>
+    </Cell>
+  );
 }
 
 // ─── NeuronValue (kept for other uses) ───────────────────────────────────────
 
 export function NeuronValue({ value }: { value: number }) {
   if (value === 0) return <span className="text-neutral-400">—</span>;
-  if (value >= ONE_BILLION)  return <span className="text-orange-600 font-medium">{(value / ONE_BILLION).toFixed(0)}B</span>;
-  if (value >= ONE_MILLION)  return <span className="text-amber-600 font-medium">{(value / ONE_MILLION).toFixed(0)}M</span>;
-  return <span className="text-yellow-600 font-medium">{(value / ONE_THOUSAND).toFixed(0)}K</span>;
+  const color = value >= ONE_BILLION ? 'text-orange-600' : value >= 1_000_000 ? 'text-amber-600' : 'text-yellow-600';
+  return <span className={`font-medium ${color}`}>{formatNeurons(value)}</span>;
 }

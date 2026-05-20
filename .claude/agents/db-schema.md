@@ -29,3 +29,4 @@ When a schema change is requested:
 2. Edit `schema.sql` directly with the new `CREATE TABLE IF NOT EXISTS` definition.
 3. List downstream files that `food-manager` and the insert scripts must update to stay aligned.
 4. Do not apply the change without user confirmation.
+5. After a confirmed change, explicitly tell the user: "Run `food-manager` to realign JSON files to the updated schema."

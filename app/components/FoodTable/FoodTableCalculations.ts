@@ -1,30 +1,3 @@
-export type EmissionsBreakdown = { co2: number; ch4: number; n2o: number };
-
-export type NutritionDetail = {
-  protein:       number;
-  fiber:         number;
-  saturatedFat:  number;
-  calories:      number;
-  sodium:        number | null;
-  carbs:         number | null;
-  sugar:         number | null;
-  cholesterol:   number | null;
-  transFat:      number | null;
-  glycemicIndex: number | null;
-};
-
-export type LandUseDetail = {
-  type:                       'plant' | 'animal';
-  yieldKilogramsPerHectare:   number | null;
-  pastureHectaresPerKilogram: number | null;
-};
-
-export type IntelligenceDetail = {
-  neuronCount:   number;
-  weightKg:      number | null;
-  yieldFraction: number | null;
-};
-
 const ONE_THOUSAND    = 1_000;
 const ONE_MILLION     = 1_000_000;
 export const ONE_BILLION     = 1_000_000_000;

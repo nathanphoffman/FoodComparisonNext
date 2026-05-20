@@ -5,11 +5,8 @@
 import Link from 'next/link';
 import { Cell } from '../Table/Cell';
 import { Tooltip } from '../Table/Tooltip';
+import type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail } from './FoodTableTypes';
 import {
-  type EmissionsBreakdown,
-  type NutritionDetail,
-  type LandUseDetail,
-  type IntelligenceDetail,
   ONE_BILLION,
   formatNeurons,
   formatIntelligenceValue,
@@ -26,7 +23,7 @@ import {
   IntelligenceTooltip,
 } from './FoodTableTooltips';
 
-export type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail };
+export type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail } from './FoodTableTypes';
 
 // ─── Name ─────────────────────────────────────────────────────────────────────
 

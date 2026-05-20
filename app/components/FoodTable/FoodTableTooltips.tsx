@@ -1,11 +1,5 @@
-import {
-  type EmissionsBreakdown,
-  type IntelligenceDetail,
-  type LandUseDetail,
-  type NutritionDetail,
-  formatNeurons,
-  nutritionScale,
-} from './FoodTableCalculations';
+import type { EmissionsBreakdown, IntelligenceDetail, LandUseDetail, NutritionDetail } from './FoodTableTypes';
+import { formatNeurons, nutritionScale } from './FoodTableCalculations';
 
 export function EmissionsTooltip({ breakdown }: { breakdown: EmissionsBreakdown }) {
   return (

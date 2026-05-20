@@ -12,12 +12,7 @@ import {
   WaterCell,
   DummyCell,
 } from './FoodTableFields';
-import type {
-  EmissionsBreakdown,
-  NutritionDetail,
-  LandUseDetail,
-  IntelligenceDetail,
-} from './FoodTableCalculations';
+import type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail } from './FoodTableTypes';
 
 export type FoodEthics = {
   name:               string;

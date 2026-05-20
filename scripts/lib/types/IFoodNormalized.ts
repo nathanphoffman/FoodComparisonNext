@@ -12,6 +12,12 @@ export interface IFoodNormalized {
   sat_fat: number | null;
   protein: number | null;
   fiber: number | null;
+  sodium: number | null;
+  carbs: number | null;
+  sugar: number | null;
+  cholesterol: number | null;
+  trans_fat: number | null;
+  glycemic_index: number | null;
   // plant metrics (NULL for animal foods; populated for plants AND feed rows)
   yield_kg_ha: number | null;
   water_per_kg: number | null;
@@ -64,6 +70,12 @@ export class FoodNormalized implements IFoodNormalized {
   sat_fat!: number | null;
   protein!: number | null;
   fiber!: number | null;
+  sodium!: number | null;
+  carbs!: number | null;
+  sugar!: number | null;
+  cholesterol!: number | null;
+  trans_fat!: number | null;
+  glycemic_index!: number | null;
   yield_kg_ha!: number | null;
   water_per_kg!: number | null;
   soil_erosion!: number | null;
@@ -97,6 +109,7 @@ export class FoodNormalized implements IFoodNormalized {
       this.slug, this.name, this.type,
       JSON.stringify(this.tags), this.human_food,
       this.calories, this.fat, this.sat_fat, this.protein, this.fiber,
+      this.sodium, this.carbs, this.sugar, this.cholesterol, this.trans_fat, this.glycemic_index,
       this.yield_kg_ha, this.water_per_kg, this.soil_erosion, this.pesticide_kg_ha,
       this.fertilizer_kg_ha, this.emissions_per_kg, this.tillage_events_per_year,
       this.co2_capture_kg_ha_yr, this.pesticide_freshwater_paf, this.pesticide_terrestrial_paf,

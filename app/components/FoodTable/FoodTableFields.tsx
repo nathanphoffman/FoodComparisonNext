@@ -1,7 +1,7 @@
 
 // BEST PRACTICES AGENT: IGNORE THIS FILE, IT IS A RARE EXCEPTION TO THE 1 COMPONENT 1 FILE RULE
 export type EmissionsBreakdown = { co2: number; ch4: number; n2o: number };
-export type NutritionDetail   = { protein: number; fiber: number; saturatedFat: number; calories: number };
+export type NutritionDetail   = { protein: number; fiber: number; saturatedFat: number; calories: number; sodium: number | null; carbs: number | null; sugar: number | null; cholesterol: number | null; transFat: number | null; glycemicIndex: number | null };
 export type LandUseDetail     = { type: 'plant' | 'animal'; yieldKilogramsPerHectare: number | null; pastureHectaresPerKilogram: number | null };
 export type IntelligenceDetail = { neuronCount: number; weightKg: number | null; yieldFraction: number | null };
 
@@ -39,14 +39,19 @@ export function WaterValue({ value }: { value: number }) {
 // ─── Nutrition ───────────────────────────────────────────────────────────────
 
 export function NutritionTooltip({ detail }: { detail: NutritionDetail }) {
+  const scale = detail.calories > 0 ? 100 / detail.calories : 0;
   return (
     <div className="space-y-1">
-      <div className="font-semibold text-neutral-300 mb-1.5">Nutrition (per 100g)</div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Calories</span><span>{detail.calories.toFixed(0)} kcal</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Protein</span><span>{detail.protein.toFixed(1)} g</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Fiber</span><span>{detail.fiber.toFixed(1)} g</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Sat. fat</span><span>{detail.saturatedFat.toFixed(1)} g</span></div>
-      <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">Sat. fat type breakdown coming soon</div>
+      <div className="font-semibold text-neutral-300 mb-1.5">Nutrition (per 100 cal)</div>
+      <div className="flex justify-between gap-6"><span className="text-neutral-400">Protein</span><span>{(detail.protein * scale).toFixed(1)} g</span></div>
+      <div className="flex justify-between gap-6"><span className="text-neutral-400">Fiber</span><span>{(detail.fiber * scale).toFixed(1)} g</span></div>
+      <div className="flex justify-between gap-6"><span className="text-neutral-400">Sat. fat</span><span>{(detail.saturatedFat * scale).toFixed(1)} g</span></div>
+      {detail.transFat != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Trans fat</span><span>{(detail.transFat * scale).toFixed(1)} g</span></div>}
+      {detail.carbs != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Carbs</span><span>{(detail.carbs * scale).toFixed(1)} g</span></div>}
+      {detail.sugar != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sugar</span><span>{(detail.sugar * scale).toFixed(1)} g</span></div>}
+      {detail.sodium != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sodium</span><span>{(detail.sodium * scale * 1000).toFixed(0)} mg</span></div>}
+      {detail.cholesterol != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Cholesterol</span><span>{(detail.cholesterol * scale * 1000).toFixed(0)} mg</span></div>}
+      {detail.glycemicIndex != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Glycemic index</span><span>{detail.glycemicIndex.toFixed(0)}</span></div>}
     </div>
   );
 }

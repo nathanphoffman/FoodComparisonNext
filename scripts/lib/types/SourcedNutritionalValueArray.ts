@@ -9,10 +9,28 @@ export class SourcedNutritionalValueArray extends Array<ISourced<NutritionValue>
     if (this.length === 0) return null;
     const totalWeight = this.reduce((acc, curr) => acc + curr.confidence, 0);
     if (totalWeight === 0) return null;
-    const fields = ['calories', 'fat', 'sat_fat', 'protein', 'fiber'] as const;
-    return fields.reduce((totals, field) => {
-      totals[field] = this.reduce((sum, entry) => sum + entry.value[field] * entry.confidence, 0) / totalWeight;
-      return totals;
-    }, { calories: 0, fat: 0, sat_fat: 0, protein: 0, fiber: 0 });
+
+    const reqFields = ['calories', 'fat', 'sat_fat', 'protein', 'fiber'] as const;
+    const required = reqFields.reduce((acc, field) => {
+      acc[field] = this.reduce((sum, e) => sum + e.value[field] * e.confidence, 0) / totalWeight;
+      return acc;
+    }, {} as Record<typeof reqFields[number], number>);
+
+    const optAvg = (field: 'sodium' | 'carbs' | 'sugar' | 'cholesterol' | 'trans_fat' | 'glycemic_index'): number | null => {
+      const entries = Array.from(this).filter(e => e.value[field] != null);
+      if (entries.length === 0) return null;
+      const w = entries.reduce((acc, e) => acc + e.confidence, 0);
+      return entries.reduce((sum, e) => sum + (e.value[field] as number) * e.confidence, 0) / w;
+    };
+
+    return {
+      ...required,
+      sodium:         optAvg('sodium'),
+      carbs:          optAvg('carbs'),
+      sugar:          optAvg('sugar'),
+      cholesterol:    optAvg('cholesterol'),
+      trans_fat:      optAvg('trans_fat'),
+      glycemic_index: optAvg('glycemic_index'),
+    };
   }
 }

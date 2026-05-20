@@ -12,6 +12,7 @@ description: Audits source code for best practice violations and recommends new 
 ### Naming
 - **No acronyms or abbreviations.** Spell everything out. `sat_fat` → `saturated_fat`, `kg_ha` → `kilograms_per_hectare`, `paf` → `potentially_affected_fraction`. Exception: universally understood conventions (`id`, `url`, `api`, `html`, `css`, HTTP method names).
 - **Descriptive names.** Functions and variables must communicate intent without needing a comment. Avoid `data`, `result`, `temp`, `item`, `val`, single-letter names outside loop indices.
+- **Casing conventions.** Use `camelCase` for variables and functions. Use `PascalCase` for file names, classes, types, and interfaces. Use `SCREAMING_SNAKE_CASE` for constants.
 
 ### Formatting
 - **Always use semicolons.** Every statement must end with a semicolon. No ASI reliance.

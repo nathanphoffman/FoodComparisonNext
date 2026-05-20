@@ -14,6 +14,12 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     sat_fat                  REAL,
     protein                  REAL,
     fiber                    REAL,
+    sodium                   REAL,
+    carbs                    REAL,
+    sugar                    REAL,
+    cholesterol              REAL,
+    trans_fat                REAL,
+    glycemic_index           REAL,
 
     -- plant metrics (NULL for animal foods; populated for plant foods AND feed rows)
     yield_kg_ha              REAL,

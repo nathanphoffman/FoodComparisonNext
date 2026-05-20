@@ -48,8 +48,14 @@ export default async function FoodPage({ params }: Props) {
           <tr><td>Calories</td><td>{(nutrition.calories * GRAMS_PER_HUNDRED).toFixed(0)} kcal</td></tr>
           <tr><td>Fat</td><td>{formatNutrientPer100g(nutrition.fat)}</td></tr>
           <tr><td>Saturated fat</td><td>{formatNutrientPer100g(nutrition.sat_fat)}</td></tr>
+          {nutrition.trans_fat != null && <tr><td>Trans fat</td><td>{formatNutrientPer100g(nutrition.trans_fat)}</td></tr>}
           <tr><td>Protein</td><td>{formatNutrientPer100g(nutrition.protein)}</td></tr>
           <tr><td>Fiber</td><td>{formatNutrientPer100g(nutrition.fiber)}</td></tr>
+          {nutrition.carbs != null && <tr><td>Total carbs</td><td>{formatNutrientPer100g(nutrition.carbs)}</td></tr>}
+          {nutrition.sugar != null && <tr><td>Sugar</td><td>{formatNutrientPer100g(nutrition.sugar)}</td></tr>}
+          {nutrition.sodium != null && <tr><td>Sodium</td><td>{(nutrition.sodium * GRAMS_PER_HUNDRED * 1000).toFixed(0)} mg</td></tr>}
+          {nutrition.cholesterol != null && <tr><td>Cholesterol</td><td>{(nutrition.cholesterol * GRAMS_PER_HUNDRED * 1000).toFixed(0)} mg</td></tr>}
+          {nutrition.glycemic_index != null && <tr><td>Glycemic index</td><td>{nutrition.glycemic_index.toFixed(0)}</td></tr>}
         </tbody>
       </table>
 

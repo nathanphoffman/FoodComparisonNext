@@ -5,8 +5,10 @@ import { getNormalizedDb, rowsToObjects } from '@/lib/db';
 type RawFood = {
   name: string; slug: string; type: 'plant' | 'animal';
   calories: number; protein: number; fiber: number; sat_fat: number;
+  sodium: number | null; carbs: number | null; sugar: number | null;
+  cholesterol: number | null; trans_fat: number | null; glycemic_index: number | null;
   yield_kg_ha: number | null; pasture_ha_per_kg_output: number | null;
-  emissions_per_kg: number; water_per_kg: number;
+  emissions_per_kg: number | null; water_per_kg: number | null;
   neuron_count: number; weight_kg: number | null; yield_fraction: number | null;
   ch4_kg_per_kg_output: number | null;
   n2o_kg_per_kg_output: number | null;
@@ -18,6 +20,7 @@ export default async function Home() {
   const query = `
     SELECT food_id, is_feed, slug, name, type, tags, human_food,
            calories, fat, sat_fat, protein, fiber,
+           sodium, carbs, sugar, cholesterol, trans_fat, glycemic_index,
            yield_kg_ha, water_per_kg, soil_erosion, pesticide_kg_ha,
            fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr,
            pesticide_freshwater_paf, pesticide_terrestrial_paf, pesticide_insect_paf, pesticide_bee_hazard, pesticide_kg_per_kg_food,
@@ -54,10 +57,16 @@ export default async function Home() {
       slug: food.slug,
       nutritionScore,
       nutritionDetail: {
-        protein:  food.protein,
-        fiber:    food.fiber,
-        saturatedFat: food.sat_fat,
-        calories: food.calories,
+        protein:       food.protein,
+        fiber:         food.fiber,
+        saturatedFat:  food.sat_fat,
+        calories:      food.calories,
+        sodium:        food.sodium,
+        carbs:         food.carbs,
+        sugar:         food.sugar,
+        cholesterol:   food.cholesterol,
+        transFat:      food.trans_fat,
+        glycemicIndex: food.glycemic_index,
       },
       emissions: food.emissions_per_kg,
       emissionsBreakdown: food.ch4_kg_per_kg_output != null ? {

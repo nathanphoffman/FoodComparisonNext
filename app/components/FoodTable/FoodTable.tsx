@@ -23,13 +23,13 @@ export type FoodEthics = {
   slug:               string;
   nutritionScore:     number | null;
   nutritionDetail:    NutritionDetail;
-  emissions:          number;
+  emissions:          number | null;
   emissionsBreakdown?: EmissionsBreakdown;
   landUse:            number | null;
   landUseDetail:      LandUseDetail;
   intelligence:       number | null;
   intelligenceDetail: IntelligenceDetail;
-  water:              number;
+  water:              number | null;
 };
 
 type SortKey = 'name' | 'nutritionScore' | 'emissions' | 'landUse' | 'intelligence' | 'water';
@@ -48,7 +48,7 @@ const COLUMN_CONFIG: { key: ColumnKey; label: string; sortKey?: SortKey; default
 const mockFoods: FoodEthics[] = [
   {
     name: 'Beef', slug: 'beef',
-    nutritionScore: 4.8, nutritionDetail: { protein: 26, fiber: 0, saturatedFat: 7, calories: 250 },
+    nutritionScore: 4.8, nutritionDetail: { protein: 26, fiber: 0, saturatedFat: 7, calories: 250, sodium: null, carbs: null, sugar: null, cholesterol: null, transFat: null, glycemicIndex: null },
     emissions: 27.0, emissionsBreakdown: { co2: 3.0, ch4: 20.0, n2o: 4.0 },
     landUse: 164, landUseDetail: { type: 'animal', yieldKilogramsPerHectare: null, pastureHectaresPerKilogram: 0.0164 },
     intelligence: 6.88e13, intelligenceDetail: { neuronCount: 71_000_000_000, weightKg: 500, yieldFraction: 0.55 },
@@ -56,7 +56,7 @@ const mockFoods: FoodEthics[] = [
   },
   {
     name: 'Broccoli', slug: 'broccoli',
-    nutritionScore: 23.5, nutritionDetail: { protein: 2.8, fiber: 2.6, saturatedFat: 0, calories: 34 },
+    nutritionScore: 23.5, nutritionDetail: { protein: 2.8, fiber: 2.6, saturatedFat: 0, calories: 34, sodium: null, carbs: null, sugar: null, cholesterol: null, transFat: null, glycemicIndex: null },
     emissions: 0.4, emissionsBreakdown: { co2: 0.2, ch4: 0.0, n2o: 0.2 },
     landUse: 0.5, landUseDetail: { type: 'plant', yieldKilogramsPerHectare: 20000, pastureHectaresPerKilogram: null },
     intelligence: null, intelligenceDetail: { neuronCount: 0, weightKg: null, yieldFraction: null },
@@ -139,9 +139,11 @@ export function FoodTable({ data = mockFoods }: { data?: FoodEthics[] }) {
       case 'emissions':
         return (
           <Cell key="emissions" align="right">
-            {food.emissionsBreakdown
-              ? <Tooltip content={<EmissionsTooltip breakdown={food.emissionsBreakdown} />}><EmissionsBadge value={food.emissions} /></Tooltip>
-              : <EmissionsBadge value={food.emissions} />
+            {food.emissions != null
+              ? food.emissionsBreakdown
+                ? <Tooltip content={<EmissionsTooltip breakdown={food.emissionsBreakdown} />}><EmissionsBadge value={food.emissions} /></Tooltip>
+                : <EmissionsBadge value={food.emissions} />
+              : <span className="text-neutral-400">—</span>
             }
           </Cell>
         );
@@ -166,7 +168,10 @@ export function FoodTable({ data = mockFoods }: { data?: FoodEthics[] }) {
       case 'water':
         return (
           <Cell key="water" align="right">
-            <WaterValue value={food.water} />
+            {food.water != null
+              ? <WaterValue value={food.water} />
+              : <span className="text-neutral-400">—</span>
+            }
           </Cell>
         );
       case 'dummy':

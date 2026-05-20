@@ -10,6 +10,12 @@ export interface NutritionValue {
   sat_fat: number;
   protein: number;
   fiber: number;
+  sodium: number | null;
+  carbs: number | null;
+  sugar: number | null;
+  cholesterol: number | null;
+  trans_fat: number | null;
+  glycemic_index: number | null;
 }
 
 export interface Food {

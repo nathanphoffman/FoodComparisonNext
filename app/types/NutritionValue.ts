@@ -7,6 +7,12 @@ export interface INutritionValue {
     sat_fat: number;
     protein: number;
     fiber: number;
+    sodium: number | null;
+    carbs: number | null;
+    sugar: number | null;
+    cholesterol: number | null;
+    trans_fat: number | null;
+    glycemic_index: number | null;
 }
 
 export class NutritionValue implements INutritionValue {
@@ -15,6 +21,12 @@ export class NutritionValue implements INutritionValue {
     sat_fat!: number;
     protein!: number;
     fiber!: number;
+    sodium!: number | null;
+    carbs!: number | null;
+    sugar!: number | null;
+    cholesterol!: number | null;
+    trans_fat!: number | null;
+    glycemic_index!: number | null;
 
     constructor(data: INutritionValue) {
         Object.assign(this, data);
@@ -39,26 +51,30 @@ export class SourcedNutritionalValueArray extends Array<SourcedNutritionalValue>
     }
 
     weightedAverage(): NutritionValue {
-        const weightedTotal = this.reduce((totals, entry) => {
-            return {
-                calories: totals.calories + entry.value.calories * entry.confidence,
-                fat: totals.fat + entry.value.fat * entry.confidence,
-                sat_fat: totals.sat_fat + entry.value.sat_fat * entry.confidence,
-                protein: totals.protein + entry.value.protein * entry.confidence,
-                fiber: totals.fiber + entry.value.fiber * entry.confidence
-            };
-
-        }, { calories: 0, fat: 0, sat_fat: 0, protein: 0, fiber: 0 });
-
         const confidenceTotal = this.reduce((sum, entry) => sum + entry.confidence, 0);
 
-        return {
-            calories: weightedTotal.calories / confidenceTotal,
-            fat: weightedTotal.fat / confidenceTotal,
-            sat_fat: weightedTotal.sat_fat / confidenceTotal,
-            protein: weightedTotal.protein / confidenceTotal,
-            fiber: weightedTotal.fiber / confidenceTotal,
+        const avgRequired = (field: 'calories' | 'fat' | 'sat_fat' | 'protein' | 'fiber') =>
+            this.reduce((sum, e) => sum + e.value[field] * e.confidence, 0) / confidenceTotal;
+
+        const avgOptional = (field: 'sodium' | 'carbs' | 'sugar' | 'cholesterol' | 'trans_fat' | 'glycemic_index'): number | null => {
+            const entries = this.filter(e => e.value[field] != null);
+            if (entries.length === 0) return null;
+            const w = entries.reduce((acc, e) => acc + e.confidence, 0);
+            return entries.reduce((sum, e) => sum + (e.value[field] as number) * e.confidence, 0) / w;
         };
 
+        return {
+            calories:       avgRequired('calories'),
+            fat:            avgRequired('fat'),
+            sat_fat:        avgRequired('sat_fat'),
+            protein:        avgRequired('protein'),
+            fiber:          avgRequired('fiber'),
+            sodium:         avgOptional('sodium'),
+            carbs:          avgOptional('carbs'),
+            sugar:          avgOptional('sugar'),
+            cholesterol:    avgOptional('cholesterol'),
+            trans_fat:      avgOptional('trans_fat'),
+            glycemic_index: avgOptional('glycemic_index'),
+        };
     }
 }

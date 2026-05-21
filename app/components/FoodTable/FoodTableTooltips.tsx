@@ -1,64 +1,73 @@
 import type { EmissionsBreakdown, IntelligenceDetail, LandUseDetail, NutritionDetail } from './FoodTableTypes';
 import { formatNeurons, nutritionScale } from './FoodTableCalculations';
+import { Tooltip, TooltipSection, TooltipRow } from '../Table/Tooltip';
 
 const MILLIGRAMS_PER_GRAM = 1000;
 const PERCENT_MULTIPLIER  = 100;
 
-export function EmissionsTooltip({ breakdown }: { breakdown: EmissionsBreakdown }) {
+export function EmissionsTooltip({ breakdown, children }: { breakdown: EmissionsBreakdown; children: React.ReactNode }) {
   return (
-    <div className="space-y-1">
-      <div className="font-semibold text-neutral-300 mb-1.5">Emissions breakdown</div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">CO₂</span><span>{breakdown.co2.toFixed(1)} kg</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">CH₄ (as CO₂e)</span><span>{breakdown.ch4.toFixed(1)} kg</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">N₂O (as CO₂e)</span><span>{breakdown.n2o.toFixed(1)} kg</span></div>
-    </div>
+    <Tooltip content={
+      <TooltipSection title="Emissions breakdown">
+        <TooltipRow label="CO₂" value={`${breakdown.co2.toFixed(1)} kg`} />
+        <TooltipRow label="CH₄ (as CO₂e)" value={`${breakdown.ch4.toFixed(1)} kg`} />
+        <TooltipRow label="N₂O (as CO₂e)" value={`${breakdown.n2o.toFixed(1)} kg`} />
+      </TooltipSection>
+    }>
+      {children}
+    </Tooltip>
   );
 }
 
-export function NutritionTooltip({ detail }: { detail: NutritionDetail }) {
+export function NutritionTooltip({ detail, children }: { detail: NutritionDetail; children: React.ReactNode }) {
   const scale = nutritionScale(detail.calories);
   return (
-    <div className="space-y-1">
-      <div className="font-semibold text-neutral-300 mb-1.5">Nutrition (per 100 cal)</div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Total fat</span><span>{(detail.fat * scale).toFixed(1)} g</span></div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Sat. fat</span><span>{(detail.saturatedFat * scale).toFixed(1)} g</span></div>
-      {detail.transFat != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Trans fat</span><span>{(detail.transFat * scale).toFixed(1)} g</span></div>}
-      {detail.cholesterol != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Cholesterol</span><span>{(detail.cholesterol * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</span></div>}
-      {detail.sodium != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sodium</span><span>{(detail.sodium * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</span></div>}
-      {detail.carbs != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Total carbs</span><span>{(detail.carbs * scale).toFixed(1)} g</span></div>}
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Fiber</span><span>{(detail.fiber * scale).toFixed(1)} g</span></div>
-      {detail.sugar != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sugar</span><span>{(detail.sugar * scale).toFixed(1)} g</span></div>}
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Protein</span><span>{(detail.protein * scale).toFixed(1)} g</span></div>
-    </div>
+    <Tooltip content={
+      <TooltipSection title="Nutrition (per 100 cal)">
+        <TooltipRow label="Total fat" value={`${(detail.fat * scale).toFixed(1)} g`} />
+        <TooltipRow label="Sat. fat" value={`${(detail.saturatedFat * scale).toFixed(1)} g`} />
+        {detail.transFat != null && <TooltipRow label="Trans fat" value={`${(detail.transFat * scale).toFixed(1)} g`} />}
+        {detail.cholesterol != null && <TooltipRow label="Cholesterol" value={`${(detail.cholesterol * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg`} />}
+        {detail.sodium != null && <TooltipRow label="Sodium" value={`${(detail.sodium * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg`} />}
+        {detail.carbs != null && <TooltipRow label="Total carbs" value={`${(detail.carbs * scale).toFixed(1)} g`} />}
+        <TooltipRow label="Fiber" value={`${(detail.fiber * scale).toFixed(1)} g`} />
+        {detail.sugar != null && <TooltipRow label="Sugar" value={`${(detail.sugar * scale).toFixed(1)} g`} />}
+        <TooltipRow label="Protein" value={`${(detail.protein * scale).toFixed(1)} g`} />
+      </TooltipSection>
+    }>
+      {children}
+    </Tooltip>
   );
 }
 
-export function LandUseTooltip({ detail }: { detail: LandUseDetail }) {
+export function LandUseTooltip({ detail, children }: { detail: LandUseDetail; children: React.ReactNode }) {
   return (
-    <div className="space-y-1">
-      <div className="font-semibold text-neutral-300 mb-1.5">Land use</div>
-      {detail.type === 'plant' && detail.yieldKilogramsPerHectare != null && (
-        <div className="flex justify-between gap-6"><span className="text-neutral-400">Crop yield</span><span>{detail.yieldKilogramsPerHectare.toLocaleString()} kg/ha</span></div>
-      )}
-      {detail.type === 'animal' && detail.pastureHectaresPerKilogram != null && (
-        <div className="flex justify-between gap-6"><span className="text-neutral-400">Pasture</span><span>{detail.pastureHectaresPerKilogram.toFixed(3)} ha/kg</span></div>
-      )}
-    </div>
+    <Tooltip content={
+      <TooltipSection title="Land use">
+        {detail.type === 'plant' && detail.yieldKilogramsPerHectare != null && (
+          <TooltipRow label="Crop yield" value={`${detail.yieldKilogramsPerHectare.toLocaleString()} kg/ha`} />
+        )}
+        {detail.type === 'animal' && detail.pastureHectaresPerKilogram != null && (
+          <TooltipRow label="Pasture" value={`${detail.pastureHectaresPerKilogram.toFixed(3)} ha/kg`} />
+        )}
+      </TooltipSection>
+    }>
+      {children}
+    </Tooltip>
   );
 }
 
-export function IntelligenceTooltip({ detail }: { detail: IntelligenceDetail }) {
+export function IntelligenceTooltip({ detail, children }: { detail: IntelligenceDetail; children: React.ReactNode }) {
   return (
-    <div className="space-y-1">
-      <div className="font-semibold text-neutral-300 mb-1.5">Intelligence score</div>
-      <div className="flex justify-between gap-6"><span className="text-neutral-400">Neuron count</span><span>{formatNeurons(detail.neuronCount)}</span></div>
-      {detail.weightKg != null && (
-        <div className="flex justify-between gap-6"><span className="text-neutral-400">Animal weight</span><span>{detail.weightKg} kg</span></div>
-      )}
-      {detail.yieldFraction != null && (
-        <div className="flex justify-between gap-6"><span className="text-neutral-400">Yield fraction</span><span>{(detail.yieldFraction * PERCENT_MULTIPLIER).toFixed(0)}%</span></div>
-      )}
-      <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">^1.5 scaling applied to reflect neural interconnectivity</div>
-    </div>
+    <Tooltip content={
+      <TooltipSection title="Intelligence score">
+        <TooltipRow label="Neuron count" value={formatNeurons(detail.neuronCount)} />
+        {detail.weightKg != null && <TooltipRow label="Animal weight" value={`${detail.weightKg} kg`} />}
+        {detail.yieldFraction != null && <TooltipRow label="Yield fraction" value={`${(detail.yieldFraction * PERCENT_MULTIPLIER).toFixed(0)}%`} />}
+        <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">^1.5 scaling applied to reflect neural interconnectivity</div>
+      </TooltipSection>
+    }>
+      {children}
+    </Tooltip>
   );
 }

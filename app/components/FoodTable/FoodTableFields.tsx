@@ -4,7 +4,6 @@
 
 import Link from 'next/link';
 import { Cell } from '../Table/Cell';
-import { Tooltip } from '../Table/Tooltip';
 import type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail } from './FoodTableTypes';
 import {
   ONE_BILLION,
@@ -53,7 +52,7 @@ export function EmissionsCell({ value, breakdown }: { value: number | null; brea
     <Cell key="emissions" align="right">
       {value != null
         ? breakdown
-          ? <Tooltip content={<EmissionsTooltip breakdown={breakdown} />}><EmissionsBadge value={value} /></Tooltip>
+          ? <EmissionsTooltip breakdown={breakdown}><EmissionsBadge value={value} /></EmissionsTooltip>
           : <EmissionsBadge value={value} />
         : <span className="text-neutral-400">—</span>
       }
@@ -92,7 +91,7 @@ export function NutritionScoreCell({ score, detail }: { score: number | null; de
   return (
     <Cell key="nutritionScore" align="right">
       {score != null
-        ? <Tooltip content={<NutritionTooltip detail={detail} />}><NutritionScore score={score} /></Tooltip>
+        ? <NutritionTooltip detail={detail}><NutritionScore score={score} /></NutritionTooltip>
         : <span className="text-neutral-400">—</span>
       }
     </Cell>
@@ -110,7 +109,7 @@ export function LandUseCell({ value, detail }: { value: number | null; detail: L
   return (
     <Cell key="landUse" align="right">
       {value != null
-        ? <Tooltip content={<LandUseTooltip detail={detail} />}><LandUseValue value={value} /></Tooltip>
+        ? <LandUseTooltip detail={detail}><LandUseValue value={value} /></LandUseTooltip>
         : <LandUseValue value={null} />
       }
     </Cell>
@@ -128,7 +127,7 @@ export function IntelligenceCell({ value, detail }: { value: number | null; deta
   return (
     <Cell key="intelligence" align="right">
       {value != null
-        ? <Tooltip content={<IntelligenceTooltip detail={detail} />}><IntelligenceValue value={value} /></Tooltip>
+        ? <IntelligenceTooltip detail={detail}><IntelligenceValue value={value} /></IntelligenceTooltip>
         : <IntelligenceValue value={null} />
       }
     </Cell>

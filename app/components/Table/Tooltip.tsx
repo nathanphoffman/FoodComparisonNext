@@ -12,7 +12,7 @@ export function TooltipRow({ label, value }: { label: React.ReactNode; value: Re
     <div className="flex justify-between gap-6">
       <span className="text-neutral-400">{label}</span>
       <span>{value}</span>
-    </div>
+    </div
   );
 }
 

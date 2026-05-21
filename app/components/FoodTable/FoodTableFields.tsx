@@ -5,17 +5,8 @@
 import Link from 'next/link';
 import { Cell } from '../Table/Cell';
 import type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail } from './FoodTableTypes';
-import {
-  ONE_BILLION,
-  ONE_MILLION,
-  formatNeurons,
-  formatIntelligenceValue,
-  getIntelligenceColor,
-  getEmissionsColor,
-  getWaterColor,
-  getNutritionScoreColor,
-  getLandUseColor,
-} from './FoodTableCalculations';
+import { formatNeurons, formatIntelligenceValue } from './FoodTableCalculations';
+import { getIntelligenceColor, getEmissionsColor, getWaterColor, getNutritionScoreColor, getLandUseColor, getNeuronColor } from './FoodTableStyles';
 import {
   EmissionsTooltip,
   NutritionTooltip,
@@ -148,6 +139,5 @@ export function DummyCell() {
 
 export function NeuronValue({ value }: { value: number }) {
   if (value === 0) return <span className="text-neutral-400">—</span>;
-  const color = value >= ONE_BILLION ? 'text-orange-600' : value >= ONE_MILLION ? 'text-amber-600' : 'text-yellow-600';
-  return <span className={`font-medium ${color}`}>{formatNeurons(value)}</span>;
+  return <span className={`font-medium ${getNeuronColor(value)}`}>{formatNeurons(value)}</span>;
 }

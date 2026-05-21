@@ -1,26 +1,13 @@
+import type { RawFood } from '@/lib/queries/commonFoods';
+import type { FoodEthics } from './FoodTableTypes';
+
 const ONE_THOUSAND    = 1_000;
 export const ONE_MILLION     = 1_000_000;
 export const ONE_BILLION     = 1_000_000_000;
-const ONE_TRILLION    = 1e12;
-const TEN_TRILLION    = 1e13;
+export const ONE_TRILLION    = 1e12;
 const ONE_QUADRILLION = 1e15;
 
-// Emissions thresholds (kg CO₂e per kg food)
-const LOW_EMISSIONS_THRESHOLD    = 2;
-const HIGH_EMISSIONS_THRESHOLD   = 10;
-
-// Water use thresholds (litres per kg food)
-const LOW_WATER_USE_THRESHOLD    = 2_000;
-const HIGH_WATER_USE_THRESHOLD   = 8_000;
-
-// Nutrition score thresholds
-const GOOD_NUTRITION_SCORE_THRESHOLD = 3;
-const FAIR_NUTRITION_SCORE_THRESHOLD = 1;
 const NUTRITION_SCORE_CALORIES_BASIS = 100;
-
-// Land use thresholds (m² per kg food)
-const LOW_LAND_USE_THRESHOLD     = 5;
-const HIGH_LAND_USE_THRESHOLD    = 50;
 
 export function formatNeurons(neuronCount: number): string {
   if (neuronCount >= ONE_BILLION)  return `${(neuronCount / ONE_BILLION).toFixed(0)}B`;
@@ -37,36 +24,65 @@ export function formatIntelligenceValue(value: number): string {
   return value.toFixed(0);
 }
 
-export function getIntelligenceColor(value: number): string {
-  if (value >= TEN_TRILLION) return 'text-red-600 font-medium';
-  if (value >= ONE_TRILLION) return 'text-orange-600 font-medium';
-  return 'text-amber-600 font-medium';
-}
-
-export function getEmissionsColor(value: number): string {
-  if (value < LOW_EMISSIONS_THRESHOLD)  return 'bg-green-100 text-green-700';
-  if (value < HIGH_EMISSIONS_THRESHOLD) return 'bg-yellow-100 text-yellow-700';
-  return 'bg-red-100 text-red-700';
-}
-
-export function getWaterColor(value: number): string {
-  if (value < LOW_WATER_USE_THRESHOLD)  return 'text-sky-600';
-  if (value < HIGH_WATER_USE_THRESHOLD) return 'text-amber-600';
-  return 'text-red-600';
-}
-
-export function getNutritionScoreColor(score: number): string {
-  if (score > GOOD_NUTRITION_SCORE_THRESHOLD) return 'bg-green-100 text-green-700';
-  if (score > FAIR_NUTRITION_SCORE_THRESHOLD) return 'bg-yellow-100 text-yellow-700';
-  return 'bg-red-100 text-red-700';
-}
-
-export function getLandUseColor(value: number): string {
-  if (value < LOW_LAND_USE_THRESHOLD)  return 'text-green-600';
-  if (value < HIGH_LAND_USE_THRESHOLD) return 'text-amber-600';
-  return 'text-red-600';
-}
-
 export function nutritionScale(calories: number): number {
   return calories > 0 ? NUTRITION_SCORE_CALORIES_BASIS / calories : 0;
+}
+
+const SQUARE_METERS_PER_HECTARE         = 10000;
+const NEURAL_INTERCONNECTIVITY_EXPONENT = 1.5;
+const NUTRITION_SCORE_SCALE             = 100;
+const FIBER_SCORE_WEIGHT                = 2;
+const SATURATED_FAT_SCORE_PENALTY       = 2;
+
+export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
+  const nutritionScore = food.calories > 0
+    ? (food.protein + FIBER_SCORE_WEIGHT * food.fiber - SATURATED_FAT_SCORE_PENALTY * food.sat_fat) / food.calories * NUTRITION_SCORE_SCALE
+    : null;
+
+  const landUse = food.type === 'plant'
+    ? (food.yield_kg_ha != null && food.yield_kg_ha > 0 ? SQUARE_METERS_PER_HECTARE / food.yield_kg_ha : null)
+    : (food.pasture_ha_per_kg_output != null ? food.pasture_ha_per_kg_output * SQUARE_METERS_PER_HECTARE : null);
+
+  const intelligence = food.neuron_count > 0
+    && food.weight_kg != null && food.weight_kg > 0
+    && food.yield_fraction != null && food.yield_fraction > 0
+    ? Math.pow(food.neuron_count, NEURAL_INTERCONNECTIVITY_EXPONENT) / (food.weight_kg * food.yield_fraction)
+    : null;
+
+  return {
+    name: food.name,
+    slug: food.slug,
+    nutritionScore,
+    nutritionDetail: {
+      calories:      food.calories,
+      fat:           food.fat,
+      saturatedFat:  food.sat_fat,
+      transFat:      food.trans_fat,
+      cholesterol:   food.cholesterol,
+      sodium:        food.sodium,
+      carbs:         food.carbs,
+      fiber:         food.fiber,
+      sugar:         food.sugar,
+      protein:       food.protein,
+    },
+    emissions: food.emissions_per_kg,
+    emissionsBreakdown: food.ch4_kg_per_kg_output != null ? {
+      co2: food.co2_kg_per_kg_output as number,
+      ch4: food.ch4_kg_per_kg_output,
+      n2o: food.n2o_kg_per_kg_output as number,
+    } : undefined,
+    landUse,
+    landUseDetail: {
+      type:                       food.type,
+      yieldKilogramsPerHectare:   food.yield_kg_ha,
+      pastureHectaresPerKilogram: food.pasture_ha_per_kg_output,
+    },
+    intelligence,
+    intelligenceDetail: {
+      neuronCount:   food.neuron_count,
+      weightKg:      food.weight_kg,
+      yieldFraction: food.yield_fraction,
+    },
+    water: food.water_per_kg,
+  };
 }

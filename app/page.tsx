@@ -1,100 +1,11 @@
 import Link from 'next/link';
 import { FoodTable } from './components/FoodTable/FoodTable';
-import { getNormalizedDb, rowsToObjects } from '@/lib/db';
-
-type RawFood = {
-  name: string; slug: string; type: 'plant' | 'animal';
-  calories: number; fat: number; protein: number; fiber: number; sat_fat: number;
-  sodium: number | null; carbs: number | null; sugar: number | null;
-  cholesterol: number | null; trans_fat: number | null;
-  yield_kg_ha: number | null; pasture_ha_per_kg_output: number | null;
-  emissions_per_kg: number | null; water_per_kg: number | null;
-  neuron_count: number; weight_kg: number | null; yield_fraction: number | null;
-  ch4_kg_per_kg_output: number | null;
-  n2o_kg_per_kg_output: number | null;
-  co2_kg_per_kg_output: number | null;
-};
-
-const SQUARE_METERS_PER_HECTARE       = 10000;
-const NEURAL_INTERCONNECTIVITY_EXPONENT = 1.5;
-const NUTRITION_SCORE_SCALE             = 100;
-const FIBER_SCORE_WEIGHT                = 2;
-const SATURATED_FAT_SCORE_PENALTY       = 2;
+import { fetchCommonFoods } from '@/lib/queries/commonFoods';
+import { mapRawFoodToFoodEthics } from './components/FoodTable/FoodTableCalculations';
 
 export default async function Home() {
-
-  const query = `
-    SELECT food_id, is_feed, slug, name, type, tags, human_food,
-           calories, fat, sat_fat, protein, fiber,
-           sodium, carbs, sugar, cholesterol, trans_fat,
-           yield_kg_ha, water_per_kg, soil_erosion, pesticide_kg_ha,
-           fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr,
-           pesticide_freshwater_paf, pesticide_terrestrial_paf, pesticide_insect_paf, pesticide_bee_hazard, pesticide_kg_per_kg_food,
-           neuron_count, weight_kg, yield_fraction, pasture_ha_per_kg_output,
-           native_fraction, bycatch_amount,
-           ch4_kg_per_kg_output, n2o_kg_per_kg_output, co2_kg_per_kg_output
-    FROM   foods_normalized
-    WHERE  is_feed = 0
-    AND    EXISTS (
-      SELECT 1 FROM json_each(tags) WHERE value = 'common'
-    )
-  `;
-
-  const db    = await getNormalizedDb();
-  const foods = rowsToObjects(db.exec(query)) as unknown as RawFood[];
-
-  const foodTable = foods.map((food) => {
-    const nutritionScore = food.calories > 0
-      ? (food.protein + FIBER_SCORE_WEIGHT * food.fiber - SATURATED_FAT_SCORE_PENALTY * food.sat_fat) / food.calories * NUTRITION_SCORE_SCALE
-      : null;
-
-    const landUse = food.type === 'plant'
-      ? (food.yield_kg_ha != null && food.yield_kg_ha > 0 ? SQUARE_METERS_PER_HECTARE / food.yield_kg_ha : null)
-      : (food.pasture_ha_per_kg_output != null ? food.pasture_ha_per_kg_output * SQUARE_METERS_PER_HECTARE : null);
-
-    const intelligence = food.neuron_count > 0
-      && food.weight_kg != null && food.weight_kg > 0
-      && food.yield_fraction != null && food.yield_fraction > 0
-      ? Math.pow(food.neuron_count, NEURAL_INTERCONNECTIVITY_EXPONENT) / (food.weight_kg * food.yield_fraction)
-      : null;
-
-    return {
-      name: food.name,
-      slug: food.slug,
-      nutritionScore,
-      nutritionDetail: {
-        calories:      food.calories,
-        fat:           food.fat,
-        saturatedFat:  food.sat_fat,
-        transFat:      food.trans_fat,
-        cholesterol:   food.cholesterol,
-        sodium:        food.sodium,
-        carbs:         food.carbs,
-        fiber:         food.fiber,
-        sugar:         food.sugar,
-        protein:       food.protein,
-      },
-      emissions: food.emissions_per_kg,
-      emissionsBreakdown: food.ch4_kg_per_kg_output != null ? {
-        co2: food.co2_kg_per_kg_output as number,
-        ch4: food.ch4_kg_per_kg_output,
-        n2o: food.n2o_kg_per_kg_output as number,
-      } : undefined,
-      landUse,
-      landUseDetail: {
-        type:           food.type,
-        yieldKilogramsPerHectare:   food.yield_kg_ha,
-        pastureHectaresPerKilogram: food.pasture_ha_per_kg_output,
-      },
-      intelligence,
-      intelligenceDetail: {
-        neuronCount:   food.neuron_count,
-        weightKg:      food.weight_kg,
-        yieldFraction: food.yield_fraction,
-      },
-      water: food.water_per_kg,
-    };
-  });
+  const raw = await fetchCommonFoods();
+  const foodTable = raw.map(mapRawFoodToFoodEthics);
 
   return (
     <div>

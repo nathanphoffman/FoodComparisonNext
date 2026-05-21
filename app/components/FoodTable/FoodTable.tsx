@@ -12,21 +12,9 @@ import {
   WaterCell,
   DummyCell,
 } from './FoodTableFields';
-import type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail } from './FoodTableTypes';
+import type { FoodEthics } from './FoodTableTypes';
 
-export type FoodEthics = {
-  name:               string;
-  slug:               string;
-  nutritionScore:     number | null;
-  nutritionDetail:    NutritionDetail;
-  emissions:          number | null;
-  emissionsBreakdown?: EmissionsBreakdown;
-  landUse:            number | null;
-  landUseDetail:      LandUseDetail;
-  intelligence:       number | null;
-  intelligenceDetail: IntelligenceDetail;
-  water:              number | null;
-};
+export type { FoodEthics };
 
 type SortKey = 'name' | 'nutritionScore' | 'emissions' | 'landUse' | 'intelligence' | 'water';
 type ColumnKey = SortKey | 'dummy';

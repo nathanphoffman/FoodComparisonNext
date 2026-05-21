@@ -322,5 +322,53 @@
         "confidence": 3
       }
     ]
+  },
+  {
+    "id": 28,
+    "animal_id": 12,
+    "plant_id": 4,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 1.058,
+        "source_id": 37,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "animal_id": 12,
+    "plant_id": 5,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 0.483,
+        "source_id": 37,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "animal_id": 12,
+    "plant_id": 3,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 0.196,
+        "source_id": 37,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "animal_id": 12,
+    "plant_id": 6,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 0.138,
+        "source_id": 37,
+        "confidence": 3
+      }
+    ]
   }
 ]

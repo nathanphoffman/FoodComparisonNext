@@ -5,15 +5,15 @@ import { Tooltip, TooltipSection, TooltipRow } from '../Table/Tooltip';
 const MILLIGRAMS_PER_GRAM = 1000;
 const PERCENT_MULTIPLIER  = 100;
 
-export function EmissionsTooltip({ breakdown, children }: { breakdown: EmissionsBreakdown; children: React.ReactNode }) {
+export function EmissionsTooltip({ breakdown, divisor, children }: { breakdown: EmissionsBreakdown; divisor: number; children: React.ReactNode }) {
   return (
     <Tooltip content={
       <TooltipSection title="Emissions breakdown">
-        <TooltipRow label="CO₂" value={`${breakdown.co2.toFixed(1)} kg`} />
-        <TooltipRow label="CH₄ (as CO₂e)" value={`${breakdown.ch4.toFixed(1)} kg`} />
-        <TooltipRow label="N₂O (as CO₂e)" value={`${breakdown.n2o.toFixed(1)} kg`} />
+        <TooltipRow label="CO₂" value={`${(breakdown.co2 / divisor).toFixed(1)} kg CO₂e`} />
+        <TooltipRow label="CH₄ (as CO₂e)" value={`${(breakdown.ch4 / divisor).toFixed(1)} kg CO₂e`} />
+        <TooltipRow label="N₂O (as CO₂e)" value={`${(breakdown.n2o / divisor).toFixed(1)} kg CO₂e`} />
         {breakdown.feedEmissions != null && (
-          <TooltipRow label="Feed crops" value={`${breakdown.feedEmissions.toFixed(1)} kg CO₂e`} />
+          <TooltipRow label="Feed crops" value={`${(breakdown.feedEmissions / divisor).toFixed(1)} kg CO₂e`} />
         )}
       </TooltipSection>
     }>

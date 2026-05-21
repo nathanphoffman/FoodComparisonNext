@@ -144,7 +144,7 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
                 switch (col.key) {
                   case 'name':           return <NameCell           key="name"           name={food.name} slug={food.slug} />;
                   case 'nutritionScore': return <NutritionScoreCell key="nutritionScore" score={food.nutritionScore} detail={food.nutritionDetail} />;
-                  case 'emissions':      return <EmissionsCell      key="emissions"      value={food.emissions != null ? food.emissions / d : null} breakdown={food.emissionsBreakdown} />;
+                  case 'emissions':      return <EmissionsCell      key="emissions"      value={food.emissions != null ? food.emissions / d : null} breakdown={food.emissionsBreakdown} divisor={d} />;
                   case 'landUse':        return <LandUseCell        key="landUse"        value={food.landUse != null ? food.landUse / d : null} detail={food.landUseDetail} />;
                   case 'intelligence':   return <IntelligenceCell   key="intelligence"   value={food.intelligence != null ? food.intelligence / d : null} detail={food.intelligenceDetail} />;
                   case 'water':          return <WaterCell          key="water"          value={food.water != null ? food.water / d : null} />;

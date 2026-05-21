@@ -14,9 +14,9 @@ export function insert(db: Database, animals: Animal[]): void {
     db.run(
       `INSERT INTO animals (
         id, food_id, neuron_count, weight_kg, bycatch_animal_id, bycatch_amount,
-        yield_fraction, pasture_ha_per_kg_output, native_fraction,
+        yield_fraction, pasture_ha_per_kg_output, pasture_green_water_l_per_ha, native_fraction,
         ch4_kg_per_kg_output, n2o_kg_per_kg_output, co2_kg_per_kg_output
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [
         animal.id, animal.food_id,
         animal.neuron_count ? JSON.stringify(animal.neuron_count) : null,
@@ -25,6 +25,7 @@ export function insert(db: Database, animals: Animal[]): void {
         animal.bycatch_amount ? JSON.stringify(animal.bycatch_amount) : null,
         animal.yield_fraction ? JSON.stringify(animal.yield_fraction) : null,
         animal.pasture_ha_per_kg_output ? JSON.stringify(animal.pasture_ha_per_kg_output) : null,
+        animal.pasture_green_water_l_per_ha ? JSON.stringify(animal.pasture_green_water_l_per_ha) : null,
         animal.native_fraction ? JSON.stringify(animal.native_fraction) : null,
         animal.ch4_kg_per_kg_output ? JSON.stringify(animal.ch4_kg_per_kg_output) : null,
         animal.n2o_kg_per_kg_output ? JSON.stringify(animal.n2o_kg_per_kg_output) : null,

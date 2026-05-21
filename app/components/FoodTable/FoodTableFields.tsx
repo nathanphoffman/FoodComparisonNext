@@ -38,17 +38,10 @@ export function EmissionsBadge({ value }: { value: number }) {
   );
 }
 
-export function EmissionsCell({ value, breakdown }: { value: number | null; breakdown?: EmissionsBreakdown }) {
-  return (
-    <Cell key="emissions" align="right">
-      {value != null
-        ? breakdown
-          ? <EmissionsTooltip breakdown={breakdown}><EmissionsBadge value={value} /></EmissionsTooltip>
-          : <EmissionsBadge value={value} />
-        : <span className="text-neutral-400">—</span>
-      }
-    </Cell>
-  );
+export function EmissionsCell({ value, breakdown, divisor }: { value: number | null; breakdown?: EmissionsBreakdown; divisor: number }) {
+  if (value == null) return <Cell key="emissions" align="right"><span className="text-neutral-400">—</span></Cell>;
+  if (breakdown) return <Cell key="emissions" align="right"><EmissionsTooltip breakdown={breakdown} divisor={divisor}><EmissionsBadge value={value} /></EmissionsTooltip></Cell>;
+  return <Cell key="emissions" align="right"><EmissionsBadge value={value} /></Cell>;
 }
 
 // ─── Water ────────────────────────────────────────────────────────────────────

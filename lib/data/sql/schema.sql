@@ -53,8 +53,13 @@ CREATE TABLE IF NOT EXISTS animals (
     bycatch_animal_id        INTEGER REFERENCES animals(id),
     bycatch_amount           TEXT,
     yield_fraction           TEXT,  -- json array of {value: 0-1, source_id, confidence}
-    pasture_ha_per_kg_output TEXT,  -- json array of {value: ha/kg, source_id, confidence}
-    native_fraction          TEXT,  -- json array of {value: 0-1, source_id, confidence} — fraction of pasture on pre-existing native land
+    pasture_ha_per_kg_output      TEXT,  -- json array of {value: ha/kg, source_id, confidence}
+    pasture_green_water_l_per_ha  TEXT,  -- json array of {value: L/ha/yr, source_id, confidence}
+                                         --   green water (precipitation-fed evapotranspiration) consumed by the
+                                         --   pasture type this animal grazes, in litres per hectare per year;
+                                         --   combined with pasture_ha_per_kg_output at build time to derive
+                                         --   pasture green water per kg of output
+    native_fraction               TEXT,  -- json array of {value: 0-1, source_id, confidence} — fraction of pasture on pre-existing native land
     ch4_kg_per_kg_output     TEXT,  -- json array of {value: kg CH4/kg output, source_id, confidence}
                                     --   includes: enteric fermentation, manure management
                                     --   excludes: land use change, feed production

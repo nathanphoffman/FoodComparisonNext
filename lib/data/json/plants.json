@@ -856,9 +856,9 @@
     ],
     "water_per_kg": [
       {
-        "value": 5874,
+        "value": 1250,
         "source_id": 30,
-        "confidence": 5
+        "confidence": 4
       }
     ],
     "soil_erosion": [
@@ -1101,9 +1101,9 @@
     ],
     "water_per_kg": [
       {
-        "value": 45914,
-        "source_id": 34,
-        "confidence": 4
+        "value": 9280,
+        "source_id": 30,
+        "confidence": 3
       }
     ],
     "soil_erosion": [

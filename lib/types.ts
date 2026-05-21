@@ -36,6 +36,7 @@ export interface Animal {
   bycatch_amount: ISourced<number>[] | null;
   yield_fraction: ISourced<number>[] | null;
   pasture_ha_per_kg_output: ISourced<number>[] | null;
+  pasture_green_water_l_per_ha: ISourced<number>[] | null;
   native_fraction: ISourced<number>[] | null;
   ch4_kg_per_kg_output: ISourced<number>[] | null;
   n2o_kg_per_kg_output: ISourced<number>[] | null;

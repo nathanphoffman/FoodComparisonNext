@@ -40,8 +40,11 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     neuron_count             REAL,
     weight_kg                REAL,
     yield_fraction           REAL,
-    pasture_ha_per_kg_output REAL,
-    native_fraction          REAL,
+    pasture_ha_per_kg_output     REAL,
+    pasture_green_water_l_per_ha REAL,  -- green water (precipitation-fed evapotranspiration) consumed by the
+                                        --   pasture type this animal grazes, in litres per hectare per year;
+                                        --   NULL for animals without pasture
+    native_fraction              REAL,
     bycatch_amount           REAL,
     ch4_kg_per_kg_output     REAL,  -- enteric fermentation + manure; excludes land use + feed
     n2o_kg_per_kg_output     REAL,  -- manure management; excludes land use + feed crop fertilizer

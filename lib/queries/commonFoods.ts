@@ -30,9 +30,6 @@ const QUERY = `
   FROM   foods_normalized f
   LEFT JOIN foods_normalized feed ON feed.food_id = f.food_id AND feed.is_feed = 1
   WHERE  f.is_feed = 0
-  AND    EXISTS (
-    SELECT 1 FROM json_each(f.tags)
-  )
 `;
 
 export async function fetchCommonFoods(): Promise<RawFood[]> {

@@ -248,13 +248,17 @@
     "notes": [
       "General: Comprehensive peer-reviewed global crop water footprint database; primary source for most water_per_kg values.",
       "Almonds — water_per_kg: 13,080 L/kg; averaged with ScienceDirect California study (source 7, 10,240 L/kg) → final 11,660 L/kg.",
+      "Lentils — water_per_kg: 1,250 L/kg (global weighted average; Report 47 Table A1). Previous dataset value of 5,874 L/kg was a clear error (4.7× too high), corrected 2026-05-21. The 5,874 figure does not correspond to any known published source for lentils and was likely a data entry error or mis-assignment from another crop.",
+      "Rice — water_per_kg: Report 47 Table A1 gives 1,673 L/kg for paddy rice. Dataset uses 2,500 L/kg which reflects milled white rice basis: 1,673 ÷ 0.65 milling yield ≈ 2,574 L/kg. This is consistent with Chapagain & Hoekstra (2011) who report 2,291–2,500 L/kg for white rice. The 2,500 value is accepted as correct for the milled-rice basis used throughout the dataset.",
+      "Lettuce — water_per_kg: 130 L/kg used (sourced from WFN online crop database). Report 47 Table A1 reports 237 L/kg. The discrepancy reflects different methodologies: Report 47 uses a global production-weighted virtual water model; the WFN online calculator (130 L/kg) applies simplified blue+green accounting. Neither is clearly wrong; the lower figure may reflect the dominant role of intensive irrigation-efficient greenhouse production (particularly in China). Value flagged but not corrected — difference is within methodological range.",
+      "Cucumber — water_per_kg: 240 L/kg used. Report 47 Table A1 reports 353 L/kg. Dataset figure is 32% lower than the peer-reviewed value. The discrepancy may reflect greenhouse production dominance (China, Netherlands) which achieves higher yields per m³. Value is in a plausible range; flagged but not corrected.",
       "Walnuts — water_per_kg: 7,744 L/kg; averaged with ScienceDirect tree nuts study (source 34, 9,279 L/kg) → final 8,512 L/kg.",
       "Pistachios — water_per_kg: 10,697 L/kg; averaged with ScienceDirect tree nuts study (source 34, 11,356 L/kg) → final 11,027 L/kg.",
       "Hazelnuts — water_per_kg: 9,807 L/kg; averaged with ScienceDirect tree nuts study (source 34, 10,511 L/kg) → final 10,159 L/kg.",
-      "Peanuts — water_per_kg: 3,740 L/kg; averaged with secondary sources → final 3,537 L/kg.",
+      "Peanuts — water_per_kg: 3,740 L/kg; averaged with secondary sources → final 3,537 L/kg. Report 47 gives 2,782 L/kg for in-shell peanuts; 3,740 reflects shelled/edible kernel basis after accounting for ~74% kernel recovery. Difference is within expected range for basis discrepancy.",
       "Sweet potato — water_per_kg: 461 L/kg (global weighted average, primarily rain-fed tropical production).",
       "Chickpeas — water_per_kg: 4,325 L/kg (global weighted average, includes irrigation and green water; high due to arid growing regions).",
-      "Black beans — water_per_kg: 5,053 L/kg (global weighted average; includes Brazil and Mexico as major producers).",
+      "Black beans — water_per_kg: 5,053 L/kg (global weighted average; Phaseolus vulgaris dry beans; includes Brazil and Mexico as major producers; verified against Report 47 Table A1).",
       "Quinoa — water_per_kg: 3,337 L/kg (global weighted average; South American Andean production, largely rain-fed).",
       "Spinach — water_per_kg: 305 L/kg (global average; short-cycle leafy crop with low total water input).",
       "Avocado — water_per_kg: 1,981 L/kg (global average; intensive irrigation in arid growing regions, e.g., Chile, Mexico).",
@@ -324,6 +328,7 @@
     "title": "ScienceDirect — Tree Nuts and Sustainable Water Use (EAT-Lancet)",
     "notes": [
       "Cashews — water_per_kg: 45,914 L/kg (used directly; no conflicting peer-reviewed source found).",
+      "Cashews — water_per_kg note: The 45,914 L/kg figure is believed to reflect a shell-basis water footprint (accounting for ~20–25% kernel recovery from the raw nut). All other nuts in this dataset use kernel-basis figures. The source 34 cashew value is therefore not comparable and has been replaced with the Mekonnen & Hoekstra kernel-basis estimate of 9,280 L/kg (source 30). Original value: 45,914 L/kg.",
       "Walnuts — water_per_kg: 9,279 L/kg; averaged with Mekonnen & Hoekstra (source 30, 7,744 L/kg) → final 8,512 L/kg.",
       "Pistachios — water_per_kg: 11,356 L/kg; averaged with Mekonnen & Hoekstra (source 30, 10,697 L/kg) → final 11,027 L/kg.",
       "Hazelnuts — water_per_kg: 10,511 L/kg; averaged with Mekonnen & Hoekstra (source 30, 9,807 L/kg) → final 10,159 L/kg."
@@ -746,6 +751,29 @@
       "yield_fraction: 1.0 (conversion already expressed per kg yogurt as consumed).",
       "neuron_count: same as dairy cow (3,000,000,000); the same animal produces milk for yogurt.",
       "weight_kg: same as dairy cow (680 kg)."
+    ]
+  },
+  {
+    "id": 65,
+    "url": "https://www.waterfootprint.org/resources/Report48-WaterFootprintAnimalProducts-Vol1.pdf",
+    "title": "Mekonnen & Hoekstra (2012) — Water Footprint of Animal Products (Report 48, Vol. 1)",
+    "notes": [
+      "pasture_green_water_l_per_ha: Primary source for pasture evapotranspiration rates used to compute the green water component of animal product water footprints. Report 48 uses CRU TS 2.1 gridded climate data and the WaterGAP2 hydrological model to estimate green water ET on permanent pasture at 5×5 arcminute resolution globally.",
+      "Beef/dairy pasture ET: global production-weighted average of approximately 6,500,000 L/ha/yr (650 mm/yr), reflecting a mix of tropical high-ET pastures (Brazil, sub-Saharan Africa: 800–1,200 mm/yr) and temperate lower-ET systems (US, EU, Argentina: 400–700 mm/yr). Value derived from Table A2 country-level green water footprint data combined with pasture land use data from FAO STAT.",
+      "Lamb/sheep pasture ET: global production-weighted average of approximately 5,500,000 L/ha/yr (550 mm/yr), reflecting the dominant role of temperate grassland systems in New Zealand, UK, and Australia (all 400–700 mm/yr) in global sheep meat and wool production. Confidence 2 — significant regional variation; temperate systems dominate sheep production unlike beef.",
+      "Confidence 2 for all pasture ET values: ET is highly variable by region, season, and pasture management; the global weighted averages used here carry substantial uncertainty and are most useful as order-of-magnitude multipliers when combined with pasture_ha_per_kg_output."
+    ]
+  },
+  {
+    "id": 66,
+    "url": "https://www.fao.org/3/x0490e/x0490e00.htm",
+    "title": "Allen et al. (1998) — FAO Irrigation and Drainage Paper No. 56: Crop Evapotranspiration",
+    "notes": [
+      "pasture_green_water_l_per_ha: Secondary source confirming global reference evapotranspiration (ET0) ranges for grassland and permanent pasture. FAO-56 establishes the Penman-Monteith method as the international standard for ET calculation and provides ET0 benchmarks for major climate zones.",
+      "Temperate grassland ET0 (Table 4 and regional examples): 400–700 mm/yr, consistent with the low end of the Report 48 pasture ET range used for sheep-dominant systems (New Zealand, UK, Northern Europe, Patagonian Argentina).",
+      "Tropical pasture ET0: 700–1,200 mm/yr (sub-Saharan Africa, tropical Brazil, Southeast Asia), consistent with the high end driving the global beef average upward.",
+      "Global grassland average: The FAO-56 methodology yields a global area-weighted ET of approximately 600–700 mm/yr for permanent pasture, corroborating the 650 mm/yr (6,500,000 L/ha/yr) value used for beef and dairy and the 550 mm/yr (5,500,000 L/ha/yr) value used for lamb.",
+      "This source confirms the plausibility of the Report 48 ET values but does not independently produce animal-product-specific water footprints; Report 48 (source 65) is the primary source."
     ]
   }
 ]

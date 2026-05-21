@@ -32,6 +32,18 @@
         "confidence": 2
       }
     ],
+    "pasture_green_water_l_per_ha": [
+      {
+        "value": 6500000,
+        "source_id": 65,
+        "confidence": 2
+      },
+      {
+        "value": 6500000,
+        "source_id": 66,
+        "confidence": 2
+      }
+    ],
     "native_fraction": [
       {
         "value": 0.65,
@@ -103,6 +115,7 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
+    "pasture_green_water_l_per_ha": null,
     "native_fraction": null,
     "ch4_kg_per_kg_output": [
       {
@@ -168,6 +181,7 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
+    "pasture_green_water_l_per_ha": null,
     "native_fraction": null,
     "ch4_kg_per_kg_output": [
       {
@@ -238,6 +252,7 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
+    "pasture_green_water_l_per_ha": null,
     "native_fraction": null,
     "ch4_kg_per_kg_output": [
       {
@@ -288,6 +303,7 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
+    "pasture_green_water_l_per_ha": null,
     "native_fraction": null,
     "ch4_kg_per_kg_output": [
       {
@@ -338,6 +354,7 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
+    "pasture_green_water_l_per_ha": null,
     "native_fraction": null,
     "ch4_kg_per_kg_output": [
       {
@@ -406,6 +423,18 @@
       {
         "value": 0.0001,
         "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "pasture_green_water_l_per_ha": [
+      {
+        "value": 6500000,
+        "source_id": 65,
+        "confidence": 2
+      },
+      {
+        "value": 6500000,
+        "source_id": 66,
         "confidence": 2
       }
     ],
@@ -480,6 +509,7 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
+    "pasture_green_water_l_per_ha": null,
     "native_fraction": null,
     "ch4_kg_per_kg_output": [
       {
@@ -530,6 +560,7 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
+    "pasture_green_water_l_per_ha": null,
     "native_fraction": null,
     "ch4_kg_per_kg_output": [
       {
@@ -580,6 +611,7 @@
       }
     ],
     "pasture_ha_per_kg_output": null,
+    "pasture_green_water_l_per_ha": null,
     "native_fraction": null,
     "ch4_kg_per_kg_output": [
       {
@@ -633,6 +665,18 @@
       {
         "value": 0.02,
         "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "pasture_green_water_l_per_ha": [
+      {
+        "value": 5500000,
+        "source_id": 65,
+        "confidence": 2
+      },
+      {
+        "value": 5500000,
+        "source_id": 66,
         "confidence": 2
       }
     ],
@@ -710,6 +754,18 @@
       {
         "value": 0.000115,
         "source_id": 64,
+        "confidence": 2
+      }
+    ],
+    "pasture_green_water_l_per_ha": [
+      {
+        "value": 6500000,
+        "source_id": 65,
+        "confidence": 2
+      },
+      {
+        "value": 6500000,
+        "source_id": 66,
         "confidence": 2
       }
     ],

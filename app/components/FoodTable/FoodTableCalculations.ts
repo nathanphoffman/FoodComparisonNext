@@ -1,5 +1,5 @@
 import type { RawFood } from '@/lib/queries/commonFoods';
-import type { FoodEthics, FoodWeights } from './FoodTableTypes';
+import type { EmissionsBreakdown, FoodEthics, FoodWeights } from './FoodTableTypes';
 
 const ONE_THOUSAND    = 1_000;
 export const ONE_MILLION     = 1_000_000;
@@ -54,19 +54,57 @@ export function getUnitLabel(weights: FoodWeights): string {
 }
 
 export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
-  const nutritionScore = food.calories > 0
-    ? (food.protein + FIBER_SCORE_WEIGHT * food.fiber - SATURATED_FAT_SCORE_PENALTY * food.sat_fat) / food.calories * NUTRITION_SCORE_SCALE
-    : null;
+  let nutritionScore: number | null = null;
+  if (food.calories > 0) {
+    const rawScore = food.protein + FIBER_SCORE_WEIGHT * food.fiber - SATURATED_FAT_SCORE_PENALTY * food.sat_fat;
+    nutritionScore = (rawScore / food.calories) * NUTRITION_SCORE_SCALE;
+  }
 
-  const landUse = food.type === 'plant'
-    ? (food.yield_kg_ha != null && food.yield_kg_ha > 0 ? SQUARE_METERS_PER_HECTARE / food.yield_kg_ha : null)
-    : (food.pasture_ha_per_kg_output != null ? food.pasture_ha_per_kg_output * SQUARE_METERS_PER_HECTARE : null);
+  const isPlant       = food.type === 'plant';
+  const hasPlantYield = food.yield_kg_ha != null && food.yield_kg_ha > 0;
+  const hasPasture    = food.pasture_ha_per_kg_output != null;
 
-  const intelligence = food.neuron_count > 0
+  const landUse = isPlant
+    ? (hasPlantYield ? SQUARE_METERS_PER_HECTARE / food.yield_kg_ha! : null)
+    : (hasPasture    ? food.pasture_ha_per_kg_output! * SQUARE_METERS_PER_HECTARE : null);
+
+  let intelligence: number | null = null;
+  
+  const hasIntelligenceData = food.neuron_count > 0
     && food.weight_kg != null && food.weight_kg > 0
-    && food.yield_fraction != null && food.yield_fraction > 0
-    ? Math.pow(food.neuron_count, NEURAL_INTERCONNECTIVITY_EXPONENT) / (food.weight_kg * food.yield_fraction)
-    : null;
+    && food.yield_fraction != null && food.yield_fraction > 0;
+
+  if (hasIntelligenceData) {
+    const neuronScore = Math.pow(food.neuron_count, NEURAL_INTERCONNECTIVITY_EXPONENT);
+    const edibleMass  = food.weight_kg! * food.yield_fraction!;
+    intelligence = neuronScore / edibleMass;
+  }
+
+  let emissions: number | null = null;
+  let emissionsBreakdown: EmissionsBreakdown | undefined = undefined;
+  const hasAnimalGasBreakdown = food.type === 'animal' && food.ch4_kg_per_kg_output != null;
+  if (hasAnimalGasBreakdown) {
+    const co2          = food.co2_kg_per_kg_output as number;
+    const ch4          = food.ch4_kg_per_kg_output as number;
+    const n2o          = food.n2o_kg_per_kg_output as number;
+    const feedEmissions = food.feed_emissions_per_kg ?? 0;
+    emissions = co2 + ch4 + n2o + feedEmissions;
+    emissionsBreakdown = {
+      co2,
+      ch4,
+      n2o,
+      feedEmissions: food.feed_emissions_per_kg ?? undefined,
+    };
+  } else {
+    emissions = food.emissions_per_kg;
+  }
+
+  let water: number | null;
+  if (food.type === 'animal') {
+    water = food.feed_water_per_kg;
+  } else {
+    water = food.water_per_kg;
+  }
 
   return {
     name: food.name,
@@ -84,15 +122,8 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
       sugar:         food.sugar,
       protein:       food.protein,
     },
-    emissions: food.type === 'animal' && food.ch4_kg_per_kg_output != null
-      ? (food.co2_kg_per_kg_output as number) + food.ch4_kg_per_kg_output + (food.n2o_kg_per_kg_output as number) + (food.feed_emissions_per_kg ?? 0)
-      : food.emissions_per_kg,
-    emissionsBreakdown: food.ch4_kg_per_kg_output != null ? {
-      co2:          food.co2_kg_per_kg_output as number,
-      ch4:          food.ch4_kg_per_kg_output,
-      n2o:          food.n2o_kg_per_kg_output as number,
-      feedEmissions: food.feed_emissions_per_kg ?? undefined,
-    } : undefined,
+    emissions,
+    emissionsBreakdown,
     landUse,
     landUseDetail: {
       type:                       food.type,
@@ -105,6 +136,6 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
       weightKg:      food.weight_kg,
       yieldFraction: food.yield_fraction,
     },
-    water: food.type === 'animal' ? food.feed_water_per_kg : food.water_per_kg,
+    water,
   };
 }

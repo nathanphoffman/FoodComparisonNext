@@ -14,6 +14,7 @@ export class RawAnimal {
   readonly weight_kg: SourcedNumberArray;
   readonly yield_fraction: SourcedNumberArray;
   readonly pasture_ha_per_kg_output: SourcedNumberArray;
+  readonly pasture_green_water_l_per_ha: SourcedNumberArray;
   readonly native_fraction: SourcedNumberArray;
   readonly bycatch_amount: SourcedNumberArray;
   readonly ch4_kg_per_kg_output: SourcedNumberArray;
@@ -25,6 +26,7 @@ export class RawAnimal {
     this.weight_kg = new SourcedNumberArray(data.weight_kg ?? []);
     this.yield_fraction = new SourcedNumberArray(data.yield_fraction ?? []);
     this.pasture_ha_per_kg_output = new SourcedNumberArray(data.pasture_ha_per_kg_output ?? []);
+    this.pasture_green_water_l_per_ha = new SourcedNumberArray(data.pasture_green_water_l_per_ha ?? []);
     this.native_fraction = new SourcedNumberArray(data.native_fraction ?? []);
     this.bycatch_amount = new SourcedNumberArray(data.bycatch_amount ?? []);
     this.ch4_kg_per_kg_output = new SourcedNumberArray(data.ch4_kg_per_kg_output ?? []);
@@ -38,6 +40,7 @@ export class RawAnimal {
       weight_kg: this.weight_kg.weightedAverage(),
       yield_fraction: this.yield_fraction.weightedAverage(),
       pasture_ha_per_kg_output: this.pasture_ha_per_kg_output.weightedAverage(),
+      pasture_green_water_l_per_ha: this.pasture_green_water_l_per_ha.weightedAverage(),
       native_fraction: this.native_fraction.weightedAverage(),
       bycatch_amount: this.bycatch_amount.weightedAverage(),
       ch4_kg_per_kg_output: this.ch4_kg_per_kg_output.weightedAverage(),
@@ -49,7 +52,13 @@ export class RawAnimal {
   feedNormalizedFields(): PlantNormalizedFields | null {
     if (this.feedEntries.length === 0) return null;
 
-    let emissions = 0, water = 0, soilErosion = 0;
+    const pastureHa          = this.pasture_ha_per_kg_output.weightedAverage();
+    const pastureEvapL_per_ha = this.pasture_green_water_l_per_ha.weightedAverage();
+    const pastureWater        = pastureHa != null && pastureEvapL_per_ha != null
+      ? pastureHa * pastureEvapL_per_ha
+      : 0;
+
+    let emissions = 0, water = pastureWater, soilErosion = 0;
     let fertilizerKgHa = 0, tillage = 0, co2Capture = 0, pesticideKgPerKg = 0;
     let potentiallyAffectedFractionNumerator = 0, potentiallyAffectedFractionDenominator = 0;
     let terrestrialPafNumerator = 0, terrestrialPafDenominator = 0;

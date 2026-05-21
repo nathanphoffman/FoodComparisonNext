@@ -36,6 +36,7 @@ export interface IFoodNormalized {
   weight_kg: number | null;
   yield_fraction: number | null;
   pasture_ha_per_kg_output: number | null;
+  pasture_green_water_l_per_ha: number | null;
   native_fraction: number | null;
   bycatch_amount: number | null;
   ch4_kg_per_kg_output: number | null;
@@ -52,7 +53,7 @@ export type PlantNormalizedFields = Pick<IFoodNormalized,
 
 export type AnimalNormalizedFields = Pick<IFoodNormalized,
   | 'neuron_count' | 'weight_kg' | 'yield_fraction' | 'pasture_ha_per_kg_output'
-  | 'native_fraction' | 'bycatch_amount'
+  | 'pasture_green_water_l_per_ha' | 'native_fraction' | 'bycatch_amount'
   | 'ch4_kg_per_kg_output' | 'n2o_kg_per_kg_output' | 'co2_kg_per_kg_output'
 >;
 
@@ -91,6 +92,7 @@ export class FoodNormalized implements IFoodNormalized {
   weight_kg!: number | null;
   yield_fraction!: number | null;
   pasture_ha_per_kg_output!: number | null;
+  pasture_green_water_l_per_ha!: number | null;
   native_fraction!: number | null;
   bycatch_amount!: number | null;
   ch4_kg_per_kg_output!: number | null;
@@ -113,7 +115,7 @@ export class FoodNormalized implements IFoodNormalized {
       this.co2_capture_kg_ha_yr, this.pesticide_freshwater_paf, this.pesticide_terrestrial_paf,
       this.pesticide_insect_paf, this.pesticide_bee_hazard, this.pesticide_kg_per_kg_food,
       this.neuron_count, this.weight_kg, this.yield_fraction,
-      this.pasture_ha_per_kg_output, this.native_fraction, this.bycatch_amount,
+      this.pasture_ha_per_kg_output, this.pasture_green_water_l_per_ha, this.native_fraction, this.bycatch_amount,
       this.ch4_kg_per_kg_output, this.n2o_kg_per_kg_output, this.co2_kg_per_kg_output,
     ];
   }

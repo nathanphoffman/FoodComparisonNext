@@ -1,4 +1,4 @@
-export type EmissionsBreakdown = { co2: number; ch4: number; n2o: number };
+export type EmissionsBreakdown = { co2: number; ch4: number; n2o: number; feedEmissions?: number };
 
 export type FoodWeights = {
     calories: number;

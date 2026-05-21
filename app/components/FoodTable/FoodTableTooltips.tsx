@@ -12,6 +12,9 @@ export function EmissionsTooltip({ breakdown, children }: { breakdown: Emissions
         <TooltipRow label="CO₂" value={`${breakdown.co2.toFixed(1)} kg`} />
         <TooltipRow label="CH₄ (as CO₂e)" value={`${breakdown.ch4.toFixed(1)} kg`} />
         <TooltipRow label="N₂O (as CO₂e)" value={`${breakdown.n2o.toFixed(1)} kg`} />
+        {breakdown.feedEmissions != null && (
+          <TooltipRow label="Feed crops" value={`${breakdown.feedEmissions.toFixed(1)} kg CO₂e`} />
+        )}
       </TooltipSection>
     }>
       {children}

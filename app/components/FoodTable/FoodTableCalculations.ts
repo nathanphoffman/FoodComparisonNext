@@ -84,11 +84,14 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
       sugar:         food.sugar,
       protein:       food.protein,
     },
-    emissions: food.emissions_per_kg,
+    emissions: food.type === 'animal' && food.ch4_kg_per_kg_output != null
+      ? (food.co2_kg_per_kg_output as number) + food.ch4_kg_per_kg_output + (food.n2o_kg_per_kg_output as number) + (food.feed_emissions_per_kg ?? 0)
+      : food.emissions_per_kg,
     emissionsBreakdown: food.ch4_kg_per_kg_output != null ? {
-      co2: food.co2_kg_per_kg_output as number,
-      ch4: food.ch4_kg_per_kg_output,
-      n2o: food.n2o_kg_per_kg_output as number,
+      co2:          food.co2_kg_per_kg_output as number,
+      ch4:          food.ch4_kg_per_kg_output,
+      n2o:          food.n2o_kg_per_kg_output as number,
+      feedEmissions: food.feed_emissions_per_kg ?? undefined,
     } : undefined,
     landUse,
     landUseDetail: {
@@ -102,6 +105,6 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
       weightKg:      food.weight_kg,
       yieldFraction: food.yield_fraction,
     },
-    water: food.water_per_kg,
+    water: food.type === 'animal' ? food.feed_water_per_kg : food.water_per_kg,
   };
 }

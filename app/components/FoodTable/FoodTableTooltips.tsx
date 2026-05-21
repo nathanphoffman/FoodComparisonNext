@@ -1,6 +1,9 @@
 import type { EmissionsBreakdown, IntelligenceDetail, LandUseDetail, NutritionDetail } from './FoodTableTypes';
 import { formatNeurons, nutritionScale } from './FoodTableCalculations';
 
+const MILLIGRAMS_PER_GRAM = 1000;
+const PERCENT_MULTIPLIER  = 100;
+
 export function EmissionsTooltip({ breakdown }: { breakdown: EmissionsBreakdown }) {
   return (
     <div className="space-y-1">
@@ -23,8 +26,8 @@ export function NutritionTooltip({ detail }: { detail: NutritionDetail }) {
       {detail.transFat != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Trans fat</span><span>{(detail.transFat * scale).toFixed(1)} g</span></div>}
       {detail.carbs != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Carbs</span><span>{(detail.carbs * scale).toFixed(1)} g</span></div>}
       {detail.sugar != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sugar</span><span>{(detail.sugar * scale).toFixed(1)} g</span></div>}
-      {detail.sodium != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sodium</span><span>{(detail.sodium * scale * 1000).toFixed(0)} mg</span></div>}
-      {detail.cholesterol != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Cholesterol</span><span>{(detail.cholesterol * scale * 1000).toFixed(0)} mg</span></div>}
+      {detail.sodium != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sodium</span><span>{(detail.sodium * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</span></div>}
+      {detail.cholesterol != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Cholesterol</span><span>{(detail.cholesterol * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</span></div>}
       {detail.glycemicIndex != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Glycemic index</span><span>{detail.glycemicIndex.toFixed(0)}</span></div>}
     </div>
   );
@@ -53,7 +56,7 @@ export function IntelligenceTooltip({ detail }: { detail: IntelligenceDetail }) 
         <div className="flex justify-between gap-6"><span className="text-neutral-400">Animal weight</span><span>{detail.weightKg} kg</span></div>
       )}
       {detail.yieldFraction != null && (
-        <div className="flex justify-between gap-6"><span className="text-neutral-400">Yield fraction</span><span>{(detail.yieldFraction * 100).toFixed(0)}%</span></div>
+        <div className="flex justify-between gap-6"><span className="text-neutral-400">Yield fraction</span><span>{(detail.yieldFraction * PERCENT_MULTIPLIER).toFixed(0)}%</span></div>
       )}
       <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">^1.5 scaling applied to reflect neural interconnectivity</div>
     </div>

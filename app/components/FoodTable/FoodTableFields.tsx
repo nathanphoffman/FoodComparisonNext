@@ -8,6 +8,7 @@ import { Tooltip } from '../Table/Tooltip';
 import type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail } from './FoodTableTypes';
 import {
   ONE_BILLION,
+  ONE_MILLION,
   formatNeurons,
   formatIntelligenceValue,
   getIntelligenceColor,
@@ -148,6 +149,6 @@ export function DummyCell() {
 
 export function NeuronValue({ value }: { value: number }) {
   if (value === 0) return <span className="text-neutral-400">—</span>;
-  const color = value >= ONE_BILLION ? 'text-orange-600' : value >= 1_000_000 ? 'text-amber-600' : 'text-yellow-600';
+  const color = value >= ONE_BILLION ? 'text-orange-600' : value >= ONE_MILLION ? 'text-amber-600' : 'text-yellow-600';
   return <span className={`font-medium ${color}`}>{formatNeurons(value)}</span>;
 }

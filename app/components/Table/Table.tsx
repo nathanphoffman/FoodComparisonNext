@@ -12,9 +12,9 @@ export function Table({ headers = [], children }: { headers?: Header[], children
       <table className="w-full border-collapse">
         <thead>
           <tr className="bg-neutral-50 border-b border-neutral-200">
-            {headers.map((header, i) => (
+            {headers.map((header) => (
               <th
-                key={i}
+                key={header.label}
                 onClick={header.onSort}
                 className={[
                   'px-4 py-3 text-xs font-semibold uppercase tracking-wider transition-colors text-left',

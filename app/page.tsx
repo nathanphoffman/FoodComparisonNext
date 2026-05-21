@@ -15,6 +15,12 @@ type RawFood = {
   co2_kg_per_kg_output: number | null;
 };
 
+const SQUARE_METERS_PER_HECTARE       = 10000;
+const NEURAL_INTERCONNECTIVITY_EXPONENT = 1.5;
+const NUTRITION_SCORE_SCALE             = 100;
+const FIBER_SCORE_WEIGHT                = 2;
+const SATURATED_FAT_SCORE_PENALTY       = 2;
+
 export default async function Home() {
 
   const query = `
@@ -39,17 +45,17 @@ export default async function Home() {
 
   const foodTable = foods.map((food) => {
     const nutritionScore = food.calories > 0
-      ? (food.protein + 2 * food.fiber - 2 * food.sat_fat) / food.calories * 100
+      ? (food.protein + FIBER_SCORE_WEIGHT * food.fiber - SATURATED_FAT_SCORE_PENALTY * food.sat_fat) / food.calories * NUTRITION_SCORE_SCALE
       : null;
 
     const landUse = food.type === 'plant'
-      ? (food.yield_kg_ha != null && food.yield_kg_ha > 0 ? 10000 / food.yield_kg_ha : null)
-      : (food.pasture_ha_per_kg_output != null ? food.pasture_ha_per_kg_output * 10000 : null);
+      ? (food.yield_kg_ha != null && food.yield_kg_ha > 0 ? SQUARE_METERS_PER_HECTARE / food.yield_kg_ha : null)
+      : (food.pasture_ha_per_kg_output != null ? food.pasture_ha_per_kg_output * SQUARE_METERS_PER_HECTARE : null);
 
     const intelligence = food.neuron_count > 0
       && food.weight_kg != null && food.weight_kg > 0
       && food.yield_fraction != null && food.yield_fraction > 0
-      ? Math.pow(food.neuron_count, 1.5) / (food.weight_kg * food.yield_fraction)
+      ? Math.pow(food.neuron_count, NEURAL_INTERCONNECTIVITY_EXPONENT) / (food.weight_kg * food.yield_fraction)
       : null;
 
     return {

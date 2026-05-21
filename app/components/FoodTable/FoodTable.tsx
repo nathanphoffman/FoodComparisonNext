@@ -130,8 +130,8 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
         </div>
       </div>
       <Table headers={headers}>
-        {sorted.map((food, i) => (
-          <Row key={i}>
+        {sorted.map((food) => (
+          <Row key={food.slug}>
             {activeCols.map(col => {
               switch (col.key) {
                 case 'name':           return <NameCell           key="name"           name={food.name} slug={food.slug} />;

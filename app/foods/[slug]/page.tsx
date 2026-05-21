@@ -1,7 +1,13 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getDb, rowsToObjects } from '@/lib/db';
-import type { Food, Plant, Animal } from '@/lib/types';
+import type { Food, Plant, Animal, ISourced } from '@/lib/types';
+
+function firstValue(field: ISourced<number>[] | null | unknown): number | null {
+  if (!field) return null;
+  const arr = typeof field === 'string' ? JSON.parse(field) as ISourced<number>[] : field as ISourced<number>[];
+  return arr[0]?.value ?? null;
+}
 
 export const dynamic = 'force-dynamic';
 
@@ -31,6 +37,7 @@ export default async function FoodPage({ params }: Props) {
   }
 
   const GRAMS_PER_HUNDRED = 100;
+  const MILLIGRAMS_PER_GRAM = 1000;
   const formatNutrientPer100g = (gramsPerGram: number) => (gramsPerGram * GRAMS_PER_HUNDRED).toFixed(1) + 'g';
 
   return (
@@ -53,8 +60,8 @@ export default async function FoodPage({ params }: Props) {
           <tr><td>Fiber</td><td>{formatNutrientPer100g(nutrition.fiber)}</td></tr>
           {nutrition.carbs != null && <tr><td>Total carbs</td><td>{formatNutrientPer100g(nutrition.carbs)}</td></tr>}
           {nutrition.sugar != null && <tr><td>Sugar</td><td>{formatNutrientPer100g(nutrition.sugar)}</td></tr>}
-          {nutrition.sodium != null && <tr><td>Sodium</td><td>{(nutrition.sodium * GRAMS_PER_HUNDRED * 1000).toFixed(0)} mg</td></tr>}
-          {nutrition.cholesterol != null && <tr><td>Cholesterol</td><td>{(nutrition.cholesterol * GRAMS_PER_HUNDRED * 1000).toFixed(0)} mg</td></tr>}
+          {nutrition.sodium != null && <tr><td>Sodium</td><td>{(nutrition.sodium * GRAMS_PER_HUNDRED * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</td></tr>}
+          {nutrition.cholesterol != null && <tr><td>Cholesterol</td><td>{(nutrition.cholesterol * GRAMS_PER_HUNDRED * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</td></tr>}
           {nutrition.glycemic_index != null && <tr><td>Glycemic index</td><td>{nutrition.glycemic_index.toFixed(0)}</td></tr>}
         </tbody>
       </table>
@@ -64,17 +71,17 @@ export default async function FoodPage({ params }: Props) {
           <h2>Environmental data</h2>
           <table>
             <tbody>
-              {(detail as Plant).yield_kg_ha != null && (
-                <tr><td>Yield</td><td>{(detail as Plant).yield_kg_ha} kg/ha</td></tr>
+              {firstValue((detail as Plant).yield_kg_ha) != null && (
+                <tr><td>Yield</td><td>{firstValue((detail as Plant).yield_kg_ha)} kg/ha</td></tr>
               )}
-              {(detail as Plant).water_per_kg != null && (
-                <tr><td>Water use</td><td>{(detail as Plant).water_per_kg} L/kg</td></tr>
+              {firstValue((detail as Plant).water_per_kg) != null && (
+                <tr><td>Water use</td><td>{firstValue((detail as Plant).water_per_kg)} L/kg</td></tr>
               )}
-              {(detail as Plant).emissions_per_kg != null && (
-                <tr><td>GHG emissions</td><td>{(detail as Plant).emissions_per_kg} kg CO₂e/kg</td></tr>
+              {firstValue((detail as Plant).emissions_per_kg) != null && (
+                <tr><td>GHG emissions</td><td>{firstValue((detail as Plant).emissions_per_kg)} kg CO₂e/kg</td></tr>
               )}
-              {(detail as Plant).pesticide_kg_ha != null && (
-                <tr><td>Pesticide use</td><td>{(detail as Plant).pesticide_kg_ha} kg/ha</td></tr>
+              {firstValue((detail as Plant).pesticide_kg_ha) != null && (
+                <tr><td>Pesticide use</td><td>{firstValue((detail as Plant).pesticide_kg_ha)} kg/ha</td></tr>
               )}
             </tbody>
           </table>
@@ -86,11 +93,11 @@ export default async function FoodPage({ params }: Props) {
           <h2>Animal data</h2>
           <table>
             <tbody>
-              {(detail as Animal).neuron_count != null && (
-                <tr><td>Neuron count</td><td>{(detail as Animal).neuron_count?.toLocaleString()}</td></tr>
+              {firstValue((detail as Animal).neuron_count) != null && (
+                <tr><td>Neuron count</td><td>{firstValue((detail as Animal).neuron_count)?.toLocaleString()}</td></tr>
               )}
-              {(detail as Animal).weight_kg != null && (
-                <tr><td>Live weight</td><td>{(detail as Animal).weight_kg} kg</td></tr>
+              {firstValue((detail as Animal).weight_kg) != null && (
+                <tr><td>Live weight</td><td>{firstValue((detail as Animal).weight_kg)} kg</td></tr>
               )}
             </tbody>
           </table>

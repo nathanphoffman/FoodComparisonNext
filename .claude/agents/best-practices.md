@@ -33,6 +33,7 @@ description: Audits source code for best practice violations and recommends new 
 ### React / Next.js
 - **No inline styles.** Disallow `style={{}}` props — use Tailwind classes instead.
 - **No magic numbers.** Replace bare numeric literals in logic and calculations with named constants that describe their meaning.
+- **Stable React keys.** Never use array index as a `key` prop in lists that can reorder. Use a domain-meaningful field (e.g. `food.slug`, `col.key`) so React reconciles correctly across sorts and mutations.
 
 ## On Every Run
 1. Pick 1 source file at random and audit it against all current best practices. Report violations with file path, line number, and a suggested fix.

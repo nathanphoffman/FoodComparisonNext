@@ -13,7 +13,12 @@
           "fat": 0.497,
           "sat_fat": 0.038,
           "protein": 0.214,
-          "fiber": 0.125
+          "fiber": 0.125,
+          "sodium": 0.01,
+          "carbs": 0.216,
+          "sugar": 0.048,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -37,7 +42,12 @@
           "fat": 0.175,
           "sat_fat": 0.067,
           "protein": 0.176,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.72,
+          "carbs": 0,
+          "sugar": 0,
+          "cholesterol": 0.72,
+          "trans_fat": 0.007
         },
         "source_id": 1,
         "confidence": 5
@@ -60,7 +70,12 @@
           "fat": 0.019,
           "sat_fat": 0.003,
           "protein": 0.133,
-          "fiber": 0.107
+          "fiber": 0.107,
+          "sodium": 0.02,
+          "carbs": 0.713,
+          "sugar": 0,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -83,7 +98,12 @@
           "fat": 0.09,
           "sat_fat": 0.013,
           "protein": 0.169,
-          "fiber": 0.06
+          "fiber": 0.06,
+          "sodium": 0.15,
+          "carbs": 0.116,
+          "sugar": 0,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -107,7 +127,12 @@
           "fat": 0.036,
           "sat_fat": 0.01,
           "protein": 0.311,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.74,
+          "carbs": 0,
+          "sugar": 0,
+          "cholesterol": 0.85,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -128,7 +153,12 @@
           "fat": 0.047,
           "sat_fat": 0.007,
           "protein": 0.091,
-          "fiber": 0.071
+          "fiber": 0.071,
+          "sodium": 0.35,
+          "carbs": 0.741,
+          "sugar": 0.006,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -149,7 +179,12 @@
           "fat": 0.028,
           "sat_fat": 0.003,
           "protein": 0.177,
-          "fiber": 0.247
+          "fiber": 0.247,
+          "sodium": 0.07,
+          "carbs": 0.213,
+          "sugar": 0,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -170,7 +205,12 @@
           "fat": 0.031,
           "sat_fat": 0.005,
           "protein": 0.088,
-          "fiber": 0.32
+          "fiber": 0.32,
+          "sodium": 0.04,
+          "carbs": 0.537,
+          "sugar": 0,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -191,7 +231,12 @@
           "fat": 0.035,
           "sat_fat": 0.005,
           "protein": 0.111,
-          "fiber": 0.066
+          "fiber": 0.066,
+          "sodium": 0.06,
+          "carbs": 0.745,
+          "sugar": 0,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -214,7 +259,12 @@
           "fat": 0.002,
           "sat_fat": 0,
           "protein": 0.009,
-          "fiber": 0.012
+          "fiber": 0.012,
+          "sodium": 0.05,
+          "carbs": 0.039,
+          "sugar": 0.026,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -235,7 +285,12 @@
           "fat": 0.001,
           "sat_fat": 0,
           "protein": 0.007,
-          "fiber": 0.005
+          "fiber": 0.005,
+          "sodium": 0.02,
+          "carbs": 0.036,
+          "sugar": 0.017,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -256,7 +311,12 @@
           "fat": 0.003,
           "sat_fat": 0,
           "protein": 0.013,
-          "fiber": 0.021
+          "fiber": 0.021,
+          "sodium": 0.28,
+          "carbs": 0.029,
+          "sugar": 0.013,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -279,7 +339,12 @@
           "fat": 0.003,
           "sat_fat": 0.001,
           "protein": 0.027,
-          "fiber": 0.004
+          "fiber": 0.004,
+          "sodium": 0.01,
+          "carbs": 0.285,
+          "sugar": 0,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -302,7 +367,12 @@
           "fat": 0.001,
           "sat_fat": 0,
           "protein": 0.02,
-          "fiber": 0.022
+          "fiber": 0.022,
+          "sodium": 0.06,
+          "carbs": 0.171,
+          "sugar": 0.008,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -325,7 +395,12 @@
           "fat": 0.205,
           "sat_fat": 0.076,
           "protein": 0.175,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.62,
+          "carbs": 0,
+          "sugar": 0,
+          "cholesterol": 0.8,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -349,7 +424,12 @@
           "fat": 0.13,
           "sat_fat": 0.031,
           "protein": 0.201,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.59,
+          "carbs": 0,
+          "sugar": 0,
+          "cholesterol": 0.63,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -372,7 +452,12 @@
           "fat": 0.095,
           "sat_fat": 0.031,
           "protein": 0.125,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 1.42,
+          "carbs": 0.011,
+          "sugar": 0.011,
+          "cholesterol": 3.72,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -393,7 +478,12 @@
           "fat": 0.002,
           "sat_fat": 0,
           "protein": 0.003,
-          "fiber": 0.024
+          "fiber": 0.024,
+          "sodium": 0.01,
+          "carbs": 0.138,
+          "sugar": 0.104,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -414,7 +504,12 @@
           "fat": 0.003,
           "sat_fat": 0.001,
           "protein": 0.011,
-          "fiber": 0.026
+          "fiber": 0.026,
+          "sodium": 0.01,
+          "carbs": 0.229,
+          "sugar": 0.122,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -435,7 +530,12 @@
           "fat": 0.004,
           "sat_fat": 0.001,
           "protein": 0.09,
-          "fiber": 0.079
+          "fiber": 0.079,
+          "sodium": 0.02,
+          "carbs": 0.202,
+          "sugar": 0.018,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -456,7 +556,12 @@
           "fat": 0.067,
           "sat_fat": 0.012,
           "protein": 0.167,
-          "fiber": 0.105
+          "fiber": 0.105,
+          "sodium": 0.02,
+          "carbs": 0.663,
+          "sugar": 0,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -479,7 +584,12 @@
           "fat": 0.004,
           "sat_fat": 0.0011,
           "protein": 0.028,
-          "fiber": 0.026
+          "fiber": 0.026,
+          "sodium": 0.33,
+          "carbs": 0.066,
+          "sugar": 0.017,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -503,7 +613,12 @@
           "fat": 0.01,
           "sat_fat": 0.003,
           "protein": 0.234,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.45,
+          "carbs": 0,
+          "sugar": 0,
+          "cholesterol": 0.49,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -524,7 +639,12 @@
           "fat": 0.654,
           "sat_fat": 0.061,
           "protein": 0.151,
-          "fiber": 0.067
+          "fiber": 0.067,
+          "sodium": 0.02,
+          "carbs": 0.138,
+          "sugar": 0.027,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -545,7 +665,12 @@
           "fat": 0.439,
           "sat_fat": 0.078,
           "protein": 0.182,
-          "fiber": 0.033
+          "fiber": 0.033,
+          "sodium": 0.12,
+          "carbs": 0.304,
+          "sugar": 0.056,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -566,7 +691,12 @@
           "fat": 0.456,
           "sat_fat": 0.056,
           "protein": 0.202,
-          "fiber": 0.103
+          "fiber": 0.103,
+          "sodium": 0.01,
+          "carbs": 0.278,
+          "sugar": 0.078,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -587,7 +717,12 @@
           "fat": 0.72,
           "sat_fat": 0.062,
           "protein": 0.092,
-          "fiber": 0.096
+          "fiber": 0.096,
+          "sodium": 0,
+          "carbs": 0.139,
+          "sugar": 0.04,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -608,7 +743,12 @@
           "fat": 0.609,
           "sat_fat": 0.045,
           "protein": 0.15,
-          "fiber": 0.099
+          "fiber": 0.099,
+          "sodium": 0,
+          "carbs": 0.168,
+          "sugar": 0.044,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -629,7 +769,12 @@
           "fat": 0.759,
           "sat_fat": 0.121,
           "protein": 0.079,
-          "fiber": 0.086
+          "fiber": 0.086,
+          "sodium": 0.05,
+          "carbs": 0.138,
+          "sugar": 0.047,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -650,7 +795,12 @@
           "fat": 0.67,
           "sat_fat": 0.152,
           "protein": 0.143,
-          "fiber": 0.075
+          "fiber": 0.075,
+          "sodium": 0.03,
+          "carbs": 0.121,
+          "sugar": 0.023,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -671,7 +821,12 @@
           "fat": 0.494,
           "sat_fat": 0.068,
           "protein": 0.258,
-          "fiber": 0.085
+          "fiber": 0.085,
+          "sodium": 0.18,
+          "carbs": 0.161,
+          "sugar": 0.04,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -692,7 +847,12 @@
           "fat": 0.682,
           "sat_fat": 0.048,
           "protein": 0.138,
-          "fiber": 0.036
+          "fiber": 0.036,
+          "sodium": 0.02,
+          "carbs": 0.188,
+          "sugar": 0.037,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -715,7 +875,12 @@
           "fat": 0.033,
           "sat_fat": 0.021,
           "protein": 0.032,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.44,
+          "carbs": 0.047,
+          "sugar": 0.047,
+          "cholesterol": 0.1,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -739,7 +904,12 @@
           "fat": 0.079,
           "sat_fat": 0.022,
           "protein": 0.293,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.77,
+          "carbs": 0,
+          "sugar": 0,
+          "cholesterol": 1.09,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -763,7 +933,12 @@
           "fat": 0.009,
           "sat_fat": 0.002,
           "protein": 0.202,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 1.19,
+          "carbs": 0.002,
+          "sugar": 0,
+          "cholesterol": 1.52,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -787,7 +962,12 @@
           "fat": 0.114,
           "sat_fat": 0.015,
           "protein": 0.245,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.41,
+          "carbs": 0,
+          "sugar": 0,
+          "cholesterol": 0.61,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -810,7 +990,12 @@
           "fat": 0.21,
           "sat_fat": 0.088,
           "protein": 0.256,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.72,
+          "carbs": 0,
+          "sugar": 0,
+          "cholesterol": 0.97,
+          "trans_fat": 0.009
         },
         "source_id": 1,
         "confidence": 5
@@ -833,7 +1018,12 @@
           "fat": 0.033,
           "sat_fat": 0.021,
           "protein": 0.035,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.46,
+          "carbs": 0.046,
+          "sugar": 0.046,
+          "cholesterol": 0.13,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -856,7 +1046,12 @@
           "fat": 0.001,
           "sat_fat": 0,
           "protein": 0.016,
-          "fiber": 0.03
+          "fiber": 0.03,
+          "sodium": 0.55,
+          "carbs": 0.201,
+          "sugar": 0.042,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -880,7 +1075,12 @@
           "fat": 0.026,
           "sat_fat": 0.003,
           "protein": 0.089,
-          "fiber": 0.078
+          "fiber": 0.078,
+          "sodium": 0.24,
+          "carbs": 0.274,
+          "sugar": 0.048,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -903,7 +1103,12 @@
           "fat": 0.005,
           "sat_fat": 0.001,
           "protein": 0.087,
-          "fiber": 0.089
+          "fiber": 0.089,
+          "sodium": 0.01,
+          "carbs": 0.237,
+          "sugar": 0.003,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -926,7 +1131,12 @@
           "fat": 0.019,
           "sat_fat": 0.002,
           "protein": 0.044,
-          "fiber": 0.028
+          "fiber": 0.028,
+          "sodium": 0.07,
+          "carbs": 0.215,
+          "sugar": 0.009,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -949,7 +1159,12 @@
           "fat": 0.004,
           "sat_fat": 0.001,
           "protein": 0.029,
-          "fiber": 0.022
+          "fiber": 0.022,
+          "sodium": 0.79,
+          "carbs": 0.036,
+          "sugar": 0.004,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -972,7 +1187,12 @@
           "fat": 0.147,
           "sat_fat": 0.021,
           "protein": 0.02,
-          "fiber": 0.067
+          "fiber": 0.067,
+          "sodium": 0.07,
+          "carbs": 0.085,
+          "sugar": 0.007,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -995,7 +1215,12 @@
           "fat": 1,
           "sat_fat": 0.138,
           "protein": 0,
-          "fiber": 0
+          "fiber": 0,
+          "sodium": 0.02,
+          "carbs": 0,
+          "sugar": 0,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -1016,7 +1241,12 @@
           "fat": 0.333,
           "sat_fat": 0.296,
           "protein": 0.033,
-          "fiber": 0.09
+          "fiber": 0.09,
+          "sodium": 0.2,
+          "carbs": 0.153,
+          "sugar": 0.062,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -1037,7 +1267,12 @@
           "fat": 0.515,
           "sat_fat": 0.054,
           "protein": 0.209,
-          "fiber": 0.088
+          "fiber": 0.088,
+          "sodium": 0.09,
+          "carbs": 0.2,
+          "sugar": 0.027,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -1058,7 +1293,12 @@
           "fat": 0.424,
           "sat_fat": 0.037,
           "protein": 0.184,
-          "fiber": 0.274
+          "fiber": 0.274,
+          "sodium": 0.3,
+          "carbs": 0.289,
+          "sugar": 0.016,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -1081,7 +1321,12 @@
           "fat": 0.024,
           "sat_fat": 0.005,
           "protein": 0.122,
-          "fiber": 0.17
+          "fiber": 0.17,
+          "sodium": 0.12,
+          "carbs": 0.734,
+          "sugar": 0,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -1104,7 +1349,12 @@
           "fat": 0.004,
           "sat_fat": 0.001,
           "protein": 0.008,
-          "fiber": 0.016
+          "fiber": 0.016,
+          "sodium": 0.01,
+          "carbs": 0.15,
+          "sugar": 0.138,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -1127,7 +1377,12 @@
           "fat": 0.001,
           "sat_fat": 0,
           "protein": 0.009,
-          "fiber": 0.024
+          "fiber": 0.024,
+          "sodium": 0,
+          "carbs": 0.118,
+          "sugar": 0.094,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -1150,7 +1405,12 @@
           "fat": 0.005,
           "sat_fat": 0.001,
           "protein": 0.064,
-          "fiber": 0.021
+          "fiber": 0.021,
+          "sodium": 0.17,
+          "carbs": 0.331,
+          "sugar": 0.01,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5
@@ -1173,7 +1433,12 @@
           "fat": 0.009,
           "sat_fat": 0.001,
           "protein": 0.043,
-          "fiber": 0.036
+          "fiber": 0.036,
+          "sodium": 0.53,
+          "carbs": 0.087,
+          "sugar": 0.022,
+          "cholesterol": 0,
+          "trans_fat": 0
         },
         "source_id": 1,
         "confidence": 5

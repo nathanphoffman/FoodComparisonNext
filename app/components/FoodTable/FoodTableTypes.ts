@@ -1,15 +1,16 @@
 export type EmissionsBreakdown = { co2: number; ch4: number; n2o: number };
 
 export type NutritionDetail = {
-  protein:       number;
-  fiber:         number;
-  saturatedFat:  number;
   calories:      number;
+  fat:           number;
+  saturatedFat:  number;
+  transFat:      number | null;
+  cholesterol:   number | null;
   sodium:        number | null;
   carbs:         number | null;
+  fiber:         number;
   sugar:         number | null;
-  cholesterol:   number | null;
-  transFat:      number | null;
+  protein:       number;
 };
 
 export type LandUseDetail = {

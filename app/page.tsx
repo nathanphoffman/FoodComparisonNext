@@ -4,7 +4,7 @@ import { getNormalizedDb, rowsToObjects } from '@/lib/db';
 
 type RawFood = {
   name: string; slug: string; type: 'plant' | 'animal';
-  calories: number; protein: number; fiber: number; sat_fat: number;
+  calories: number; fat: number; protein: number; fiber: number; sat_fat: number;
   sodium: number | null; carbs: number | null; sugar: number | null;
   cholesterol: number | null; trans_fat: number | null;
   yield_kg_ha: number | null; pasture_ha_per_kg_output: number | null;
@@ -63,15 +63,16 @@ export default async function Home() {
       slug: food.slug,
       nutritionScore,
       nutritionDetail: {
-        protein:       food.protein,
-        fiber:         food.fiber,
-        saturatedFat:  food.sat_fat,
         calories:      food.calories,
+        fat:           food.fat,
+        saturatedFat:  food.sat_fat,
+        transFat:      food.trans_fat,
+        cholesterol:   food.cholesterol,
         sodium:        food.sodium,
         carbs:         food.carbs,
+        fiber:         food.fiber,
         sugar:         food.sugar,
-        cholesterol:   food.cholesterol,
-        transFat:      food.trans_fat,
+        protein:       food.protein,
       },
       emissions: food.emissions_per_kg,
       emissionsBreakdown: food.ch4_kg_per_kg_output != null ? {

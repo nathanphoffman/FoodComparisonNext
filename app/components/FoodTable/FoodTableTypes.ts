@@ -10,7 +10,6 @@ export type NutritionDetail = {
   sugar:         number | null;
   cholesterol:   number | null;
   transFat:      number | null;
-  glycemicIndex: number | null;
 };
 
 export type LandUseDetail = {

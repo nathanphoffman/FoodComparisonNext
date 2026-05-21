@@ -28,7 +28,6 @@ export function NutritionTooltip({ detail }: { detail: NutritionDetail }) {
       {detail.sugar != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sugar</span><span>{(detail.sugar * scale).toFixed(1)} g</span></div>}
       {detail.sodium != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Sodium</span><span>{(detail.sodium * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</span></div>}
       {detail.cholesterol != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Cholesterol</span><span>{(detail.cholesterol * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</span></div>}
-      {detail.glycemicIndex != null && <div className="flex justify-between gap-6"><span className="text-neutral-400">Glycemic index</span><span>{detail.glycemicIndex.toFixed(0)}</span></div>}
     </div>
   );
 }

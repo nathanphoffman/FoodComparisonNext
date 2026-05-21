@@ -49,7 +49,6 @@ export class RawFood {
       sugar:          averageNutrition?.sugar ?? null,
       cholesterol:    averageNutrition?.cholesterol ?? null,
       trans_fat:      averageNutrition?.trans_fat ?? null,
-      glycemic_index: averageNutrition?.glycemic_index ?? null,
       ...(this.plant?.normalizedFields() ?? nullPlantFields),
       ...(this.animal?.normalizedFields() ?? nullAnimalFields),
     });
@@ -69,7 +68,7 @@ export class RawFood {
       tags: this.data.tags,
       human_food: this.data.human_food,
       calories: null, fat: null, sat_fat: null, protein: null, fiber: null,
-      sodium: null, carbs: null, sugar: null, cholesterol: null, trans_fat: null, glycemic_index: null,
+      sodium: null, carbs: null, sugar: null, cholesterol: null, trans_fat: null,
       ...feedFields,
       ...nullAnimalFields,
     });

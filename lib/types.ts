@@ -15,7 +15,6 @@ export interface NutritionValue {
   sugar: number | null;
   cholesterol: number | null;
   trans_fat: number | null;
-  glycemic_index: number | null;
 }
 
 export interface Food {

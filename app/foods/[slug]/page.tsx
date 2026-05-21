@@ -62,7 +62,6 @@ export default async function FoodPage({ params }: Props) {
           {nutrition.sugar != null && <tr><td>Sugar</td><td>{formatNutrientPer100g(nutrition.sugar)}</td></tr>}
           {nutrition.sodium != null && <tr><td>Sodium</td><td>{(nutrition.sodium * GRAMS_PER_HUNDRED * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</td></tr>}
           {nutrition.cholesterol != null && <tr><td>Cholesterol</td><td>{(nutrition.cholesterol * GRAMS_PER_HUNDRED * MILLIGRAMS_PER_GRAM).toFixed(0)} mg</td></tr>}
-          {nutrition.glycemic_index != null && <tr><td>Glycemic index</td><td>{nutrition.glycemic_index.toFixed(0)}</td></tr>}
         </tbody>
       </table>
 

@@ -9,7 +9,7 @@ export default async function FoodsPage() {
 
   const humanFoodsQueryResult = db.exec(`SELECT food_id, is_feed, slug, name, type, tags, human_food,
          calories, fat, sat_fat, protein, fiber,
-         sodium, carbs, sugar, cholesterol, trans_fat, glycemic_index,
+         sodium, carbs, sugar, cholesterol, trans_fat,
          yield_kg_ha, water_per_kg, soil_erosion, pesticide_kg_ha,
          fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr,
          pesticide_freshwater_paf, pesticide_terrestrial_paf, pesticide_insect_paf, pesticide_bee_hazard, pesticide_kg_per_kg_food,

@@ -16,7 +16,7 @@ export class SourcedNutritionalValueArray extends Array<ISourced<NutritionValue>
       return acc;
     }, {} as Record<typeof reqFields[number], number>);
 
-    const optAvg = (field: 'sodium' | 'carbs' | 'sugar' | 'cholesterol' | 'trans_fat' | 'glycemic_index'): number | null => {
+    const optAvg = (field: 'sodium' | 'carbs' | 'sugar' | 'cholesterol' | 'trans_fat'): number | null => {
       const entries = Array.from(this).filter(e => e.value[field] != null);
       if (entries.length === 0) return null;
       const w = entries.reduce((acc, e) => acc + e.confidence, 0);
@@ -30,7 +30,6 @@ export class SourcedNutritionalValueArray extends Array<ISourced<NutritionValue>
       sugar:          optAvg('sugar'),
       cholesterol:    optAvg('cholesterol'),
       trans_fat:      optAvg('trans_fat'),
-      glycemic_index: optAvg('glycemic_index'),
     };
   }
 }

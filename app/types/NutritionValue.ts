@@ -12,7 +12,6 @@ export interface INutritionValue {
     sugar: number | null;
     cholesterol: number | null;
     trans_fat: number | null;
-    glycemic_index: number | null;
 }
 
 export class NutritionValue implements INutritionValue {
@@ -26,7 +25,6 @@ export class NutritionValue implements INutritionValue {
     sugar!: number | null;
     cholesterol!: number | null;
     trans_fat!: number | null;
-    glycemic_index!: number | null;
 
     constructor(data: INutritionValue) {
         Object.assign(this, data);
@@ -56,7 +54,7 @@ export class SourcedNutritionalValueArray extends Array<SourcedNutritionalValue>
         const avgRequired = (field: 'calories' | 'fat' | 'sat_fat' | 'protein' | 'fiber') =>
             this.reduce((sum, e) => sum + e.value[field] * e.confidence, 0) / confidenceTotal;
 
-        const avgOptional = (field: 'sodium' | 'carbs' | 'sugar' | 'cholesterol' | 'trans_fat' | 'glycemic_index'): number | null => {
+        const avgOptional = (field: 'sodium' | 'carbs' | 'sugar' | 'cholesterol' | 'trans_fat'): number | null => {
             const entries = this.filter(e => e.value[field] != null);
             if (entries.length === 0) return null;
             const w = entries.reduce((acc, e) => acc + e.confidence, 0);
@@ -74,7 +72,6 @@ export class SourcedNutritionalValueArray extends Array<SourcedNutritionalValue>
             sugar:          avgOptional('sugar'),
             cholesterol:    avgOptional('cholesterol'),
             trans_fat:      avgOptional('trans_fat'),
-            glycemic_index: avgOptional('glycemic_index'),
         };
     }
 }

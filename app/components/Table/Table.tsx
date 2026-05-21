@@ -8,16 +8,16 @@ type Header = {
 
 export function Table({ headers = [], children }: { headers?: Header[], children?: React.ReactNode }) {
   return (
-    <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm">
-      <table className="w-full border-collapse">
+    <div className="rounded-xl border border-neutral-200 bg-white shadow-sm">
+      <table className="w-full border-separate border-spacing-0">
         <thead>
-          <tr className="bg-neutral-50 border-b border-neutral-200">
+          <tr>
             {headers.map((header) => (
               <th
                 key={header.label}
                 onClick={header.onSort}
                 className={[
-                  'px-4 py-3 text-xs font-semibold uppercase tracking-wider transition-colors text-left',
+                  'bg-neutral-50 border-b border-neutral-200 first:rounded-tl-xl last:rounded-tr-xl px-4 py-3 text-xs font-semibold uppercase tracking-wider transition-colors text-left',
                   header.sorted ? 'text-neutral-800' : 'text-neutral-500',
                   header.onSort ? 'cursor-pointer select-none hover:bg-neutral-100' : '',
                 ].join(' ')}

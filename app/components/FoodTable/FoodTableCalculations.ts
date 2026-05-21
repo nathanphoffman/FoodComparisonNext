@@ -1,5 +1,5 @@
 import type { RawFood } from '@/lib/queries/commonFoods';
-import type { FoodEthics } from './FoodTableTypes';
+import type { FoodEthics, FoodWeights } from './FoodTableTypes';
 
 const ONE_THOUSAND    = 1_000;
 export const ONE_MILLION     = 1_000_000;
@@ -33,6 +33,25 @@ const NEURAL_INTERCONNECTIVITY_EXPONENT = 1.5;
 const NUTRITION_SCORE_SCALE             = 100;
 const FIBER_SCORE_WEIGHT                = 2;
 const SATURATED_FAT_SCORE_PENALTY       = 2;
+
+const CALORIE_NORM = 1_000; // kcal/kg — "per 1000 kcal" when cal=100%
+const PROTEIN_NORM = 100;   // g/kg   — "per 100g protein" when protein=100%
+
+export function computeDivisor(food: FoodEthics, weights: FoodWeights): number {
+    const caloriesPerKg = food.nutritionDetail.calories * 1_000;
+    const proteinPerKg  = food.nutritionDetail.protein  * 1_000;
+    const d = (weights.mass     / 100) * 1
+            + (weights.calories / 100) * (caloriesPerKg / CALORIE_NORM)
+            + (weights.protein  / 100) * (proteinPerKg  / PROTEIN_NORM);
+    return d > 0 ? d : 1;
+}
+
+export function getUnitLabel(weights: FoodWeights): string {
+    if (weights.mass     === 100) return 'kg';
+    if (weights.calories === 100) return '1000 kcal';
+    if (weights.protein  === 100) return '100g protein';
+    return 'weighted unit';
+}
 
 export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
   const nutritionScore = food.calories > 0

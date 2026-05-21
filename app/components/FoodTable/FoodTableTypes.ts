@@ -1,5 +1,11 @@
 export type EmissionsBreakdown = { co2: number; ch4: number; n2o: number };
 
+export type FoodWeights = {
+    calories: number;
+    protein:  number;
+    mass:     number;
+};
+
 export type FoodEthics = {
   name:               string;
   slug:               string;

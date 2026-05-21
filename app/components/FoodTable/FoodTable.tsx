@@ -12,7 +12,9 @@ import {
   WaterCell,
   DummyCell,
 } from './FoodTableFields';
-import type { FoodEthics } from './FoodTableTypes';
+import type { FoodEthics, FoodWeights } from './FoodTableTypes';
+import { FoodTableSliders } from './FoodTableSliders';
+import { computeDivisor, getUnitLabel } from './FoodTableCalculations';
 
 export type { FoodEthics };
 
@@ -36,6 +38,7 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
     () => new Set(COLUMN_CONFIG.filter(c => c.defaultVisible).map(c => c.key))
   );
   const [showToggle, setShowToggle]  = useState(false);
+  const [weights, setWeights]        = useState<FoodWeights>({ calories: 34, protein: 33, mass: 33 });
   const toggleRef                    = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -70,10 +73,16 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
   }
 
   const rows = data ?? [];
+
+  const WEIGHTED_SORT_KEYS = new Set<SortKey>(['emissions', 'landUse', 'intelligence', 'water']);
+
   const sorted = sortKey
     ? [...rows].sort((a, b) => {
-        const va = a[sortKey] as number | string | null;
-        const vb = b[sortKey] as number | string | null;
+        const useWeight = WEIGHTED_SORT_KEYS.has(sortKey);
+        const rawA = a[sortKey] as number | string | null;
+        const rawB = b[sortKey] as number | string | null;
+        const va = useWeight && typeof rawA === 'number' ? rawA / computeDivisor(a, weights) : rawA;
+        const vb = useWeight && typeof rawB === 'number' ? rawB / computeDivisor(b, weights) : rawB;
         if (va === null && vb === null) return 0;
         if (va === null) return 1;
         if (vb === null) return -1;
@@ -85,13 +94,22 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
 
   const activeCols = COLUMN_CONFIG.filter(c => visibleColumns.has(c.key));
 
+  const unit = getUnitLabel(weights);
+  const DYNAMIC_LABELS: Partial<Record<ColumnKey, string>> = {
+    emissions:    `CO₂e (kg / ${unit})`,
+    landUse:      `Land Use (m² / ${unit})`,
+    intelligence: `Intelligence / ${unit}`,
+    water:        `Water (L / ${unit})`,
+  };
+
   const headers = activeCols.map(c => ({
-    label: c.label,
+    label: DYNAMIC_LABELS[c.key] ?? c.label,
     ...(c.sortKey ? columnSortProps(c.sortKey) : {}),
   }));
 
   return (
     <div className="mt-6">
+      <FoodTableSliders onChange={setWeights} />
       <div className="flex justify-end mb-2" ref={toggleRef}>
         <div className="relative">
           <button
@@ -118,21 +136,24 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
         </div>
       </div>
       <Table headers={headers}>
-        {sorted.map((food) => (
-          <Row key={food.slug}>
-            {activeCols.map(col => {
-              switch (col.key) {
-                case 'name':           return <NameCell           key="name"           name={food.name} slug={food.slug} />;
-                case 'nutritionScore': return <NutritionScoreCell key="nutritionScore" score={food.nutritionScore} detail={food.nutritionDetail} />;
-                case 'emissions':      return <EmissionsCell      key="emissions"      value={food.emissions} breakdown={food.emissionsBreakdown} />;
-                case 'landUse':        return <LandUseCell        key="landUse"        value={food.landUse} detail={food.landUseDetail} />;
-                case 'intelligence':   return <IntelligenceCell   key="intelligence"   value={food.intelligence} detail={food.intelligenceDetail} />;
-                case 'water':          return <WaterCell          key="water"          value={food.water} />;
-                case 'dummy':          return <DummyCell          key="dummy" />;
-              }
-            })}
-          </Row>
-        ))}
+        {sorted.map((food) => {
+          const d = computeDivisor(food, weights);
+          return (
+            <Row key={food.slug}>
+              {activeCols.map(col => {
+                switch (col.key) {
+                  case 'name':           return <NameCell           key="name"           name={food.name} slug={food.slug} />;
+                  case 'nutritionScore': return <NutritionScoreCell key="nutritionScore" score={food.nutritionScore} detail={food.nutritionDetail} />;
+                  case 'emissions':      return <EmissionsCell      key="emissions"      value={food.emissions != null ? food.emissions / d : null} breakdown={food.emissionsBreakdown} />;
+                  case 'landUse':        return <LandUseCell        key="landUse"        value={food.landUse != null ? food.landUse / d : null} detail={food.landUseDetail} />;
+                  case 'intelligence':   return <IntelligenceCell   key="intelligence"   value={food.intelligence != null ? food.intelligence / d : null} detail={food.intelligenceDetail} />;
+                  case 'water':          return <WaterCell          key="water"          value={food.water != null ? food.water / d : null} />;
+                  case 'dummy':          return <DummyCell          key="dummy" />;
+                }
+              })}
+            </Row>
+          );
+        })}
       </Table>
     </div>
   );

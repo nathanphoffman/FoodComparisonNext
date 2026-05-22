@@ -48,6 +48,8 @@ export interface Plant {
   food_id: number;
   yield_kg_ha: ISourced<number>[] | null;
   water_per_kg: ISourced<number>[] | null;
+  green_water_per_kg: ISourced<number>[] | null;
+  blue_water_per_kg:  ISourced<number>[] | null;
   soil_erosion: ISourced<number>[] | null;
   pesticide_kg_ha: ISourced<number>[] | null;
   fertilizer_kg_ha: ISourced<number>[] | null;

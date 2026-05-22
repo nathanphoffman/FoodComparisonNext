@@ -6,7 +6,9 @@
       "Write",
       "Bash(npx tsc --noEmit *)",
       "Bash(npm run dev *)",
-      "Bash(npm run build-db *)"
+      "Bash(npm run build-db *)",
+      "Bash(python3 -c *)",
+      "Bash(git -C *)"
     ]
   }
 }

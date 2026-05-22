@@ -14,6 +14,8 @@ export class RawPlant {
   readonly food_id: number;
   readonly yield_kg_ha: SourcedNumberArray;
   readonly water_per_kg: SourcedNumberArray;
+  readonly green_water_per_kg: SourcedNumberArray;
+  readonly blue_water_per_kg: SourcedNumberArray;
   readonly soil_erosion: SourcedNumberArray;
   readonly pesticide_kg_ha: SourcedNumberArray;
   readonly fertilizer_kg_ha: SourcedNumberArray;
@@ -26,6 +28,8 @@ export class RawPlant {
     this.food_id = data.food_id;
     this.yield_kg_ha = new SourcedNumberArray(data.yield_kg_ha ?? []);
     this.water_per_kg = new SourcedNumberArray(data.water_per_kg ?? []);
+    this.green_water_per_kg = new SourcedNumberArray(data.green_water_per_kg ?? []);
+    this.blue_water_per_kg = new SourcedNumberArray(data.blue_water_per_kg ?? []);
     this.soil_erosion = new SourcedNumberArray(data.soil_erosion ?? []);
     this.pesticide_kg_ha = new SourcedNumberArray(data.pesticide_kg_ha ?? []);
     this.fertilizer_kg_ha = new SourcedNumberArray(data.fertilizer_kg_ha ?? []);
@@ -105,6 +109,8 @@ export class RawPlant {
     return {
       yield_kg_ha: this.yield_kg_ha.weightedAverage(),
       water_per_kg: this.water_per_kg.weightedAverage(),
+      green_water_per_kg: this.green_water_per_kg.weightedAverage(),
+      blue_water_per_kg: this.blue_water_per_kg.weightedAverage(),
       soil_erosion: this.soil_erosion.weightedAverage(),
       pesticide_kg_ha: this.pesticide_kg_ha.weightedAverage(),
       fertilizer_kg_ha: this.fertilizer_kg_ha.weightedAverage(),

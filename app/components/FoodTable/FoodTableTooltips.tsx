@@ -1,4 +1,4 @@
-import type { EmissionsBreakdown, IntelligenceDetail, LandUseDetail, NutritionDetail } from './FoodTableTypes';
+import type { EmissionsBreakdown, IntelligenceDetail, LandUseDetail, NutritionDetail, WaterDetail } from './FoodTableTypes';
 import { formatNeurons, nutritionScale } from './FoodTableCalculations';
 import { Tooltip, TooltipSection, TooltipRow } from '../Table/Tooltip';
 
@@ -30,8 +30,8 @@ export function NutritionTooltip({ detail, children }: { detail: NutritionDetail
         <TooltipRow label="Total fat" value={`${(detail.fat * scale).toFixed(1)} g`} />
         <TooltipRow label="Sat. fat" value={`${(detail.saturatedFat * scale).toFixed(1)} g`} />
         {detail.transFat != null && <TooltipRow label="Trans fat" value={`${(detail.transFat * scale).toFixed(1)} g`} />}
-        {detail.cholesterol != null && <TooltipRow label="Cholesterol" value={`${(detail.cholesterol * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg`} />}
-        {detail.sodium != null && <TooltipRow label="Sodium" value={`${(detail.sodium * scale * MILLIGRAMS_PER_GRAM).toFixed(0)} mg`} />}
+        {detail.cholesterol != null && <TooltipRow label="Cholesterol" value={`${(detail.cholesterol * scale).toFixed(0)} mg`} />}
+        {detail.sodium != null && <TooltipRow label="Sodium" value={`${(detail.sodium * scale).toFixed(0)} mg`} />}
         {detail.carbs != null && <TooltipRow label="Total carbs" value={`${(detail.carbs * scale).toFixed(1)} g`} />}
         <TooltipRow label="Fiber" value={`${(detail.fiber * scale).toFixed(1)} g`} />
         {detail.sugar != null && <TooltipRow label="Sugar" value={`${(detail.sugar * scale).toFixed(1)} g`} />}
@@ -52,6 +52,24 @@ export function LandUseTooltip({ detail, children }: { detail: LandUseDetail; ch
         )}
         {detail.type === 'animal' && detail.pastureHectaresPerKilogram != null && (
           <TooltipRow label="Pasture" value={`${detail.pastureHectaresPerKilogram.toFixed(3)} ha/kg`} />
+        )}
+      </TooltipSection>
+    }>
+      {children}
+    </Tooltip>
+  );
+}
+
+export function WaterTooltip({ detail, referenceTotal, children }: { detail: WaterDetail; referenceTotal: number | null; children: React.ReactNode }) {
+  return (
+    <Tooltip content={
+      <TooltipSection title="Water breakdown">
+        {detail.blue  != null && <TooltipRow label="Blue (irrigation)" value={`${detail.blue.toLocaleString()} L/kg`} />}
+        {detail.green != null && <TooltipRow label="Green (rain)"      value={`${detail.green.toLocaleString()} L/kg`} />}
+        {referenceTotal != null && (
+          <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">
+            Reference total (independent source): {referenceTotal.toLocaleString()} L/kg
+          </div>
         )}
       </TooltipSection>
     }>

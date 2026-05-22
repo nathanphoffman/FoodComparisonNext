@@ -23,6 +23,8 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     -- plant metrics (NULL for animal foods; populated for plant foods AND feed rows)
     yield_kg_ha              REAL,
     water_per_kg             REAL,
+    green_water_per_kg       REAL,  -- green (rain-fed) component of water_per_kg; NULL if not yet sourced
+    blue_water_per_kg        REAL,  -- blue (irrigation) component of water_per_kg; NULL if not yet sourced
     soil_erosion             REAL,
     pesticide_kg_ha          REAL,
     fertilizer_kg_ha         REAL,

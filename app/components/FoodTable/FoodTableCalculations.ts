@@ -1,5 +1,5 @@
 import type { RawFood } from '@/lib/queries/commonFoods';
-import type { EmissionsBreakdown, FoodEthics, FoodWeights } from './FoodTableTypes';
+import type { EmissionsBreakdown, FoodEthics, FoodWeights, WaterDetail } from './FoodTableTypes';
 
 const ONE_THOUSAND    = 1_000;
 export const ONE_MILLION     = 1_000_000;
@@ -44,6 +44,14 @@ export function computeDivisor(food: FoodEthics, weights: FoodWeights): number {
             + (weights.calories / 100) * (caloriesPerKg / CALORIE_NORM)
             + (weights.protein  / 100) * (proteinPerKg  / PROTEIN_NORM);
     return d > 0 ? d : 1;
+}
+
+export function effectiveWater(food: FoodEthics, greenWaterWeight: number): number | null {
+    const { green, blue } = food.waterDetail;
+    if (green != null && blue != null) {
+        return blue + (greenWaterWeight / 100) * green;
+    }
+    return food.water;
 }
 
 export function getUnitLabel(weights: FoodWeights): string {
@@ -100,10 +108,13 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
   }
 
   let water: number | null;
+  let waterDetail: WaterDetail;
   if (food.type === 'animal') {
     water = food.feed_water_per_kg;
+    waterDetail = { green: food.feed_green_water_per_kg, blue: food.feed_blue_water_per_kg };
   } else {
     water = food.water_per_kg;
+    waterDetail = { green: food.green_water_per_kg, blue: food.blue_water_per_kg };
   }
 
   return {
@@ -137,5 +148,6 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
       yieldFraction: food.yield_fraction,
     },
     water,
+    waterDetail,
   };
 }

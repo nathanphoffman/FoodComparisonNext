@@ -1,0 +1,71 @@
+GREEN BLUE WATER BREAKDOWN
+First make sure that this was added for animals successfully, finally add it 
+for plants and have the food manager run it.
+
+NEW SLIDERS 
+Talk about adding 2 sliders: "% Pasture Natural" and "% Cropland Natural" to
+ further help pin down actual green water and land use considerations, as if 
+ cant be used why count it?  My thought process is to set cropland to 5% as most of it is unnatural and
+ set Pasture to some >5% percentage whatever the stats show.  It also leads to 
+ implications when we calculate ecosystem destruction based on land use.
+
+ECO SYSTEM DESTRUCTION
+Into the intelligence score we need to roll up all possible deaths due to pesticides 
+and deforestation.  For pesticides we should have the numbers we need to calculate all 
+major general deaths of creatures, and then figure out neuron cost from there. 
+Remember neuron cost here is not divided as it is rolled up into the final score 
+for output set by the three sliders: calorie, protein, weight output. It is treated 
+as if the output was the animals weight and the neurons the intelligence killed, however 
+it is needed to figure out how to roll up the data as 2 small ~= 1 medium in intelligence. We
+have to reverse the 1.5 power.  For deforestation we should discuss general numbers 
+of creatures killed, take into account intelligence lost, then divide it over 
+the amount of time the average crop land has been cleared and used. I was hoping 
+to use a general number for this but if it makes sense to add another column for it fine,
+just know this one I don't care as much about being exact on.
+
+WILD GATHERED PLANTS
+We need to discuss wild plants like Brazil nuts, technically they should have 
+no water use like wild animals correct? I also want us to audit the database and
+see if any other plants we have come from wild plants, and we should make sure the 
+food manager checks this for any plant added in the future, and not just assume 
+they are farmed.
+
+NEW SLIDER SET FOR NUTRITION
+We need to talk about a new set of Sliders that allow for the nutrition calculation 
+to be adjusted so that each factor has its slider defaulted to current but can be
+adjusted: think -Saturated Fat (per g): 2x, -Sodium: 2x (per 100mg = 50mg actual),
+-Sugar (per g) 0.5x.  +Protein 1x (per g), +Fiber (per g) 2x, and whatever we do
+with glycemic index.  The sliders probably ranging from 0x - 4x in 1/4 increments (16 settings) 
+
+ADD FEED ANIMALS TO DATABASE
+We need to talk about adding feed animals (for intelligence consideration). I have 
+heard that salmon are fed small fish, we should try to add that fish to our db 
+and then roll up the number killed over the salmons lifetime into intelligence 
+rollup.  --- FOLLOW UP: Consider adding a slider to % adjust how much of the fish 
+should be included as intelligence since salmon do eat fish in the wild. Also 
+when adding intelligence, we should consider about bearing in mind that we are not 
+adding intelligence scores together, because it involves a root, we need to reverse it 
+with an inverse root, to get an equivalent single animal since we are fighting 1.5 
+pow.
+
+NUTRITION TOOLTIP IS VERY WRONG
+Right now cholesterol for some items is showing 10s of thousands of mg and 0s 
+are showing for a few items, partly its because 100 calories is quite low. Just check 
+this out one of the ones that looks really wrong is Lamb.  Sodium also sometimes 
+looks absurd like in avocado.
+
+BY_CATCH:
+We should talk about by catch and roll that into the intelligence score.
+
+ADD (Wild) TO WILD ANIMAL NAMES
+For foods specify (Wild) after the animal name, consult food manager.
+
+ADD MORE FOODS
+Consult food manager to add:
+- Deer (wild)
+- American Cheese
+- Cheddar Cheese
+- Mussels 
+- Oysters
+- Clams
+- Crab (a few types)

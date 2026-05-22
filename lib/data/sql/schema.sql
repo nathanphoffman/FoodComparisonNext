@@ -76,6 +76,8 @@ CREATE TABLE IF NOT EXISTS plants (
     food_id          INTEGER REFERENCES foods(id),
     yield_kg_ha             TEXT,  -- json array of {value: kg/ha, source_id, confidence}
     water_per_kg            TEXT,  -- json array of {value: liters/kg, source_id, confidence}
+    green_water_per_kg      TEXT,  -- json array of {value: L/kg, source_id, confidence}; green (rain-fed evapotranspiration) component of water_per_kg; Mekonnen & Hoekstra (2010)
+    blue_water_per_kg       TEXT,  -- json array of {value: L/kg, source_id, confidence}; blue (irrigation) component of water_per_kg; Mekonnen & Hoekstra (2010)
     soil_erosion            TEXT,  -- json array of {value: tons/ha/yr, source_id, confidence}
     pesticide_kg_ha         TEXT,  -- json array of {value: kg/ha, source_id, confidence}
     fertilizer_kg_ha        TEXT,  -- json array of {value: kg/ha, source_id, confidence}

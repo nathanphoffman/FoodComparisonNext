@@ -6,6 +6,11 @@ export type FoodWeights = {
     mass:     number;
 };
 
+export type WaterDetail = {
+    green: number | null;
+    blue:  number | null;
+};
+
 export type FoodEthics = {
   name:               string;
   slug:               string;
@@ -18,6 +23,7 @@ export type FoodEthics = {
   intelligence:       number | null;
   intelligenceDetail: IntelligenceDetail;
   water:              number | null;
+  waterDetail:        WaterDetail;
 };
 
 export type NutritionDetail = {

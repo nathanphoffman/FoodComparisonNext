@@ -4,7 +4,7 @@
 
 import Link from 'next/link';
 import { Cell } from '../Table/Cell';
-import type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail } from './FoodTableTypes';
+import type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail, WaterDetail } from './FoodTableTypes';
 import { formatNeurons, formatIntelligenceValue } from './FoodTableCalculations';
 import { getIntelligenceColor, getEmissionsColor, getWaterColor, getNutritionScoreColor, getLandUseColor, getNeuronColor } from './FoodTableStyles';
 import {
@@ -12,6 +12,7 @@ import {
   NutritionTooltip,
   LandUseTooltip,
   IntelligenceTooltip,
+  WaterTooltip,
 } from './FoodTableTooltips';
 
 export type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail } from './FoodTableTypes';
@@ -50,15 +51,19 @@ export function WaterValue({ value }: { value: number }) {
   return <span className={getWaterColor(value)}>{value.toLocaleString()}</span>;
 }
 
-export function WaterCell({ value }: { value: number | null }) {
-  return (
-    <Cell key="water" align="right">
-      {value != null
-        ? <WaterValue value={value} />
-        : <span className="text-neutral-400">—</span>
-      }
-    </Cell>
-  );
+export function WaterCell({ value, detail, referenceTotal }: { value: number | null; detail?: WaterDetail; referenceTotal?: number | null }) {
+  if (value == null) return <Cell key="water" align="right"><span className="text-neutral-400">—</span></Cell>;
+  const hasBreakdown = detail?.green != null || detail?.blue != null;
+  if (hasBreakdown) {
+    return (
+      <Cell key="water" align="right">
+        <WaterTooltip detail={detail!} referenceTotal={referenceTotal ?? null}>
+          <WaterValue value={value} />
+        </WaterTooltip>
+      </Cell>
+    );
+  }
+  return <Cell key="water" align="right"><WaterValue value={value} /></Cell>;
 }
 
 // ─── Nutrition ────────────────────────────────────────────────────────────────

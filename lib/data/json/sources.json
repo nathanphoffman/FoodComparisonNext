@@ -775,5 +775,15 @@
       "Global grassland average: The FAO-56 methodology yields a global area-weighted ET of approximately 600–700 mm/yr for permanent pasture, corroborating the 650 mm/yr (6,500,000 L/ha/yr) value used for beef and dairy and the 550 mm/yr (5,500,000 L/ha/yr) value used for lamb.",
       "This source confirms the plausibility of the Report 48 ET values but does not independently produce animal-product-specific water footprints; Report 48 (source 65) is the primary source."
     ]
+  },
+  {
+    "id": 67,
+    "url": "https://www.unesco-ihe.org/sites/default/files/report47-waterfoot.pdf",
+    "title": "Mekonnen & Hoekstra (2010) — The Green, Blue and Grey Water Footprint of Crops and Crop Products (UNESCO-IHE Report 47)",
+    "notes": [
+      "Primary source for green_water_per_kg and blue_water_per_kg splits for plant foods. Reports global average green, blue, and grey water footprints per crop in m³/ton (= L/kg) based on a grid-based model covering 1996–2005 production data at 5×5 arcminute resolution.",
+      "Green water = evapotranspiration from soil moisture recharged by rainfall (no human extraction). Blue water = evapotranspiration of irrigation water drawn from surface/groundwater.",
+      "Values used here are global production-weighted averages from Table A1. Confidence 3 for major staple crops (wheat, corn, rice, soy, sorghum, potato) where M&H have dense country coverage. Confidence 2 for tree nuts and specialty crops where regional variation is high or M&H coverage is thinner."
+    ]
   }
 ]

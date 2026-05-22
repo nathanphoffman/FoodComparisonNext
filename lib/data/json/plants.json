@@ -21,6 +21,20 @@
         "confidence": 5
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 3584,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 6349,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
     "soil_erosion": [
       {
         "value": 1.5,
@@ -79,6 +93,20 @@
         "value": 1827,
         "source_id": 9,
         "confidence": 4
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 1334,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 342,
+        "source_id": 67,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
@@ -141,6 +169,20 @@
         "confidence": 4
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 2029,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 55,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
     "soil_erosion": [
       {
         "value": 4.5,
@@ -199,6 +241,20 @@
         "value": 1222,
         "source_id": 11,
         "confidence": 4
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 1084,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 77,
+        "source_id": 67,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
@@ -261,6 +317,20 @@
         "confidence": 4
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 495,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 360,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
     "soil_erosion": [
       {
         "value": 0.3,
@@ -319,6 +389,20 @@
         "value": 550,
         "source_id": 15,
         "confidence": 4
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 506,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 28,
+        "source_id": 67,
+        "confidence": 2
       }
     ],
     "soil_erosion": [
@@ -381,6 +465,20 @@
         "confidence": 4
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 2760,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 15,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
     "soil_erosion": [
       {
         "value": 3,
@@ -439,6 +537,20 @@
         "value": 180,
         "source_id": 30,
         "confidence": 5
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 137,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 23,
+        "source_id": 67,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
@@ -501,6 +613,20 @@
         "confidence": 5
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 182,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 31,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
     "soil_erosion": [
       {
         "value": 1.5,
@@ -559,6 +685,20 @@
         "value": 130,
         "source_id": 30,
         "confidence": 5
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 118,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 7,
+        "source_id": 67,
+        "confidence": 2
       }
     ],
     "soil_erosion": [
@@ -621,6 +761,20 @@
         "confidence": 5
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 1671,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 545,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
     "soil_erosion": [
       {
         "value": 1,
@@ -679,6 +833,20 @@
         "value": 250,
         "source_id": 30,
         "confidence": 5
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 188,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 49,
+        "source_id": 67,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
@@ -741,6 +909,20 @@
         "confidence": 5
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 694,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 100,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
     "soil_erosion": [
       {
         "value": 1,
@@ -799,6 +981,20 @@
         "value": 860,
         "source_id": 30,
         "confidence": 5
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 657,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 103,
+        "source_id": 67,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
@@ -861,6 +1057,20 @@
         "confidence": 4
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 1231,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 79,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
     "soil_erosion": [
       {
         "value": 1.5,
@@ -921,6 +1131,20 @@
         "confidence": 5
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 1576,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 46,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
     "soil_erosion": [
       {
         "value": 2,
@@ -979,6 +1203,20 @@
         "value": 285,
         "source_id": 30,
         "confidence": 5
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 257,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 14,
+        "source_id": 67,
+        "confidence": 2
       }
     ],
     "soil_erosion": [
@@ -1046,6 +1284,20 @@
         "confidence": 4
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 3872,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 3329,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
     "soil_erosion": [
       {
         "value": 1,
@@ -1104,6 +1356,20 @@
         "value": 9280,
         "source_id": 30,
         "confidence": 3
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 8630,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 464,
+        "source_id": 67,
+        "confidence": 2
       }
     ],
     "soil_erosion": [
@@ -1171,6 +1437,20 @@
         "confidence": 4
       }
     ],
+    "green_water_per_kg": [
+      {
+        "value": 3209,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 7274,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
     "soil_erosion": [
       {
         "value": 1,
@@ -1229,6 +1509,20 @@
         "value": 10000,
         "source_id": 35,
         "confidence": 3
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 7500,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 2000,
+        "source_id": 67,
+        "confidence": 2
       }
     ],
     "soil_erosion": [
@@ -1337,6 +1631,20 @@
         "source_id": 30,
         "confidence": 5
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 6865,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 2452,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -1396,6 +1704,20 @@
         "value": 6000,
         "source_id": 35,
         "confidence": 3
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 5754,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 1808,
+        "source_id": 67,
+        "confidence": 2
       }
     ]
   },
@@ -1457,6 +1779,20 @@
         "source_id": 34,
         "confidence": 4
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 2310,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 24,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -1516,6 +1852,20 @@
         "value": 1500,
         "source_id": 30,
         "confidence": 5
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 2992,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 673,
+        "source_id": 67,
+        "confidence": 2
       }
     ]
   },
@@ -1577,6 +1927,20 @@
         "source_id": 35,
         "confidence": 3
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 7200,
+        "source_id": 67,
+        "confidence": 1
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 1530,
+        "source_id": 67,
+        "confidence": 1
+      }
     ]
   },
   {
@@ -1636,6 +2000,20 @@
         "value": 1500,
         "source_id": 55,
         "confidence": 3
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 419,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 23,
+        "source_id": 67,
+        "confidence": 2
       }
     ]
   },
@@ -1697,6 +2075,20 @@
         "source_id": 55,
         "confidence": 3
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 4152,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 87,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -1757,6 +2149,20 @@
         "source_id": 55,
         "confidence": 3
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 4851,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 101,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -1815,6 +2221,20 @@
       {
         "value": 1800,
         "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 2903,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 334,
+        "source_id": 67,
         "confidence": 2
       }
     ]
@@ -1877,6 +2297,20 @@
         "source_id": 55,
         "confidence": 3
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 275,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 15,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -1936,6 +2370,20 @@
         "value": 6000,
         "source_id": 55,
         "confidence": 3
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 713,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 1189,
+        "source_id": 67,
+        "confidence": 2
       }
     ]
   },
@@ -1997,6 +2445,20 @@
         "source_id": 55,
         "confidence": 3
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 11544,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 2165,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -2055,6 +2517,20 @@
       {
         "value": 8000,
         "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 2400,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 75,
+        "source_id": 67,
         "confidence": 2
       }
     ]
@@ -2117,6 +2593,20 @@
         "source_id": 55,
         "confidence": 3
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 3029,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 269,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -2175,6 +2665,20 @@
       {
         "value": 1000,
         "source_id": 55,
+        "confidence": 2
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 3304,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 220,
+        "source_id": 67,
         "confidence": 2
       }
     ]
@@ -2237,6 +2741,20 @@
         "source_id": 55,
         "confidence": 3
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 1252,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 128,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -2296,6 +2814,20 @@
         "value": 5000,
         "source_id": 55,
         "confidence": 3
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 617,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 55,
+        "source_id": 67,
+        "confidence": 2
       }
     ]
   },
@@ -2357,6 +2889,20 @@
         "source_id": 55,
         "confidence": 3
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 345,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 92,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -2417,6 +2963,20 @@
         "source_id": 55,
         "confidence": 3
       }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 276,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 341,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
@@ -2476,6 +3036,20 @@
         "value": 1200,
         "source_id": 55,
         "confidence": 3
+      }
+    ],
+    "green_water_per_kg": [
+      {
+        "value": 213,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "blue_water_per_kg": [
+      {
+        "value": 14,
+        "source_id": 67,
+        "confidence": 2
       }
     ]
   }

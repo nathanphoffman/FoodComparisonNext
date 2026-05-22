@@ -14,39 +14,64 @@ const LABELS: Record<keyof FoodWeights, string> = {
     mass:     'Mass Weight',
 };
 
-const DEFAULT: FoodWeights = { calories: 34, protein: 33, mass: 33 };
+const DEFAULT_FOOD_WEIGHTS: FoodWeights = { calories: 34, protein: 33, mass: 33 }
+const DEFAULT_GREEN_WATER = 25;
+const DEFAULT_GREY_WATER = 25;
 
 export function FoodTableSliders({ onChange, onGreenWaterChange, onGreyWaterChange }: { onChange?: (w: FoodWeights) => void; onGreenWaterChange?: (w: number) => void; onGreyWaterChange?: (w: number) => void }) {
 
-    const [ weights, setWeights ]           = useState<FoodWeights>(DEFAULT);
-    const [ greenWaterWeight, setGreenWater ] = useState(100);
-    const [ greyWaterWeight, setGreyWater ]   = useState(100);
+    const [ weights, setWeights ]           = useState<FoodWeights>(DEFAULT_FOOD_WEIGHTS);
+    const [ greenWaterWeight, setGreenWater ] = useState(DEFAULT_GREEN_WATER);
+    const [ greyWaterWeight, setGreyWater ]   = useState(DEFAULT_GREY_WATER);
 
-    const handleChange = (key: keyof FoodWeights, newVal: number) => {
-        setWeights(prev => {
-            const others = KEYS.filter(k => k !== key);
-            const otherTotal = others.reduce((s, k) => s + prev[k], 0);
-            const delta = newVal - prev[key];
+    const splitEvenlyBetweenTwo = (
+        updatedWeights: FoodWeights,
+        otherKeys: (keyof FoodWeights)[],
+        movedKeyNewValue: number,
+    ) => {
+        const TOTAL_PERCENTAGE = 100;
+        const remainingBudget = TOTAL_PERCENTAGE - movedKeyNewValue;
+        const firstHalf = Math.round(remainingBudget / 2);
+        const secondHalf = remainingBudget - firstHalf;
+        updatedWeights[otherKeys[0]] = firstHalf;
+        updatedWeights[otherKeys[1]] = secondHalf;
+    };
 
-            const next = { ...prev, [key]: newVal } as FoodWeights;
+    const redistributeProportionally = (
+        updatedWeights: FoodWeights,
+        currentWeights: FoodWeights,
+        otherKeys: (keyof FoodWeights)[],
+        amountMoved: number,
+        otherKeysTotal: number,
+    ) => {
+        const TOTAL_PERCENTAGE = 100;
+        for (const weightKey of otherKeys) {
+            const proportionalShare = currentWeights[weightKey] / otherKeysTotal;
+            updatedWeights[weightKey] = Math.max(0, Math.round(currentWeights[weightKey] - amountMoved * proportionalShare));
+        }
+        const roundingDrift = KEYS.reduce((runningTotal, weightKey) => runningTotal + updatedWeights[weightKey], 0) - TOTAL_PERCENTAGE;
+        if (roundingDrift !== 0) {
+            const largestOtherKey = otherKeys.reduce((candidateKey, currentKey) => updatedWeights[candidateKey] >= updatedWeights[currentKey] ? candidateKey : currentKey);
+            updatedWeights[largestOtherKey] = Math.max(0, updatedWeights[largestOtherKey] - roundingDrift);
+        }
+    };
 
-            if (otherTotal === 0) {
-                const half = Math.round((100 - newVal) / 2);
-                next[others[0]] = half;
-                next[others[1]] = 100 - newVal - half;
+    const handleWeightSliderChange = (movedKey: keyof FoodWeights, newValue: number) => {
+        setWeights(currentWeights => {
+            const otherKeys = KEYS.filter(weightKey => weightKey !== movedKey);
+            const otherKeysTotal = otherKeys.reduce((runningTotal, weightKey) => runningTotal + currentWeights[weightKey], 0);
+            const amountMoved = newValue - currentWeights[movedKey];
+
+            const updatedWeights = { ...currentWeights, [movedKey]: newValue } as FoodWeights;
+
+            if (otherKeysTotal === 0) {
+                splitEvenlyBetweenTwo(updatedWeights, otherKeys, newValue);
             } else {
-                for (const k of others) {
-                    next[k] = Math.max(0, Math.round(prev[k] - delta * (prev[k] / otherTotal)));
-                }
-                const drift = KEYS.reduce((s, k) => s + next[k], 0) - 100;
-                if (drift !== 0) {
-                    const largest = others.reduce((a, b) => next[a] >= next[b] ? a : b);
-                    next[largest] = Math.max(0, next[largest] - drift);
-                }
+                redistributeProportionally(updatedWeights, currentWeights, otherKeys, amountMoved, otherKeysTotal);
             }
 
-            onChange?.(next);
-            return next;
+            onChange?.(updatedWeights);
+            return updatedWeights;
         });
     };
 
@@ -67,7 +92,7 @@ export function FoodTableSliders({ onChange, onGreenWaterChange, onGreyWaterChan
                     <span>{LABELS[key]}</span>
                     <span className="font-medium text-neutral-700">{weights[key]}%</span>
                 </div>
-                <Slider min={0} max={100} value={weights[key]} onChange={v => handleChange(key, v)} />
+                <Slider min={0} max={100} value={weights[key]} onChange={v => handleWeightSliderChange(key, v)} />
             </div>
         ))}
         <div className="flex flex-col gap-1 flex-1 border-l border-neutral-200 pl-6">

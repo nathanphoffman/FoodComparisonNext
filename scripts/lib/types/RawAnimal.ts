@@ -64,12 +64,15 @@ export class RawAnimal {
     let terrestrialPafNumerator = 0, terrestrialPafDenominator = 0;
     let insectPafNumerator = 0, insectPafDenominator = 0;
     let beeHazardNumerator = 0, beeHazardDenominator = 0;
+    let yieldTotal = 0;
 
     for (const { feed, plant } of this.feedEntries) {
       const feedRatio = feed.kg_feed_per_kg_output.weightedAverage();
       if (feedRatio == null) continue;
 
       const avgYield = plant.yield_kg_ha.weightedAverage();
+      yieldTotal += avgYield * feedRatio || 0;
+
       const avgEmissions = plant.emissions_per_kg.weightedAverage();
       const avgWater = plant.water_per_kg.weightedAverage();
       const avgSoilErosion = plant.soil_erosion.weightedAverage();

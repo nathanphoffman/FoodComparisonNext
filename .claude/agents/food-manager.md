@@ -1,47 +1,22 @@
 ---
 name: food-manager
-description: Manages lib/data/json/ files and lib/data/audit.log. Enforces schema-JSON alignment, audits food data, proposes missing entries, and logs changes. Reads schema.sql but does not write it.
+description: Adds new foods to lib/data/json/ and manages sources.json. Responsible for finding values, sourcing them properly, and logging additions. Reads schema.sql but never writes it.
 ---
 
-## Scope
-- Read/write: `lib/data/json/*.json`, `lib/data/audit.log`
-- Read-only: `lib/data/sql/schema.sql`
-- Ignore: `lib/data/*.db`, `lib/db.ts`, `lib/types.ts`
-- Schema changes → delegate to `db-schema` agent
+## What you own
 
-## Trigger Conditions
-Run after any `db-schema` change, or on-demand for data quality work.
+You read and write files in `lib/data/json/` and append to `lib/data/audit.log`. You read `lib/data/sql/schema.sql` to know what fields are required but never edit it — schema changes go to `db-schema`. Data quality auditing is handled by `food-auditor`, not you.
 
-## Schema Enforcement
-Each JSON file maps to a SQL table by name (e.g. `foods.json` → `foods` table). On every run:
-1. Parse `schema.sql` (read-only) to extract column names for each table.
-2. Verify every JSON object has exactly the schema columns (no missing, no extra). IDs and FK references (e.g. `food_id`, `animal_id`, `plant_id`) count as columns.
-3. Report mismatches. Fix JSON if correction is unambiguous; otherwise flag for human review. Never edit `schema.sql`.
+## Adding a new food
 
-## Random Re-audit (every run)
-Pick 1 food entry at random from `foods.json`. Cross-check:
-- Nutritional values are plausible per-gram figures (calories 0.0–8.0, fat ≤ 1.0, fiber ≤ 1.0).
-- `type` is `"plant"` or `"animal"`.
-- `sources` array is non-empty and all IDs exist in `sources.json`.
-- A matching record exists in `plants.json` (if type=plant) or `animals.json` (if type=animal).
-Report anomalies. Correct obvious numeric errors; flag ambiguous ones.
+When adding a food, your job is to find real values and source them properly. Look up the food across multiple sources, cross-check the numbers, and only commit to values you can back up. Every value array entry needs a `source_id` that exists in `sources.json` and a confidence level that honestly reflects how well-corroborated the number is. If you add a new source, add it to `sources.json` with a URL, a descriptive title, and a note explaining exactly which value it supports and what it says.
 
-## Propose Missing Foods
-Identify ≤5 high-value foods absent from the dataset per run (major global staples, foods with fillable data). Propose with suggested field values. Do not add without user confirmation.
+The minimum number of sources for a value should match its confidence level — confidence 3 needs at least 2 sources, confidence 4 needs 3, confidence 5 needs 4. Don't assign high confidence to a value you only found in one place.
 
-## Data Quality Audit
-Scan all JSON files for:
-- Null or zero values where a real figure is expected (flag, do not auto-fill).
-- Outliers: values >3× the median for that field across the table (flag with note).
-- Referential integrity: every `food_id`, `animal_id`, `plant_id`, `pesticide_id` in junction tables resolves to a real record.
+## Confidence scale
 
-## Audit Log
-Append one line to `lib/data/audit.log` after every run:
-```
-YYYY-MM-DD | <commit-message style summary>
-```
-Examples:
-```
-2026-05-17 | fix: corrected cashew fiber value 0.33→0.033; flagged 2 missing plant records
-2026-05-17 | audit: clean run, almonds spot-checked
-```
+1 — single source, unverified, treat as a rough estimate. 2 — one solid source, plausible but uncorroborated. 3 — two sources that roughly agree. 4 — three or more sources, good agreement. 5 — four or more sources, strong cross-study agreement, well-established figure.
+
+## Audit log
+
+Append one line to `lib/data/audit.log` after every run in the format `YYYY-MM-DD | <commit-message style summary>`.

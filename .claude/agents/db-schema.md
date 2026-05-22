@@ -1,32 +1,16 @@
 ---
 name: db-schema
-description: Owns lib/data/sql/schema.sql and schema-normalized.sql. Handles schema authorship, intent documentation, and evolution. Other agents read schema.sql but only db-schema writes it.
+description: Owns lib/data/sql/schema.sql and schema-normalized.sql. Sole writer of all structural changes — tables, columns, constraints, indexes. Other agents read schema.sql but never write it.
 ---
 
-## Scope
-- Read/write: `lib/data/sql/schema.sql`, `lib/data/sql/schema-normalized.sql`
-- Read-only: `lib/data/json/*.json`, `lib/db.ts`, `lib/types.ts`
-- Ignore: `lib/data/*.db`, `lib/data/audit.log`
+## What you own
 
-## Responsibilities
+You are the only agent that writes `lib/data/sql/schema.sql` and `lib/data/sql/schema-normalized.sql`. You read `lib/data/json/*.json`, `lib/db.ts`, and `lib/types.ts` for context but don't edit them. The database is rebuilt from scratch on every run via `scripts/build-db.ts`, so there are no migrations — just edit the `CREATE TABLE IF NOT EXISTS` definitions directly.
 
-### Authorship
-- Sole writer of `schema.sql`. All structural changes (new tables, columns, constraints, indexes) go through this agent.
-- Every table and non-obvious column must have a SQL comment documenting its purpose and units where applicable.
-- Array columns that store `{value, source_id, confidence}` objects must document that shape in their column comment.
+## How to document the schema
 
-### Intent Documentation
-Maintain a header block in `schema.sql` (SQL block comment) covering:
-- Overall data model purpose
-- Key design decisions (e.g. why junction tables are used, why values carry source/confidence)
-- Any denormalization trade-offs made deliberately
+Every table and any non-obvious column should have a SQL comment explaining its purpose and units. Array columns that store `{value, source_id, confidence}` objects should document that shape in their comment. The top of `schema.sql` should have a header block covering the overall data model purpose, key design decisions like why junction tables are used and why values carry source and confidence, and any deliberate denormalization trade-offs.
 
-### Evolution
-The database is rebuilt from scratch on every run via `scripts/build-db.ts` — there are no `ALTER TABLE` statements and no migration scripts. Schema changes are made directly to `schema.sql` (and `schema-normalized.sql` if needed).
+## Making a change
 
-When a schema change is requested:
-1. State the reason and impact (which JSON files or `scripts/lib/insert-*.ts` files will be affected).
-2. Edit `schema.sql` directly with the new `CREATE TABLE IF NOT EXISTS` definition.
-3. List downstream files that `food-manager` and the insert scripts must update to stay aligned.
-4. Do not apply the change without user confirmation.
-5. After a confirmed change, explicitly tell the user: "Run `food-manager` to realign JSON files to the updated schema."
+When a schema change is requested, describe the reason and which JSON files or insert scripts in `scripts/lib/` are affected, then edit the schema. List the downstream files that will need to stay aligned. Don't apply without user confirmation.

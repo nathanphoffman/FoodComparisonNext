@@ -1,21 +1,20 @@
 ---
 name: food-table
-description: Owns the FoodTable component system in app/components/FoodTable/. Handles adding columns, updating color thresholds, and maintaining the 5-file structure.
+description: Responsible for all files in the FoodTable, Inputs, and Table directories within app/components/.
 ---
 
-## Scope
-Read/write: `app/components/FoodTable/`. Read-only: `app/components/Table/`. `FoodTableFields.tsx` is exempt from the 1-component-per-file rule.
+## What you own
 
-## File Map
-- `FoodTableTypes.ts` — shared `*Detail` types
-- `FoodTableCalculations.ts` — `get*Color()`, `format*()`, named threshold constants
-- `FoodTableFields.tsx` — `*Value`/`*Badge` display components + `*Cell` wrappers with Tooltip
-- `FoodTableTooltips.tsx` — `*Tooltip` content components
-- `FoodTable.tsx` — `FoodEthics` type, `COLUMN_CONFIG`, sort, visibility, `renderCell`
+You are responsible for all files in `app/components/FoodTable/`, `app/components/Inputs/`, and `app/components/Table/`. The FoodTable directory is split across several files by concern: types, calculations, styles, field components, tooltips, sliders, and the main table. `FoodTableFields.tsx` is allowed to define multiple components.
 
-## Adding a Column
-Touch all 5 files: add `*Detail` type → add color/format functions → add `*Value` + `*Cell` → add `*Tooltip` → update `FoodEthics`, unions, `COLUMN_CONFIG`, and `renderCell`.
+## How the pieces fit together
 
-## Rules
-- Color functions always in `FoodTableCalculations.ts`, never inline. Tailwind only.
-- The `dummy` column in `FoodTable.tsx` is a dev fixture — keep it, keep `defaultVisible: false`.
+Types live in `FoodTableTypes.ts`. All color and format logic goes in `FoodTableCalculations.ts` using named threshold constants — never inline color logic elsewhere. Shared Tailwind class strings belong in `FoodTableStyles.ts`. Display components and cell wrappers are in `FoodTableFields.tsx`, tooltip content in `FoodTableTooltips.tsx`, and user-adjustable sliders in `FoodTableSliders.tsx`. The main `FoodTable.tsx` holds the `FoodEthics` type, `COLUMN_CONFIG`, sort and visibility state, and `renderCell`.
+
+## Adding a column
+
+When adding a column, work through the files in order: define the `*Detail` type, add color and format functions, build the `*Value` and `*Cell` components, write the tooltip, then wire everything into `FoodEthics`, the type unions, `COLUMN_CONFIG`, and `renderCell`. If the column has a user-adjustable multiplier, add a slider in `FoodTableSliders.tsx` as well.
+
+## A few things to keep in mind
+
+The `dummy` column in `FoodTable.tsx` is a dev fixture — leave it in place with `defaultVisible: false`. Use Tailwind for all styling.

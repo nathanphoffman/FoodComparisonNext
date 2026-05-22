@@ -1,0 +1,494 @@
+[
+    {
+        "id": 33,
+        "slug": "milk",
+        "name": "Milk",
+        "type": "animal",
+        "category": "dairy",
+        "human_food": 1,
+        "tags": [
+            "dairy"
+        ],
+        "nutrition": [
+            {
+                "value": {
+                    "calories": 0.61,
+                    "fat": 0.033,
+                    "sat_fat": 0.021,
+                    "protein": 0.032,
+                    "fiber": 0,
+                    "sodium": 0.44,
+                    "carbs": 0.047,
+                    "sugar": 0.047,
+                    "cholesterol": 0.1,
+                    "trans_fat": 0
+                },
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "neuron_count": [
+            {
+                "value": 3000000000,
+                "confidence": 3,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": null
+                }
+            }
+        ],
+        "weight_kg": [
+            {
+                "value": 680,
+                "confidence": 3,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": null
+                }
+            }
+        ],
+        "yield_fraction": [
+            {
+                "value": 1,
+                "confidence": 5,
+                "source": {
+                    "id": 54,
+                    "url": "https://www.fao.org/uploads/media/bognar_bfe-r-02-03.pdf",
+                    "title": "FAO/BfR — Tables on Weight Yield of Food and Retention Factors",
+                    "note": null
+                }
+            }
+        ],
+        "bycatch_food_id": null,
+        "bycatch_food_slug": null,
+        "bycatch_amount": null,
+        "pasture_ha_per_kg_output": [
+            {
+                "value": 0.0001,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "pasture_green_water_l_per_ha": [
+            {
+                "value": 6500000,
+                "confidence": 2,
+                "source": {
+                    "id": 65,
+                    "url": "https://www.waterfootprint.org/resources/Report48-WaterFootprintAnimalProducts-Vol1.pdf",
+                    "title": "Mekonnen & Hoekstra (2012) — Water Footprint of Animal Products (Report 48, Vol. 1)",
+                    "note": null
+                }
+            },
+            {
+                "value": 6500000,
+                "confidence": 2,
+                "source": {
+                    "id": 66,
+                    "url": "https://www.fao.org/3/x0490e/x0490e00.htm",
+                    "title": "Allen et al. (1998) — FAO Irrigation and Drainage Paper No. 56: Crop Evapotranspiration",
+                    "note": null
+                }
+            }
+        ],
+        "native_fraction": [
+            {
+                "value": 0.8,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "ch4_kg_per_kg_output": [
+            {
+                "value": 0.24,
+                "confidence": 3,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            },
+            {
+                "value": 0.22,
+                "confidence": 3,
+                "source": {
+                    "id": 56,
+                    "url": "https://www.fao.org/gleam/en/",
+                    "title": "FAO GLEAM — Global Livestock Environmental Assessment Model",
+                    "note": null
+                }
+            }
+        ],
+        "n2o_kg_per_kg_output": [
+            {
+                "value": 0.004,
+                "confidence": 3,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            },
+            {
+                "value": 0.004,
+                "confidence": 3,
+                "source": {
+                    "id": 56,
+                    "url": "https://www.fao.org/gleam/en/",
+                    "title": "FAO GLEAM — Global Livestock Environmental Assessment Model",
+                    "note": null
+                }
+            }
+        ],
+        "co2_kg_per_kg_output": [
+            {
+                "value": 0.08,
+                "confidence": 3,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            },
+            {
+                "value": 0.07,
+                "confidence": 3,
+                "source": {
+                    "id": 56,
+                    "url": "https://www.fao.org/gleam/en/",
+                    "title": "FAO GLEAM — Global Livestock Environmental Assessment Model",
+                    "note": null
+                }
+            }
+        ],
+        "feed": [
+            {
+                "food_id": 6,
+                "food_slug": "corn",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.92,
+                        "confidence": 3,
+                        "source": {
+                            "id": 37,
+                            "url": "https://albertamilk.com/ask-dairy-farmer/how-much-feed-does-a-cow-need-to-produce-1-litre-of-milk/",
+                            "title": "Alberta Milk — Feed Required per Litre of Milk",
+                            "note": null
+                        }
+                    }
+                ]
+            },
+            {
+                "food_id": 7,
+                "food_slug": "alfalfa",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.42,
+                        "confidence": 3,
+                        "source": {
+                            "id": 37,
+                            "url": "https://albertamilk.com/ask-dairy-farmer/how-much-feed-does-a-cow-need-to-produce-1-litre-of-milk/",
+                            "title": "Alberta Milk — Feed Required per Litre of Milk",
+                            "note": null
+                        }
+                    }
+                ]
+            },
+            {
+                "food_id": 4,
+                "food_slug": "soy",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.17,
+                        "confidence": 3,
+                        "source": {
+                            "id": 37,
+                            "url": "https://albertamilk.com/ask-dairy-farmer/how-much-feed-does-a-cow-need-to-produce-1-litre-of-milk/",
+                            "title": "Alberta Milk — Feed Required per Litre of Milk",
+                            "note": null
+                        }
+                    }
+                ]
+            },
+            {
+                "food_id": 8,
+                "food_slug": "grass-hay",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.12,
+                        "confidence": 3,
+                        "source": {
+                            "id": 37,
+                            "url": "https://albertamilk.com/ask-dairy-farmer/how-much-feed-does-a-cow-need-to-produce-1-litre-of-milk/",
+                            "title": "Alberta Milk — Feed Required per Litre of Milk",
+                            "note": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "slug": "yogurt",
+        "name": "Yogurt",
+        "type": "animal",
+        "category": "dairy",
+        "human_food": 1,
+        "tags": [
+            "dairy"
+        ],
+        "nutrition": [
+            {
+                "value": {
+                    "calories": 0.59,
+                    "fat": 0.033,
+                    "sat_fat": 0.021,
+                    "protein": 0.035,
+                    "fiber": 0,
+                    "sodium": 0.46,
+                    "carbs": 0.046,
+                    "sugar": 0.046,
+                    "cholesterol": 0.13,
+                    "trans_fat": 0
+                },
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "neuron_count": [
+            {
+                "value": 3000000000,
+                "confidence": 3,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": null
+                }
+            }
+        ],
+        "weight_kg": [
+            {
+                "value": 680,
+                "confidence": 3,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": null
+                }
+            }
+        ],
+        "yield_fraction": [
+            {
+                "value": 1,
+                "confidence": 4,
+                "source": {
+                    "id": 54,
+                    "url": "https://www.fao.org/uploads/media/bognar_bfe-r-02-03.pdf",
+                    "title": "FAO/BfR — Tables on Weight Yield of Food and Retention Factors",
+                    "note": null
+                }
+            }
+        ],
+        "bycatch_food_id": null,
+        "bycatch_food_slug": null,
+        "bycatch_amount": null,
+        "pasture_ha_per_kg_output": [
+            {
+                "value": 0.000115,
+                "confidence": 2,
+                "source": {
+                    "id": 64,
+                    "url": "https://www.dairyglobal.net/dairy-management/processing/how-much-milk-is-needed-to-make-1-kg-of-yogurt/",
+                    "title": "Dairy Global — Milk-to-Yogurt Conversion Ratio",
+                    "note": null
+                }
+            }
+        ],
+        "pasture_green_water_l_per_ha": [
+            {
+                "value": 6500000,
+                "confidence": 2,
+                "source": {
+                    "id": 65,
+                    "url": "https://www.waterfootprint.org/resources/Report48-WaterFootprintAnimalProducts-Vol1.pdf",
+                    "title": "Mekonnen & Hoekstra (2012) — Water Footprint of Animal Products (Report 48, Vol. 1)",
+                    "note": null
+                }
+            },
+            {
+                "value": 6500000,
+                "confidence": 2,
+                "source": {
+                    "id": 66,
+                    "url": "https://www.fao.org/3/x0490e/x0490e00.htm",
+                    "title": "Allen et al. (1998) — FAO Irrigation and Drainage Paper No. 56: Crop Evapotranspiration",
+                    "note": null
+                }
+            }
+        ],
+        "native_fraction": [
+            {
+                "value": 0.8,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "ch4_kg_per_kg_output": [
+            {
+                "value": 0.276,
+                "confidence": 3,
+                "source": {
+                    "id": 64,
+                    "url": "https://www.dairyglobal.net/dairy-management/processing/how-much-milk-is-needed-to-make-1-kg-of-yogurt/",
+                    "title": "Dairy Global — Milk-to-Yogurt Conversion Ratio",
+                    "note": null
+                }
+            },
+            {
+                "value": 0.253,
+                "confidence": 3,
+                "source": {
+                    "id": 64,
+                    "url": "https://www.dairyglobal.net/dairy-management/processing/how-much-milk-is-needed-to-make-1-kg-of-yogurt/",
+                    "title": "Dairy Global — Milk-to-Yogurt Conversion Ratio",
+                    "note": null
+                }
+            }
+        ],
+        "n2o_kg_per_kg_output": [
+            {
+                "value": 0.0046,
+                "confidence": 3,
+                "source": {
+                    "id": 64,
+                    "url": "https://www.dairyglobal.net/dairy-management/processing/how-much-milk-is-needed-to-make-1-kg-of-yogurt/",
+                    "title": "Dairy Global — Milk-to-Yogurt Conversion Ratio",
+                    "note": null
+                }
+            }
+        ],
+        "co2_kg_per_kg_output": [
+            {
+                "value": 0.092,
+                "confidence": 3,
+                "source": {
+                    "id": 64,
+                    "url": "https://www.dairyglobal.net/dairy-management/processing/how-much-milk-is-needed-to-make-1-kg-of-yogurt/",
+                    "title": "Dairy Global — Milk-to-Yogurt Conversion Ratio",
+                    "note": null
+                }
+            },
+            {
+                "value": 0.0805,
+                "confidence": 3,
+                "source": {
+                    "id": 64,
+                    "url": "https://www.dairyglobal.net/dairy-management/processing/how-much-milk-is-needed-to-make-1-kg-of-yogurt/",
+                    "title": "Dairy Global — Milk-to-Yogurt Conversion Ratio",
+                    "note": null
+                }
+            }
+        ],
+        "feed": [
+            {
+                "food_id": 6,
+                "food_slug": "corn",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 1.058,
+                        "confidence": 3,
+                        "source": {
+                            "id": 37,
+                            "url": "https://albertamilk.com/ask-dairy-farmer/how-much-feed-does-a-cow-need-to-produce-1-litre-of-milk/",
+                            "title": "Alberta Milk — Feed Required per Litre of Milk",
+                            "note": null
+                        }
+                    }
+                ]
+            },
+            {
+                "food_id": 7,
+                "food_slug": "alfalfa",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.483,
+                        "confidence": 3,
+                        "source": {
+                            "id": 37,
+                            "url": "https://albertamilk.com/ask-dairy-farmer/how-much-feed-does-a-cow-need-to-produce-1-litre-of-milk/",
+                            "title": "Alberta Milk — Feed Required per Litre of Milk",
+                            "note": null
+                        }
+                    }
+                ]
+            },
+            {
+                "food_id": 4,
+                "food_slug": "soy",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.196,
+                        "confidence": 3,
+                        "source": {
+                            "id": 37,
+                            "url": "https://albertamilk.com/ask-dairy-farmer/how-much-feed-does-a-cow-need-to-produce-1-litre-of-milk/",
+                            "title": "Alberta Milk — Feed Required per Litre of Milk",
+                            "note": null
+                        }
+                    }
+                ]
+            },
+            {
+                "food_id": 8,
+                "food_slug": "grass-hay",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.138,
+                        "confidence": 3,
+                        "source": {
+                            "id": 37,
+                            "url": "https://albertamilk.com/ask-dairy-farmer/how-much-feed-does-a-cow-need-to-produce-1-litre-of-milk/",
+                            "title": "Alberta Milk — Feed Required per Litre of Milk",
+                            "note": null
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

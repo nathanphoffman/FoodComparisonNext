@@ -1,0 +1,422 @@
+[
+    {
+        "id": 7,
+        "slug": "alfalfa",
+        "name": "Alfalfa",
+        "type": "plant",
+        "category": "feeds",
+        "human_food": 0,
+        "tags": [],
+        "nutrition": [
+            {
+                "value": {
+                    "calories": 2.16,
+                    "fat": 0.028,
+                    "sat_fat": 0.003,
+                    "protein": 0.177,
+                    "fiber": 0.247,
+                    "sodium": 0.07,
+                    "carbs": 0.213,
+                    "sugar": 0,
+                    "cholesterol": 0,
+                    "trans_fat": 0
+                },
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "yield_fraction": [
+            {
+                "value": 1,
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "yield_kg_ha": [
+            {
+                "value": 8500,
+                "confidence": 4,
+                "source": {
+                    "id": 13,
+                    "url": "https://alfalfa.ucdavis.edu/sites/g/files/dgvnsk12586/files/media/documents/UCAlfalfa8303Livestock-reg.pdf",
+                    "title": "UC Davis — Alfalfa for Livestock",
+                    "note": "Alfalfa — yield_kg_ha: Source for typical yield and agronomic characteristics."
+                }
+            }
+        ],
+        "water_per_kg": [
+            {
+                "value": 900,
+                "confidence": 4,
+                "source": {
+                    "id": 13,
+                    "url": "https://alfalfa.ucdavis.edu/sites/g/files/dgvnsk12586/files/media/documents/UCAlfalfa8303Livestock-reg.pdf",
+                    "title": "UC Davis — Alfalfa for Livestock",
+                    "note": "Alfalfa — water_per_kg: Source for water use as livestock feed."
+                }
+            }
+        ],
+        "green_water_per_kg": [
+            {
+                "value": 495,
+                "confidence": 2,
+                "source": {
+                    "id": 67,
+                    "url": "https://www.unesco-ihe.org/sites/default/files/report47-waterfoot.pdf",
+                    "title": "Mekonnen & Hoekstra (2010) — The Green, Blue and Grey Water Footprint of Crops and Crop Products (UNESCO-IHE Report 47)",
+                    "note": null
+                }
+            }
+        ],
+        "blue_water_per_kg": [
+            {
+                "value": 360,
+                "confidence": 2,
+                "source": {
+                    "id": 67,
+                    "url": "https://www.unesco-ihe.org/sites/default/files/report47-waterfoot.pdf",
+                    "title": "Mekonnen & Hoekstra (2010) — The Green, Blue and Grey Water Footprint of Crops and Crop Products (UNESCO-IHE Report 47)",
+                    "note": null
+                }
+            }
+        ],
+        "grey_water_per_kg": [
+            {
+                "value": 3,
+                "confidence": 2,
+                "source": {
+                    "id": 67,
+                    "url": "https://www.unesco-ihe.org/sites/default/files/report47-waterfoot.pdf",
+                    "title": "Mekonnen & Hoekstra (2010) — The Green, Blue and Grey Water Footprint of Crops and Crop Products (UNESCO-IHE Report 47)",
+                    "note": null
+                }
+            }
+        ],
+        "soil_erosion": [
+            {
+                "value": 0.3,
+                "confidence": 4,
+                "source": {
+                    "id": 13,
+                    "url": "https://alfalfa.ucdavis.edu/sites/g/files/dgvnsk12586/files/media/documents/UCAlfalfa8303Livestock-reg.pdf",
+                    "title": "UC Davis — Alfalfa for Livestock",
+                    "note": "Alfalfa — yield_kg_ha: Source for typical yield and agronomic characteristics."
+                }
+            }
+        ],
+        "pesticide_kg_ha": [
+            {
+                "value": 1.5,
+                "confidence": 4,
+                "source": {
+                    "id": 13,
+                    "url": "https://alfalfa.ucdavis.edu/sites/g/files/dgvnsk12586/files/media/documents/UCAlfalfa8303Livestock-reg.pdf",
+                    "title": "UC Davis — Alfalfa for Livestock",
+                    "note": "Alfalfa — yield_kg_ha: Source for typical yield and agronomic characteristics."
+                }
+            }
+        ],
+        "fertilizer_kg_ha": [
+            {
+                "value": 0,
+                "confidence": 4,
+                "source": {
+                    "id": 13,
+                    "url": "https://alfalfa.ucdavis.edu/sites/g/files/dgvnsk12586/files/media/documents/UCAlfalfa8303Livestock-reg.pdf",
+                    "title": "UC Davis — Alfalfa for Livestock",
+                    "note": "Alfalfa — yield_kg_ha: Source for typical yield and agronomic characteristics."
+                }
+            }
+        ],
+        "emissions_per_kg": [
+            {
+                "value": 0.4,
+                "confidence": 4,
+                "source": {
+                    "id": 13,
+                    "url": "https://alfalfa.ucdavis.edu/sites/g/files/dgvnsk12586/files/media/documents/UCAlfalfa8303Livestock-reg.pdf",
+                    "title": "UC Davis — Alfalfa for Livestock",
+                    "note": "Alfalfa — yield_kg_ha: Source for typical yield and agronomic characteristics."
+                }
+            }
+        ],
+        "tillage_events_per_year": [
+            {
+                "value": 0,
+                "confidence": 4,
+                "source": {
+                    "id": 13,
+                    "url": "https://alfalfa.ucdavis.edu/sites/g/files/dgvnsk12586/files/media/documents/UCAlfalfa8303Livestock-reg.pdf",
+                    "title": "UC Davis — Alfalfa for Livestock",
+                    "note": "Alfalfa — yield_kg_ha: Source for typical yield and agronomic characteristics."
+                }
+            }
+        ],
+        "co2_capture_kg_ha_yr": [
+            {
+                "value": 4000,
+                "confidence": 4,
+                "source": {
+                    "id": 13,
+                    "url": "https://alfalfa.ucdavis.edu/sites/g/files/dgvnsk12586/files/media/documents/UCAlfalfa8303Livestock-reg.pdf",
+                    "title": "UC Davis — Alfalfa for Livestock",
+                    "note": "Alfalfa — yield_kg_ha: Source for typical yield and agronomic characteristics."
+                }
+            }
+        ],
+        "pesticides": [
+            {
+                "pesticide_id": 4,
+                "name": "Malathion",
+                "kg_ha": [
+                    {
+                        "value": 0.3,
+                        "confidence": 3,
+                        "source": {
+                            "id": 52,
+                            "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+                            "title": "USDA NASS — Agricultural Chemical Use Survey",
+                            "note": "Alfalfa — malathion: 0.3 kg/ha; carbaryl: 0.4 kg/ha; diazinon: 0.15 kg/ha."
+                        }
+                    }
+                ]
+            },
+            {
+                "pesticide_id": 17,
+                "name": "Carbaryl",
+                "kg_ha": [
+                    {
+                        "value": 0.4,
+                        "confidence": 3,
+                        "source": {
+                            "id": 52,
+                            "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+                            "title": "USDA NASS — Agricultural Chemical Use Survey",
+                            "note": "Alfalfa — malathion: 0.3 kg/ha; carbaryl: 0.4 kg/ha; diazinon: 0.15 kg/ha."
+                        }
+                    }
+                ]
+            },
+            {
+                "pesticide_id": 15,
+                "name": "Diazinon",
+                "kg_ha": [
+                    {
+                        "value": 0.15,
+                        "confidence": 3,
+                        "source": {
+                            "id": 52,
+                            "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+                            "title": "USDA NASS — Agricultural Chemical Use Survey",
+                            "note": "Alfalfa — malathion: 0.3 kg/ha; carbaryl: 0.4 kg/ha; diazinon: 0.15 kg/ha."
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "slug": "grass-hay",
+        "name": "Grass Hay",
+        "type": "plant",
+        "category": "feeds",
+        "human_food": 0,
+        "tags": [],
+        "nutrition": [
+            {
+                "value": {
+                    "calories": 2.89,
+                    "fat": 0.031,
+                    "sat_fat": 0.005,
+                    "protein": 0.088,
+                    "fiber": 0.32,
+                    "sodium": 0.04,
+                    "carbs": 0.537,
+                    "sugar": 0,
+                    "cholesterol": 0,
+                    "trans_fat": 0
+                },
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "yield_fraction": [
+            {
+                "value": 1,
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "yield_kg_ha": [
+            {
+                "value": 5500,
+                "confidence": 4,
+                "source": {
+                    "id": 15,
+                    "url": "https://www.nass.usda.gov/",
+                    "title": "USDA National Agricultural Statistics Service (NASS)",
+                    "note": null
+                }
+            }
+        ],
+        "water_per_kg": [
+            {
+                "value": 550,
+                "confidence": 4,
+                "source": {
+                    "id": 15,
+                    "url": "https://www.nass.usda.gov/",
+                    "title": "USDA National Agricultural Statistics Service (NASS)",
+                    "note": null
+                }
+            }
+        ],
+        "green_water_per_kg": [
+            {
+                "value": 506,
+                "confidence": 2,
+                "source": {
+                    "id": 67,
+                    "url": "https://www.unesco-ihe.org/sites/default/files/report47-waterfoot.pdf",
+                    "title": "Mekonnen & Hoekstra (2010) — The Green, Blue and Grey Water Footprint of Crops and Crop Products (UNESCO-IHE Report 47)",
+                    "note": null
+                }
+            }
+        ],
+        "blue_water_per_kg": [
+            {
+                "value": 28,
+                "confidence": 2,
+                "source": {
+                    "id": 67,
+                    "url": "https://www.unesco-ihe.org/sites/default/files/report47-waterfoot.pdf",
+                    "title": "Mekonnen & Hoekstra (2010) — The Green, Blue and Grey Water Footprint of Crops and Crop Products (UNESCO-IHE Report 47)",
+                    "note": null
+                }
+            }
+        ],
+        "grey_water_per_kg": [
+            {
+                "value": 3,
+                "confidence": 2,
+                "source": {
+                    "id": 67,
+                    "url": "https://www.unesco-ihe.org/sites/default/files/report47-waterfoot.pdf",
+                    "title": "Mekonnen & Hoekstra (2010) — The Green, Blue and Grey Water Footprint of Crops and Crop Products (UNESCO-IHE Report 47)",
+                    "note": null
+                }
+            }
+        ],
+        "soil_erosion": [
+            {
+                "value": 0.5,
+                "confidence": 4,
+                "source": {
+                    "id": 15,
+                    "url": "https://www.nass.usda.gov/",
+                    "title": "USDA National Agricultural Statistics Service (NASS)",
+                    "note": null
+                }
+            }
+        ],
+        "pesticide_kg_ha": [
+            {
+                "value": 0.5,
+                "confidence": 4,
+                "source": {
+                    "id": 15,
+                    "url": "https://www.nass.usda.gov/",
+                    "title": "USDA National Agricultural Statistics Service (NASS)",
+                    "note": null
+                }
+            }
+        ],
+        "fertilizer_kg_ha": [
+            {
+                "value": 80,
+                "confidence": 4,
+                "source": {
+                    "id": 15,
+                    "url": "https://www.nass.usda.gov/",
+                    "title": "USDA National Agricultural Statistics Service (NASS)",
+                    "note": null
+                }
+            }
+        ],
+        "emissions_per_kg": [
+            {
+                "value": 0.3,
+                "confidence": 4,
+                "source": {
+                    "id": 15,
+                    "url": "https://www.nass.usda.gov/",
+                    "title": "USDA National Agricultural Statistics Service (NASS)",
+                    "note": null
+                }
+            }
+        ],
+        "tillage_events_per_year": [
+            {
+                "value": 0,
+                "confidence": 4,
+                "source": {
+                    "id": 15,
+                    "url": "https://www.nass.usda.gov/",
+                    "title": "USDA National Agricultural Statistics Service (NASS)",
+                    "note": null
+                }
+            }
+        ],
+        "co2_capture_kg_ha_yr": [
+            {
+                "value": 3500,
+                "confidence": 4,
+                "source": {
+                    "id": 15,
+                    "url": "https://www.nass.usda.gov/",
+                    "title": "USDA National Agricultural Statistics Service (NASS)",
+                    "note": null
+                }
+            }
+        ],
+        "pesticides": [
+            {
+                "pesticide_id": 12,
+                "name": "2,4-D",
+                "kg_ha": [
+                    {
+                        "value": 0.25,
+                        "confidence": 3,
+                        "source": {
+                            "id": 52,
+                            "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+                            "title": "USDA NASS — Agricultural Chemical Use Survey",
+                            "note": null
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

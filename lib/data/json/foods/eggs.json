@@ -1,0 +1,178 @@
+[
+    {
+        "id": 17,
+        "slug": "egg",
+        "name": "Egg",
+        "type": "animal",
+        "category": "eggs",
+        "human_food": 1,
+        "tags": [
+            "common"
+        ],
+        "nutrition": [
+            {
+                "value": {
+                    "calories": 1.43,
+                    "fat": 0.095,
+                    "sat_fat": 0.031,
+                    "protein": 0.125,
+                    "fiber": 0,
+                    "sodium": 1.42,
+                    "carbs": 0.011,
+                    "sugar": 0.011,
+                    "cholesterol": 3.72,
+                    "trans_fat": 0
+                },
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "neuron_count": [
+            {
+                "value": 221000000,
+                "confidence": 3,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": null
+                }
+            }
+        ],
+        "weight_kg": [
+            {
+                "value": 1.8,
+                "confidence": 3,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": null
+                }
+            }
+        ],
+        "yield_fraction": [
+            {
+                "value": 1,
+                "confidence": 5,
+                "source": {
+                    "id": 54,
+                    "url": "https://www.fao.org/uploads/media/bognar_bfe-r-02-03.pdf",
+                    "title": "FAO/BfR — Tables on Weight Yield of Food and Retention Factors",
+                    "note": null
+                }
+            }
+        ],
+        "bycatch_food_id": null,
+        "bycatch_food_slug": null,
+        "bycatch_amount": null,
+        "pasture_ha_per_kg_output": null,
+        "pasture_green_water_l_per_ha": null,
+        "native_fraction": null,
+        "ch4_kg_per_kg_output": [
+            {
+                "value": 0.05,
+                "confidence": 3,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            },
+            {
+                "value": 0.045,
+                "confidence": 3,
+                "source": {
+                    "id": 56,
+                    "url": "https://www.fao.org/gleam/en/",
+                    "title": "FAO GLEAM — Global Livestock Environmental Assessment Model",
+                    "note": null
+                }
+            }
+        ],
+        "n2o_kg_per_kg_output": [
+            {
+                "value": 0.012,
+                "confidence": 3,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            },
+            {
+                "value": 0.011,
+                "confidence": 3,
+                "source": {
+                    "id": 56,
+                    "url": "https://www.fao.org/gleam/en/",
+                    "title": "FAO GLEAM — Global Livestock Environmental Assessment Model",
+                    "note": null
+                }
+            }
+        ],
+        "co2_kg_per_kg_output": [
+            {
+                "value": 0.35,
+                "confidence": 3,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            },
+            {
+                "value": 0.32,
+                "confidence": 3,
+                "source": {
+                    "id": 56,
+                    "url": "https://www.fao.org/gleam/en/",
+                    "title": "FAO GLEAM — Global Livestock Environmental Assessment Model",
+                    "note": null
+                }
+            }
+        ],
+        "feed": [
+            {
+                "food_id": 6,
+                "food_slug": "corn",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 2.42,
+                        "confidence": 3,
+                        "source": {
+                            "id": 36,
+                            "url": "https://www.champrix.com/articles/maximize-efficiency-and-profits-understanding-and-improving-feed-conversion-ratio-(fcr)-in-layers",
+                            "title": "Champrix — Feed Conversion Ratio in Layer Hens",
+                            "note": null
+                        }
+                    }
+                ]
+            },
+            {
+                "food_id": 4,
+                "food_slug": "soy",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.81,
+                        "confidence": 3,
+                        "source": {
+                            "id": 36,
+                            "url": "https://www.champrix.com/articles/maximize-efficiency-and-profits-understanding-and-improving-feed-conversion-ratio-(fcr)-in-layers",
+                            "title": "Champrix — Feed Conversion Ratio in Layer Hens",
+                            "note": null
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,556 @@
+[
+    {
+        "id": 16,
+        "slug": "salmon",
+        "name": "Salmon",
+        "type": "animal",
+        "category": "seafood",
+        "human_food": 1,
+        "tags": [
+            "fish",
+            "common"
+        ],
+        "nutrition": [
+            {
+                "value": {
+                    "calories": 2.08,
+                    "fat": 0.13,
+                    "sat_fat": 0.031,
+                    "protein": 0.201,
+                    "fiber": 0,
+                    "sodium": 0.59,
+                    "carbs": 0,
+                    "sugar": 0,
+                    "cholesterol": 0.63,
+                    "trans_fat": 0
+                },
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "neuron_count": [
+            {
+                "value": 10000000,
+                "confidence": 1,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": null
+                }
+            },
+            {
+                "value": 130000000,
+                "confidence": 2,
+                "source": {
+                    "id": 40,
+                    "url": "https://forum.effectivealtruism.org/posts/4SpYcqZvuyZ8JyiCK/neuron-count-based-measures-may-currently-underweight",
+                    "title": "EA Forum — Neuron Count Measures May Underweight Suffering in Farmed Fish",
+                    "note": null
+                }
+            }
+        ],
+        "weight_kg": [
+            {
+                "value": 4.5,
+                "confidence": 3,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": null
+                }
+            }
+        ],
+        "yield_fraction": [
+            {
+                "value": 0.65,
+                "confidence": 3,
+                "source": {
+                    "id": 54,
+                    "url": "https://www.fao.org/uploads/media/bognar_bfe-r-02-03.pdf",
+                    "title": "FAO/BfR — Tables on Weight Yield of Food and Retention Factors",
+                    "note": null
+                }
+            }
+        ],
+        "bycatch_food_id": null,
+        "bycatch_food_slug": null,
+        "bycatch_amount": null,
+        "pasture_ha_per_kg_output": null,
+        "pasture_green_water_l_per_ha": null,
+        "native_fraction": null,
+        "ch4_kg_per_kg_output": [
+            {
+                "value": 0.01,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "n2o_kg_per_kg_output": [
+            {
+                "value": 0.005,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "co2_kg_per_kg_output": [
+            {
+                "value": 0.6,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "feed": [
+            {
+                "food_id": 4,
+                "food_slug": "soy",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.24,
+                        "confidence": 4,
+                        "source": {
+                            "id": 32,
+                            "url": "https://www.seafish.org/responsible-sourcing/aquaculture-farming-seafood/species-farmed-in-aquaculture/aquaculture-profiles/atlantic-salmon/feed/",
+                            "title": "Seafish — Atlantic Salmon Feed Profile",
+                            "note": null
+                        }
+                    }
+                ]
+            },
+            {
+                "food_id": 3,
+                "food_slug": "wheat",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.13,
+                        "confidence": 4,
+                        "source": {
+                            "id": 32,
+                            "url": "https://www.seafish.org/responsible-sourcing/aquaculture-farming-seafood/species-farmed-in-aquaculture/aquaculture-profiles/atlantic-salmon/feed/",
+                            "title": "Seafish — Atlantic Salmon Feed Profile",
+                            "note": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "slug": "tuna",
+        "name": "Tuna",
+        "type": "animal",
+        "category": "seafood",
+        "human_food": 1,
+        "tags": [
+            "fish",
+            "common"
+        ],
+        "nutrition": [
+            {
+                "value": {
+                    "calories": 1.09,
+                    "fat": 0.01,
+                    "sat_fat": 0.003,
+                    "protein": 0.234,
+                    "fiber": 0,
+                    "sodium": 0.45,
+                    "carbs": 0,
+                    "sugar": 0,
+                    "cholesterol": 0.49,
+                    "trans_fat": 0
+                },
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "neuron_count": [
+            {
+                "value": 30000000,
+                "confidence": 3,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": "Tuna — neuron_count: ~30 million neurons."
+                }
+            }
+        ],
+        "weight_kg": [
+            {
+                "value": 60,
+                "confidence": 3,
+                "source": {
+                    "id": 17,
+                    "url": "https://en.wikipedia.org/wiki/List_of_animals_by_number_of_neurons",
+                    "title": "Wikipedia — List of Animals by Number of Neurons",
+                    "note": "Tuna — neuron_count: ~30 million neurons."
+                }
+            }
+        ],
+        "yield_fraction": [
+            {
+                "value": 0.6,
+                "confidence": 2,
+                "source": {
+                    "id": 54,
+                    "url": "https://www.fao.org/uploads/media/bognar_bfe-r-02-03.pdf",
+                    "title": "FAO/BfR — Tables on Weight Yield of Food and Retention Factors",
+                    "note": null
+                }
+            }
+        ],
+        "bycatch_food_id": null,
+        "bycatch_food_slug": null,
+        "bycatch_amount": null,
+        "pasture_ha_per_kg_output": null,
+        "pasture_green_water_l_per_ha": null,
+        "native_fraction": null,
+        "ch4_kg_per_kg_output": [
+            {
+                "value": 0,
+                "confidence": 3,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "n2o_kg_per_kg_output": [
+            {
+                "value": 0.001,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "co2_kg_per_kg_output": [
+            {
+                "value": 0.8,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "feed": []
+    },
+    {
+        "id": 35,
+        "slug": "shrimp",
+        "name": "Shrimp",
+        "type": "animal",
+        "category": "seafood",
+        "human_food": 1,
+        "tags": [
+            "seafood",
+            "common"
+        ],
+        "nutrition": [
+            {
+                "value": {
+                    "calories": 0.85,
+                    "fat": 0.009,
+                    "sat_fat": 0.002,
+                    "protein": 0.202,
+                    "fiber": 0,
+                    "sodium": 1.19,
+                    "carbs": 0.002,
+                    "sugar": 0,
+                    "cholesterol": 1.52,
+                    "trans_fat": 0
+                },
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "neuron_count": [
+            {
+                "value": 1000000,
+                "confidence": 2,
+                "source": {
+                    "id": 43,
+                    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4685590/",
+                    "title": "PMC — Nervous Systems of Decapod Crustaceans",
+                    "note": "Shrimp — neuron_count: Decapod crustaceans (including penaeoid shrimp) have been estimated at approximately 100,000–1,000,000 neurons in the central nervous system, with most commercial penaeid shrimp species falling near the lower end (~100,000–500,000). A value of 1,000,000 is used here as a conservative upper bound for commercial-sized shrimp (~15–20g), consistent with estimates for small decapods in the peer-reviewed literature."
+                }
+            }
+        ],
+        "weight_kg": [
+            {
+                "value": 0.018,
+                "confidence": 3,
+                "source": {
+                    "id": 43,
+                    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4685590/",
+                    "title": "PMC — Nervous Systems of Decapod Crustaceans",
+                    "note": "Shrimp — neuron_count: Decapod crustaceans (including penaeoid shrimp) have been estimated at approximately 100,000–1,000,000 neurons in the central nervous system, with most commercial penaeid shrimp species falling near the lower end (~100,000–500,000). A value of 1,000,000 is used here as a conservative upper bound for commercial-sized shrimp (~15–20g), consistent with estimates for small decapods in the peer-reviewed literature."
+                }
+            }
+        ],
+        "yield_fraction": [
+            {
+                "value": 0.6,
+                "confidence": 3,
+                "source": {
+                    "id": 54,
+                    "url": "https://www.fao.org/uploads/media/bognar_bfe-r-02-03.pdf",
+                    "title": "FAO/BfR — Tables on Weight Yield of Food and Retention Factors",
+                    "note": null
+                }
+            }
+        ],
+        "bycatch_food_id": 36,
+        "bycatch_food_slug": "sardines",
+        "bycatch_amount": [
+            {
+                "value": 5.7,
+                "confidence": 2,
+                "source": {
+                    "id": 44,
+                    "url": "https://www.worldwildlife.org/threats/bycatch",
+                    "title": "WWF — Bycatch Overview",
+                    "note": "Shrimp — wild vs. farmed: Approximately 55% of global shrimp production is wild-caught (predominantly trawl). The bycatch values apply to the wild-caught fraction. Farmed shrimp contribute no trawl bycatch but have separate feed and environmental impacts."
+                }
+            }
+        ],
+        "pasture_ha_per_kg_output": null,
+        "pasture_green_water_l_per_ha": null,
+        "native_fraction": null,
+        "ch4_kg_per_kg_output": [
+            {
+                "value": 0.03,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "n2o_kg_per_kg_output": [
+            {
+                "value": 0.008,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "co2_kg_per_kg_output": [
+            {
+                "value": 0.7,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "feed": [
+            {
+                "food_id": 4,
+                "food_slug": "soy",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.67,
+                        "confidence": 2,
+                        "source": {
+                            "id": 49,
+                            "url": "https://www.fao.org/fishery/en/culturedspecies/penaeus_vannamei",
+                            "title": "FAO — Farmed Whiteleg Shrimp (Penaeus vannamei)",
+                            "note": null
+                        }
+                    }
+                ]
+            },
+            {
+                "food_id": 3,
+                "food_slug": "wheat",
+                "kg_feed_per_kg_output": [
+                    {
+                        "value": 0.45,
+                        "confidence": 2,
+                        "source": {
+                            "id": 49,
+                            "url": "https://www.fao.org/fishery/en/culturedspecies/penaeus_vannamei",
+                            "title": "FAO — Farmed Whiteleg Shrimp (Penaeus vannamei)",
+                            "note": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "slug": "sardines",
+        "name": "Sardines",
+        "type": "animal",
+        "category": "seafood",
+        "human_food": 1,
+        "tags": [
+            "fish",
+            "seafood"
+        ],
+        "nutrition": [
+            {
+                "value": {
+                    "calories": 2.08,
+                    "fat": 0.114,
+                    "sat_fat": 0.015,
+                    "protein": 0.245,
+                    "fiber": 0,
+                    "sodium": 0.41,
+                    "carbs": 0,
+                    "sugar": 0,
+                    "cholesterol": 0.61,
+                    "trans_fat": 0
+                },
+                "confidence": 5,
+                "source": {
+                    "id": 1,
+                    "url": "https://fdc.nal.usda.gov/",
+                    "title": "USDA FoodData Central",
+                    "note": "All foods — calories, fat, sat_fat, protein, fiber: Primary source for all nutritional values, reported per gram."
+                }
+            }
+        ],
+        "neuron_count": [
+            {
+                "value": 10000000,
+                "confidence": 2,
+                "source": {
+                    "id": 45,
+                    "url": "https://en.wikipedia.org/wiki/Sardine",
+                    "title": "Wikipedia — Sardine",
+                    "note": "Sardines — neuron_count: No direct empirical neuronal count for sardines exists in the peer-reviewed literature. As small teleost fish with brain structure comparable to other clupeoids, an estimate of ~10 million neurons is applied, consistent with figures used for small pelagic fish of similar body size (e.g., reference values for small fish in the range of 5–30 million neurons). This carries significant uncertainty."
+                }
+            }
+        ],
+        "weight_kg": [
+            {
+                "value": 0.1,
+                "confidence": 3,
+                "source": {
+                    "id": 45,
+                    "url": "https://en.wikipedia.org/wiki/Sardine",
+                    "title": "Wikipedia — Sardine",
+                    "note": "Sardines — weight_kg: Commercial sardines (Sardina pilchardus, Sardinops sagax) at harvest typically weigh 50–150g; a value of 0.1 kg (100g) is used as representative."
+                }
+            }
+        ],
+        "yield_fraction": [
+            {
+                "value": 0.75,
+                "confidence": 3,
+                "source": {
+                    "id": 54,
+                    "url": "https://www.fao.org/uploads/media/bognar_bfe-r-02-03.pdf",
+                    "title": "FAO/BfR — Tables on Weight Yield of Food and Retention Factors",
+                    "note": null
+                }
+            }
+        ],
+        "bycatch_food_id": 23,
+        "bycatch_food_slug": "tuna",
+        "bycatch_amount": [
+            {
+                "value": 0.1,
+                "confidence": 2,
+                "source": {
+                    "id": 44,
+                    "url": "https://www.worldwildlife.org/threats/bycatch",
+                    "title": "WWF — Bycatch Overview",
+                    "note": null
+                }
+            }
+        ],
+        "pasture_ha_per_kg_output": null,
+        "pasture_green_water_l_per_ha": null,
+        "native_fraction": null,
+        "ch4_kg_per_kg_output": [
+            {
+                "value": 0,
+                "confidence": 3,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "n2o_kg_per_kg_output": [
+            {
+                "value": 0.001,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "co2_kg_per_kg_output": [
+            {
+                "value": 0.35,
+                "confidence": 2,
+                "source": {
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": null
+                }
+            }
+        ],
+        "feed": []
+    }
+]

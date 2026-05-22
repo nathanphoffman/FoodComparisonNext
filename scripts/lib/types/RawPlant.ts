@@ -13,9 +13,11 @@ export class RawPlant {
   readonly id: number;
   readonly food_id: number;
   readonly yield_kg_ha: SourcedNumberArray;
+  readonly yield_fraction: SourcedNumberArray;
   readonly water_per_kg: SourcedNumberArray;
   readonly green_water_per_kg: SourcedNumberArray;
   readonly blue_water_per_kg: SourcedNumberArray;
+  readonly grey_water_per_kg: SourcedNumberArray;
   readonly soil_erosion: SourcedNumberArray;
   readonly pesticide_kg_ha: SourcedNumberArray;
   readonly fertilizer_kg_ha: SourcedNumberArray;
@@ -27,9 +29,11 @@ export class RawPlant {
     this.id = data.id;
     this.food_id = data.food_id;
     this.yield_kg_ha = new SourcedNumberArray(data.yield_kg_ha ?? []);
+    this.yield_fraction = new SourcedNumberArray(data.yield_fraction ?? []);
     this.water_per_kg = new SourcedNumberArray(data.water_per_kg ?? []);
     this.green_water_per_kg = new SourcedNumberArray(data.green_water_per_kg ?? []);
     this.blue_water_per_kg = new SourcedNumberArray(data.blue_water_per_kg ?? []);
+    this.grey_water_per_kg = new SourcedNumberArray(data.grey_water_per_kg ?? []);
     this.soil_erosion = new SourcedNumberArray(data.soil_erosion ?? []);
     this.pesticide_kg_ha = new SourcedNumberArray(data.pesticide_kg_ha ?? []);
     this.fertilizer_kg_ha = new SourcedNumberArray(data.fertilizer_kg_ha ?? []);
@@ -108,9 +112,11 @@ export class RawPlant {
   normalizedFields(): PlantNormalizedFields {
     return {
       yield_kg_ha: this.yield_kg_ha.weightedAverage(),
+      yield_fraction: this.yield_fraction.weightedAverage() ?? 1,
       water_per_kg: this.water_per_kg.weightedAverage(),
       green_water_per_kg: this.green_water_per_kg.weightedAverage(),
       blue_water_per_kg: this.blue_water_per_kg.weightedAverage(),
+      grey_water_per_kg: this.grey_water_per_kg.weightedAverage(),
       soil_erosion: this.soil_erosion.weightedAverage(),
       pesticide_kg_ha: this.pesticide_kg_ha.weightedAverage(),
       fertilizer_kg_ha: this.fertilizer_kg_ha.weightedAverage(),

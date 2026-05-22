@@ -2,6 +2,13 @@
   {
     "id": 1,
     "food_id": 1,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 3000,
@@ -26,6 +33,11 @@
         "value": 3584,
         "source_id": 67,
         "confidence": 2
+      },
+      {
+        "value": 2321,
+        "source_id": 7,
+        "confidence": 2
       }
     ],
     "blue_water_per_kg": [
@@ -33,6 +45,18 @@
         "value": 6349,
         "source_id": 67,
         "confidence": 2
+      },
+      {
+        "value": 4026,
+        "source_id": 7,
+        "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 374,
+        "source_id": 67,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
@@ -81,6 +105,13 @@
   {
     "id": 2,
     "food_id": 3,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 2067,
@@ -105,6 +136,13 @@
     "blue_water_per_kg": [
       {
         "value": 342,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 151,
         "source_id": 67,
         "confidence": 3
       }
@@ -155,6 +193,13 @@
   {
     "id": 3,
     "food_id": 4,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 2800,
@@ -179,6 +224,13 @@
     "blue_water_per_kg": [
       {
         "value": 55,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 64,
         "source_id": 67,
         "confidence": 3
       }
@@ -229,6 +281,13 @@
   {
     "id": 4,
     "food_id": 6,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 5600,
@@ -253,6 +312,13 @@
     "blue_water_per_kg": [
       {
         "value": 77,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 63,
         "source_id": 67,
         "confidence": 3
       }
@@ -303,6 +369,13 @@
   {
     "id": 5,
     "food_id": 7,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 8500,
@@ -327,6 +400,13 @@
     "blue_water_per_kg": [
       {
         "value": 360,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 3,
         "source_id": 67,
         "confidence": 2
       }
@@ -377,6 +457,13 @@
   {
     "id": 6,
     "food_id": 8,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 5500,
@@ -401,6 +488,13 @@
     "blue_water_per_kg": [
       {
         "value": 28,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 3,
         "source_id": 67,
         "confidence": 2
       }
@@ -451,6 +545,13 @@
   {
     "id": 7,
     "food_id": 9,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 4200,
@@ -475,6 +576,13 @@
     "blue_water_per_kg": [
       {
         "value": 15,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 30,
         "source_id": 67,
         "confidence": 3
       }
@@ -525,6 +633,13 @@
   {
     "id": 8,
     "food_id": 10,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 38000,
@@ -549,6 +664,13 @@
     "blue_water_per_kg": [
       {
         "value": 23,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 27,
         "source_id": 67,
         "confidence": 3
       }
@@ -599,6 +721,13 @@
   {
     "id": 9,
     "food_id": 11,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 35000,
@@ -625,6 +754,13 @@
         "value": 31,
         "source_id": 67,
         "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 42,
+        "source_id": 67,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
@@ -673,6 +809,13 @@
   {
     "id": 10,
     "food_id": 12,
+    "yield_fraction": [
+      {
+        "value": 0.96,
+        "source_id": 1,
+        "confidence": 4
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 25000,
@@ -699,6 +842,13 @@
         "value": 7,
         "source_id": 67,
         "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 37,
+        "source_id": 67,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
@@ -747,6 +897,13 @@
   {
     "id": 11,
     "food_id": 13,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 4700,
@@ -771,6 +928,13 @@
     "blue_water_per_kg": [
       {
         "value": 545,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 284,
         "source_id": 67,
         "confidence": 3
       }
@@ -821,6 +985,13 @@
   {
     "id": 12,
     "food_id": 14,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 22000,
@@ -845,6 +1016,13 @@
     "blue_water_per_kg": [
       {
         "value": 49,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 63,
         "source_id": 67,
         "confidence": 3
       }
@@ -895,6 +1073,13 @@
   {
     "id": 13,
     "food_id": 18,
+    "yield_fraction": [
+      {
+        "value": 0.9,
+        "source_id": 1,
+        "confidence": 4
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 18000,
@@ -919,6 +1104,13 @@
     "blue_water_per_kg": [
       {
         "value": 100,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 26,
         "source_id": 67,
         "confidence": 3
       }
@@ -969,6 +1161,13 @@
   {
     "id": 14,
     "food_id": 19,
+    "yield_fraction": [
+      {
+        "value": 0.65,
+        "source_id": 1,
+        "confidence": 4
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 32000,
@@ -993,6 +1192,13 @@
     "blue_water_per_kg": [
       {
         "value": 103,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 59,
         "source_id": 67,
         "confidence": 3
       }
@@ -1043,6 +1249,13 @@
   {
     "id": 15,
     "food_id": 20,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 1200,
@@ -1067,6 +1280,13 @@
     "blue_water_per_kg": [
       {
         "value": 79,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 35,
         "source_id": 67,
         "confidence": 3
       }
@@ -1117,6 +1337,13 @@
   {
     "id": 16,
     "food_id": 21,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 2500,
@@ -1141,6 +1368,13 @@
     "blue_water_per_kg": [
       {
         "value": 46,
+        "source_id": 67,
+        "confidence": 3
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 33,
         "source_id": 67,
         "confidence": 3
       }
@@ -1191,6 +1425,13 @@
   {
     "id": 17,
     "food_id": 22,
+    "yield_fraction": [
+      {
+        "value": 0.89,
+        "source_id": 1,
+        "confidence": 4
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 15000,
@@ -1215,6 +1456,13 @@
     "blue_water_per_kg": [
       {
         "value": 14,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 55,
         "source_id": 67,
         "confidence": 2
       }
@@ -1265,6 +1513,13 @@
   {
     "id": 18,
     "food_id": 24,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 3500,
@@ -1296,6 +1551,13 @@
         "value": 3329,
         "source_id": 67,
         "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 209,
+        "source_id": 67,
+        "confidence": 3
       }
     ],
     "soil_erosion": [
@@ -1344,6 +1606,13 @@
   {
     "id": 19,
     "food_id": 25,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 700,
@@ -1368,6 +1637,13 @@
     "blue_water_per_kg": [
       {
         "value": 464,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 138,
         "source_id": 67,
         "confidence": 2
       }
@@ -1418,6 +1694,13 @@
   {
     "id": 20,
     "food_id": 26,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 1200,
@@ -1447,6 +1730,13 @@
     "blue_water_per_kg": [
       {
         "value": 7274,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 346,
         "source_id": 67,
         "confidence": 2
       }
@@ -1497,6 +1787,13 @@
   {
     "id": 21,
     "food_id": 27,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 1500,
@@ -1523,6 +1820,14 @@
         "value": 2000,
         "source_id": 67,
         "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 220,
+        "source_id": 67,
+        "confidence": 1,
+        "note": "uncertain - no dedicated study"
       }
     ],
     "soil_erosion": [
@@ -1571,6 +1876,13 @@
   {
     "id": 22,
     "food_id": 28,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 1700,
@@ -1645,11 +1957,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 161,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 23,
     "food_id": 29,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 2500,
@@ -1719,11 +2045,26 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 150,
+        "source_id": 67,
+        "confidence": 1,
+        "note": "uncertain - no dedicated study"
+      }
     ]
   },
   {
     "id": 24,
     "food_id": 30,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 80,
@@ -1793,11 +2134,26 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 10,
+        "source_id": 67,
+        "confidence": 1,
+        "note": "uncertain - no dedicated study"
+      }
     ]
   },
   {
     "id": 25,
     "food_id": 31,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 1600,
@@ -1867,11 +2223,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 80,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 26,
     "food_id": 32,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 200,
@@ -1941,11 +2311,26 @@
         "source_id": 67,
         "confidence": 1
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 100,
+        "source_id": 67,
+        "confidence": 1,
+        "note": "uncertain - no dedicated study"
+      }
     ]
   },
   {
     "id": 27,
     "food_id": 39,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 11000,
@@ -2015,11 +2400,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 39,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 28,
     "food_id": 40,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 1000,
@@ -2089,11 +2488,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 36,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 29,
     "food_id": 41,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 850,
@@ -2163,11 +2576,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 21,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 30,
     "food_id": 42,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 1700,
@@ -2237,11 +2664,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 32,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
     "id": 31,
     "food_id": 43,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 20000,
@@ -2311,11 +2752,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 30,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
     "id": 32,
     "food_id": 44,
+    "yield_fraction": [
+      {
+        "value": 0.75,
+        "source_id": 1,
+        "confidence": 4
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 11000,
@@ -2385,11 +2840,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 133,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
     "id": 33,
     "food_id": 45,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 400,
@@ -2459,11 +2928,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 294,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 34,
     "food_id": 46,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 5600,
@@ -2533,11 +3016,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 200,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
     "id": 35,
     "food_id": 47,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 2000,
@@ -2607,11 +3104,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 65,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 36,
     "food_id": 48,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 1300,
@@ -2681,11 +3192,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 100,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 37,
     "food_id": 49,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 3100,
@@ -2755,11 +3280,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 81,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 38,
     "food_id": 50,
+    "yield_fraction": [
+      {
+        "value": 0.69,
+        "source_id": 1,
+        "confidence": 4
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 8000,
@@ -2829,11 +3368,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 26,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 39,
     "food_id": 51,
+    "yield_fraction": [
+      {
+        "value": 0.73,
+        "source_id": 1,
+        "confidence": 4
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 24000,
@@ -2903,11 +3456,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 24,
+        "source_id": 67,
+        "confidence": 3
+      }
     ]
   },
   {
     "id": 40,
     "food_id": 52,
+    "yield_fraction": [
+      {
+        "value": 0.87,
+        "source_id": 1,
+        "confidence": 4
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 18000,
@@ -2977,11 +3544,25 @@
         "source_id": 67,
         "confidence": 2
       }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 84,
+        "source_id": 67,
+        "confidence": 2
+      }
     ]
   },
   {
     "id": 41,
     "food_id": 53,
+    "yield_fraction": [
+      {
+        "value": 1.0,
+        "source_id": 1,
+        "confidence": 5
+      }
+    ],
     "yield_kg_ha": [
       {
         "value": 15000,
@@ -3048,6 +3629,13 @@
     "blue_water_per_kg": [
       {
         "value": 14,
+        "source_id": 67,
+        "confidence": 2
+      }
+    ],
+    "grey_water_per_kg": [
+      {
+        "value": 55,
         "source_id": 67,
         "confidence": 2
       }

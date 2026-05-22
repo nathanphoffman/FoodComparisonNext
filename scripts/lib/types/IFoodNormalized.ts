@@ -22,6 +22,7 @@ export interface IFoodNormalized {
   water_per_kg: number | null;
   green_water_per_kg: number | null;
   blue_water_per_kg: number | null;
+  grey_water_per_kg: number | null;
   soil_erosion: number | null;
   pesticide_kg_ha: number | null;
   fertilizer_kg_ha: number | null;
@@ -47,7 +48,7 @@ export interface IFoodNormalized {
 }
 
 export type PlantNormalizedFields = Pick<IFoodNormalized,
-  | 'yield_kg_ha' | 'water_per_kg' | 'green_water_per_kg' | 'blue_water_per_kg'
+  | 'yield_kg_ha' | 'yield_fraction' | 'water_per_kg' | 'green_water_per_kg' | 'blue_water_per_kg' | 'grey_water_per_kg'
   | 'soil_erosion' | 'pesticide_kg_ha'
   | 'fertilizer_kg_ha' | 'emissions_per_kg' | 'tillage_events_per_year'
   | 'co2_capture_kg_ha_yr' | 'pesticide_freshwater_paf' | 'pesticide_terrestrial_paf'
@@ -82,6 +83,7 @@ export class FoodNormalized implements IFoodNormalized {
   water_per_kg!: number | null;
   green_water_per_kg!: number | null;
   blue_water_per_kg!: number | null;
+  grey_water_per_kg!: number | null;
   soil_erosion!: number | null;
   pesticide_kg_ha!: number | null;
   fertilizer_kg_ha!: number | null;
@@ -115,7 +117,7 @@ export class FoodNormalized implements IFoodNormalized {
       JSON.stringify(this.tags), this.human_food,
       this.calories, this.fat, this.sat_fat, this.protein, this.fiber,
       this.sodium, this.carbs, this.sugar, this.cholesterol, this.trans_fat,
-      this.yield_kg_ha, this.water_per_kg, this.green_water_per_kg, this.blue_water_per_kg,
+      this.yield_kg_ha, this.water_per_kg, this.green_water_per_kg, this.blue_water_per_kg, this.grey_water_per_kg,
       this.soil_erosion, this.pesticide_kg_ha,
       this.fertilizer_kg_ha, this.emissions_per_kg, this.tillage_events_per_year,
       this.co2_capture_kg_ha_yr, this.pesticide_freshwater_paf, this.pesticide_terrestrial_paf,

@@ -15,14 +15,14 @@ const SQL = `INSERT INTO foods_normalized (
   food_id, is_feed, slug, name, type, tags, human_food,
   calories, fat, sat_fat, protein, fiber,
   sodium, carbs, sugar, cholesterol, trans_fat,
-  yield_kg_ha, water_per_kg, green_water_per_kg, blue_water_per_kg,
+  yield_kg_ha, water_per_kg, green_water_per_kg, blue_water_per_kg, grey_water_per_kg,
   soil_erosion, pesticide_kg_ha,
   fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr,
   pesticide_freshwater_paf, pesticide_terrestrial_paf, pesticide_insect_paf, pesticide_bee_hazard, pesticide_kg_per_kg_food,
   neuron_count, weight_kg, yield_fraction, pasture_ha_per_kg_output,
   pasture_green_water_l_per_ha, native_fraction, bycatch_amount,
   ch4_kg_per_kg_output, n2o_kg_per_kg_output, co2_kg_per_kg_output
-) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
 
 export function insert(db: Database, { foods, plants, animals, plantPesticides, pesticides, animalFeed }: NormalizedInsertData): void {
   const plantByFoodId = new Map(plants.map(plant => [plant.food_id, plant]));

@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     water_per_kg             REAL,
     green_water_per_kg       REAL,  -- green (rain-fed) component of water_per_kg; NULL if not yet sourced
     blue_water_per_kg        REAL,  -- blue (irrigation) component of water_per_kg; NULL if not yet sourced
+    grey_water_per_kg        REAL,  -- grey (pollution-assimilation) component of water_per_kg; NULL if not yet sourced
     soil_erosion             REAL,
     pesticide_kg_ha          REAL,
     fertilizer_kg_ha         REAL,
@@ -37,11 +38,13 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     pesticide_bee_hazard      REAL,  -- application-weighted bee hazard score derived from bee_ld50 via inverse-weighted formula (higher = more hazardous);
                                      --   NOT a PAF and NOT an LD50 — it is a unitless relative hazard index computed as sum(kg_ha / bee_ld50) / total_kg_ha
     pesticide_kg_per_kg_food REAL,   -- total pesticide application intensity in kg active ingredient per kg food output (pesticide_kg_ha / yield_kg_ha)
+    yield_fraction           REAL,  -- fraction of harvested weight that is edible (shell, peel, pit/seed loss etc.);
+                                    --   1.0 for foods already measured in edible-weight form;
+                                    --   applies to both plant and animal foods
 
     -- animal metrics (NULL for plant foods and feed rows)
     neuron_count             REAL,
     weight_kg                REAL,
-    yield_fraction           REAL,
     pasture_ha_per_kg_output     REAL,
     pasture_green_water_l_per_ha REAL,  -- green water (precipitation-fed evapotranspiration) consumed by the
                                         --   pasture type this animal grazes, in litres per hectare per year;

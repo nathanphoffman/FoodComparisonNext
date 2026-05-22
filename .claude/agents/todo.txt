@@ -1,6 +1,3 @@
-GREEN BLUE WATER BREAKDOWN
-First make sure that this was added for animals successfully, finally add it 
-for plants and have the food manager run it.
 
 NEW SLIDERS 
 Talk about adding 2 sliders: "% Pasture Natural" and "% Cropland Natural" to

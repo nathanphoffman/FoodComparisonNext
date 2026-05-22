@@ -9,6 +9,7 @@ export type FoodWeights = {
 export type WaterDetail = {
     green: number | null;
     blue:  number | null;
+    grey:  number | null;
 };
 
 export type FoodEthics = {

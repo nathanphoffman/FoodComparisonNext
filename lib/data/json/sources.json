@@ -52,8 +52,10 @@
     "url": "https://www.sciencedirect.com/science/article/pii/S1470160X17308592",
     "title": "ScienceDirect — Almond Water Footprint Study",
     "notes": [
-      "Almonds — water_per_kg: Reports 10,240 L/kg average for California commercial orchards.",
-      "Almonds — water_per_kg averaging: Averaged with Mekonnen & Hoekstra (source 30) value of 13,080 L/kg to produce final value of 11,660 L/kg."
+      "Almonds — water_per_kg: Reports 10,240 L/kg average for California commercial orchards (2004–2015 study period).",
+      "Almonds — water_per_kg averaging: Averaged with Mekonnen & Hoekstra (source 30) value of 13,080 L/kg to produce final value of 11,660 L/kg.",
+      "Almonds — green_water_per_kg: 2,321 L/kg for California orchards (Marston et al. 2018, Ecological Indicators; derived from the study's blue+green component breakdown for the California production region average).",
+      "Almonds — blue_water_per_kg: 4,026 L/kg for California orchards (Marston et al. 2018). California almonds are predominantly irrigated; blue water represents ~39% of total footprint vs. ~23% green and ~38% grey. This is lower than the Mekonnen & Hoekstra global average (source 67: 6,349 L/kg blue) because M&H's global production-weighted figure includes Mediterranean and Middle Eastern rain-fed almond production which elevates the total differently, and M&H report a higher overall total of 13,080 L/kg."
     ]
   },
   {

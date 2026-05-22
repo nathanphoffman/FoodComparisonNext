@@ -64,8 +64,9 @@ export function WaterTooltip({ detail, referenceTotal, children }: { detail: Wat
   return (
     <Tooltip content={
       <TooltipSection title="Water breakdown">
-        {detail.blue  != null && <TooltipRow label="Blue (irrigation)" value={`${detail.blue.toLocaleString()} L/kg`} />}
-        {detail.green != null && <TooltipRow label="Green (rain)"      value={`${detail.green.toLocaleString()} L/kg`} />}
+        {detail.blue  != null && <TooltipRow label="Blue (irrigation)"  value={`${detail.blue.toLocaleString()} L/kg`} />}
+        {detail.green != null && <TooltipRow label="Green (rain)"       value={`${detail.green.toLocaleString()} L/kg`} />}
+        {detail.grey  != null && <TooltipRow label="Grey (pollution)"   value={`${detail.grey.toLocaleString()} L/kg`} />}
         {referenceTotal != null && (
           <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">
             Reference total (independent source): {referenceTotal.toLocaleString()} L/kg

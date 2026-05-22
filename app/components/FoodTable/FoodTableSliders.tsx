@@ -16,10 +16,11 @@ const LABELS: Record<keyof FoodWeights, string> = {
 
 const DEFAULT: FoodWeights = { calories: 34, protein: 33, mass: 33 };
 
-export function FoodTableSliders({ onChange, onGreenWaterChange }: { onChange?: (w: FoodWeights) => void; onGreenWaterChange?: (w: number) => void }) {
+export function FoodTableSliders({ onChange, onGreenWaterChange, onGreyWaterChange }: { onChange?: (w: FoodWeights) => void; onGreenWaterChange?: (w: number) => void; onGreyWaterChange?: (w: number) => void }) {
 
     const [ weights, setWeights ]           = useState<FoodWeights>(DEFAULT);
     const [ greenWaterWeight, setGreenWater ] = useState(100);
+    const [ greyWaterWeight, setGreyWater ]   = useState(100);
 
     const handleChange = (key: keyof FoodWeights, newVal: number) => {
         setWeights(prev => {
@@ -54,6 +55,11 @@ export function FoodTableSliders({ onChange, onGreenWaterChange }: { onChange?: 
         onGreenWaterChange?.(val);
     };
 
+    const handleGreyWater = (val: number) => {
+        setGreyWater(val);
+        onGreyWaterChange?.(val);
+    };
+
     return <div className="flex gap-6 mb-4">
         {KEYS.map(key => (
             <div key={key} className="flex flex-col gap-1 flex-1">
@@ -71,6 +77,14 @@ export function FoodTableSliders({ onChange, onGreenWaterChange }: { onChange?: 
             </div>
             <Slider min={0} max={100} value={greenWaterWeight} onChange={handleGreenWater} />
             <div className="text-xs text-neutral-400 mt-0.5">how much green (rain) water counts</div>
+        </div>
+        <div className="flex flex-col gap-1 flex-1">
+            <div className="flex justify-between text-xs text-neutral-500">
+                <span>Pollution Water</span>
+                <span className="font-medium text-neutral-700">{greyWaterWeight}%</span>
+            </div>
+            <Slider min={0} max={100} value={greyWaterWeight} onChange={handleGreyWater} />
+            <div className="text-xs text-neutral-400 mt-0.5">how much grey (pollution) water counts</div>
         </div>
     </div>
 }

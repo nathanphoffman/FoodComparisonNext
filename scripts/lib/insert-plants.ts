@@ -14,11 +14,13 @@ export function insert(db: Database, plants: Plant[]): void {
     assertSourcedArray(plant.tillage_events_per_year, `${label}.tillage_events_per_year`);
     assertSourcedArray(plant.co2_capture_kg_ha_yr, `${label}.co2_capture_kg_ha_yr`);
     db.run(
-      'INSERT INTO plants (id, food_id, yield_kg_ha, water_per_kg, soil_erosion, pesticide_kg_ha, fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+      'INSERT INTO plants (id, food_id, yield_kg_ha, yield_fraction, water_per_kg, grey_water_per_kg, soil_erosion, pesticide_kg_ha, fertilizer_kg_ha, emissions_per_kg, tillage_events_per_year, co2_capture_kg_ha_yr) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
       [
         plant.id, plant.food_id,
         plant.yield_kg_ha ? JSON.stringify(plant.yield_kg_ha) : null,
+        plant.yield_fraction ? JSON.stringify(plant.yield_fraction) : null,
         plant.water_per_kg ? JSON.stringify(plant.water_per_kg) : null,
+        plant.grey_water_per_kg ? JSON.stringify(plant.grey_water_per_kg) : null,
         plant.soil_erosion ? JSON.stringify(plant.soil_erosion) : null,
         plant.pesticide_kg_ha ? JSON.stringify(plant.pesticide_kg_ha) : null,
         plant.fertilizer_kg_ha ? JSON.stringify(plant.fertilizer_kg_ha) : null,

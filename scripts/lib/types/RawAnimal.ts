@@ -58,7 +58,7 @@ export class RawAnimal {
       ? pastureHa * pastureEvapL_per_ha
       : 0;
 
-    let emissions = 0, greenWater = pastureWater, blueWater = 0, soilErosion = 0;
+    let emissions = 0, greenWater = pastureWater, blueWater = 0, greyWater = 0, soilErosion = 0;
     let fertilizerKgHa = 0, tillage = 0, co2Capture = 0, pesticideKgPerKg = 0;
     let potentiallyAffectedFractionNumerator = 0, potentiallyAffectedFractionDenominator = 0;
     let terrestrialPafNumerator = 0, terrestrialPafDenominator = 0;
@@ -85,8 +85,10 @@ export class RawAnimal {
       if (avgEmissions != null) emissions += feedRatio * avgEmissions;
       const avgGreenWater = plant.green_water_per_kg.weightedAverage();
       const avgBlueWater  = plant.blue_water_per_kg.weightedAverage();
+      const avgGreyWater  = plant.grey_water_per_kg.weightedAverage();
       if (avgGreenWater != null) greenWater += feedRatio * avgGreenWater;
       if (avgBlueWater  != null) blueWater  += feedRatio * avgBlueWater;
+      if (avgGreyWater  != null) greyWater  += feedRatio * avgGreyWater;
       if (avgGreenWater == null && avgBlueWater == null && avgWater != null) {
         greenWater += feedRatio * avgWater;
       }
@@ -121,9 +123,11 @@ export class RawAnimal {
 
     return {
       yield_kg_ha: null,
+      yield_fraction: null,
       water_per_kg: (greenWater + blueWater) || null,
       green_water_per_kg: greenWater || null,
       blue_water_per_kg: blueWater || null,
+      grey_water_per_kg: greyWater || null,
       soil_erosion: soilErosion || null,
       pesticide_kg_ha: null,
       fertilizer_kg_ha: fertilizerKgHa || null,

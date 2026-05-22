@@ -40,6 +40,7 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
   const [showToggle, setShowToggle]  = useState(false);
   const [weights, setWeights]        = useState<FoodWeights>({ calories: 34, protein: 33, mass: 33 });
   const [greenWaterWeight, setGreenWaterWeight] = useState(100);
+  const [greyWaterWeight, setGreyWaterWeight]   = useState(100);
   const toggleRef                    = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -80,8 +81,8 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
   const sorted = sortKey
     ? [...rows].sort((a, b) => {
         const useWeight = WEIGHTED_SORT_KEYS.has(sortKey);
-        const rawA = sortKey === 'water' ? effectiveWater(a, greenWaterWeight) : a[sortKey] as number | string | null;
-        const rawB = sortKey === 'water' ? effectiveWater(b, greenWaterWeight) : b[sortKey] as number | string | null;
+        const rawA = sortKey === 'water' ? effectiveWater(a, greenWaterWeight, greyWaterWeight) : a[sortKey] as number | string | null;
+        const rawB = sortKey === 'water' ? effectiveWater(b, greenWaterWeight, greyWaterWeight) : b[sortKey] as number | string | null;
         const va = useWeight && typeof rawA === 'number' ? rawA / computeDivisor(a, weights) : rawA;
         const vb = useWeight && typeof rawB === 'number' ? rawB / computeDivisor(b, weights) : rawB;
         if (va === null && vb === null) return 0;
@@ -110,7 +111,7 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
 
   return (
     <div className="mt-6">
-      <FoodTableSliders onChange={setWeights} onGreenWaterChange={setGreenWaterWeight} />
+      <FoodTableSliders onChange={setWeights} onGreenWaterChange={setGreenWaterWeight} onGreyWaterChange={setGreyWaterWeight} />
       <div className="flex justify-end mb-2" ref={toggleRef}>
         <div className="relative">
           <button
@@ -149,7 +150,7 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
                   case 'landUse':        return <LandUseCell        key="landUse"        value={food.landUse != null ? food.landUse / d : null} detail={food.landUseDetail} />;
                   case 'intelligence':   return <IntelligenceCell   key="intelligence"   value={food.intelligence != null ? food.intelligence / d : null} detail={food.intelligenceDetail} />;
                   case 'water': {
-                    const ew = effectiveWater(food, greenWaterWeight);
+                    const ew = effectiveWater(food, greenWaterWeight, greyWaterWeight);
                     return <WaterCell key="water" value={ew != null ? ew / d : null} detail={food.waterDetail} referenceTotal={food.water} />;
                   }
                   case 'dummy':          return <DummyCell          key="dummy" />;

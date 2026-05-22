@@ -5,7 +5,7 @@ import { RawPlant } from './RawPlant';
 import { RawAnimal } from './RawAnimal';
 
 const nullPlantFields: PlantNormalizedFields = {
-  yield_kg_ha: null, water_per_kg: null, green_water_per_kg: null, blue_water_per_kg: null,
+  yield_kg_ha: null, yield_fraction: null, water_per_kg: null, green_water_per_kg: null, blue_water_per_kg: null, grey_water_per_kg: null,
   soil_erosion: null, pesticide_kg_ha: null, fertilizer_kg_ha: null, emissions_per_kg: null,
   tillage_events_per_year: null, co2_capture_kg_ha_yr: null,
   pesticide_freshwater_paf: null, pesticide_terrestrial_paf: null,

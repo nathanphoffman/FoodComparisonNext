@@ -46,10 +46,10 @@ export function computeDivisor(food: FoodEthics, weights: FoodWeights): number {
     return d > 0 ? d : 1;
 }
 
-export function effectiveWater(food: FoodEthics, greenWaterWeight: number): number | null {
-    const { green, blue } = food.waterDetail;
+export function effectiveWater(food: FoodEthics, greenWaterWeight: number, greyWaterWeight: number): number | null {
+    const { green, blue, grey } = food.waterDetail;
     if (green != null && blue != null) {
-        return blue + (greenWaterWeight / 100) * green;
+        return blue + (greenWaterWeight / 100) * green + (greyWaterWeight / 100) * (grey ?? 0);
     }
     return food.water;
 }
@@ -111,10 +111,10 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
   let waterDetail: WaterDetail;
   if (food.type === 'animal') {
     water = food.feed_water_per_kg;
-    waterDetail = { green: food.feed_green_water_per_kg, blue: food.feed_blue_water_per_kg };
+    waterDetail = { green: food.feed_green_water_per_kg, blue: food.feed_blue_water_per_kg, grey: food.feed_grey_water_per_kg };
   } else {
     water = food.water_per_kg;
-    waterDetail = { green: food.green_water_per_kg, blue: food.blue_water_per_kg };
+    waterDetail = { green: food.green_water_per_kg, blue: food.blue_water_per_kg, grey: food.grey_water_per_kg };
   }
 
   return {

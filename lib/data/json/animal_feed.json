@@ -370,5 +370,39 @@
         "confidence": 3
       }
     ]
+  },
+  {
+    "id": 32,
+    "animal_id": 2,
+    "plant_id": 2,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 0.24,
+        "source_id": 68,
+        "confidence": 3
+      },
+      {
+        "value": 0.24,
+        "source_id": 69,
+        "confidence": 3
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "animal_id": 3,
+    "plant_id": 2,
+    "kg_feed_per_kg_output": [
+      {
+        "value": 0.46,
+        "source_id": 68,
+        "confidence": 3
+      },
+      {
+        "value": 0.46,
+        "source_id": 69,
+        "confidence": 3
+      }
+    ]
   }
 ]

@@ -787,5 +787,27 @@
       "Green water = evapotranspiration from soil moisture recharged by rainfall (no human extraction). Blue water = evapotranspiration of irrigation water drawn from surface/groundwater.",
       "Values used here are global production-weighted averages from Table A1. Confidence 3 for major staple crops (wheat, corn, rice, soy, sorghum, potato) where M&H have dense country coverage. Confidence 2 for tree nuts and specialty crops where regional variation is high or M&H coverage is thinner."
     ]
+  },
+  {
+    "id": 68,
+    "url": "https://www.fao.org/3/i3460e/i3460e.pdf",
+    "title": "FAO (2013) — Greenhouse Gas Emissions from Pig and Chicken Supply Chains",
+    "notes": [
+      "Global pig feed composition: FAO GLEAM pig report documents production-weighted average finishing-diet composition across major producing regions (China, EU, US, Brazil). Global average: corn ~55–60%, wheat ~10–15%, soybean meal ~20–25%, with minor barley, cassava, and by-products.",
+      "Pork — wheat kg_feed_per_kg_output: Global swine FCR ~2.8 kg/kg live weight (consistent with source 31); dressing ~73%; feed/kg pork = 3.836 kg. Wheat fraction ~12% of global average diet (higher in EU ~35–45%, lower in US/Brazil <5%); wheat feed = 3.836 × 0.12 = 0.46 kg/kg pork. Confidence 3 — wheat inclusion varies substantially by region; global average reflects production-weighted blend of corn-dominant (Americas) and wheat-dominant (EU) systems.",
+      "Global broiler feed composition: Corn ~55–60%, soybean meal ~20–25%, wheat ~8–12% (wheat use highest in EU and Middle East broiler production), minor sorghum, fats, vitamins. US production is corn-dominant with wheat <5%; EU production uses wheat 20–35%.",
+      "Chicken — wheat kg_feed_per_kg_output: Global broiler FCR ~1.8 kg/kg live weight; dressing ~75% (source 54); feed/kg chicken = 2.40 kg. Wheat fraction ~10% of global average diet; wheat feed = 2.40 × 0.10 = 0.24 kg/kg chicken. Confidence 3 — wheat inclusion varies substantially by region; global average reflects production-weighted blend of corn-dominant (Americas/Asia) and wheat-significant (EU) systems."
+    ]
+  },
+  {
+    "id": 69,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0377840111003823",
+    "title": "Leinonen et al. (2012) — Predicting the Environmental Impacts of Chicken Production in the EU (Poultry Science)",
+    "notes": [
+      "Broiler chicken — feed composition (EU): Typical EU broiler finishing diet contains wheat 20–30%, corn 20–35%, soybean meal 20–25%, with remainder from sunflower, rapeseed, and minor ingredients. Wheat inclusion rates higher than US due to greater availability and lower cost relative to corn in European markets.",
+      "Broiler chicken — FCR: EU commercial broilers achieve FCR 1.7–2.0 kg/kg live weight; consistent with global average FCR ~1.8 used in this dataset. Dressing percentage ~75% (source 54).",
+      "Broiler chicken — wheat kg_feed_per_kg_output: EU wheat fraction ~25%; applied to global production-weighted average of ~10% wheat (EU production ~20% of global volume); this supports the 0.24 kg wheat/kg chicken entry derived from source 68.",
+      "Pig — FCR verification: EU commercial pig finishing achieves FCR ~2.6–3.0 kg/kg live weight, consistent with global FCR 2.8 (source 31). EU diet typically 40–50% wheat, 15–20% barley, 20–25% soy, confirming wheat as a significant global pork feed component."
+    ]
   }
 ]

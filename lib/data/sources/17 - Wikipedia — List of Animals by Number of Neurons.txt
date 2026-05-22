@@ -1,0 +1,1264 @@
+Jump to content
+Main menu
+Search
+Donate
+Create account
+Log in
+Contents hide
+(Top)
+Overview
+Whole nervous system
+Forebrain (cerebrum or pallium) only
+See also
+Notes
+References
+List of animals by number of neurons
+7 languages
+Article
+Talk
+Read
+Edit
+View history
+Tools
+Appearance hide
+Text
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Color
+Automatic
+Light
+Dark
+From Wikipedia, the free encyclopedia
+Brief comparisons of number of whole brain neurons (top) and cerebral cortex neurons (bottom) among six mammals.
+
+The following are two lists of animals ordered by the size of their nervous system. The first list shows number of neurons in their entire nervous system. The second list shows the number of neurons in the structure that has been found to be representative of animal intelligence.[1] The human brain contains 86 billion neurons, with 16 billion neurons in the cerebral cortex.[2][1]
+
+Neuron counts constitute an important source of insight on the topic of neuroscience and intelligence: the question of how the evolution of a set of components and parameters (~1011 neurons, ~1014 synapses) of a complex system leads to the phenomenon of intelligence.[3]
+
+Overview[edit]
+
+Neurons are the cells that transmit information in an animal's nervous system so that it can sense stimuli from its environment and behave accordingly. Not all animals have neurons; Trichoplax and sponges lack nerve cells altogether.
+
+Neurons may be packed to form structures such as the brain of vertebrates or the neural ganglions of insects.
+
+The number of neurons and their relative abundance in different parts of the brain is a determinant of neural function and, consequently, of behavior.
+
+Whole nervous system[edit]
+This is a dynamic list and may never be able to satisfy particular standards for completeness. You can help by editing the page to add missing items, with references to reliable sources.
+
+All numbers for neurons (except Caenorhabditis and Ciona), and all numbers for synapses (except Ciona) are estimations.
+
+Name	Neurons in the brain & whole nervous system	Synapses	Details	Image	Source
+Sponge	0			
+	[4]
+Trichoplax	0		Despite no nervous system, it exhibits coordinated feeding and response behaviors.[5]	
+	[6]
+Asplanchna brightwellii (rotifer)	~200		Brain only	
+	[7]
+Tardigrade	~200		Brain only	
+	[8]
+Ciona intestinalis larva (sea squirt)	231	8,617 (central nervous system only)		
+	[9]
+
+[10]
+
+
+Caenorhabditis elegans (roundworm)	302	~7,500	First organism with its whole connectome (neuronal "wiring diagram") completed.[11][12][13]	
+	[14]
+Starfish	~500		ring of neurons surrounding the mouth	
+	[citation needed]
+Hydra vulgaris (fresh-water polyp)	5,600			
+	[15]
+Megaphragma mymaripenne	7,400			
+	[16]
+Box jellyfish	8,700–17,500		Adult Tripedalia cystophora (8 mm diameter)
+Does not include 1000 neurons in each of the four rhopalia	
+	[17]
+Medicinal leech	10,000			
+	[18]
+Pond snail	11,000			
+	[19]
+Sea slug	18,000			
+	[20]
+Amphioxus	20,000		central nervous system only	
+	[21]
+
+[22]
+
+
+Larval zebrafish	100,000			
+	[23]
+Fruit fly	150,000		Another organism with the connectome mapped, 139,255 neurons in the female brain[24] and ~20,000 neurons in the ventral nerve cord.[25]	
+	[25][26][27][28]
+Wandering spider	100,000			
+	[29]
+Calliopsis (bee)	234,000			
+	[30]
+Ant	250,000		Varies per species	
+	[31]
+Perdita (bee)	275,000				[30]
+Melissodes	495,000				[30]
+Bombus impatiens	557,000			
+	[30]
+Western honey bee	613,000			
+	[30]
+Honey bee	960,000	~1×109		
+	[32]
+Cockroach	1,000,000			
+	[33]
+Coconut crab	>1,000,000		c. 1,000,000 interneurons are dedicated to analysing olfactory input alone.		[34]
+California carpenter bee	1,180,000			
+	[30]
+Steudner's dwarf gecko	1,771,000			
+	[35]
+Brown anole	2,792,000			
+	[35]
+Mochlus sundevallii	3,049,000			
+	[35]
+Peloponnese slowworm	3,713,000			
+	[35]
+Common house gecko	3,988,000			
+	[35]
+Takydromus sexlineatus	4,021,000			
+	[35]
+Anolis cristatellus	4,270,000			
+	[36]
+Papua snake lizard	4,271,000				[35]
+Guppy	4,300,000			
+	[37]
+Natal Midlands dwarf chameleon	4,305,000			
+	[35]
+Acontias percivali	4,340,000			
+	[35]
+Sand lizard	4,341,000			
+	[35]
+Ocelot gecko	4,420,000			
+	[38]
+Darevskia raddei	4,765,000			
+	[35]
+Anolis evermanni	4,920,000				[36]
+Echis carinatus	4,951,000			
+	[35]
+Cerastes cerastes	4,996,000			
+	[35]
+Tenerife gecko	5,001,000			
+	[35]
+Draco sumatranus	5,174,000			
+	[35]
+Blue-throated keeled lizard	5,269,000			
+	[35]
+Crested gecko	5,417,000			
+	[35]
+Lacerta strigata	5,529,000			
+	[35]
+San Francisco garter snake	5,663,000			
+	[35]
+Red-eyed crocodile skink	5,697,000			
+	[35]
+Emoia cyanura	5,733,000			
+	[35]
+East African spiny-tailed lizard	5,756,000			
+	[35]
+Chalcides ocellatus	5,774,000			
+	[35]
+Cylindrophis ruffus	5,779,000			
+	[35]
+Cat gecko	5,964,000			
+	[35]
+Aspidoscelis deppii	5,968,000			
+	[35]
+Brown water snake	5,995,000			
+	[35]
+Aspidelaps lubricus	6,020,000			
+	[35]
+Scincus scincus	6,284,000			
+	[35]
+Montivipera xanthina	6,677,000			
+	[35]
+Hispaniolan curlytail lizard	7,063,000			
+	[35]
+Sceloporus malachiticus	7,149,000			
+	[35]
+Crotalus durissus	7,263,000			
+	[35]
+Agama agama	7,455,000			
+	[35]
+Agama aculeata	7,631,000			
+	[35]
+Gekko kuhli	7,659,000			
+	[35]
+Leopard gecko	8,081,000			
+	[35]
+Latastia longicaudata	8,099,000			
+	[35]
+Razor-backed musk turtle	8,389,000			
+	[35]
+Greek tortoise	8,520,000			
+	[35]
+Phelsuma grandis	8,623,000			
+	[35]
+Acanthocercus atricollis	8,650,000			
+	[35]
+Tokay gecko	8,892,000			
+	[35]
+Russian tortoise	9,008,000			
+	[35]
+Marginated tortoise	9,074,000			
+	[35]
+Psammophis elegans	9,170,000				[35]
+Xenopeltis unicolor	9,293,000			
+	[35]
+Zonosaurus Karsteni	9,538,000			
+	[35]
+Oplurus quadrimaculatus	9,565,000			
+	[35]
+Malagasy giant chameleon	9,751,000			
+	[35]
+Ahaetulla prasina	9,767,000			
+	[35]
+Dasia olivacea	9,785,000			
+	[35]
+Adult zebrafish	~10,000,000		cells (neurons + other)	
+	[39]
+Timon tangitanus	10,619,000			
+	[35]
+Corn snake	10,629,000			
+	[35]
+Acanthosaura capra	10,724,000			
+	[35]
+Gallotia galloti	10,903,000			
+	[35]
+Eutropis multifasciata	10,944,000			
+	[35]
+Rainbow boa	11,083,000			
+	[35]
+East African black mud turtle	11,285,000			
+	[35]
+Indochinese spitting cobra	11,306,000			
+	[35]
+Cyrtodactylus irianjayaensis	11,415,000				[35]
+Uromastyx ornata	11,438,000			
+	[35]
+Yellow-throated plated lizard	11,847,000			
+	[35]
+Meller's chameleon	12,035,000			
+	[35]
+Twist-necked turtle	12,171,000			
+	[35]
+Western whiptail	12,269,000			
+	[35]
+Gehyra vorax	12,388,000			
+	[35]
+White-lipped mud turtle	12,671,000				[35]
+Painted wood turtle	12,677,000			
+	[35]
+Sheltopusik	12,830,000			
+	[35]
+Standing's day gecko	13,223,000			
+	[35]
+Common snapping turtle	13,681,000			
+	[35]
+Painted turtle	14,302,000			
+	[35]
+Ocellated lizard	14,593,000			
+	[35]
+Oplurus cuvieri	14,627,000			
+	[35]
+African spurred tortoise	14,986,000			
+	[35]
+Boa imperator	15,194,000			
+	[35]
+Red-eared slider	15,388,000			
+	[35]
+Plumed basilisk	15,536,000			
+	[35]
+Red-bellied short-necked turtle	15,787,000			
+	[35]
+Frog	16,000,000			
+	[40]
+Corallus hortulana	16,303,000			
+	[35]
+Blue-tongued skink	16,376,000			
+	[35]
+Gran Canaria giant lizard	18,038,000			
+	[35]
+Chinese water dragon	18,301,000			
+	[35]
+Chlamydosaurus	18,641,000			
+	[35]
+Northern snake-necked turtle	19,040,000			
+	[35]
+Spiny-tailed monitor	19,771,000			
+	[35]
+Boa constrictor	19,781,000			
+	[35]
+Ameiva ameiva	19,835,000			
+	[35]
+Chinese softshell turtle	20,697,000			
+	[35]
+Amboina box turtle	21,440,000			
+	[35]
+Alligator snapping turtle	22,230,000			
+	[35]
+Yellow anaconda	23,035,000			
+	[35]
+Mexican beaded lizard	23,681,000			
+	[35]
+Major skink	24,155,000			
+	[35]
+Sudan plated lizard	24,434,000			
+	[35]
+Mata mata	26,105,000				[35]
+Naked mole-rat	26,880,000			
+	[41]
+Weber's sailfin lizard	27,245,000			
+	[35]
+Green iguana	29,098,000			
+	[35]
+Argentine black and white tegu	29,251,000			
+	[35]
+Cyclura nubila	30,820,000			
+	[35]
+Gold tegu	31,335,000			
+	[35]
+Varanus macraei	33,091,000			
+	[35]
+Little free-tailed bat	35,000,000			
+	[42]
+Smoky shrew	36,000,000			
+	[43]
+Sand goanna	50,253,000			
+	[35]
+Short-tailed shrew	52,000,000			
+	[43]
+Pig-nosed turtle	53,027,000			
+	[35]
+Common bent-wing bat	56,000,000				[42]
+African sheath-tailed bat	59,000,000				[42]
+Hottentot golden mole	65,000,000			
+	[44]
+Woermann's bat	66,000,000				[42]
+Zenker's fruit bat	66,000,000				[42]
+Commerson's roundleaf bat	67,000,000			
+	[42]
+Rufous trident bat	70,000,000				[42]
+House mouse	71,000,000	~1×1012		
+	[45]
+Asian water monitor	78,231,000			
+	[35]
+King quail	80,478,000			
+	[35]
+Nile crocodile	80,500,000			
+	[46]
+Heart-nosed bat	81,000,000			
+	[42]
+Diamond dove	87,879,000			
+	[35]
+Golden hamster	90,000,000			
+	[45]
+Short-palated fruit bat	99,000,000				[42]
+Ansell's mole-rat	103,000,000			
+	[47]
+Mashona mole-rat	113,000,000				[47]
+Common quail	117,760,000			
+	[35]
+Hairy-tailed mole	124,000,000			
+	[44]
+Eastern rock elephant shrew	129,000,000			
+	[44]
+Star-nosed mole	131,000,000			
+	[43]
+Zebra finch	131,000,000		Brain only	
+	[48]
+African collared dove	139,271,000			
+	[35]
+Silvery mole-rat	148,000,000			
+	[47]
+Northern bobwhite	148,399,000			
+	[35]
+Four-toed elephant shrew	157,000,000			
+	[44]
+Eurasian blackcap	157,000,000			
+	[48]
+Wahlberg's epauletted fruit bat	162,000,000			
+	[42]
+Goldcrest	164,000,000			
+	[48]
+Cape mole-rat	170,000,000			
+	[47]
+Grey partridge	170,287,000			
+	[35]
+Egyptian fruit bat	172,000,000			
+	[42]
+Mechow's mole-rat	174,000,000			
+	[47]
+Damaraland mole-rat	178,000,000			
+	[47]
+Franquet's epauletted fruit bat	186,000,000				[42]
+Brown rat	200,000,000	~4.48×1011		
+	[49]
+Guyenne spiny rat	202,000,000				[44]
+Eastern mole	204,000,000			
+	[43]
+Elegant crested tinamou	217,768,000			
+	[35]
+Red junglefowl	221,000,000			
+	[48]
+Great tit	226,000,000			
+	[48]
+Green-rumped parrotlet	227,000,000			
+	[48]
+Quebracho crested tinamou	235,671,000			
+	[35]
+Guinea pig	240,000,000			
+	[45]
+Chilean tinamou	241,374,000			
+	[35]
+Gray mouse lemur	254,710,000			
+	[50]
+Common wood pigeon	258,681,000			
+	[35]
+Common treeshrew	261,000,000			
+	[51]
+Hammer-headed bat	275,000,000			
+	[42]
+Wood duck	305,816,000			
+	[35]
+Pigeon	310,000,000		Brain only	
+	[48]
+Budgerigar	322,000,000			
+	[48]
+Pygmy falcon	350,367,000			
+	[35]
+Cape dune mole-rat	361,000,000			
+	[47]
+Mallard	367,000,000			
+	[35]
+Eurasian teal	375,409,000			
+	[35]
+Common blackbird	379,000,000			
+	[48]
+Marbled duck	386,920,000			
+	[35]
+Reeves's pheasant	387,173,000			
+	[35]
+Eurasian sparrowhawk	401,751,000			
+	[35]
+Ferret	404,000,000			
+	[52]
+Cockatiel	453,000,000			
+	[48]
+Gray squirrel	453,660,000			
+	[41]
+Banded mongoose	454,000,000			
+	[52]
+Prairie dog	473,940,000			
+	[41]
+Red-breasted goose	482,705,000			
+	[35]
+Common starling	483,000,000			
+	[48]
+Wild turkey	492,873,000			
+	[35]
+European rabbit	494,200,000			
+	[41]
+Octopus	500,000,000			
+	[53]
+Bigfin reef squid	>500,000,000			
+	[54]
+Western tree hyrax	505,000,000			
+	[44]
+Eurasian pygmy owl	533,263,000			
+	[35]
+Indian peafowl	570,934,000			
+	[35]
+Victoria crowned pigeon	578,697,000			
+	[35]
+Little owl	585,923,000			
+	[35]
+Common kestrel	624,582,000			
+	[35]
+Common marmoset	636,000,000			
+	[51]
+Eastern rosella	642,000,000			
+	[48]
+Yellow-knobbed curassow	652,989,000			
+	[35]
+Barn owl	690,000,000			
+	[48]
+Monk parakeet	697,000,000			
+	[48]
+Greylag goose	738,232,000			
+	[35]
+Azure-winged magpie	741,000,000			
+	[48]
+Rock hyrax	756,000,000			
+	[44]
+Cat	760,000,000	~1×1013		
+	[55]
+Black-rumped agouti	857,000,000			
+	[45]
+Magpie	897,000,000			
+	[48]
+Common hill myna	906,000,000			
+	[48]
+Northern greater galago	936,000,000				[51]
+Western jackdaw	968,000,000			
+	[48]
+Long-eared owl	991,310,000			
+	[35]
+Mute swan	1.001×109			
+	[35]
+Common buzzard	1.001×109			
+	[35]
+Black vulture	1.009×109			
+	[35]
+Greater rhea	1.03×109			
+	[35]
+Eurasian jay	1.085×109			
+	[48]
+Alexandrine parakeet	1.096×109			
+	[48]
+Raccoon dog	1.16×109			
+	[56]
+Tanimbar corella	1.161×109			
+	[48]
+Saker falcon	1.204×109			
+	[35]
+Emu	1.335×109			
+	[48]
+Three-striped night monkey	1.468×109				[51]
+Rook	1.509×109			
+	[48]
+Grey parrot	1.566×109			
+	[48]
+Tawny owl	1.58×109			
+	[35]
+Capybara	1.6×109			
+	[45]
+Common ostrich	1.62×109			
+	[35]
+White-tailed eagle	1.65×109			
+	[35]
+Jackal	1.73×109			
+	[56]
+Snowy owl	1.807×109			
+	[35]
+Eurasian eagle-owl	1.897×109			
+	[35]
+Fox	2.11×109			
+	[56]
+Sulphur-crested cockatoo	2.122×109			
+	[48]
+Raccoon	2.148×109			
+	[52]
+Kea	2.149×109			
+	[48]
+Raven	2.171×109		Brain only	
+	[48]
+Domestic pig	2.22×109			
+	[57]
+Dog	2.253×109			
+	[52]
+Dog (Chihuahua)	2.51×109			
+	[56]
+Dog (Chow Chow)	2.61×109			
+	[56]
+Dog (Yorkshire Terrier)	2.64×109			
+	[56]
+Springbok	2.72×109			
+	[57]
+Dog (West Highland White Terrier)	2.83×109			
+	[56]
+Blesbok	3.06×109			
+	[57]
+Blue-and-yellow macaw	3.136×109		Brain only	
+	[48]
+Common squirrel monkey	3.246×109			
+	[51]
+Crab-eating macaque	3.44×109			
+	[50]
+Dog (German Shepherd)	3.53×109			
+	[56]
+Tufted capuchin	3.691×109			
+	[51]
+Bonnet macaque	3.78×109			
+	[50]
+Striped hyena	3.885×109			
+	[52]
+Dog (Komondor)	3.99×109				[56]
+Dog (Transylvanian Hound)	4.39×109			
+	[56]
+Lion	4.667×109			
+	[52]
+Greater kudu	4.91×109			
+	[57]
+Rhesus macaque	6.376×109			
+	[51]
+Brown bear	9.586×109			
+	[52]
+Giraffe	1.075×1010			
+	[57]
+Yellow baboon	1.095×1010			
+	[50]
+Chimpanzee	2.8×1010			
+	[58]
+Orangutan	3.26×1010			
+	[59]
+Gorilla	3.34×1010			
+	[59]
+Common minke whale	5.7×1010			
+	[60]
+Human	8.6×1010	~1.5×1014	Neurons for average adult	
+	[61][62][63]
+Short-finned pilot whale	1.28×1011			
+	[60]
+African elephant	2.57×1011			
+	[64][65]
+Forebrain (cerebrum or pallium) only[edit]
+
+Proxies for animal intelligence have varied over the centuries. One early suggestion was brain size (or weight, which provides the same ordering.) A second proposal was brain-to-body-mass ratio, and a third was encephalization quotient, sometimes referred to as EQ. The current best predictor is number of neurons in the forebrain, based on Herculano-Houzel's improved neuron counts.[1] This accounts for variation in the number of neurons in the rest of the brain, for which no link to intelligence has been established. Elephants, for example, have an exceptionally large cerebellum, while birds make do with a much smaller one.
+
+Differing methods have been used to count neurons, and these may differ in degree of reliability. The primary methods are the optical fractionator, an application of stereology and the isotropic fractionator, a recent methodological innovation. Most numbers in the list are the result of studies using the newer isotropic fractionator.[1][41][30][45][46][48][49][50][51][57][58][59][61][62][64][66] A variation of the optical fractionator was responsible for the previous total human brain neuron count of 100,000,000,000 neurons, which has been revised down to 86,000,000,000 by the use of the isotropic fractionator. This is in part why it may be considered to be less reliable. Finally, some numbers are the result of estimations based on correlations observed between number of cortical neurons and brain mass within closely related taxa.
+
+The following table gives information on the number of neurons estimated to be in the sensory-associative structure: the cerebral cortex (aka pallium) for mammals, the dorsal ventricular ridge ("DVR" or "hypopallium") of the pallium for birds, and the corpora pedunculata ("mushroom bodies") for insects.
+
+Common name	Average number of sensory-associative structure neurons[a]	Intraspecific variation[b]	Method[c]	Sensory-associative structure	Binomial nomenclature	Image	Source
+Common fruit fly	2,500*		Optical fractionator	Corpora pedunculata	Drosophila melanogaster	
+	[67]
+House cricket	50,000*		Optical fractionator	Corpora pedunculata	Acheta domesticus	
+	[67]
+Honey bee	170,000*		Optical fractionator	Corpora pedunculata	Genus: Apis	
+	[67]
+Common cockroach	200,000*		Optical fractionator	Corpora pedunculata	Genus: Periplaneta	
+	[67]
+African sheath-tailed bat	5,000,000		Isotropic fractionator	Pallium (cortex)	Coleura afra		[42]
+Rufous trident bat	6,000,000		Isotropic fractionator	Pallium (cortex)	Triaenops persicus		[42]
+Naked mole-rat	6,000,000	± 1,065,587[44]	Isotropic fractionator	Pallium (cortex)	Heterocephalus glaber	
+	[41]
+Little free-tailed bat	6,000,000		Isotropic fractionator	Pallium (cortex)	Chaerephon pumilus	
+	[42]
+Common bent-wing bat	6,000,000		Isotropic fractionator	Pallium (cortex)	Miniopterus schreibersii		[42]
+Commerson's roundleaf bat	8,000,000		Isotropic fractionator	Pallium (cortex)	Hipposideros commersoni	
+	[42]
+Heart-nosed bat	10,000,000		Isotropic fractionator	Pallium (cortex)	Cardioderma cor	
+	[42]
+Ansell's mole-rat	10,000,000		Isotropic fractionator	Pallium (cortex)	Fukomys anselli	
+	[47]
+Smoky shrew	10,000,000	± 352,000[44]	Isotropic fractionator	Pallium (cortex)	Sorex fumeus	
+	[44]
+Short-palated fruit bat	10,000,000		Isotropic fractionator	Pallium (cortex)	Casinycteris argynnis		[42]
+Mashona mole-rat	12,000,000		Isotropic fractionator	Pallium (cortex)	Fukomys darlingi		[47]
+Woermann's bat	12,000,000		Isotropic fractionator	Pallium (cortex)	Megaloglossus woermanni		[42]
+Northern short-tailed shrew	12,000,000	± 1,569,000[44]	Isotropic fractionator	Pallium (cortex)	Blarina brevicauda	
+	[44]
+Zenker's fruit bat	13,000,000		Isotropic fractionator	Pallium (cortex)	Scotonycteris zenkeri		[42]
+House mouse	14,000,000	± 2,242,257[44]	Isotropic fractionator	Pallium (cortex)	Mus musculus	
+	[44]
+Hairy-tailed mole	16,000,000	± 2,611,000[44]	Isotropic fractionator	Pallium (cortex)	Parascalops breweri	
+	[44]
+Star-nosed mole	17,000,000	± 3,105,000[44]	Isotropic fractionator	Pallium (cortex)	Condylura cristata	
+	[44]
+Golden hamster	17,000,000	± 3,619,934[44]	Isotropic fractionator	Pallium (cortex)	Mesocricetus auratus	
+	[44]
+Diamond dove	18,209,000		Isotropic fractionator	Pallium (DVR)	Geopelia cuneata	
+	[35]
+King quail	20,523,000		Isotropic fractionator	Pallium (DVR)	Synoicus chinensis	
+	[35]
+Damaraland mole-rat	21,000,000		Isotropic fractionator	Pallium (cortex)	Fukomys damarensis	
+	[47]
+Hottentot golden mole	22,000,000	± 2,154,000[44]	Isotropic fractionator	Pallium (cortex)	Amblysomus hottentotus	
+	[44]
+Gray mouse lemur	22,310,000		Isotropic fractionator	Pallium (cortex)	Microcebus murinus	
+	[50]
+Common quail	22,568,000		Isotropic fractionator	Pallium (DVR)	Coturnix coturnix	
+	[35]
+Mechow's mole-rat	23,000,000		Isotropic fractionator	Pallium (cortex)	Fukomys mechowii	
+	[47]
+Franquet's epauletted fruit bat	23,000,000		Isotropic fractionator	Pallium (cortex)	Epomops franqueti		[42]
+Hammer-headed bat	24,000,000		Isotropic fractionator	Pallium (cortex)	Hypsignathus mostrosus		[42]
+Hedgehog	24,000,000^		Estimated	Pallium (cortex)	Subfamily Erinaceinae, various species	
+	[68]
+Silvery mole-rat	25,000,000		Isotropic fractionator	Pallium (cortex)	Heliophobius argenteocinereus	
+	[47]
+Wahlberg's epauletted fruit bat	26,000,000		Isotropic fractionator	Pallium (cortex)	Epomophorus wahlbergi	
+	[42]
+Cape mole-rat	26,000,000		Isotropic fractionator	Pallium (cortex)	Georychus capensis	
+	[47]
+Guyenne spiny rat	26,000,000	± 2,155,723[44]	Isotropic fractionator	Pallium (cortex)	Proechimys cayennensis		[44]
+Eastern rock elephant shrew	26,000,000	± 4,020,000[44]	Isotropic fractionator	Pallium (cortex)	Elephantulus myurus	
+	[44]
+Eastern mole	27,000,000	± 5,113,000[44]	Isotropic fractionator	Pallium (cortex)	Scalopus aquaticus	
+	[44]
+Opossum	27,000,000^		Estimated	Pallium (cortex)	Didelphis virginiana	
+	[68]
+Egyptian fruit bat	29,000,000		Isotropic fractionator	Pallium (cortex)	Rousettus aegyptiacus	
+	[42]
+Brown Rat	31,000,000	+ 3,034,654[44]	Isotropic fractionator	Pallium (cortex)	Rattus norvegicus	
+	[44]
+Four-toed elephant shrew	34,000,000	± 5,840,000[44]	Isotropic fractionator	Pallium (cortex)	Petrodromus tetradactylus	
+	[44]
+Grey partridge	36,882,000		Isotropic fractionator	Pallium (DVR)	Perdix perdix	
+	[35]
+Ferret	38,950,000		Isotropic fractionator	Pallium (cortex)	Mustela putorius furo	
+	[52]
+Northern bobwhite	39,112,000		Isotropic fractionator	Pallium (DVR)	Colinus virginianus	
+	[35]
+African collared dove	39,997,000		Isotropic fractionator	Pallium (DVR)	Streptopelia roseogrisea	
+	[35]
+Cape dune mole-rat	43,000,000		Isotropic fractionator	Pallium (cortex)	Bathyergus suillus	
+	[47]
+Guinea pig	43,510,000	± 3,169,924[44]	Isotropic fractionator	Pallium (cortex)	Cavia porcellus	
+	[41]
+Quebracho crested tinamou	48,292,000		Isotropic fractionator	Pallium (DVR)	Eudromia formosa	
+	[35]
+Common wood pigeon	51,325,000		Isotropic fractionator	Pallium (DVR)	Columba palumbus	
+	[35]
+Elegant crested tinamou	51,384,000		Isotropic fractionator	Pallium (DVR)	Eudromia elegans	
+	[35]
+Eurasian blackcap	52,176,000		Isotropic fractionator	Pallium (DVR)	Sylvia atricapilla	
+	[48]
+Prairie dog	53,770,000	± 6,044,322[44]	Isotropic fractionator	Pallium (cortex)	Genus:Cynomys	
+	[41]
+Zebra finch	55,226,000		Isotropic fractionator	Pallium (DVR)	Taeniopygia guttata	
+	[48]
+Chilean tinamou	59,130,000		Isotropic fractionator	Pallium (DVR)	Nothoprocta perdicaria	
+	[35]
+Common treeshrew	60,000,000	± 26,510,000[44]	Isotropic fractionator	Pallium (cortex)	Tupaia glis	
+	[44]
+Red junglefowl	60,665,000		Isotropic fractionator	Pallium (DVR)	Gallus gallus	
+	[48]
+Goldcrest	64,210,000		Isotropic fractionator	Pallium (DVR)	Regulus regulus	
+	[48]
+European roller	67,570,000		Isotropic fractionator	Pallium (DVR)	Coracias garrulus		[69]
+European rabbit	71,450,000		Isotropic fractionator	Pallium (cortex)	Oryctolagus cuniculus	
+	[41]
+Rock dove	71,862,000		Isotropic fractionator	Pallium (DVR)	Columba livia	
+	[48]
+Eastern gray squirrel	77,330,000	± 2,634,444[44]	Isotropic fractionator	Pallium (cortex)	Sciurius carolinensis	
+	[41]
+Reeves's pheasant	80,688,000		Isotropic fractionator	Pallium (DVR)	Syrmaticus reevesii	
+	[35]
+Great tit	83,011,000		Isotropic fractionator	Pallium (DVR)	Parus major	
+	[48]
+Speckled mousebird	84,175,000		Isotropic fractionator	Pallium (DVR)	Colius striatus		[69]
+Eurasian wryneck	85,387,000		Isotropic fractionator	Pallium (DVR)	Jynx torquilla		[69]
+Eurasian sparrowhawk	87,832,000		Isotropic fractionator	Pallium (DVR)	Accipiter nisus	
+	[35]
+Western tree hyrax	99,000,000		Isotropic fractionator	Pallium (cortex)	Dendrohyrax dorsalis	
+	[44]
+Green-rumped parrotlet	103,418,000		Isotropic fractionator	Pallium (DVR)	Forpus passerinus	
+	[48]
+Wild turkey	105,654,000		Isotropic fractionator	Pallium (DVR)	Meleagris gallopavo	
+	[35]
+Mallard	112,255,000		Isotropic fractionator	Pallium (DVR)	Anas platyrhynchos	
+	[35]
+Black-rumped agouti	113,000,000	± 2,576,768[44]	Isotropic fractionator	Pallium (cortex)	Dasyprocta prymnolopha	
+	[1]
+Banded mongoose	115,770,000		Isotropic fractionator	Pallium (cortex)	Mungos mungo	
+	[52]
+Victoria crowned pigeon	118,445,000		Isotropic fractionator	Pallium (DVR)	Goura victoria	
+	[35]
+Yellow-knobbed curassow	124,624,000		Isotropic fractionator	Pallium (DVR)	Crax daubentoni	
+	[35]
+Indian peafowl	129,621,000		Isotropic fractionator	Pallium (DVR)	Pavo cristatus	
+	[35]
+Marbled duck	130,142,000		Isotropic fractionator	Pallium (DVR)	Marmaronetta angustirostris	
+	[35]
+Pygmy falcon	131,898,000		Isotropic fractionator	Pallium (DVR)	Polihierax semitorquatus	
+	[35]
+Common blackbird	136,218,000		Isotropic fractionator	Pallium (DVR)	Turdus merula	
+	[48]
+Eurasian hoopoe	136,380,000		Isotropic fractionator	Pallium (DVR)	Upupa epops		[69]
+Wood duck	138,206,000		Isotropic fractionator	Pallium (DVR)	Aix sponsa	
+	[35]
+Red-breasted goose	148,617,000		Isotropic fractionator	Pallium (DVR)	Branta ruficollis	
+	[35]
+Budgerigar	148,910,000		Isotropic fractionator	Pallium (DVR)	Melopsittacus undulatus	
+	[48]
+Laughing kookaburra	164,985,000		Isotropic fractionator	Pallium (DVR)	Dacelo novaeguineae		[69]
+Eurasian teal	167,287,000		Isotropic fractionator	Pallium (DVR)	Anas crecca	
+	[35]
+Rock hyrax	198,000,000	± 29,082,000[44]	Isotropic fractionator	Pallium (cortex)	Procavia capensis	
+	[44]
+Red-legged Seriema	219,570,000		Isotropic fractionator	Pallium (DVR)	Cariama cristata		[70]
+Northern greater galago	226,000,000	± 87,570,000[44]	Isotropic fractionator	Pallium (cortex)	Otolemur garnettii	
+	[44]
+Common starling	226,288,000		Isotropic fractionator	Pallium (DVR)	Sturnus vulgaris	
+	[48]
+Common kestrel	237,903,000		Isotropic fractionator	Pallium (DVR)	Falco tinnunculus	
+	[35]
+Raccoon dog	240,180,000		Isotropic fractionator	Pallium (cortex)	Nyctereutes procyonoides	
+	[56]
+Common marmoset	245,000,000	± 81,180,000[44]	Isotropic fractionator	Pallium (cortex)	Callithrix jacchus	
+	[44]
+Muscovy duck	248,163,000		Isotropic fractionator	Pallium (DVR)	Cairina moschata		[70]
+House cat	249,830,000		Isotropic fractionator	Pallium (cortex)	Felis catus	
+	[52]
+Brown bear	250,970,000		Isotropic fractionator	Pallium (cortex)	Ursus arctos	
+	[52]
+Cockatiel	258,481,000		Isotropic fractionator	Pallium (DVR)	Nymphicus hollandicus	
+	[48]
+Greylag goose	258,650,000		Isotropic fractionator	Pallium (DVR)	Anser anser	
+	[35]
+Capybara	306,500,000	± 62,726,120[44]	Isotropic fractionator	Pallium (cortex)	Hydrochoerus hydrochaeris	
+	[41]
+Tarsius	310,000,000		Estimated	Pallium (cortex)	Genus: Tarsius, unknown species	
+	[71]
+Great spotted woodpecker	311,900,000		Isotropic fractionator	Pallium (DVR)	Dendrocopos major		[69]
+Mute swan	323,661,000		Isotropic fractionator	Pallium (DVR)	Cygnus olor	
+	[35]
+Greater rhea	330,342,000		Isotropic fractionator	Pallium (DVR)	Rhea americana	
+	[35]
+Eastern rosella	333,274,000		Isotropic fractionator	Pallium (DVR)	Platycercus eximius	
+	[48]
+Common buzzard	351,700,000		Isotropic fractionator	Pallium (DVR)	Buteo buteo	
+	[35]
+Red-billed hornbill	354,400,000		Isotropic fractionator	Pallium (DVR)	Tockus erythrorhynchus		[69]
+Red fox	355,010,000		Isotropic fractionator	Pallium (cortex)	Vulpes vulpes	
+	[56]
+Goeldi's marmoset	357,130,000		Isotropic fractionator	Pallium (cortex)	Callimico goeldii	
+	[50]
+Eurasian pygmy owl	364,000,000		Isotropic fractionator	Pallium (DVR)	Glaucidium passerinum	
+	[35]
+Western grey kangaroo	370,170,000		Isotropic fractionator	Pallium (cortex)	Macropus fuliginosus	
+	[72]
+Swan goose	381,100,000		Isotropic fractionator	Pallium (DVR)	Anser cygnoides		[70]
+Golden jackal	393,620,000		Isotropic fractionator	Pallium (cortex)	Canis aureus	
+	[56]
+Monk parakeet	396,183,000		Isotropic fractionator	Pallium (DVR)	Myiopsitta monachus	
+	[48]
+Springbok	396,900,000		Isotropic fractionator	Pallium (cortex)	Antidorcas marsupialis	
+	[57]
+Black vulture	398,899,000		Isotropic fractionator	Pallium (DVR)	Coragyps atratus	
+	[35]
+Azure-winged magpie	399,695,000		Isotropic fractionator	Pallium (DVR)	Cyanopica cyanus	
+	[48]
+Little owl	400,822,000		Isotropic fractionator	Pallium (DVR)	Athene noctua	
+	[35]
+Common hill myna	410,330,000		Isotropic fractionator	Pallium (DVR)	Gracula religiosa	
+	[48]
+European green woodpecker	424,400,000		Isotropic fractionator	Pallium (DVR)	Picus viridis		[69]
+Domesticated pig	425,000,000*		Optical fractionator	Pallium (cortex)	Sus scrofa domesticus	
+	[73]
+Emu	439,300,000		Isotropic fractionator	Pallium (DVR)	Dromaius novaehollandiae	
+	[48]
+West Highland White Terrier	440,160,000		Isotropic fractionator	Pallium (cortex)	Canis lupus familiaris	
+	[56]
+Three-striped night monkey	442,000,000	± 111,310,000[44]	Isotropic fractionator	Pallium (cortex)	Aotus trivirgatus	
+	[1]
+Saker falcon	442,946,000		Isotropic fractionator	Pallium (DVR)	Falco cherrug	
+	[35]
+Eurasian magpie	443,187,000		Isotropic fractionator	Pallium (DVR)	Pica pica	
+	[48]
+Raccoon	453,000,000		Isotropic fractionator	Pallium (cortex)	Procyon lotor	
+	[66]
+Black woodpecker	457,400,000		Isotropic fractionator	Pallium (DVR)	Dryocopus martius		[69]
+Chow Chow	471,500,000		Isotropic fractionator	Pallium (cortex)	Canis lupus familiaris	
+	[56]
+Common ostrich	479,410,000		Isotropic fractionator	Pallium (DVR)	Struthio camelus	
+	[35]
+Barn owl	480,670,000		Isotropic fractionator	Pallium (DVR)	Tyto alba	
+	[70]
+Western jackdaw	491,678,000		Isotropic fractionator	Pallium (DVR)	Coloeus monedula	
+	[48]
+Striped hyena	495,280,000		Isotropic fractionator	Pallium (cortex)	Hyaena hyaena	
+	[52]
+Chihuahua	513,330,000		Isotropic fractionator	Pallium (cortex)	Canis lupus familiaris	
+	[56]
+Eurasian jay	528,770,000		Isotropic fractionator	Pallium (DVR)	Garrulus glandarius	
+	[48]
+White-tailed eagle	542,926,000		Isotropic fractionator	Pallium (DVR)	Haliaeetus albicilla	
+	[35]
+Lion	545,240,000		Isotropic fractionator	Pallium (cortex)	Panthera leo	
+	[52]
+Blesbok	570,670,000		Isotropic fractionator	Pallium (cortex)	Damaliscus pygargus phillipsi	
+	[57]
+Yorkshire Terrier	572,140,000		Isotropic fractionator	Pallium (cortex)	Canis lupus familiaris	
+	[56]
+Alexandrine parakeet	574,648,000		Isotropic fractionator	Pallium (DVR)	Psittacula eupatria	
+	[48]
+Tanimbar corella	599,227,000		Isotropic fractionator	Pallium (DVR)	Cacatua goffiniana	
+	[48]
+Golden retriever	627,000,000		Isotropic fractionator	Pallium (cortex)	Canis lupus familiaris	
+	[52]
+Striated caracara	663,370,000		Isotropic fractionator	Pallium (DVR)	Phalcoboenus australis		[70]
+Long-eared owl	673,000,000		Isotropic fractionator	Pallium (DVR)	Asio otus	
+	[35]
+Transylvanian Hound	725,760,000		Isotropic fractionator	Pallium (cortex)	Canis lupus familiaris	
+	[56]
+Greater kudu	762,570,000		Isotropic fractionator	Pallium (cortex)	Tragelaphus strepsiceros	
+	[57]
+Trumpeter hornbill	799,932,800		Isotropic fractionator	Pallium (DVR)	Bycanistes bucinator		[69]
+Crab-eating macaque	800,960,000		Isotropic fractionator	Pallium (cortex)	Macaca fascicularis	
+	[50]
+Rook	820,305,000		Isotropic fractionator	Pallium (DVR)	Corvus frugilegus	
+	[48]
+Beagle	844,410,000		Isotropic fractionator	Pallium (cortex)	Canis lupus familiaris	
+	[56]
+Grey parrot	850,100,000		Isotropic fractionator	Pallium (DVR)	Psittacus erithacus	
+	[48]
+Komondor	883,380,000		Isotropic fractionator	Pallium (cortex)	Canis lupus familiaris	
+	[56]
+German Shepherd	885,460,000		Isotropic fractionator	Pallium (cortex)	Canis lupus familiaris	
+	[56]
+Sulphur-crested cockatoo	1,135,000,000		Isotropic fractionator	Pallium (DVR)	Cacatua galerita	
+	[48]
+Tufted capuchin	1,140,000,000		Isotropic fractionator	Pallium (cortex)	Sapajus apella	
+	[44][1]
+Tawny owl	1,153,000,000		Isotropic fractionator	Pallium (DVR)	Strix aluco	
+	[35]
+Harp seal	1,168,000,000^
+
+6,100,000,000*
+
+		Estimated
+
+Optical fractionator
+
+	Pallium (cortex)	Pagophilus groenlandicus	
+	[74][75]
+Silvery-cheeked hornbill	1,177,000,000		Isotropic fractionator	Pallium (DVR)	Bycanistes brevis		[69]
+Horse	1,200,000,000^		Estimated	Pallium (cortex)	Equus ferus caballus	
+	[76]
+Raven	1,204,000,000		Isotropic fractionator	Pallium (DVR)	Corvus corax	
+	[48]
+Snowy owl	1,270,000,000		Isotropic fractionator	Pallium (DVR)	Bubo scandiacus	
+	[35]
+Kea	1,281,000,000		Isotropic fractionator	Pallium (DVR)	Nestor notabilis	
+	[48]
+Eurasian eagle-owl	1,328,000,000		Isotropic fractionator	Pallium (DVR)	Bubo bubo	
+	[35]
+Common squirrel monkey	1,340,000,000	± 20,000,000[44]	Isotropic fractionator	Pallium (cortex)	Saimiri sciureus	
+	[44]
+Bonnet macaque	1,660,000,000		Isotropic fractionator	Pallium (cortex)	Macaca radiata	
+	[44]
+Great grey owl	1,700,000,000		Isotropic fractionator	Pallium (cortex)	Strix nebulosa		[70]
+Rhesus macaque	1,710,000,000		Isotropic fractionator	Pallium (cortex)	Macaca mulatta	
+	[44]
+Giraffe	1,731,000,000		Isotropic fractionator	Pallium (cortex)	Giraffa camelopardalis	
+	[57]
+Blue and yellow macaw	1,917,000,000		Isotropic fractionator	Pallium (DVR)	Ara ararauna	
+	[48]
+Pygmy sperm whale	2,020,000,000*		Optical fractionator	Pallium (cortex)	Kogia breviceps	
+	[77]
+Leopard seal	2,386,000,000^		Estimated	Pallium (cortex)	Hydrurga leptonyx	
+	[74]
+Guenon	2,500,000,000^		Estimated	Pallium (cortex)	Genus: Cercopithecus, unknown species	
+	[71]
+Pigtail Macaque	2,531,000,000^		Estimated	Pallium (cortex)	Macaca nemestrina	
+	[74]
+Gelada baboon	2,568,000,000^		Estimated	Pallium (cortex)	Theropithecus gelada	
+	[74]
+Red-and-green macaw	2,646,000,000^		Estimated	Telencephalon (Pallium + Subpallium)	Ara chloropterus	
+	[74]
+Harbor porpoise	2,750,000,000*		Optical fractionator	Pallium (cortex)	Phocoena phocoena	
+	[74][75]
+Yellow baboon	2,880,000,000		Isotropic fractionator	Pallium (cortex)	Papio cynocephalus	
+	[50]
+Hyacinth macaw	2,944,000,000^		Estimated	Telencephalon (Pallium + Subpallium)	Anodorhynchus hyacinthinus	
+	[74]
+Hamadryas baboon	2,990,000,000^		Estimated	Pallium (cortex)	Papio hamadryas	
+	[74]
+Mandrill	3,102,000,000^		Estimated	Pallium (cortex)	Mandrillus sphinx	
+	[74]
+Common minke whale	3,134,000,000
+
+12,800,000,000*
+
+		Isotropic fractionator
+
+Optical fractionator
+
+	Pallium (cortex)	Balaenoptera acutorostrata	
+	[60][78]
+Walrus	3,929,000,000^		Estimated	Pallium (cortex)	Odobenus rosmarus	
+	[74]
+Southern elephant seal	3,994,000,000^		Estimated	Pallium (cortex)	Mirounga leonina	
+	[74]
+Fin whale	5,000,000,000^
+
+15,000,000,000^
+
+		Estimated	Pallium (cortex)	Balaenoptera physalus	
+	[74][79]
+Blue whale	5,000,000,000^		Estimated	Pallium (cortex)	Balaenoptera musculus	
+	[74]
+African elephant	5,600,000,000		Isotropic fractionator	Pallium (cortex)	Loxodonta africana	
+	[64]
+Pygmy chimpanzee or bonobo	6,250,000,000^		Estimated	Pallium (cortex)	Pan paniscus	
+	[74]
+Short-beaked common dolphin	6,700,000,000*
+
+4,800,000,000^
+
+		Optical fractionator
+
+Estimated
+
+	Pallium (cortex)	Delphinus delphis	
+	[74][77][60]
+Asian elephant	6,775,000,000^		Estimated	Pallium (cortex)	Elephas maximus	
+	[74]
+Chimpanzee	7,400,000,000*		Optical fractionator	Pallium (cortex)	Pan troglodytes	
+	[80]
+Orangutan	7,704,000,000^ - 8,900,000,000^		Estimated	Pallium (cortex)	Genus: Pongo	
+	[74][59]
+Western gorilla	9,100,000,000^		Estimated	Pallium (cortex)	Gorilla gorilla	
+	[74][59]
+Cuvier's beaked whale	9,100,000,000*		Optical fractionator	Pallium (cortex)	Ziphius cavirostris	
+	[77]
+Beluga whale	10,000,000,000^		Estimated	Pallium (cortex)	Delphinapterus leucas	
+	[74][60]
+Risso's dolphin	10,000,000,000^		Estimated	Pallium (cortex)	Grampus griseus	
+	[74][60]
+Short-finned pilot whale	11,850,000,000		Isotropic fractionator	Pallium (cortex)	Globicephala macrorhynchus	
+	[74][60]
+Bottlenose dolphin	12,700,000,000*
+
+8,700,000,000^
+
+		Optical fractionator
+
+Estimated
+
+	Pallium (cortex)	Tursiops truncatus	
+	[74][77][60]
+Long-finned pilot whale	13,966,000,000^
+
+37,200,000,000*
+
+		Estimated
+
+Optical fractionator
+
+	Pallium (cortex)	Globicephala melas	
+	[81][74][60]
+Human	16,340,000,000
+
+21,000,000,000*
+
+	± 2,170,000,000[44]	Isotropic fractionator
+
+Optical fractionator
+
+	Pallium (cortex)	Homo sapiens	
+	[44][61][1][82][83]
+Orca	43,100,000,000*
+
+21,000,000,000^
+
+		Optical fractionator
+
+Estimated
+
+	Pallium (cortex)	Orcinus orca	
+	[74][77][60]
+See also[edit]
+Lists of animals
+Theory of mind in animals
+Brain size
+Brain–body mass ratio
+Encephalization quotient
+Connectome
+Connectomics
+Cranial capacity
+fr:Noogenèse
+Neuroscience and intelligence
+Notes[edit]
+^ ^ = Estimated
+* = Optical fractionator
+^ ± standard deviation
+^ For the estimated values, the numbers of cortical neurons estimated from brain mass for different mammalian and bird orders are based on correlation observed between number of cortical neuron and brain mass per order[44]
+
+Reference 56 cited for all dog neuron numbers on this Wikipedia page is a Univerzita Karlova student review of a single 2017 study by Suzana Herculano-Houzel (a self avowed "dog person"[84]) which has not been independently replicated.
+
+References[edit]
+^ 
+Jump up to:
+a b c d e f g h Herculano-Houzel S (9 November 2009). "The human brain in numbers: a linearly scaled-up primate brain". Frontiers in Human Neuroscience. 3: 31. doi:10.3389/neuro.09.031.2009. PMC 2776484. PMID 19915731.
+^ Randerson J (28 February 2012). "How many neurons make a human brain? Billions fewer than we thought". The Guardian.
+^ Eryomin, A. L. (2022). "Biophysics of Evolution of Intellectual Systems". Biophysics. 67 (2): 320–326. doi:10.1134/S0006350922020051. PMC 9244026. PMID 35789557.
+^ Sherwood L, Klandorf H and Yancey P (2012) Animal Physiology: From Genes to Organisms Cengage Learning, p. 150. ISBN 978-1-133-70951-0.
+^ Smith CL, Pivovarova N, Reese TS (2015). "Coordinated Feeding Behavior in Trichoplax, an Animal without Synapses". PLOS ONE. 10 (9) e0136098. Bibcode:2015PLoSO..1036098S. doi:10.1371/journal.pone.0136098. PMC 4558020. PMID 26333190.
+Carolyn L. Smith; et al. (2015). Coordinated Feeding Behavior in Trichoplax, an Animal without Synapses. PLoS ONE – via YouTube.
+^ Schierwater B (December 2005). "My favorite animal, Trichoplax adhaerens". BioEssays. 27 (12): 1294–302. doi:10.1002/bies.20320. PMID 16299758.
+^ Ware RW (1975). Three-Dimensional Reconstruction from Serial Sections. International Review of Cytology. Vol. 40. pp. 325–440. doi:10.1016/S0074-7696(08)60956-0. ISBN 978-0-12-364340-7. PMID 1097356.
+^ Martin C, Gross V, Hering L, Tepper B, Jahn H, de Sena Oliveira I, et al. (August 2017). "The nervous and visual systems of onychophorans and tardigrades: learning about arthropod evolution from their closest relatives" (PDF). Journal of Comparative Physiology A: Neuroethology, Sensory, Neural & Behavioral Physiology. 203 (8): 565–590. doi:10.1007/s00359-017-1186-4. PMID 28600600. S2CID 25280904.
+^ Ryan K, Lu Z, Meinertzhagen IA (December 2016). "The CNS connectome of a tadpole larva of Ciona intestinalis (L.) highlights sidedness in the brain of a chordate sibling". eLife. 5 e16962. doi:10.7554/eLife.16962. PMC 5140270. PMID 27921996.
+^ Ryan K, Lu Z, Meinertzhagen IA (March 2018). "The peripheral nervous system of the ascidian tadpole larva: Types of neurons and their synaptic networks". The Journal of Comparative Neurology. 526 (4): 583–608. doi:10.1002/cne.24353. PMID 29124768. S2CID 20052591.
+^ White JG, Southgate E, Thomson JN, Brenner S (November 1986). "The structure of the nervous system of the nematode Caenorhabditis elegans". Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences. 314 (1165): 1–340. Bibcode:1986RSPTB.314....1W. doi:10.1098/rstb.1986.0056. PMID 22462104.
+^ White JG (June 2013). "Getting into the mind of a worm--a personal view". WormBook: 1–10. doi:10.1895/wormbook.1.158.1. PMC 4781474. PMID 23801597.
+^ Jabr F (2012-10-02). "The Connectome Debate: Is Mapping the Mind of a Worm Worth It?". Scientific American. Retrieved 2014-01-18.
+^ White JG, Southgate E, Thomson JN, Brenner S (November 1986). "The structure of the nervous system of the nematode Caenorhabditis elegans". Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences. 314 (1165): 1–340. Bibcode:1986RSPTB.314....1W. doi:10.1098/rstb.1986.0056. PMID 22462104. S2CID 5006466.
+^ Bode H, Berking S, David CN, Gierer A, Schaller H, Trenkner E (December 1973). "Quantitative analysis of cell types during growth and morphogenesis in Hydra". Wilhelm Roux' Archiv für Entwicklungsmechanik der Organismen (Submitted manuscript). 171 (4): 269–285. doi:10.1007/BF00577725. PMID 28304608. S2CID 5484431.
+^ Polilov AA (January 2012). "The smallest insects evolve anucleate neurons". Arthropod Structure & Development. 41 (1): 29–34. Bibcode:2012ArtSD..41...29P. doi:10.1016/j.asd.2011.09.001. PMID 22078364.
+^ Garm A, Poussart Y, Parkefelt L, Ekström P, Nilsson DE (July 2007). "The ring nerve of the box jellyfish Tripedalia cystophora". Cell and Tissue Research. 329 (1): 147–57. doi:10.1007/s00441-007-0393-7. PMID 17340150. S2CID 26982210.
+^ Kuffler SW, Potter DD (March 1964). "Glia in the Leech Central Nervous System: Physiological Properties and Neuron-Glia Relationship". Journal of Neurophysiology. 27 (2): 290–320. doi:10.1152/jn.1964.27.2.290. PMID 14129773.
+^ Roth G, Dicke U (May 2005). "Evolution of the brain and intelligence". Trends in Cognitive Sciences. 9 (5): 250–7. doi:10.1016/j.tics.2005.03.005. PMID 15866152. S2CID 14758763. as PDF
+^ Cash D, Carew TJ (January 1989). "A quantitative analysis of the development of the central nervous system in juvenile Aplysia californica". Journal of Neurobiology. 20 (1): 25–47. doi:10.1002/neu.480200104. PMID 2921607.
+^ Roth G (3 June 2013). The Long Evolution of Brains and Minds. Springer Science & Business Media. p. 121. ISBN 978-94-007-6259-6. Retrieved 9 December 2015.
+^ Aniszewski T (25 April 2015). Alkaloids: Chemistry, Biology, Ecology, and Applications. Elsevier Science. p. 316. ISBN 978-0-444-59462-4. Retrieved 9 December 2015.
+^ Ahrens MB, Orger MB (March 2013). "Whole-brain functional imaging at cellular resolution using light-sheet microscopy". Nature Methods. 10 (5): 413–20. doi:10.1038/nmeth.2434. PMID 23524393. S2CID 3353074.
+^ editorial. "The FlyWire connectome: neuronal wiring diagram of a complete fly brain". Nature. Retrieved October 2, 2024.
+^ 
+Jump up to:
+a b Azevedo, Anthony; et al. (2024). "Connectomic reconstruction of a female Drosophila ventral nerve cord". Nature. 631 (8020): 360–368. Bibcode:2024Natur.631..360A. bioRxiv 10.1101/2022.12.15.520299. doi:10.1038/s41586-024-07389-x. PMC 11348827. PMID 38926570.
+^ Servick K (July 19, 2018). "In a 'tour de force', researchers image an entire fly brain in minute detail". Science. Retrieved May 18, 2021.
+^ Dorkenwald, Sven; et al. (2024). "Neuronal wiring diagram of an adult brain". Nature. 634 (8032): 124–138. bioRxiv 10.1101/2023.06.27.546656. doi:10.1038/s41586-024-07558-y. PMC 11446842. PMID 39358518.
+^ Takemura, Shin-ya; Hayworth, Kenneth J.; Huang, Gary B.; Januszewski, Michal; Lu, Zhiyuan; Marin, Elizabeth C.; Preibisch, Stephan; Xu, C. Shan; Bogovic, John; Champion, Andrew S.; Cheong, Han SJ; Costa, Marta; Eichler, Katharina; Katz, William; Knecht, Christopher (2024-05-23). "A Connectome of the Male Drosophila Ventral Nerve Cord". eLife. 13. doi:10.7554/eLife.97769.1.
+^ Babu KS, Barth FG (1984). "Neuroanatomy of the central nervous system of the wandering spider, Cupiennius salei (Arachnida, Araneida)". Zoomorphology. 104 (6): 344–359. doi:10.1007/BF00312185. S2CID 23710492.
+^ 
+Jump up to:
+a b c d e f g Godfrey RK, Swartzlander M, Gronenberg W (March 2021). "Allometric analysis of brain cell number in Hymenoptera suggests ant brains diverge from general trends". Proceedings. Biological Sciences. 288 (1947) 20210199. doi:10.1098/rspb.2021.0199. PMC 8059961. PMID 33757353.
+^ John and Sarah Tefl. "Interesting Facts About Ants". Retrieved December 23, 2010.
+^ Menzel R, Giurfa M (February 2001). "Cognitive architecture of a mini-brain: the honeybee". Trends in Cognitive Sciences. 5 (2): 62–71. doi:10.1016/S1364-6613(00)01601-6. PMID 11166636. S2CID 3202685.
+^ "A Strange Approach to Social Interaction, and Butterflies". Anthropology.net. January 10, 2007. Archived from the original on January 13, 2007. Retrieved November 26, 2010.
+^ Krieger J, Sandeman RE, Sandeman DC, Hansson BS, Harzsch S (September 2010). "Brain architecture of the largest living land arthropod, the Giant Robber Crab Birgus latro (Crustacea, Anomura, Coenobitidae): evidence for a prominent central olfactory pathway?". Frontiers in Zoology. 7 (1) 25. doi:10.1186/1742-9994-7-25. PMC 2945339. PMID 20831795.
+^ 
+Jump up to:
+a b c d e f g h i j k l m n o p q r s t u v w x y z aa ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc bd be bf bg bh bi bj bk bl bm bn bo bp bq br bs bt bu bv bw bx by bz ca cb cc cd ce cf cg ch ci cj ck cl cm cn co cp cq cr cs ct cu cv cw cx cy cz da db dc dd de df dg dh di dj dk dl dm dn do dp dq dr ds dt du dv dw dx dy dz ea eb ec ed ee ef eg eh ei ej ek el em en eo ep eq er es et eu ev ew ex ey ez fa fb fc fd fe ff fg fh fi fj fk fl fm fn fo fp fq fr fs ft fu fv fw fx Kverková, Kristina; Marhounová, Lucie; Polonyiová, Alexandra; Kocourek, Martin; Zhang, Yicheng; Olkowicz, Seweryn; Straková, Barbora; Pavelková, Zuzana; Vodička, Roman; Frynta, Daniel; Němec, Pavel (2022-03-15). "The evolution of brain neuron numbers in amniotes". Proceedings of the National Academy of Sciences. 119 (11) e2121624119. Bibcode:2022PNAS..11921624K. doi:10.1073/pnas.2121624119. ISSN 0027-8424. PMC 8931369. PMID 35254911.
+^ 
+Jump up to:
+a b Storks L, Powell BJ, Leal M (September 2020). "Peeking Inside the Lizard Brain: Neuron Numbers in Anolis and Its Implications for Cognitive Performance and Vertebrate Brain Evolution". Integrative and Comparative Biology. 63: 223–237. doi:10.1093/icb/icaa129. PMID 33175153.
+^ Marhounová L, Kotrschal A, Kverková K, Kolm N, Němec P (September 2019). "Artificial selection on brain size leads to matching changes in overall number of neurons". Evolution; International Journal of Organic Evolution. 73 (9): 2003–2012. doi:10.1111/evo.13805. PMC 6772110. PMID 31339177.
+^ Kverková K, Polonyiová A, Kubička L, Němec P (September 2020). "Individual and age-related variation of cellular brain composition in a squamate reptile". Biology Letters. 16 (9) 20200280. doi:10.1098/rsbl.2020.0280. PMC 7532707. PMID 32961085.
+^ Hinsch K, Zupanc GK (May 2007). "Generation and long-term persistence of new neurons in the adult zebrafish brain: a quantitative analysis". Neuroscience. 146 (2): 679–96. doi:10.1016/j.neuroscience.2007.01.071. PMID 17395385. S2CID 5643696.
+^ "Frog Brain Neuron Number". Archived from the original on 16 July 2015. Retrieved 15 July 2015.
+^ 
+Jump up to:
+a b c d e f g h i j k Herculano-Houzel S, Ribeiro P, Campos L, Valotta da Silva A, Torres LB, Catania KC, Kaas JH (2011). "Updated neuronal scaling rules for the brains of Glires (rodents/lagomorphs)". Brain, Behavior and Evolution. 78 (4): 302–14. doi:10.1159/000330825. PMC 3237106. PMID 21985803.
+^ 
+Jump up to:
+a b c d e f g h i j k l m n o p q r s t u v w x y z Herculano-Houzel S, da Cunha FB, Reed JL, Kaswera-Kyamakya C, Gillissen E, Manger PR (December 2020). "Microchiropterans have a diminutive cerebral cortex, not an enlarged cerebellum, compared to megachiropterans and other mammals". The Journal of Comparative Neurology. 528 (17): 2978–2993. doi:10.1002/cne.24985. PMID 32656795. S2CID 220499352.
+^ 
+Jump up to:
+a b c d Hofman MA, Falk D (2 March 2012). Evolution of the Primate Brain: From Neuron to Behavior. Elsevier. p. 425. ISBN 978-0-444-53860-4.
+^ 
+Jump up to:
+a b c d e f g h i j k l m n o p q r s t u v w x y z aa ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc Herculano-Houzel S, Catania K, Manger PR, Kaas JH (2015). "Mammalian Brains Are Made of These: A Dataset of the Numbers and Densities of Neuronal and Nonneuronal Cells in the Brain of Glires, Primates, Scandentia, Eulipotyphlans, Afrotherians and Artiodactyls, and Their Relationship with Body Mass". Brain, Behavior and Evolution. 86 (3–4). S. Karger AG: 145–63. doi:10.1159/000437413. PMID 26418466. S2CID 10637829.[permanent dead link]
+^ 
+Jump up to:
+a b c d e f Herculano-Houzel S, Mota B, Lent R (August 2006). "Cellular scaling rules for rodent brains". Proceedings of the National Academy of Sciences of the United States of America. 103 (32): 12138–43. Bibcode:2006PNAS..10312138H. doi:10.1073/pnas.0604911103. PMC 1567708. PMID 16880386.
+^ 
+Jump up to:
+a b Ngwenya A, Patzke N, Manger PR, Herculano-Houzel S (2016). "Continued Growth of the Central Nervous System without Mandatory Addition of Neurons in the Nile Crocodile (Crocodylus niloticus)". Brain, Behavior and Evolution. 87 (1): 19–38. doi:10.1159/000443201. PMID 26914769. S2CID 5353731.
+^ 
+Jump up to:
+a b c d e f g h i j k l m n Kverková K, Bělíková T, Olkowicz S, Pavelková Z, O'Riain MJ, Šumbera R, et al. (June 2018). "Sociality does not drive the evolution of large brains in eusocial African mole-rats". Scientific Reports. 8 (1) 9203. Bibcode:2018NatSR...8.9203K. doi:10.1038/s41598-018-26062-8. PMC 6003933. PMID 29907782.
+^ 
+Jump up to:
+a b c d e f g h i j k l m n o p q r s t u v w x y z aa ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc bd Olkowicz S, Kocourek M, Lučan RK, Porteš M, Fitch WT, Herculano-Houzel S, Němec P (June 2016). "Birds have primate-like numbers of neurons in the forebrain". Proceedings of the National Academy of Sciences of the United States of America. 113 (26): 7255–60. Bibcode:2016PNAS..113.7255O. doi:10.1073/pnas.1517131113. PMC 4932926. PMID 27298365.
+^ 
+Jump up to:
+a b Herculano-Houzel S, Lent R (March 2005). "Isotropic fractionator: a simple, rapid method for the quantification of total cell and neuron numbers in the brain". The Journal of Neuroscience. 25 (10): 2518–21. doi:10.1523/jneurosci.4526-04.2005. PMC 6725175. PMID 15758160.
+^ 
+Jump up to:
+a b c d e f g h i Gabi M, Collins CE, Wong P, Torres LB, Kaas JH, Herculano-Houzel S (2010). "Cellular scaling rules for the brains of an extended number of primate species". Brain, Behavior and Evolution. 76 (1): 32–44. doi:10.1159/000319872. PMC 2980814. PMID 20926854.
+^ 
+Jump up to:
+a b c d e f g h Herculano-Houzel S, Collins CE, Wong P, Kaas JH (February 2007). "Cellular scaling rules for primate brains". Proceedings of the National Academy of Sciences of the United States of America. 104 (9): 3562–7. Bibcode:2007PNAS..104.3562H. doi:10.1073/pnas.0611396104. PMC 1805542. PMID 17360682.
+^ 
+Jump up to:
+a b c d e f g h i j k l m n Jardim-Messeder D, Lambert K, Noctor S, Pestana FM, de Castro Leal ME, Bertelsen MF, et al. (2017). "Dogs Have the Most Neurons, Though Not the Largest Brain: Trade-Off between Body Mass and Number of Neurons in the Cerebral Cortex of Large Carnivoran Species". Frontiers in Neuroanatomy. 11 118. doi:10.3389/fnana.2017.00118. PMC 5733047. PMID 29311850.
+^ "Brain Facts and Figures". Retrieved 15 July 2015.
+^ Chung W, Kurniawan N, Marshall J (24 January 2020). "Toward an MRI-Based Mesoscale Connectome of the Squid Brain". iScience. 23 (1) 100816. Bibcode:2020iSci...23j0816C. doi:10.1016/j.isci.2019.100816. PMC 6974791. PMID 31972515.
+^ Ananthanarayanan R, Esser SK, Simon HD, Modha DS (2009). "The cat is out of the bag: cortical simulations with 109 neurons, 1013 synapses". Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis - SC '09. pp. 1–12. doi:10.1145/1654059.1654124. ISBN 978-1-60558-744-8. S2CID 6110450.
+^ 
+Jump up to:
+a b c d e f g h i j k l m n o p q r s t u Salajková V (2020-02-03). Pravidla buněčného škálování mozku u psů: Efekt domestikace a miniaturizace psích plemen (Thesis) (in Czech). Univerzita Karlova.
+^ 
+Jump up to:
+a b c d e f g h i j Kazu RS, Maldonado J, Mota B, Manger PR, Herculano-Houzel S (2015). "Corrigendum: Cellular scaling rules for the brain of Artiodactyla include a highly folded cortex with few neurons". Frontiers in Neuroanatomy. 9: 39. doi:10.3389/fnana.2015.00039. PMC 4374476. PMID 25859187.
+^ 
+Jump up to:
+a b Herculano-Houzel S (June 2012). "The remarkable, yet not extraordinary, human brain as a scaled-up primate brain and its associated cost". Proceedings of the National Academy of Sciences of the United States of America. 109 (Suppl 1): 10661–8. Bibcode:2012PNAS..10910661H. doi:10.1073/pnas.1201895109. PMC 3386878. PMID 22723358.
+^ 
+Jump up to:
+a b c d e Herculano-Houzel S, Kaas JH (2011). "Gorilla and orangutan brains conform to the primate cellular scaling rules: implications for human evolution". Brain, Behavior and Evolution. 77 (1): 33–44. doi:10.1159/000322729. PMC 3064932. PMID 21228547.
+^ 
+Jump up to:
+a b c d e f g h i j "Plataforma Sucupira". sucupira.capes.gov.br. Retrieved 2023-12-30.
+^ 
+Jump up to:
+a b c Azevedo FA, Carvalho LR, Grinberg LT, Farfel JM, Ferretti RE, Leite RE, et al. (April 2009). "Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain". The Journal of Comparative Neurology. 513 (5): 532–41. doi:10.1002/cne.21974. PMID 19226510. S2CID 5200449.
+^ 
+Jump up to:
+a b Herculano-Houzel S (June 2012). "The remarkable, yet not extraordinary, human brain as a scaled-up primate brain and its associated cost". Proceedings of the National Academy of Sciences of the United States of America. 109 Suppl 1 (Supplement_1): 10661–8. Bibcode:2012PNAS..10910661H. doi:10.1073/pnas.1201895109. PMC 3386878. PMID 22723358.
+^ Tower DB (August 1954). "Structural and functional organization of mammalian cerebral cortex; the correlation of neurone density with brain size; cortical neurone density in the fin whale (Balaenoptera physalus L.) with a note on the cortical neurone density in the Indian elephant". The Journal of Comparative Neurology. 101 (1): 19–51. doi:10.1002/cne.901010103. PMID 13211853. S2CID 10396499.
+^ 
+Jump up to:
+a b c Herculano-Houzel S, Avelino-de-Souza K, Neves K, Porfírio J, Messeder D, Mattos Feijó L, et al. (2014). "The elephant brain in numbers". Frontiers in Neuroanatomy. 8: 46. doi:10.3389/fnana.2014.00046. PMC 4053853. PMID 24971054.
+^ "Searching For The Elephant's Genius Inside the Largest Brain on Land". Scientificamerica. 26 February 2014.
+^ 
+Jump up to:
+a b Lambert KG, Bardi M, Landis T, Hyer MM, Rzucidlo A, Gehrt S, Anchor C, Jardim Messeder D, Herculano-Houzel S (2014). "Behind the Mask: Neurobiological indicants of emotional resilience and cognitive function in wild raccoons (Procyon lotor)". Society for Neuroscience.
+^ 
+Jump up to:
+a b c d Heisenberg M (May 1998). "What do the mushroom bodies do for the insect brain? an introduction". Learning & Memory. 5 (1–2): 1–10. doi:10.1101/lm.5.1.1. PMC 311238. PMID 10454369.
+^ 
+Jump up to:
+a b Fasolo A (30 November 2011). The Theory of Evolution and Its Impact. Springer. p. 182. ISBN 978-88-470-1973-7.
+^ 
+Jump up to:
+a b c d e f g h i j k Stehlík, Patrik (22 September 2021). "Buněčné složení mozku zoborožců, šplhavců a srostloprstých ptáků". Univerzita Karlova Přírodovědecká fakulta (in Czech).
+^ 
+Jump up to:
+a b c d e f Sol, Daniel; Olkowicz, Seweryn; Sayol, Ferran; Kocourek, Martin; Zhang, Yicheng; Marhounová, Lucie; Osadnik, Christin; Corssmit, Eva; Garcia-Porta, Joan; Martin, Thomas E.; Lefebvre, Louis; Němec, Pavel (September 2022). "Neuron numbers link innovativeness with both absolute and relative brain size in birds". Nature Ecology & Evolution. 6 (9): 1381–1389. doi:10.1038/s41559-022-01815-x.
+^ 
+Jump up to:
+a b Quarton GC, Melnechuk T, Schmitt FO (1967). The neurosciences. Rockefeller University Press. p. 732. GGKEY:DF21HXQKLNX.
+^ Dos Santos SE, Porfirio J, da Cunha FB, Manger PR, Tavares W, Pessoa L, et al. (2017). "Cellular Scaling Rules for the Brains of Marsupials: Not as "Primitive" as Expected". Brain, Behavior and Evolution. 89 (1): 48–63. doi:10.1159/000452856. PMID 28125804. Table S1: Cellular composition of the Marsupial brains.
+^ Phillips, Kathryn (2006). "Learning from Pig Brains". Journal of Experimental Biology. 209 (8): ii. Bibcode:2006JExpB.209W...2P. doi:10.1242/jeb.02215. S2CID 144033784. Retrieved 15 July 2015.
+^ 
+Jump up to:
+a b c d e f g h i j k l m n o p q r s t u v w x Herculano-Houzel S (July 2019). "Longevity and sexual maturity vary across species with number of cortical neurons, and humans are no exception". The Journal of Comparative Neurology. 527 (10): 1689–1705. doi:10.1002/cne.24564. PMID 30350858. S2CID 53033539.
+^ 
+Jump up to:
+a b Walløe S, Eriksen N, Dabelsteen T, Pakkenberg B (December 2010). "A neurological comparative study of the harp seal (Pagophilus groenlandicus) and harbor porpoise (Phocoena phocoena) brain". Anatomical Record. 293 (12): 2129–35. doi:10.1002/ar.21295. PMID 21077171. S2CID 2636107.
+^ Haug H (October 1987). "Brain sizes, surfaces, and neuronal sizes of the cortex cerebri: a stereological investigation of man and his variability and a comparison with some mammals (primates, whales, marsupials, insectivores, and one elephant)". The American Journal of Anatomy. 180 (2): 126–42. doi:10.1002/aja.1001800203. PMID 3673918.
+^ 
+Jump up to:
+a b c d e Ridgway SH, Brownson RH, Van Alstyne KR, Hauser RA (2019-12-16). "Higher neuron densities in the cerebral cortex and larger cerebellums may limit dive times of delphinids compared to deep-diving toothed whales". PLOS ONE. 14 (12) e0226206. Bibcode:2019PLoSO..1426206R. doi:10.1371/journal.pone.0226206. PMC 6914331. PMID 31841529. Note:Total number of neurons listed in "S1 Table: Values from the current studies compared to published values", which downloads when you click on the "Click here for additional data file" in the "Supporting information" section.
+^ Eriksen N, Pakkenberg B (January 2007). "Total neocortical cell number in the mysticete brain". Anatomical Record. 290 (1): 83–95. doi:10.1002/ar.20404. PMID 17441201. S2CID 31374672.
+^ Food and Agriculture Organization of the United Nations Working Party on Marine Mammals (1978-01-01). Mammals in the Seas: Report. Food & Agriculture Org. ISBN 978-92-5-100513-2.
+^ Collins CE, Turner EC, Sawyer EK, Reed JL, Young NA, Flaherty DK, Kaas JH (January 2016). "Cortical cell and neuron density estimates in one chimpanzee hemisphere". Proceedings of the National Academy of Sciences of the United States of America. 113 (3): 740–5. Bibcode:2016PNAS..113..740C. doi:10.1073/pnas.1524208113. PMC 4725503. PMID 26729880.
+^ Mortensen HS, Pakkenberg B, Dam M, Dietz R, Sonne C, Mikkelsen B, Eriksen N (2014). "Quantitative relationships in delphinid neocortex". Frontiers in Neuroanatomy. 8: 132. doi:10.3389/fnana.2014.00132. PMC 4244864. PMID 25505387.
+^ Steven M. Platek; Julian Paul Keenan; Todd K. Shackelford, eds. (2009). Evolutionary Cognitive Neuroscience (PDF). MIT Press. p. 139.
+^ Pakkenberg B, Gundersen HJ (July 1997). "Neocortical neuron number in humans: effect of sex and age". The Journal of Comparative Neurology. 384 (2). Wiley-Liss, Inc.: 312–20. doi:10.1002/(SICI)1096-9861(19970728)384:2<312::AID-CNE10>3.0.CO;2-K. PMID 9215725. S2CID 25706714.
+^ "New Study Shows Dogs Possess Significantly More Neurons Than Cats". SciTechDaily. 2017-11-29. Retrieved 2026-04-19.
+hide
+vte
+Animal cognition
+
+Cognition	
+Animal communicationAnimal consciousnessAnimal cultureAnimal language Great ape languageTalking animalTalking birdAnimal-made artAnimal navigationAnimal resistanceCognitive biasCognitive ethologyComparative cognitionEmotionInsectMirror testNeuroethologyNumber senseObservational learningPrimate archaeologyTheory of mindTool use sea ottersVocal learning
+
+Intelligence	
+Bird PigeonCatCephalopodCetaceanDogElephantFishg factor in non-humansPrimate HominidSwarm
+
+Pain	
+Pain in animalsPain in invertebrates Pain in cephalopodsPain in crustaceansVertebrates Pain in amphibiansPain in fish
+
+Relation to brain	
+Brain sizeBrain-to-body mass ratioEncephalization quotientNeuroscience and intelligenceNumber of neurons
+
+
+ Category
+Categories: Animal cognitionAnimal nervous systemBiology-related listsLists of animals
+This page was last edited on 19 April 2026, at 04:05 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policy
+About Wikipedia
+Disclaimers
+Contact Wikipedia
+Legal & safety contacts
+Code of Conduct
+Developers
+Statistics
+Cookie statement
+Mobile view

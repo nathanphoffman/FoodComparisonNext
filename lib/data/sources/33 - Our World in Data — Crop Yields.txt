@@ -1,0 +1,504 @@
+Our World
+in Data
+Browse by topic
+Data
+Insights
+Resources
+About
+Donate
+Crop Yields
+
+Increasing crop yields is crucial to improve food security, living standards, and reduce human impacts on the environment.
+
+By Hannah Ritchie, Pablo Rosado, and Max Roser
+
+Cite this work
+Reuse this work
+Introduction
+Data Explorer
+Research & Writing
+Charts
+
+Improvements in crop yields have been essential to feed a growing population while reducing the environmental impact of food production at the same time. Increasing crop yields can reduce the amount of land we use for agriculture.
+
+Crop yields might seem far from being one of the world's largest problems. But, if yields and labor productivity do not increase, it will have far-reaching consequences for global poverty and the protection of the environment. For people and the planet, it’s one of our most important problems to work on.
+
+You can find all our data, visualizations, and writing relating to crop yields on this page.
+
+RELATED TOPICS
+Land use
+Biodiversity
+Fertilizers
+Explore data on Crop Yields
+Crop Yields Data Explorer
+Explore crop yields across the world.
+CROP
+Wheat
+ 
+Almonds
+Apples
+Apricots
+Artichokes
+Asparagus
+Avocados
+Bananas
+Barley
+Beans
+Blueberries
+Broad beans
+Buckwheat
+Cabbages
+Carrots and turnips
+Cashews
+Cassava
+Cauliflowers and broccoli
+Cereals
+Cherries
+Chestnuts
+Chickpeas
+Chilies and peppers
+Cinnamon
+Citrus fruit
+Cloves
+Cocoa beans
+Coconuts
+Coffee beans
+Corn (maize)
+Cotton
+Cowpeas
+Cranberries
+Cucumbers and gherkins
+Currants
+Dates
+Eggplants
+Figs
+Fruit
+Garlic
+Ginger
+Grapefruit
+Grapes
+Green beans
+Green chilies and peppers
+Green onions and shallots
+Green peas
+Groundnut
+Hazelnuts
+Hempseed
+Herbs
+Kiwi
+Leeks
+Lemons and limes
+Lentils
+Lettuce
+Linseed
+Mangoes
+Melon
+Millet
+Mustard seed
+Oats
+Oil palm
+Okra
+Olives
+Onions
+Oranges
+Papayas
+Peaches and nectarines
+Pears
+Peas
+Pepper (spice)
+Persimmons
+Pineapples
+Pistachios
+Plantains
+Plums
+Potato
+Pulses
+Quinces
+Quinoa
+Rapeseed
+Raspberries
+Rice
+Roots and tubers
+Rye
+Safflower seed
+Sesame seed
+Sorghum
+Soybean
+Spinach
+Strawberries
+Sugar beet
+Sugar cane
+Sugar crops
+Sunflower seed
+Sweet potatoes
+Tangerines
+Tobacco
+Tomato
+Treenuts
+Triticale
+Vanilla
+Vegetables
+Walnuts
+Watermelons
+Wheat
+Yams
+METRIC
+ Actual yield
+ Attainable yield
+ Yield gap
+Sort by
+Relevance
+ 
+Relevance
+Country or region
+United States
+High-income countries
+North America
+Afghanistan
+Africa
+Albania
+Algeria
+Andorra
+Angola
+Antigua and Barbuda
+Argentina
+Armenia
+Asia
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Brazil
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Central African Republic
+Chad
+Chile
+China
+Colombia
+Comoros
+Congo
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Cyprus
+Czechia
+Democratic Republic of Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Eswatini
+Ethiopia
+Europe
+European Union (27)
+Fiji
+Finland
+France
+French Guiana
+French Southern Territories
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Greece
+Greenland
+Grenada
+Guatemala
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Honduras
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Israel
+Italy
+Jamaica
+Japan
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Low-income countries
+Lower-middle-income countries
+Luxembourg
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Mauritania
+Mauritius
+Melanesia
+Mexico
+Micronesia (country)
+Moldova
+Monaco
+Mongolia
+Montenegro
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+North Korea
+North Macedonia
+Norway
+Oceania
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Puerto Rico
+Qatar
+Romania
+Russia
+Rwanda
+Saint Kitts and Nevis
+Saint Lucia
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South America
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+Upper-middle-income countries
+Uruguay
+Uzbekistan
+Vanuatu
+Venezuela
+Vietnam
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+ Clear selection
+Research & Writing
+Increasing agricultural productivity across Sub-Saharan Africa is one of the most important problems this century
+
+Agricultural productivity across Sub-Saharan Africa needs to improve to reduce hunger, poverty, and the destruction of biodiversity.
+
+Hannah Ritchie
+
+Do we only have 60 harvests left?
+
+Claims that the world has only 100, 60, or even 30 years of harvests left often hit the headlines. These claims are overblown, but soil erosion is a problem and we can do something about it.
+
+Hannah Ritchie
+
+More key articles on Crop Yields
+To protect the world’s wildlife we must improve crop yields – especially across Africa
+
+Hannah Ritchie
+
+After millennia of agricultural expansion, the world has passed ‘peak agricultural land’
+
+Hannah Ritchie
+
+Yields vs. Land Use: How the Green Revolution enabled us to feed a growing population
+
+Hannah Ritchie
+
+Key Charts on Crop Yields
+See all charts on this topic
+Cereal yield vs. fertilizer use
+Cereal yields
+Change in cereal production, yield, land use and population
+Crop yields
+How much cropland has the world spared due to increases in crop yields?
+Almond yields
+Area of land needed to meet global vegetable oil demand
+Area of land needed to produce one tonne of vegetable oil
+Banana yields
+Barley yields
+Bean yields
+Cashew nut yields
+Cassava yields
+Cereal yield vs. GDP per capita
+Cereal yield vs. extreme poverty rate
+Change in production, yield and land use of oil palm fruit
+Cocoa bean yields
+Coffee bean yields
+Corn yields
+Corn: Attainable crop yields
+Corn: Yield gap
+Cotton yields
+Groundnut yields
+Lettuce yields
+Millet yields
+Oil palm fruit yields
+Oil yields by crop type
+Orange yields
+Pea yields
+Potato yields
+Rapeseed yields
+Rice yields
+Rye yields
+Sorghum yields
+Soybean yields
+Sugar beet yields
+Sugar cane yields
+Sunflower seed yields
+Tomato yields
+Wheat yields
+Which countries overapplied nitrogen without gains in crop yields?
+Yields of important staple crops
+Chart 1 of 42
+Cite this work
+
+Our articles and data visualizations rely on work from many different people and organizations. When citing this topic page, please also cite the underlying data sources. This topic page can be cited as:
+
+Hannah Ritchie, Pablo Rosado, and Max Roser (2022) - “Crop Yields” Published online at OurWorldinData.org. Retrieved from: 'https://ourworldindata.org/crop-yields' [Online Resource]
+
+BibTeX citation
+
+@article{owid-crop-yields,
+    author = {Hannah Ritchie and Pablo Rosado and Max Roser},
+    title = {Crop Yields},
+    journal = {Our World in Data},
+    year = {2022},
+    note = {https://ourworldindata.org/crop-yields}
+}
+Reuse this work freely
+
+All visualizations, data, and articles produced by Our World in Data are completely open access under the Creative Commons BY license. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited.
+
+The data produced by third parties and made available by Our World in Data is subject to the license terms from the original third-party authors. We will always indicate the original source of the data in our documentation, so you should always check the license of any such third-party data before use and redistribution.
+
+All of our charts can be embedded in any site.
+
+Our World in Data is free and accessible for everyone.
+
+Help us do this work by making a donation.
+
+Donate now
+
+Our World in Data is a project of Global Change Data Lab, a nonprofit based in the UK (Reg. Charity No. 1186433). Our charts, articles, and data are licensed under CC BY, unless stated otherwise. The source code for our tools and software is made publicly available for transparency and educational reference under a custom license. Re-use requires permission. Third-party materials, including some charts and data, are subject to third-party licenses. See our FAQs for more details.
+
+EXPLORE
+Topics
+Data
+Insights
+RESOURCES
+Latest
+SDG Tracker
+Teaching with OWID
+ABOUT
+About us
+Organization
+Funding
+Team
+Jobs
+FAQs
+RSS FEEDS
+Research & Writing
+Data Insights
+FOLLOW US
+Privacy policy
+Cookie notice
+Legal disclaimer
+Grapher license
+Send feedback
+Subscribe
+ Feedback
+Cookies help us build a better website
+
+We are a non-profit that relies on reader donations. We never use ads on our website or sell user data.
+
+Reject optional cookies
+Accept optional cookies
+
+We use a small number of cookies and similar technologies to make our website work. Some of these are essential and can't be switched off. Other optional cookies help us better understand how our website is used — by accepting these, you can help us improve our publication for everyone. Read more in our Privacy Policy or manage your cookie settings.

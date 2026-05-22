@@ -1,0 +1,626 @@
+Our World
+in Data
+Browse by topic
+Data
+Insights
+Resources
+About
+Donate
+DATA
+Corn yieldsUSDA/NASS
+SEE ALL DATA AND RESEARCH ON:
+Crop Yields
+Explore the Data
+Research & Writing
+All Charts
+Sources & Processing
+Reuse This Work
+Corn yields, 2025
+
+
+Yields are measured in tonnes per hectare.
+
+Table
+Map
+Line
+Bar
+No data
+0 t
+1 t
+2 t
+5 t
+10 t
+20 t
+1866
+2025
+
+Data source: USDA National Agricultural Statistics Service (NASS) (2026); Food and Agriculture Organization of the United Nations
+(2025) – Learn more about this data
+
+OurWorldinData.org/crop-yields | CC BY
+SELECT COUNTRIES AND REGIONS
+Search for a country or region
+Sort by: Maize yield, 2025
+ 
+Name
+Population
+GDP per capita (int. $)
+Maize yield
+Filter by type: All (214)
+ 
+All
+Countries
+Continents
+Income groups
+United States 
+11.71
+North America 
+9.66
+United Arab Emirates
+22.47
+Qatar
+19.24
+Kuwait
+16.87
+Tajikistan
+15.84
+Israel
+15.69
+Saint Vincent and the Grenadines
+13.34
+New Caledonia
+12.45
+Spain
+12.12
+Uzbekistan
+11.92
+Mauritius
+11.89
+New Zealand
+11.3
+Azerbaijan
+10.81
+Chile
+10.81
+Canada
+10.59
+Turkey
+10.26
+High-income countries
+10.09
+Germany
+10.05
+Switzerland
+9.98
+Italy
+9.97
+Austria
+9.9
+Greece
+9.67
+Portugal
+9.48
+Bangladesh
+9.25
+France
+9.2
+Slovenia
+9.2
+Netherlands
+8.45
+Belgium
+8.33
+Czechia
+8.14
+Lithuania
+7.87
+Bahamas
+7.74
+Egypt
+7.59
+Croatia
+7.57
+Kyrgyzstan
+7.32
+Poland
+7.22
+Slovakia
+7.22
+Saudi Arabia
+7.13
+Albania
+7.12
+Oceania
+7.01
+Denmark
+6.89
+Luxembourg
+6.88
+European Union (27)
+6.79
+Sweden
+6.77
+Iran
+6.67
+Ukraine
+6.6
+China
+6.59
+Argentina
+6.58
+Europe
+6.36
+Bosnia and Herzegovina
+6.25
+Kazakhstan
+6.2
+Pakistan
+6.13
+Cambodia
+6.09
+Taiwan
+6
+Algeria
+6
+Hungary
+6
+Australia
+5.95
+Indonesia
+5.94
+Upper-middle-income countries
+5.92
+Asia
+5.85
+Russia
+5.84
+South Korea
+5.71
+Syria
+5.68
+Belarus
+5.67
+South America
+5.59
+Brazil
+5.43
+Papua New Guinea
+5.41
+Armenia
+5.19
+Serbia
+5.17
+Vietnam
+5.11
+Oman
+5.05
+Iraq
+5
+Laos
+4.97
+South Africa
+4.87
+Uruguay
+4.7
+Thailand
+4.66
+North Macedonia
+4.6
+Melanesia
+4.5
+Ecuador
+4.36
+Colombia
+4.34
+Venezuela
+4.34
+Malaysia
+4.18
+Maldives
+4.17
+Paraguay
+4.15
+Suriname
+4.02
+Panama
+4.01
+North Korea
+3.93
+Myanmar
+3.93
+Belize
+3.82
+Mexico
+3.7
+Bhutan
+3.67
+Peru
+3.66
+Montenegro
+3.64
+India
+3.54
+Puerto Rico
+3.5
+Nepal
+3.49
+Ethiopia
+3.44
+Fiji
+3.32
+Philippines
+3.31
+Bulgaria
+3.25
+El Salvador
+3.08
+Sri Lanka
+3.07
+Georgia
+3.07
+Lebanon
+3
+Turkmenistan
+2.96
+Lower-middle-income countries
+2.84
+Romania
+2.83
+Senegal
+2.81
+Barbados
+2.79
+Ghana
+2.77
+Japan
+2.69
+Cote d'Ivoire
+2.56
+Bolivia
+2.53
+Mali
+2.47
+Guatemala
+2.26
+Libya
+2.22
+Zambia
+2.21
+Uganda
+2.17
+Africa
+2.07
+East Timor
+2.06
+Djibouti
+2.04
+Nigeria
+2.03
+Sao Tome and Principe
+2
+Malawi
+2
+Antigua and Barbuda
+1.96
+Afghanistan
+1.93
+Dominican Republic
+1.92
+Cuba
+1.91
+Costa Rica
+1.9
+Honduras
+1.9
+Low-income countries
+1.88
+Rwanda
+1.83
+Cameroon
+1.83
+Madagascar
+1.83
+Tanzania
+1.76
+Comoros
+1.72
+Sierra Leone
+1.7
+Dominica
+1.69
+Burkina Faso
+1.68
+Kenya
+1.67
+Moldova
+1.62
+Yemen
+1.57
+Gabon
+1.56
+Micronesia (country)
+1.45
+Guinea
+1.44
+Guyana
+1.36
+Jamaica
+1.34
+Chad
+1.27
+Togo
+1.26
+Burundi
+1.23
+Niger
+1.22
+Benin
+1.19
+Angola
+1.19
+Eswatini
+1.07
+Congo
+1
+Guinea-Bissau
+1
+Eritrea
+1
+Grenada
+1
+Sudan
+0.97
+South Sudan
+0.96
+Namibia
+0.93
+Gambia
+0.93
+Mozambique
+0.81
+Haiti
+0.77
+Democratic Republic of Congo
+0.77
+Central African Republic
+0.74
+Zimbabwe
+0.73
+Morocco
+0.72
+Somalia
+0.69
+Mauritania
+0.64
+Vanuatu
+0.64
+Lesotho
+0.63
+Botswana
+0.6
+Cape Verde
+0.04
+Andorra
+No data
+Bahrain
+No data
+Brunei
+No data
+Cyprus
+No data
+Equatorial Guinea
+No data
+Estonia
+No data
+Finland
+No data
+French Guiana
+No data
+French Southern Territories
+No data
+Greenland
+No data
+Iceland
+No data
+Ireland
+No data
+Jordan
+No data
+Kiribati
+No data
+Kosovo
+No data
+Latvia
+No data
+Liberia
+No data
+Liechtenstein
+No data
+Malta
+No data
+Marshall Islands
+No data
+Monaco
+No data
+Mongolia
+No data
+Nauru
+No data
+Nicaragua
+No data
+Norway
+No data
+Palau
+No data
+Palestine
+No data
+Saint Kitts and Nevis
+No data
+Saint Lucia
+No data
+Samoa
+No data
+San Marino
+No data
+Seychelles
+No data
+Singapore
+No data
+Solomon Islands
+No data
+Tonga
+No data
+Trinidad and Tobago
+No data
+Tunisia
+No data
+Tuvalu
+No data
+United Kingdom
+No data
+Western Sahara
+No data
+About this data
+CORN YIELDS
+USDA/NASS
+Average corn yields measured in tonnes per hectare.
+Source
+USDA National Agricultural Statistics Service (NASS) (2026); Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data
+Last updated
+March 2, 2026
+Next expected update
+March 2027
+Date range
+1866–2025
+Unit
+tonnes per hectare
+Related research and writing
+Why is improving agricultural productivity crucial to ending global hunger and protecting the world’s wildlife?
+Max Roser
+Explore charts that include this data
+Sources and processing
+This data is based on the following sources
+USDA National Agricultural Statistics Service (NASS) – Long-term corn yields in United States
+Retrieved on
+March 2, 2026
+Retrieved from
+https://quickstats.nass.usda.gov/
+Citation
+This is the citation of the original data obtained from the source, prior to any processing or adaptation by Our World in Data. To cite data downloaded from this page, please use the suggested citation given in Reuse This Work below.
+National Agricultural Statistics Service of the United States Department of Agriculture (USDA/NASS) - Long-term corn yields in United States (2026).
+Food and Agriculture Organization of the United Nations – Production: Crops and livestock products
+
+Crop and livestock statistics are recorded for 278 products, covering the following categories:
+
+Crops primary: Cereals, Citrus Fruit, Fibre Crops, Fruit, Oil Crops, Oil Crops and Cakes in Oil Equivalent, Pulses, Roots and Tubers, Sugar Crops, Treenuts and Vegetables. Data are expressed in terms of area harvested, production quantity and yield. Cereals: Area and production data on cereals relate to crops harvested for dry grain only. Cereal crops harvested for hay or harvested green for food, feed or silage or used for grazing are therefore excluded.
+
+Crops processed: Beer of barley; Cotton lint; Cottonseed; Margarine, short; Molasses; Oil, coconut (copra); Oil, cottonseed; Oil, groundnut; Oil, linseed; Oil, maize; Oil, olive, virgin; Oil, palm; Oil, palm kernel; Oil, rapeseed; Oil, safflower; Oil, sesame; Oil, soybean; Oil, sunflower; Palm kernels; Sugar Raw Centrifugal; Wine.
+
+Live animals: Animals live n.e.s.; Asses; Beehives; Buffaloes; Camelids, other; Camels; Cattle; Chickens; Ducks; Geese and guinea fowls; Goats; Horses; Mules; Pigeons, other birds; Pigs; Rabbits and hares; Rodents, other; Sheep; Turkeys.
+
+Livestock primary: Beeswax; Eggs (various types); Hides buffalo, fresh; Hides, cattle, fresh; Honey, natural; Meat (ass, bird nes, buffalo, camel, cattle, chicken, duck, game, goat, goose and guinea fowl, horse, mule, Meat nes, meat other camelids, Meat other rodents, pig, rabbit, sheep, turkey); Milk (buffalo, camel, cow, goat, sheep); Offals, nes; Silk-worm cocoons, reelable; Skins (goat, sheep); Snails, not sea; Wool, greasy.
+
+Livestock processed: Butter (of milk from sheep, goat, buffalo, cow); Cheese (of milk from goat, buffalo, sheep, cow milk); Cheese of skimmed cow milk; Cream fresh; Ghee (cow and buffalo milk); Lard; Milk (dry buttermilk, skimmed condensed, skimmed cow, skimmed dried, skimmed evaporated, whole condensed, whole dried, whole evaporated); Silk raw; Tallow; Whey (condensed and dry); Yoghurt.
+
+Retrieved on
+February 25, 2026
+Retrieved from
+http://www.fao.org/faostat/en/#data/QCL
+Citation
+This is the citation of the original data obtained from the source, prior to any processing or adaptation by Our World in Data. To cite data downloaded from this page, please use the suggested citation given in Reuse This Work below.
+Food and Agriculture Organization of the United Nations - Production: Crops and livestock products (2025).
+How we process data at Our World in Data
+
+All data and visualizations on Our World in Data rely on data sourced from one or several original data providers. Preparing this original data involves several processing steps. Depending on the data, this can include standardizing country names and world region definitions, converting units, calculating derived indicators such as per capita measures, as well as adding or adapting metadata such as the name or the description given to an indicator.
+
+At the link below you can find a detailed description of the structure of our data pipeline, including links to all the code used to prepare data across Our World in Data.
+
+Read about our data pipeline
+Reuse this work
+All data produced by third-party providers and made available by Our World in Data are subject to the license terms from the original providers. Our work would not be possible without the data providers we rely on, so we ask you to always cite them appropriately (see below). This is crucial to allow data providers to continue doing their work, enhancing, maintaining and updating valuable data.
+All data, visualizations, and code produced by Our World in Data are completely open access under the Creative Commons BY license. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited.
+Citations
+HOW TO CITE THIS PAGE
+
+To cite this page overall, including any descriptions, FAQs or explanations of the data authored by Our World in Data, please use the following citation:
+
+“Data Page: Corn yields”, part of the following publication: Hannah Ritchie, Pablo Rosado, and Max Roser (2022) - “Crop Yields”. Data adapted from USDA National Agricultural Statistics Service (NASS), Food and Agriculture Organization of the United Nations. Retrieved from https://archive.ourworldindata.org/20260518-093348/grapher/maize-yields.html [online resource] (archived on May 18, 2026).
+HOW TO CITE THIS DATA
+
+In-line citation
+If you have limited space (e.g. in data visualizations), you can use this abbreviated in-line citation:
+
+USDA National Agricultural Statistics Service (NASS) (2026); Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data
+
+Full citation
+
+USDA National Agricultural Statistics Service (NASS) (2026); Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data. “Corn yields – USDA/NASS” [dataset]. USDA National Agricultural Statistics Service (NASS), “Long-term corn yields in United States”; Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data]. Retrieved May 22, 2026 from https://archive.ourworldindata.org/20260518-093348/grapher/maize-yields.html (archived on May 18, 2026).
+Download
+QUICK DOWNLOAD
+
+Download the data shown in this chart as a ZIP file containing a CSV file, metadata in JSON format, and a README. The CSV file can be opened in Excel, Google Sheets, and other data analysis tools.
+
+Download full data
+
+Includes all entities and time points
+
+Download displayed data
+
+Includes only the entities and time points currently visible in the chart
+
+DATA API
+
+Use these URLs to programmatically access this chart's data and configure your requests with the options below. Our documentation provides more information on how to use the API, and you can find a few code examples below.
+
+Download full data, including all entities and time points
+Download only the currently selected data visible in the chart
+Data URL (CSV format)
+https://ourworldindata.org/grapher/maize-yields.csv?v=1&csvType=full&useColumnShortNames=false
+Metadata URL (JSON format)
+https://ourworldindata.org/grapher/maize-yields.metadata.json?v=1&csvType=full&useColumnShortNames=false
+Code examples
+
+Examples of how to load this data into different data analysis tools.
+
+Our World in Data is free and accessible for everyone.
+
+Help us do this work by making a donation.
+
+Donate now
+
+Our World in Data is a project of Global Change Data Lab, a nonprofit based in the UK (Reg. Charity No. 1186433). Our charts, articles, and data are licensed under CC BY, unless stated otherwise. The source code for our tools and software is made publicly available for transparency and educational reference under a custom license. Re-use requires permission. Third-party materials, including some charts and data, are subject to third-party licenses. See our FAQs for more details.
+
+EXPLORE
+Topics
+Data
+Insights
+RESOURCES
+Latest
+SDG Tracker
+Teaching with OWID
+ABOUT
+About us
+Organization
+Funding
+Team
+Jobs
+FAQs
+RSS FEEDS
+Research & Writing
+Data Insights
+FOLLOW US
+Privacy policy
+Cookie notice
+Legal disclaimer
+Grapher license
+Send feedback
+Subscribe
+ Feedback
+Cookies help us build a better website
+
+We are a non-profit that relies on reader donations. We never use ads on our website or sell user data.
+
+Reject optional cookies
+Accept optional cookies
+
+We use a small number of cookies and similar technologies to make our website work. Some of these are essential and can't be switched off. Other optional cookies help us better understand how our website is used — by accepting these, you can help us improve our publication for everyone. Read more in our Privacy Policy or manage your cookie settings.

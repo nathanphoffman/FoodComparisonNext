@@ -1,0 +1,247 @@
+Jump to content
+Main menu
+Search
+Donate
+Create account
+Log in
+Contents hide
+(Top)
+Background
+Conversion ratios for livestock
+Toggle Conversion ratios for livestock subsection
+Beef cattle
+Dairy cattle
+Pigs
+Sheep
+Poultry
+Carnivorous fish
+Herbivorous and omnivorous fish
+Rabbits
+Global averages by species and production systems
+Feed conversion ratios of meat alternatives
+Toggle Feed conversion ratios of meat alternatives subsection
+Insects
+Meat analogue
+Cultured meat
+See also
+References
+Feed conversion ratio
+8 languages
+Article
+Talk
+Read
+Edit
+View history
+Tools
+Appearance hide
+Text
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Color
+Automatic
+Light
+Dark
+From Wikipedia, the free encyclopedia
+
+In animal husbandry, feed conversion ratio (FCR) or feed conversion rate is a ratio or rate measuring of the efficiency with which the bodies of livestock convert animal feed into the desired output. For dairy cows, for example, the output is milk, whereas in animals raised for meat (such as beef cows,[1] pigs, chickens, and fish) the output is the flesh, that is, the body mass gained by the animal, represented either in the final mass of the animal or the mass of the dressed output. FCR is the mass of the input divided by the output (thus mass of feed per mass of milk or meat). In some sectors, feed efficiency, which is the output divided by the input (i.e. the inverse of FCR), is used. These concepts are also closely related to efficiency of conversion of ingested foods (ECI).
+
+Background[edit]
+
+Feed conversion ratio (FCR) is the ratio of inputs to outputs; it is the inverse of "feed efficiency" which is the ratio of outputs to inputs.[2] FCR is widely used in hog and poultry production, while FE is used more commonly with cattle.[2] Being a ratio the FCR is dimensionless, that is, it is not affected by the units of measurement used to determine the FCR.[3]
+
+FCR a function of the animal's genetics[4] and age,[5] the quality and ingredients of the feed,[5] and the conditions in which the animal is kept,[1][6] and storage and use of the feed by the farmworkers.[7]
+
+As a rule of thumb, the daily FCR is low for young animals (when relative growth is large) and increases for older animals (when relative growth tends to level out). However FCR is a poor basis to use for selecting animals to improve genetics, as that results in larger animals that cost more to feed; instead residual feed intake (RFI) is used which is independent of size.[8] RFI uses for output the difference between actual intake and predicted intake based on an animal's body weight, weight gain, and composition.[8][9]
+
+The outputs portion may be calculated based on weight gained, on the whole animal at sale, or on the dressed product; with milk it may be normalized for fat and protein content.[10]
+
+As for the inputs portion, although FCR is commonly calculated using feed dry mass, it is sometimes calculated on an as-fed wet mass basis, (or in the case of grains and oilseeds, sometimes on a wet mass basis at standard moisture content), with feed moisture resulting in higher ratios.[11]
+
+Conversion ratios for livestock[edit]
+
+Animals that have a low FCR are considered efficient users of feed. However, comparisons of FCR among different species may be of little significance unless the feeds involved are of similar quality and suitability.
+
+Beef cattle[edit]
+
+As of 2013 in the US, an FCR calculated on live weight gain of 4.5–7.5 was in the normal range with an FCR above 6 being typical.[8] Divided by an average carcass yield of 62.2%, the typical carcass weight FCR is above 10. As of 2013, FCRs had not changed much compared to other fields in the prior 30 years, especially compared to poultry which had improved feed efficiency by about 250% over the last 50 years.[8]
+
+Dairy cattle[edit]
+
+The dairy industry traditionally didn't use FCR but in response to increasing concentration in the dairy industry and other livestock operations, the EPA updated its regulations in 2003 controlling manure and other waste releases produced by livestock operators.[12]: 11–11  In response, the USDA began issuing guidance to dairy farmers about how to control inputs to better minimize manure output and to minimize harmful contents, as well as optimizing milk output.[13][14]
+
+In the US, the price of milk is based on the protein and fat content, so the FCR is often calculated to take that into account.[15] Using an FCR calculated just on the weight of protein and fat, as of 2011 an FCR of 13 was poor, and an FCR of 8 was very good.[15]
+
+Another method for dealing with pricing based on protein and fat, is using energy-corrected milk (ECM), which adds a factor to normalize assuming certain amounts of fat and protein in a final milk product; that formula is (0.327 x milk mass) + (12.95 x fat mass) + (7.2 x protein mass).[11]
+
+In the dairy industry, feed efficiency (ECM/intake) is often used instead of FCR (intake/ECM); an FE less than 1.3 is considered problematic.[13][11]
+
+FE based simply on the weight of milk is also used; an FE between 1.30 and 1.70 is normal.[10]
+
+Pigs[edit]
+
+Pigs have been kept to produce meat for 5,000 to 9,000 years.[16] As of 2011, pigs used commercially in the UK and Europe had an FCR, calculated using weight gain, of about 1 as piglets and ending about 3 at time of slaughter.[5] As of 2012, in Australia and using dressed weight for the output, an FCR calculated using weight of dressed meat of 4.5 was fair, 4.0 was considered "good", and 3.8, "very good".[17]
+
+The FCR of pigs is greatest up to the period, when pigs weigh 220 pounds. During this period, their FCR is 3.5.[16] Their FCR begins increasing gradually after this period. For instance, in the US as of 2012, commercial pigs had FCR calculated using weight gain, of 3.46 for while they weighed between 240 and 250 pounds, 3.65 between 250 and 260 pounds, 3.87 between 260 and 270 lbs, and 4.09 between 280 and 270 lbs.[18]
+
+Because FCR calculated on the basis of weight gained gets worse after pigs mature, as it takes more and more feed to drive growth, countries that have a culture of slaughtering pigs at very high weights, like Japan and Korea, have poor FCRs.[5]
+
+Sheep[edit]
+
+Some data for sheep illustrate variations in FCR. An FCR (kg feed dry matter intake per kg live mass gain) for lambs is often in the range of about 4 to 5 on high-concentrate rations,[19][20][21] 5 to 6 on some forages of good quality,[22] and more than 6 on feeds of lesser quality.[23] On a diet of straw, which has a low metabolizable energy concentration, FCR of lambs may be as high as 40.[24] Other things being equal, FCR tends to be higher for older lambs (e.g. 8 months) than younger lambs (e.g. 4 months).[21]
+
+Poultry[edit]
+
+As of 2011, in the US, broiler chickens has an FCR of 1.6 based on body weight gain, and mature in 39 days.[25] At around the same time, the FCR based on weight gain for broilers in Brazil was 1.8.[25] The global average in 2013 is around 2.0 for weight gain (live weight) and 2.8 for slaughtered meat (carcass weight).[26]
+
+For hens used in egg production in the US, as of 2011 the FCR was about 2, with each hen laying about 330 eggs per year.[25] When slaughtered, the world average layer flock as of 2013 yields a carcass FCR of 4.2, still much better than the average backyard chicken flock (FCR 9.2 for eggs, 14.6 for carcass).[26]
+
+From the early 1960s to 2011, in the US, broiler growth rates doubled and their FCRs halved, mostly due to improvements in genetics and rapid dissemination of the improved chickens.[25] The improvement in genetics for growing meat created challenges for farmers who breed the chickens that are raised by the broiler industry, as the genetics that cause fast growth decreased reproductive abilities.[27]
+
+Carnivorous fish[edit]
+
+In aquaculture, the fish feed for carnivorous fish commonly includes fish-derived products in the form of fishmeal and fish oil. There are therefore two ratios to be reported:[28][29]
+
+The regular feed conversion ratio, i.e. output fish mass divided by total feed mass.
+The conversion ratio only taking into account the fish-based component of fish feed, called the FIFO ratio (or Fish In – Fish Out ratio). FIFO is fish in (the mass of harvested fish used to feed farmed fish) divided by fish out (mass of the resulting farmed fish).
+
+FIFO is a way of expressing the contribution from harvested wild fish used in aquafeed compared with the amount of edible farmed fish, as a ratio. The fish used in fishmeal and fish oil production are not used for human consumption, but with their use as fishmeal and fish oil in aquafeed they contribute to global food production.
+
+Fishmeal and fish oil inclusion rates in aquafeeds have shown a continual decline over time as aquaculture grows and more feed is produced, but with a finite annual supply of fishmeal and fish oil. Calculations have shown that the overall fed aquaculture FIFO declined from 0.63 in 2000 to 0.33 in 2010, and 0.22 in 2015. In 2015, therefore, approximately 4.55 kg of farmed fish was produced for every 1 kg of wild fish harvested and used in feed. (For Salmon & Trout, the FIFO ratios for 2000, 2010, and 2015 are: 2.57, 1.38, 0.82.)[30]
+
+As of 2015 farm-raised Atlantic salmon had a commodified feed supply with four main suppliers, and an FCR of around 1.[31] Tilapia is about 1.5,[32] and as of 2013 farmed catfish had an FCR of about 1.[8]
+
+It is possible for fish to have an FCR below 1 despite obvious energy losses in feed-to-meat conversion. Fish feed tends to be dry food with higher energy density than water-rich fish flesh.[33]
+
+Herbivorous and omnivorous fish[edit]
+
+For herbivorous and omnivorous fish like Chinese carp and tilapia, the plant-based feed yields much lower FCR compared to carnivorous kept on a partially fish-based diet, despite a decrease in overall resource use. The edible (fillet) FCR of tilapia is around 4.6 and the FCR of Chinese carp is around 4.9.[34]
+
+Rabbits[edit]
+
+In India, rabbits raised for meat had an FCR of 2.5 to 3.0 on high grain diet and 3.5 to 4.0 on natural forage diet, without animal-feed grain.[35]
+
+Global averages by species and production systems[edit]
+
+In a global study, FAO estimated various feed conversion ratios, taking into account the diversity of feed material consumed by livestock.[36][37] At global level, ruminants require 133 kg of dry matter per kg of protein while monogastrics require 30 kg.[36][37] However, when considering human edible feed only, ruminants require 5.9 kg of feed to produce 1 kg of animal protein, while monogastrics require 15.8 kg.[36][37] When looking at meat only, ruminants consume an average of 2.8 kg of human edible feed per kg of meat produced, while monogastrics need 3.2 kg.[36][37] Finally, when accounting for the protein content of the feed, ruminant need an average of 0.6 kg of edible plant protein to produce 1 kg of animal protein while monogastric need 2 kg.[36][37] This means that ruminants make a positive net contribution to the supply of edible protein for humans at global level.[36][37]
+
+Feed conversion ratios of meat alternatives[edit]
+
+Many alternatives to conventional animal meat sources have been proposed for higher efficiency, including insects, meat analogues, and cultured meats.[34]
+
+Insects[edit]
+
+Although there are few studies of the feed conversion ratios of edible insects, the house cricket (Acheta domesticus) has been shown to have an FCR of 0.9 - 1.1 depending on diet composition.[38] A more recent work gives an FCR of 1.9–2.4. Reasons contributing to such a low FCR include the whole body being used for food, the lack of internal temperature control (insects are poikilothermic), high fecundity and rate of maturation.[34]
+
+Meat analogue[edit]
+
+If one treats tofu as a meat, the FCR reaches as low as 0.29. The FCRs for less watery forms of meat analogues are unknown.[34]
+
+Cultured meat[edit]
+
+Although cultured meat has a potentially much lower land footprint required, its FCR is closer to poultry at around 4 (2-8). It has a high need for energy inputs.[34]
+
+See also[edit]
+Entomophagy
+Food vs. feed
+Life-cycle assessment
+References[edit]
+^ 
+Jump up to:
+a b Dan Shike, University of Illinois Beef Cattle Feed Efficiency
+^ 
+Jump up to:
+a b DJ Cottle and WS Pitchford. Production Efficiency. Chapter 18 in Beef Cattle Production and Trade, Ed Lewis Kahn. Csiro Publishing, 2014 ISBN 978-0-643-10989-6 Pp 439-440
+^ Stickney, Robert R. (2009) Aquaculture: An Introductory Text, page 248, CABI, ISBN 978-1-84593-589-4.
+^ Arthur P.F. et al. 2014 Lessons Learnt from 25 Years of Feed Efficiency Research in Australia. Proceedings, 10th World Congress of Genetics Applied to Livestock Production. Abstract here [1]
+^ 
+Jump up to:
+a b c d Mike Varley for Pig Progress. Taking control of feed conversion ratio Apr 1, 2009, Last update:Jan 26, 2011
+^ National Research Council (Subcommittee on Environmental Stress). 1981. Effect of environment on nutrient requirements of domestic animals. National Academy Press, Washington. 168 pp.
+^ Dennis DiPietre for Pig 333. April 21, 2014 Feed Conversion Ratio: critically important but often misused
+^ 
+Jump up to:
+a b c d e Dan W. Shike, Ph.D., University of Illinois at Urbana-Champaign Driftless Region Beef Conference 2013 Beef Cattle Feed Efficiency
+^ Travis D. Maddock, Darren D. Henry, and G. Cliff Lamb. Animal Sciences Department, UF/IFAS Extension. AN217: The Economic Impact of Feed Efficiency in Beef Cattle Original publication date May 2009. Revised October 2015.
+^ 
+Jump up to:
+a b Robert C. Fry, Atlantic Dairy Management Services. Measuring Feed Efficiency Why & How on the Back of a Napkin
+^ 
+Jump up to:
+a b c Virginia Ishler for Progressive Dairyman. June 30, 2014 Calculating feed efficiency
+^ Cornell University, University of Wisconsin-Madison, USDA-Agricultural Research Service, Dairy Forage Research Center April 30, 2004 Whole-Farm Nutrient Management on Dairy Farms to Improve Profitability and Reduce Environmental Impacts
+^ 
+Jump up to:
+a b Michael F. Hutjens August 21, 2012 Feed Efficiency and Its Impact on Feed Intake
+^ USDA Natural Resources Conservation Service Conservation Practice Standard: Feed Management: (Animal Units (AUs) Affected): Code 592. September 2011
+^ 
+Jump up to:
+a b Tony Hall for Eastern Dairy Business September 2011 Define And Improve Your Herd's Feed Conversion Ratio
+^ 
+Jump up to:
+a b Jukes TH (February 1992). "Today's non-Orwellian animal farm". Nature. 355 (6361): 582. doi:10.1038/355582a0. PMID 1538742. S2CID 4308400.
+^ Department of Agriculture and Fisheries, Queensland Government. Managing a piggery >> Production and performance >> Performance standards Last updated 28 September 2012
+^ David R. Stender, Iowa State University Extension. IPIC 25h. Swine Feed Efficiency: Influence of Market Weight 2012
+^ Knott, S. A., B. J. Leury, L. J. Cummins, F. D. Brien and F. R. Dunshea. 2003. Relationship between body composition, net feed intake and gross feed conversion efficiency in composite sire line sheep. In: Souffrant, W. B. and C. C. Metges (eds.). Progress in research on energy and protein metabolism. EAAP publ. no. 109. Wageningen
+^ Brand, T. S., S. W. P. Cloete and F. Franck. 1991. Wheat-straw as roughage component in finishing diets of growing lambs. S. Afr. J. Anim. Sci 21: 184-188.
+^ 
+Jump up to:
+a b National Research Council. 2007. Nutrient requirements of small ruminants. National Academies Press. 362 pp.
+^ Fahmy, M. H., J. M. Boucher, L. M. Pose, R. Grégoire, G. Butler and J. E. Comeau. 1992. Feed efficiency, carcass characteristics, and sensory quality of lambs, with or without prolific ancestry, fed diets with different protein supplements. J. Anim. Sci. 70: 1365-1374
+^ Malik, R. C., M. A. Razzaque, S. Abbas, N. Al-Khozam and S. Sahni. 1996. Feedlot growth and efficiency of three-way cross lambs as affected by genotype, age and diet. Proc. Aust. Soc. Anim. Prod. 21: 251-254.
+^ Cronjé. P. B. and E. Weites. 1990. Live mass, carcass and wool growth responses to supplementation of a roughage diet with sources of protein and energy in South African Mutton Merino lambs. S. Afr. J. Anim. Sci. 20: 141-168
+^ 
+Jump up to:
+a b c d Peter Best for WATTagnet.com November 24, 2011 Poultry performance improves over past decades
+^ 
+Jump up to:
+a b MacLeod, M.; Gerber, P.; Mottet, A.; Tempio, G.; Falcucci, A.; Opio, C.; Vellinga, T.; Henderson, B.; Steinfeld, H. (2013). Greenhouse gas emissions from pig and chicken supply chains – a global life cycle assessment (PDF). Food and Agriculture Organization of the United Nations. ISBN 978-92-5-107944-7.
+^ Mississippi State University Extension Service Broiler Breeder Management Is No Easy Task, 2013
+^ "FIFO explanation document" (PDF). Archived from the original (PDF) on 2016-10-10. Retrieved 2016-06-04.
+^ "FIFO explained". Archived from the original on 2016-07-01. Retrieved 2016-06-04.
+^ "Fish in: Fish Out (FIFO) ratios for the conversion of wild feed to farmed fish, including salmon | IFFO - The Marine Ingredients Organisation". IFFO. 2010-04-16. Retrieved 2020-04-04.
+^ FAO Cultured Aquatic Species Information Programme: Salmo salar (Linnaeus, 1758) 2004
+^ Dennis P. DeLong, Thomas M. Losordo and James E. Rakocy Southern Regional Aquaculture Center SRAC Publication No. 282: Tank Culture of Tilapia June 2009
+^ USAID Harvest. "Technical Bulletin #07: Feed Conversion Ratio (FCR): How to calculate it and how it is used" (PDF). Archived from the original (PDF) on January 31, 2017. Retrieved 22 March 2024.
+^ 
+Jump up to:
+a b c d e Alexander, Peter; Brown, Calum; Arneth, Almut; Dias, Clare; Finnigan, John; Moran, Dominic; Rounsevell, Mark D.A. (December 2017). "Could consumption of insects, cultured meat or imitation meat reduce global agricultural land use?". Global Food Security. 15: 22–32. Bibcode:2017GlFS...15...22A. doi:10.1016/j.gfs.2017.04.001. hdl:20.500.11820/17f627e0-ff81-4492-87d8-97bd6f454840.
+^ Tamilnadu Veterinary Animal Sciences University Extension Service. TNAU Animal Husbandry ::Rabbit No date on website; site accessed June 16, 2016
+^ 
+Jump up to:
+a b c d e f Mottet, A.; de Haan, C.; Falcucci, A.; Tempio, G.; Opio, C.; Gerber, P. (2022). More fuel for the food/feed debate. Rome: FAO.
+^ 
+Jump up to:
+a b c d e f Mottet, Anne; de Haan, Cees; Falcucci, Alessandra; Tempio, Giuseppe; Opio, Carolyn; Gerber, Pierre (2017-09-01). "Livestock: On our plates or eating at our table? A new analysis of the feed/food debate". Global Food Security. Food Security Governance in Latin America. 14: 1–8. Bibcode:2017GlFS...14....1M. doi:10.1016/j.gfs.2017.01.001. ISSN 2211-9124.
+^ In Huis, Arnold. (2012). Potential of Insects as Food and Feed in Assuring Food Security. Annual review of entomology. 58. 10.1146/annurev-ento-120811-153704
+show
+vte
+Meat
+
+
+show
+vte
+Ecology: Modelling ecosystems: Trophic components
+
+
+show
+vte
+Ecology: Modelling ecosystems: Other components
+
+
+Categories: LivestockPoultry farmingAnimal breeding
+This page was last edited on 21 May 2026, at 20:37 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policy
+About Wikipedia
+Disclaimers
+Contact Wikipedia
+Legal & safety contacts
+Code of Conduct
+Developers
+Statistics
+Cookie statement
+Mobile view

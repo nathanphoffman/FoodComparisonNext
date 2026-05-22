@@ -1,0 +1,302 @@
+Effective Altruism Forum
+Login
+Sign up
+Neuron Count-Based Measures May Currently Underweight Suffering in Farmed Fish
+by MHR🔸
+Dec 13 2022
+7 min read
+ 9
+70
+Animal welfareMoral weightBioethicsFish welfare
+Frontpage
+Neuron Count-Based Measures May Currently Underweight Suffering in Farmed Fish
+Summary
+The role of neuron counts in estimating moral significance
+Current neuron count data for fish
+Table 1. Fish neuron counts (PAWS)
+Species
+Average Adult Body Weight
+Neuron Count
+Source
+Resulting problems with current neuron count-based moral weights
+Table 2. Predicted neuron counts for fish based on Invincible Wellbeing's curve fits
+Implications
+9 comments
+
+Epistemic status: layperson’s attempt to understand the relevant literature. I welcome corrections from anyone with a better understanding of fish biology. 
+
+Summary
+Neuron counts have historically been used as a proxy for the moral weight of different animal species. While alternate systems have been proposed in response to criticisms of using neuron counts alone, neuron counts likely remain a useful input into these more holistic weighting processes. 
+The only publicly-available empirical reports of fish neuron counts sample exclusively from very small species (<1 g bodyweight), but many farmed fish are of species at least 1000x more massive.
+Some sources apply neuron count estimates from small fish to larger farmed fish without correction, which seems very unlikely to be reasonable given the large size differences involved.
+Even among sources that try to account for these size differences, there is significant uncertainty in how to extrapolate neuron count data from small fish to larger fish. 
+As a result, animal welfare advocates should be highly skeptical of current neuron count-based estimates of the moral weight of farmed fish, and should consider funding studies to empirically measure neuron counts in these species.
+The role of neuron counts in estimating moral significance
+
+As long as there are limited resources available for improving animal welfare, advocates will require a means of morally weighting the harm that occurs to different species. Historically, neuron counts have often been used as a proxy for moral weight in interspecies comparisons, sometimes as the sole factor used.[1] Researchers have raised issues with the direct use of neuron counts in determining moral weights, with a prominent recent example being a segment of the Rethink Priorities Moral Weight Project, which argues against the validity of neuron counts alone as a proxy for moral importance. However, even the Rethink Priorities team does not argue that neuron counts are useless, but rather, that they should be considered as just one component among many in establishing moral weight: 
+
+Overall, we suggest that neuron counts should not be used as a sole proxy for moral weight, but cannot be dismissed entirely. Rather, neuron counts should be combined with other metrics in an overall weighted score that includes information about whether different species have welfare-relevant capacities.
+
+Given this context, neuron counts will likely continue to be a meaningful factor in most plausible models for estimating interspecies relative moral importance; it is therefore important both morally and epistemically that neuron count estimates are accurate. This is especially true with respect to those species for which we can plausibly impact the welfare of a very large number of individual members. Farmed fish, of which more than 50 billion are slaughtered each year (probably more than the number of farmed chickens), are easily among those species for which it is most important to obtain a high-quality neuron count estimate. 
+
+Current neuron count data for fish 
+
+Invincible Wellbeing's Planetary Animal Welfare Survey (PAWS) spreadsheet is, to the best of my knowledge, the most comprehensive literature review of neuron count estimates across animal species. Despite this, only two fish species, both weighing less than one gram, appear in PAWS.
+
+Table 1. Fish neuron counts (PAWS)
+
+Species
+
+	
+
+Average Adult Body Weight
+
+	
+
+Neuron Count
+
+	
+
+Source
+
+
+Guppy (Poecilia reticulata)	0.41 g	4.3 million	Link
+Zebrafish (Danio rerio)	0.75 g	10 million	Link
+
+A further independent literature review revealed only a single additional estimate of a fish species’s neuron count: in What We Owe the Future, Will MacAskill cites this study of the Cleaner Fish (Labroides dimidiatus) with some relevant data (average body mass of 3.5 g and an average brain cell count of 39 million), and assumes that approximately half of these brain cells are neurons, leading to a final neuron count estimate of 20 million
+
+While MacAskill’s estimate corresponds to the largest species of the three, the 3.5 g Cleaner Fish (lighter than a Hershey’s Kiss) remains orders of magnitude smaller than common farmed species. More specifically, according to the Food and Agriculture Organization of the United Nations (FAO), the most commonly farmed fish types include carp, tilapia, catfish, perch, and salmon, all of which generally grow to at least 1 kg, or >285x larger than any species mentioned above. Note that this figure is a lower bound; as just one more dramatic example, a 3kg adult salmon would be 850x more massive than a cleaner fish or 4000x more massive than a zebrafish. 
+
+Between animal species, neuron counts generally grow sub-linearly with body mass (e.g., a German shepherd is about 1000x heavier than a mouse but only has about 50x more neurons).[2] Even so, the multiple orders-of-magnitude difference in weight between farmed fish and their better-studied counterparts still makes it extremely difficult to meaningfully estimate farmed fish’s neuron counts. 
+
+Resulting problems with current neuron count-based moral weights
+
+Currently, efforts to compute moral weights that take into account neuron counts for fish tend to do so in very unsatisfactory ways, and may substantially underestimate the moral weight of suffering in farmed fish as a result. One example is the calculator at FoodImpacts.org, which describes itself as: 
+
+a tool [that] allows you to set your priorities on these two issues in order to rank consumption of different animal species according to contributions to climate change and farmed animal suffering.
+
+For the welfare side of the comparison, the calculator uses 10 million for the neuron count of a ~3 kg salmon—the very same number empirically estimated to be the neuron count of a 0.75 g zebrafish. Given that a salmon and zebrafish differ in body weight by a factor of ~4000, this is virtually certain to be false. As a result, the calculator likely significantly underweights the moral importance of suffering in farmed fish. 
+
+This kind of underestimation is not just limited to resources directed at the public. For example, in their recent paper Moral Weights of Animals, Considering Viewpoint Uncertainty (linkpost/summary on the Forum) Richard Bruns and Jim Davies use neuron counts as one input into a Monte Carlo simulation to estimate the plausible ranges of moral weights of a variety of species. Using existing estimates of brain mass and a range of neurons/brain-gram estimates, the authors report that the plausible neuron count range of salmon (the paper’s representative farmed fish) is 8 to 64 million. 
+
+The low end of this range seems implausibly low, given that it would be lower than the neuron count of a <1 g zebrafish. The high end of this range also appears to be much lower than a reasonable maximum plausible estimate, since it would imply that the 4000x difference in body weight between salmon and zebrafish only leads to a 6.8x increase in neuron count. This result is certainly possible, but it seems unlikely to be an upper bound. 
+
+As an alternative to these very low estimates, it is worthwhile to consider the curve fits developed by Invincible Wellbeing that relate body weight and neuron count, based on fitting the data from all 131 species in their database.[3] Their result is
+
+log10(neuron count) ≈ 7.133*log10(bodyweight * 0.15) + 0.812
+
+Applying this result to the fish species of interest leads to the following results.
+
+Table 2. Predicted neuron counts for fish based on Invincible Wellbeing's curve fits
+
+Species	Average Adult Body Weight (g)	Measured Neuron Count	Predicted Neuron Count (IW Curve Fit)	Error (%)
+Guppy	
+
+0.41
+
+	
+
+4.3 million
+
+	
+
+1.4 million
+
+	
+
+-67%
+
+
+Zebrafish	
+
+0.75
+
+	
+
+10 million
+
+	
+
+2.3 million
+
+	
+
+-77%
+
+
+Salmon	
+
+3000
+
+	
+
+Unknown
+
+	
+
+1.9 billion
+
+	
+
+N/A
+
+
+Carp	
+
+1500
+
+	
+
+Unknown
+
+	
+
+1.1 billion
+
+	
+
+N/A
+
+Given that the curve fit underestimates neuron counts in guppies and zebrafish, the resulting neuron count estimates for salmon and carp would naïvely seem unlikely to be too high. However, it is commonly understood that fish brains are generally quite small relative to other mammals and birds of the same bodyweight (on the order of 1/15th the size), which are the primary larger species included in the Invincible Wellbeing dataset.[4] Applying a factor of 1/15 correction to these results leads to a neuron count estimate of 74 million for Carp and 130 million for salmon. This result for salmon is approximately twice the upper bound estimate from Bruns and Davies (2022).
+
+Implications
+
+The enormous gap between the types of fish species whose neuron counts have been studied and the types of fish species that are commonly farmed creates a significant challenge for animal welfare advocates. In the short run, it seems likely that advocates should treat all neuron count-based estimates of moral weight for large fish with significant skepticism, and should avoid placing emphasis on neuron counts when developing more holistic moral weights for fish. Moreover, if past prioritization decisions around fish have been made based on neuron count-based moral weight estimates, it seems likely that they should be reexamined. Given that fish are one of the most common farmed animals and that the global aquaculture industry is rapidly growing, any underestimate of fish's capacity for suffering could lead to major harm. 
+
+Looking to the future, this uncertainty highlights the importance of additional research. If neuron counts are thought to be at all relevant to moral weight calculations, as even the Rethink Priorities team appears to believe, then it seems critical that researchers obtain correct neuron count estimates for salmon, carp, and/or other large farmed fish. It is possible that this data already exists, and is simply not in a publicly accessible or known location. If so, it would be of great value to make this data accessible and available to all researchers working on animal welfare. If the data does not currently exist, EA organizations should consider funding efforts to obtain it. The required techniques for neuron count measurements in vertebrates are relatively well known, so getting this data is likely just a question of providing a grant to one of the labs with relevant experience.[5] This kind of research would not be costless, but would likely be a small expense compared to the $30-90 million spent per year by EA organizations on animal welfare, and could lead to significant improvements in cause prioritization in the long run. 
+
+Thank you to Aaron Bergman for providing comments on a draft version of this post.
+ 
+
+^
+
+ For another example and some justification of this usage, see What We Owe the Future (2022) by Will MacAskill, pp. 210-211: 
+
+To capture the importance of differences in capacity for wellbeing, we could, as a very rough heuristic, weight animals’ interests by the number of neurons they have. The motivating thought behind weighting by neurons is that, since we know that conscious experience of pain is the result of activity in certain neurons in the brain, then it should not matter more that the neurons are divided up among four hundred chickens rather than present in one human. If we do this, then a beetle with 50,000 neurons would have very little capacity for wellbeing; honeybees, with 960,000 neurons, would count a little more; chickens, with 200 million neurons, count a lot more; and humans,with over 80 billion neurons, count the most.
+
+^
+
+ Data from Invincible Wellbeing. Mouse: 40.4 g weight, 71 million neurons. German shepherd: 44.4 kg weight, 3.5 billion neurons.
+
+^
+
+ Note that this result is from a draft report, and may be less reliable than some other referenced sources.
+
+^
+
+ Most of the smaller species in the dataset are invertebrates, while most of the larger species in the dataset are birds and mammals, so it seems likely that the curve fit would underestimate neuron counts for small fish and overestimate neuron counts for large fish. 
+
+^
+
+Prediction markets might be another useful tool, for example to improve neuron count estimates prior to empirical research being completed 
+
+Show all footnotes
+70
+0
+0
+Mentioned in
+145
+Animal Welfare - 6 Months in 6 Minutes
+35
+Animal Advocacy Digest #3: Dec 2nd - Dec 23rd
+27
+EA & LW Forums Weekly Summary (12th Dec - 18th Dec 22')
+MORE POSTS LIKE THIS
+Comments9
+Comment
+Sorted by New & upvoted
+Click to highlight new comments since: Today at 3:07 AM
+Vasco Grilo🔸
+Sep 17 2025
+2
+0
+0
+
+Hi Matt.
+
+Invincible Wellbeing's Planetary Animal Welfare Survey (PAWS) spreadsheet is, to the best of my knowledge, the most comprehensive literature review of neuron count estimates across animal species. Despite this, only two fish species, both weighing less than one gram, appear in PAWS.
+
+Do you mean less than 1 kg? Less than 1 g seems super low for a fish.
+
+Reply
+Vasco Grilo🔸
+Sep 17 2025
+3
+0
+0
+
+Nevermind. I see zebrafish can be that light. From Siccardi III et al. (2009), "Mean weights for zebrafish fed the other diets ranged between 70.6 mg (Cyclop-eeze) and 178.5 mg (TetraMin Tropical Flakes)".
+
+Reply
+[anonymous]
+Dec 14 2022
+6
+2
+0
+
+*minor nitpick While Carp, Catfish, Tilapia, Salmonids etc are very common “ types” of fish farmed, each of those categories lumps together numerous species, while the most common farmed fish species is the pond loach https://docs.google.com/spreadsheets/d/12pA0UxIbRDcfY5g25XZ7na4duhj6411l-1-_3tRH48k/edit only weighs 4 to 5 grams https://www.fisheriesjournal.com/archives/2019/vol7issue4/PartC/7-3-62-705.pdf
+
+Reply
+MHR🔸
+Dec 14 2022
+1
+0
+0
+
+Thanks for the comment! I've corrected the wording there. Am I correct in my understanding that even though the pond loach is the most commonly farmed species, the total number of farmed carp (across all the different carp species) is quite a bit higher? 
+
+Reply
+[anonymous]
+Dec 14 2022
+2
+0
+0
+
+Yes the three top carp* species alone make up 19 billion individuals vs 11 billion pond loach
+
+*I’m treating any large member of the Cyprinidae family as a “carp” ( common names are difficult at the best of the times and even worse for fish) for these purposes
+
+Reply
+Yellow (Daryl)
+Dec 13 2022
+4
+0
+0
+
+Thank you for your impeccable attention to detail, and taking the time to spot check and challenge assumptions :D
+
+May I ask, what made you make the choice to look deeper into this issue? Do you have some amazing intuition as to when something is off? Or are just a fan of spot checking many facts? Or something alerted you as to that something may be off?
+
+Reply
+MHR🔸
+Dec 14 2022
+1
+0
+0
+
+Thanks for your comment! It's a little of both general spot checking fandom and being alerted. I generally enjoy  digging into methodologies and red-teaming results (some examples), but in this case it was a  discussion on Twitter that inspired me to look further into it. 
+
+Reply
+khazna
+Jan 17 2023
+2
+0
+0
+
+Hi, thank you for this! I'm trying to recreate your estimated numbers but can't get the right results - are you measuring body weights in grams for the curve fit?  
+
+Reply
+MHR🔸
+Jan 17 2023
+1
+0
+0
+
+Yes I am. Here is the link to my  sheet with the calculations. 
+
+Reply
+More from MHR🔸
+View more
+Curated and popular this week
+Relevant opportunities
+View more

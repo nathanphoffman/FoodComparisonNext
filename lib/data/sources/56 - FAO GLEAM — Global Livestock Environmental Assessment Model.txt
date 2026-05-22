@@ -1,0 +1,113 @@
+Discover 
+English 
+Home
+Global Livestock Environmental Assessment Model (GLEAM)
+Areas of work
+Tools and Data
+Impact
+Partners
+Resources 
+FAO’s Global Livestock Environmental Assessment Model (GLEAM) is designed to calculate environmental impacts of livestock agrifood systems.
+
+GLEAM enables policymakers, researchers, and project teams to assess the environmental performance of livestock systems and identify pathways for minimizing those impacts and improving the efficiency of natural resource use. Currently, GLEAM simulates greenhouse gas (GHG) emissions as well as water use for animal production from buffalo, camels, cattle, goats, sheep, pigs, and chickens.
+
+For GHG emissions, GLEAM adopts the IPCC Tier 2 methodology and applies a Life Cycle Assessment (LCA) approach, considering both direct farm emissions and indirect emissions throughout the production chain as methane (CH4), nitrous oxide (N2O), and carbon dioxide (CO2). Water use includes drinking and service water at farm and processing activities as well as water applied to irrigated feed crops.
+
+Quick access
+GLEAM v3 Water Use dashboard
+
+This application allows aggregation and visualization of data related to water use and water footprints in livestock agrifood systems, and considers water used for feed production, as well as direct water use for drinking water and service water.
+
+GLEAM v3 Emissions dashboard
+
+This application allows aggregation and visualization of data related to livestock numbers, animal production, greenhouse gas emissions, and emission intensities by region, production systems, and source of emissions.
+
+GLEAM-X interactive web application
+
+Coming soon
+
+GLEAM-X interactive web application is a user-friendly tool that provides access to the Global Livestock Environmental Assessment Model (GLEAM).
+
+Did you know?
+Better use of energy along supply chains could reduce the overall carbon footprint.
+
+
+Learn more   
+
+Better manure management practices could ensure the recovery and recycling of nutrients contained in manure.
+
+
+Learn more   
+
+Better husbandry and health management could reduce the unproductive part of the herd.
+
+
+Learn more   
+
+Better feeding practices could reduce enteric and manure emissions.
+
+
+Learn more   
+
+Publications
+Enhancing food security and reducing greenhouse gas emissions through dairy modernization in Georgia
+2026
+
+This assessment evaluates the outcomes and impacts of the Dairy Modernization and Market Access (DiMMA) programme in Georgia, which aimed to improve the productivity of smallholder dairy farming systems through better nutrition and feeding, veterinary care leading to better animal health, and breed improvements.
+
+The value of animal health innovations for sustainable livestock transformation
+2025
+
+Improving animal health is increasingly recognized as a vital pathway for reducing greenhouse gas (GHG) emissions from the global livestock sector while also supporting food security, climate resilience, and animal welfare.
+
+Pathways towards lower emissions
+2023
+
+This FAO report presents a comprehensive global assessment of greenhouse gas emissions from livestock systems, utilizing FAO’s Global Livestock Environmental Assessment Model (GLEAM) based on the most recent available data.
+
+Multimedia resources
+FAO Global Livestock Environmental Assessment Model (GLEAM)
+23/03/2026
+
+FAO’s Global Livestock Environmental Assessment Model (GLEAM) is designed to calculate environmental impacts of livestock agrifood systems and help...
+
+FAO LEAP: A global partnership for livestock sustainability
+16/04/2024
+
+The FAO Livestock Environmental Assessment and Performance (LEAP) Partnership is a global multi-stakeholder initiative striving for more sustainable...
+
+Livestock and enteric methane
+20/10/2022
+
+Burping livestock are a big problem for our planet. When cows and other ruminants eat, their food ferments in their gut and produces methane, which...
+
+Contacts
+
+Please contact our team for any request or information about GLEAM.
+
+info-GLEAM@fao.org
+
+Read now
+
+FAO Releases GLEAM-X R-Package as Open Source
+
+Related links
+Global Agenda for Sustainable Livestock
+Livestock Environmental Assessment and Performance (LEAP) Partnership
+Reducing Enteric Methane for improving food security and livelihoods
+Mitigation of Climate Change in agriculture (MICCA)
+Gridded Livestock of the World (GLW)
+Livestock and the environment
+Intergovernmental Panel on Climate Change (IPCC)
+FAO Livestock Systems
+Domestic Animal Diversity Information System (DAD-IS)
+FAO Climate Change
+Federal Ministry of Food and Agriculture
+Hand-in-Hand Geospatial Platform
+FAOSTAT
+Livestock and enteric methane
+FOLLOW US ON
+FAO Organizational Chart
+Worldwide offices 
+Jobs Contact us Terms and Conditions Data protection and privacy Scam Alert Report Misconduct Transparency and accountability Procurement
+© FAO 2026

@@ -1,0 +1,116 @@
+Privacy
+We use cookies to improve your experience on our site. Find out more from our cookie policy.
+Accept and close Your options
+Skip to main content
+Trade and regulation
+Seafood for Life
+Safety and training
+Responsible sourcing
+Insight and research
+News & blogs
+About us
+Responsible sourcing
+Aquaculture - farming seafood
+Species farmed in aquaculture
+Aquaculture profiles
+Atlantic Salmon
+Feed
+Jump to:
+Introduction
+Sources, Quantities and Cultivation Methods
+Governance and Outlook
+Farm Siting
+Nutrient Pollution
+Feed
+Disease, Medicines and Chemicals
+Escapes and Introductions
+Certification
+Atlantic Salmon
+Salmo salar
+Feed
+﻿
+﻿
+Fish Meal and Fish Oil
+
+
+Marine ingredients such as Fishmeal (FM) and Fish Oil (FO) provide nutrients that often cannot be found in other feed materials (e.g. particular amino acids, vitamins and minerals), and they are essential constituents of many aquafeeds. FM and FO are a finite resource and are seen by the aquaculture industry as a strategic ingredient to be used efficiently and replaced where possible1.
+
+Globally the FM and FO used in aquafeeds is increasingly derived from fishery and aquaculture processing by-product; the utilisation of these by-products as a raw material for FM and FO production is in the region of 25%-35% and this trend will continue; it is expected to rise to 49% by 20221, 2, 3.
+
+IFFO The Marine Ingredients Organisation4 (formerly known as The International Fishmeal and Fish Oil Organisation or IFFO) estimate that if aquaculture is taken as a whole, producing one tonne of fed farmed fish (excluding filter feeding species) now takes 0.22 tonnes of whole wild fish. This essentially means that for every 0.22 kg of whole wild fish used in FM production, a kilo of farmed fish is produced; in other words, for every 1 kg of wild fish used 4.5 kg of farmed fish is produced5.
+
+Perhaps the most important mitigation measure is to ensure that products such as FM and FO used to manufacture aquafeed come from legal, reported and regulated fisheries. Such fishery products can demonstrate their sourcing adheres to the United Nation Food and Agriculture Organisation (UN FAO) “Code of Conduct for Responsible Fisheries”6, known as CCRF, through several mechanisms:
+
+The Marine Stewardship Council (MSC)7 which certifies fisheries to an international standard based on FAO best-practice requirements
+IFFO RS Global Standard for Responsible Supply (IFFO RS)8 which certifies FM and FO through a process which includes the assessment of source fisheries against a set of CCRF-based requirements
+Information platforms such as FishSource9 or FisheryProgress10 which provide information and analysis without a certification or approval rating
+
+Currently around 1.9 million tonnes of FM production is certified as either IFFO RS or MSC – representing about 40% of global production; most of this comes from South America, but Europe and North America are providing significant volumes, and North Africa currently has certified production. Currently there is no certified FM product produced in China and only very small quantities (less than 10,000 tonnes) are produced in the rest of Asia (and this is from by-products)2.Aquaculture certification schemes also require that fish products used in feeds are not on the International Union for Conservation of Nature (IUCN) red lists11 of threatened species or the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES)12 lists of endangered species.
+
+GM Feed Ingredients
+
+The use of genetically modified (GM) vegetable ingredients in animal feedstuffs (including aquafeed) is an ongoing area of debate13. Whilst some contend that GM soy can help support current levels of aquaculture, global attitudes and consumer perceptions about the use of Genetically Modified Organisms (GMOs) vary in different parts of the world, with North American markets being far less averse than European ones. However, their use in all livestock feed is widespread, and in the EU food from animals fed on authorised GM crops is considered to be as safe as food from animals fed on non-GM crops14.
+
+Atlantic salmon Feed
+
+Careful management of food and feeding regimes are important to the success of salmon aquaculture. To reduce wasting aquafeed on farms, efficient feed use can be monitored and should comply with levels set in certification standards. The indicators used can include the Feed Conversion Rate or FCR (the amount of feed an animal requires to gain a kilogram of body weight), economic feed conversion ratio (eFCR), maximum fish feed equivalence ratio (FFER), or protein efficiency ratio (PER).
+
+Atlantic salmon have a requirement for a high protein diet and whilst their aquafeeds are still relatively high in FM and FO, vegetable materials are increasingly substituting these marine ingredients. The graph shows that in 1990 90% of the ingredients in Norwegian salmon feed were of marine origin, whereas in 2013 it was only around 30%15, and this trend is set to continue.
+
+Ingredient Sources: Trend in Norwegian Salmon Grow-out Feeds (15)
+
+In terms of feeding efficiency, the average FCR figure for Atlantic salmon is low at around 1.116, and improvements in FCR has reduced the feed requirement per tonne of salmon produced by around 60% since the 1980s17. IFFO The Marine Ingredients Organisation estimate that in 2015 for every 0.83 kg of whole wild fish used in FM production for all salmonids (i.e. salmon and trout) aquafeeds, a kilo of farmed salmonids are produced. This means that the salmonid feed industry supports the production of more farmed fish than it uses as feed fish, which appears to be the first time this has been recorded5.
+
+As feed companies constantly develop their aquafeed formulations the decreasing inclusion of marine ingredients will not only continue in salmon feeds but in those for a number of other aquaculture species.
+
+Flesh Pigments
+
+The pink colour of salmon flesh, wild or farmed, results from the retention of carotenoids in the fish flesh. Astaxanthin is a naturally occurring carotenoid pigment18 found in wild salmon and crustaceans. Salmon cannot make their own astaxanthin; they consume it in their diet. The wild salmon diet includes krill, zooplankton, small fish and crustaceans all of which naturally contain astaxanthin. There are several health benefits from astaxanthin for salmon; it is a potent antioxidant and a source of vitamin A and helps to protect tissues, stimulate the immune system and improve fertility and growth19. In order to confer these health benefits to farmed Atlantic salmon, astaxanthin (either natural or synthetic) is introduced into their pelletised feed whilst in the seawater grow-out phase.
+
+There is no difference between the natural and synthetic forms of astaxanthin; both are processed and absorbed by wild and farmed fish in exactly the same manner19, 20. Both natural and synthetic forms are considered safe for use in salmon diets, and their use up to the maximum permitted dietary level for salmon is of no concern for consumer safety21, 22. Seafood buyers often use colour charts such as a ‘Salmofan’23 to compare different salmon flesh colour, and whether the pigment used is natural astaxanthin (extracted from crustacean shell, Phaffia yeast24, or predominately from the bacteria Paracoccus carotinifaciens producing the pigment Panaferd 25) or synthesized, depends on the requirements of the particular brand or retailer.
+
+References
+ IFFO
+ IFFO
+ Seafish
+ IFFO
+ IFFO 
+ FAO
+ MSC
+ IFFO RS
+ FishSource
+ FisheryProgress
+ IUCN
+ CITES
+ Sissener, N.H. et al, 2011. Genetically modified plants as fish feed ingredients. Canadian Journal of Fisheries and Aquatic Sciences, 2011, 68(3) p563-574
+ FSA
+ Ytrestøyl, T. et al, 2015. Utilisation of feed resources in production of Atlantic salmon (Salmo salar) in Norway.  Aquaculture, Vol. 448, 2015 p365–374
+ MOWI
+ Little, D. and Shepherd, C.J., 2014. Aquaculture: are the criticisms justified? II - Aquaculture’s environmental impact and use of resources, with special reference to farming Atlantic salmon
+ Mahfuzur R., et al, 2016. Astaxanthin-Producing Green Microalga Haematococcus pluvialis: From Single Cell to High Value Commercial Products. Frontiers in Plant Science, Vol 7, 2016
+ Skretting
+ NOAA
+ European Food Safety Agency
+ FSA
+ DSM
+ Sanderson, G.W. and Jolly, S.O., 1994. The value of Phaffia yeast as a feed ingredient for salmonid fish. Aquaculture, Vol 124, Iss 1–4, 1994 p193-200
+ JXTG Group
+Previous
+Nutrient Pollution
+Next
+Disease, Medicines and Chemicals
+Back to top
+© 2026
+Who we are
+Contact
+Working with us
+Privacy Policy
+Website Terms and Conditions
+Accessibility
+Freedom of Information
+Sign up to Seafish news
+
+Follow the link below to get the latest news straight to your email inbox.
+
+Sign up to Seafish news
+Follow us

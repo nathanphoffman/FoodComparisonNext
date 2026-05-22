@@ -1,0 +1,627 @@
+Our World
+in Data
+Browse by topic
+Data
+Insights
+Resources
+About
+Donate
+DATA
+Soybean yieldsUN FAO
+SEE ALL DATA AND RESEARCH ON:
+Agricultural Production
+Explore the Data
+Research & Writing
+All Charts
+Sources & Processing
+Reuse This Work
+Soybean yields, 2024
+
+
+Yields are measured in tonnes per hectare.
+
+Table
+Map
+Line
+Bar
+No data
+0 t
+0.5 t
+1 t
+1.5 t
+2 t
+2.5 t
+3 t
+3.5 t
+4 t
+1961
+2024
+
+Data source: Food and Agriculture Organization of the United Nations (2025) – Learn more about this data
+
+OurWorldinData.org/crop-yields | CC BY
+SELECT COUNTRIES AND REGIONS
+Search for a country or region
+Sort by: Soybean yields, 2024
+ 
+Name
+Population
+GDP per capita (int. $)
+Soybean yields
+Filter by type: All (214)
+ 
+All
+Countries
+Continents
+Income groups
+United States 
+3.41
+North America 
+3.4
+Uzbekistan
+4.33
+Turkey
+4.12
+Spain
+3.51
+Italy
+3.34
+Canada
+3.31
+Germany
+3.25
+Uruguay
+3.23
+High-income countries
+3.21
+Brazil
+3.15
+South America
+3.06
+Paraguay
+3.04
+Egypt
+3
+Australia
+2.97
+Oceania
+2.97
+Argentina
+2.95
+Upper-middle-income countries
+2.9
+Slovenia
+2.79
+Austria
+2.78
+European Union (27)
+2.74
+Ethiopia
+2.67
+Guatemala
+2.65
+France
+2.61
+Czechia
+2.6
+Laos
+2.59
+Poland
+2.59
+Colombia
+2.52
+Cuba
+2.5
+Nicaragua
+2.5
+Luxembourg
+2.5
+Croatia
+2.48
+Ukraine
+2.44
+Iran
+2.44
+Kyrgyzstan
+2.42
+Albania
+2.4
+Hungary
+2.31
+Switzerland
+2.28
+Slovakia
+2.25
+Peru
+2.21
+Romania
+2.17
+Afghanistan
+2.14
+Mexico
+2.12
+Kazakhstan
+2.1
+South Korea
+2.09
+Europe
+2.08
+Bosnia and Herzegovina
+2.08
+Syria
+2.06
+Polynesia
+2.03
+China
+2
+Georgia
+2
+Honduras
+2
+El Salvador
+1.94
+Sri Lanka
+1.93
+Lithuania
+1.92
+Bolivia
+1.91
+Venezuela
+1.88
+Bangladesh
+1.87
+Ghana
+1.86
+Zimbabwe
+1.84
+Cameroon
+1.75
+North Macedonia
+1.72
+Indonesia
+1.7
+Russia
+1.69
+Taiwan
+1.67
+Japan
+1.64
+Greece
+1.64
+Thailand
+1.64
+Vietnam
+1.63
+Belize
+1.62
+South Africa
+1.61
+Serbia
+1.58
+Asia
+1.55
+Cote d'Ivoire
+1.46
+Cambodia
+1.46
+Philippines
+1.36
+Ecuador
+1.32
+Nepal
+1.26
+Lower-middle-income countries
+1.24
+Africa
+1.24
+Moldova
+1.22
+Tanzania
+1.2
+Malawi
+1.17
+India
+1.17
+Mozambique
+1.17
+Burkina Faso
+1.16
+North Korea
+1.15
+Angola
+1.14
+Suriname
+1.11
+Low-income countries
+1.09
+Bulgaria
+1.09
+Zambia
+1.08
+Myanmar
+1.06
+Benin
+1.02
+Nigeria
+1.02
+Togo
+1.01
+Kenya
+1.01
+Morocco
+1
+Bhutan
+0.86
+Gabon
+0.86
+Iraq
+0.82
+East Timor
+0.8
+Uganda
+0.74
+Sierra Leone
+0.67
+Mali
+0.64
+Madagascar
+0.6
+Pakistan
+0.6
+Democratic Republic of Congo
+0.56
+Azerbaijan
+0.56
+Rwanda
+0.51
+Burundi
+0.43
+Liberia
+0.43
+Panama
+0.34
+Tajikistan
+0.33
+Algeria
+No data
+Andorra
+No data
+Antigua and Barbuda
+No data
+Armenia
+No data
+Bahamas
+No data
+Bahrain
+No data
+Barbados
+No data
+Belarus
+No data
+Belgium
+No data
+Botswana
+No data
+Brunei
+No data
+Cape Verde
+No data
+Central African Republic
+No data
+Chad
+No data
+Chile
+No data
+Comoros
+No data
+Congo
+No data
+Costa Rica
+No data
+Cyprus
+No data
+Denmark
+No data
+Djibouti
+No data
+Dominica
+No data
+Dominican Republic
+No data
+Equatorial Guinea
+No data
+Eritrea
+No data
+Estonia
+No data
+Eswatini
+No data
+Fiji
+No data
+Finland
+No data
+French Guiana
+No data
+French Southern Territories
+No data
+Gambia
+No data
+Greenland
+No data
+Grenada
+No data
+Guinea
+No data
+Guinea-Bissau
+No data
+Guyana
+No data
+Haiti
+No data
+Iceland
+No data
+Ireland
+No data
+Israel
+No data
+Jamaica
+No data
+Jordan
+No data
+Kiribati
+No data
+Kosovo
+No data
+Kuwait
+No data
+Latvia
+No data
+Lebanon
+No data
+Lesotho
+No data
+Libya
+No data
+Liechtenstein
+No data
+Malaysia
+No data
+Maldives
+No data
+Malta
+No data
+Marshall Islands
+No data
+Mauritania
+No data
+Mauritius
+No data
+Micronesia (country)
+No data
+Monaco
+No data
+Mongolia
+No data
+Montenegro
+No data
+Namibia
+No data
+Nauru
+No data
+Netherlands
+No data
+New Caledonia
+No data
+New Zealand
+No data
+Niger
+No data
+Norway
+No data
+Oman
+No data
+Palau
+No data
+Palestine
+No data
+Papua New Guinea
+No data
+Portugal
+No data
+Puerto Rico
+No data
+Qatar
+No data
+Saint Kitts and Nevis
+No data
+Saint Lucia
+No data
+Saint Vincent and the Grenadines
+No data
+Samoa
+No data
+San Marino
+No data
+Sao Tome and Principe
+No data
+Saudi Arabia
+No data
+Senegal
+No data
+Seychelles
+No data
+Singapore
+No data
+Solomon Islands
+No data
+Somalia
+No data
+South Sudan
+No data
+Sudan
+No data
+Sweden
+No data
+Tonga
+No data
+Trinidad and Tobago
+No data
+Tunisia
+No data
+Turkmenistan
+No data
+Tuvalu
+No data
+United Arab Emirates
+No data
+United Kingdom
+No data
+Vanuatu
+No data
+Western Sahara
+No data
+Yemen
+No data
+What you should know about this indicator
+How is this data described by its producer - UN FAO?
+SOYBEAN YIELDS
+UN FAO
+Yield is the amount produced per unit of land used, measured in tonnes per hectare.
+Source
+Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data
+Last updated
+February 25, 2026
+Next expected update
+February 2027
+Date range
+1961–2024
+Unit
+tonnes per hectare
+Related research and writing
+Drivers of Deforestation
+Hannah Ritchie
+Crop yields have increased dramatically in recent decades, but crops like maize would have improved more without climate change
+Hannah Ritchie
+Explore charts that include this data
+Crop yields
+Soy production, yield and area harvested
+Yields of key staple crops
+Chart 1 of 3
+Sources and processing
+This data is based on the following sources
+Food and Agriculture Organization of the United Nations – Production: Crops and livestock products
+
+Crop and livestock statistics are recorded for 278 products, covering the following categories:
+
+Crops primary: Cereals, Citrus Fruit, Fibre Crops, Fruit, Oil Crops, Oil Crops and Cakes in Oil Equivalent, Pulses, Roots and Tubers, Sugar Crops, Treenuts and Vegetables. Data are expressed in terms of area harvested, production quantity and yield. Cereals: Area and production data on cereals relate to crops harvested for dry grain only. Cereal crops harvested for hay or harvested green for food, feed or silage or used for grazing are therefore excluded.
+
+Crops processed: Beer of barley; Cotton lint; Cottonseed; Margarine, short; Molasses; Oil, coconut (copra); Oil, cottonseed; Oil, groundnut; Oil, linseed; Oil, maize; Oil, olive, virgin; Oil, palm; Oil, palm kernel; Oil, rapeseed; Oil, safflower; Oil, sesame; Oil, soybean; Oil, sunflower; Palm kernels; Sugar Raw Centrifugal; Wine.
+
+Live animals: Animals live n.e.s.; Asses; Beehives; Buffaloes; Camelids, other; Camels; Cattle; Chickens; Ducks; Geese and guinea fowls; Goats; Horses; Mules; Pigeons, other birds; Pigs; Rabbits and hares; Rodents, other; Sheep; Turkeys.
+
+Livestock primary: Beeswax; Eggs (various types); Hides buffalo, fresh; Hides, cattle, fresh; Honey, natural; Meat (ass, bird nes, buffalo, camel, cattle, chicken, duck, game, goat, goose and guinea fowl, horse, mule, Meat nes, meat other camelids, Meat other rodents, pig, rabbit, sheep, turkey); Milk (buffalo, camel, cow, goat, sheep); Offals, nes; Silk-worm cocoons, reelable; Skins (goat, sheep); Snails, not sea; Wool, greasy.
+
+Livestock processed: Butter (of milk from sheep, goat, buffalo, cow); Cheese (of milk from goat, buffalo, sheep, cow milk); Cheese of skimmed cow milk; Cream fresh; Ghee (cow and buffalo milk); Lard; Milk (dry buttermilk, skimmed condensed, skimmed cow, skimmed dried, skimmed evaporated, whole condensed, whole dried, whole evaporated); Silk raw; Tallow; Whey (condensed and dry); Yoghurt.
+
+Retrieved on
+February 25, 2026
+Retrieved from
+http://www.fao.org/faostat/en/#data/QCL
+Citation
+This is the citation of the original data obtained from the source, prior to any processing or adaptation by Our World in Data. To cite data downloaded from this page, please use the suggested citation given in Reuse This Work below.
+Food and Agriculture Organization of the United Nations - Production: Crops and livestock products (2025).
+How we process data at Our World in Data
+
+All data and visualizations on Our World in Data rely on data sourced from one or several original data providers. Preparing this original data involves several processing steps. Depending on the data, this can include standardizing country names and world region definitions, converting units, calculating derived indicators such as per capita measures, as well as adding or adapting metadata such as the name or the description given to an indicator.
+
+At the link below you can find a detailed description of the structure of our data pipeline, including links to all the code used to prepare data across Our World in Data.
+
+Read about our data pipeline
+Reuse this work
+All data produced by third-party providers and made available by Our World in Data are subject to the license terms from the original providers. Our work would not be possible without the data providers we rely on, so we ask you to always cite them appropriately (see below). This is crucial to allow data providers to continue doing their work, enhancing, maintaining and updating valuable data.
+All data, visualizations, and code produced by Our World in Data are completely open access under the Creative Commons BY license. You have the permission to use, distribute, and reproduce these in any medium, provided the source and authors are credited.
+Citations
+HOW TO CITE THIS PAGE
+
+To cite this page overall, including any descriptions, FAQs or explanations of the data authored by Our World in Data, please use the following citation:
+
+“Data Page: Soybean yields”, part of the following publication: Hannah Ritchie, Pablo Rosado, and Max Roser (2023) - “Agricultural Production”. Data adapted from Food and Agriculture Organization of the United Nations. Retrieved from https://archive.ourworldindata.org/20260518-090244/grapher/soybean-yields.html [online resource] (archived on May 18, 2026).
+HOW TO CITE THIS DATA
+
+In-line citation
+If you have limited space (e.g. in data visualizations), you can use this abbreviated in-line citation:
+
+Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data
+
+Full citation
+
+Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data. “Soybean yields – UN FAO” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data]. Retrieved May 22, 2026 from https://archive.ourworldindata.org/20260518-090244/grapher/soybean-yields.html (archived on May 18, 2026).
+Download
+QUICK DOWNLOAD
+
+Download the data shown in this chart as a ZIP file containing a CSV file, metadata in JSON format, and a README. The CSV file can be opened in Excel, Google Sheets, and other data analysis tools.
+
+Download full data
+
+Includes all entities and time points
+
+Download displayed data
+
+Includes only the entities and time points currently visible in the chart
+
+DATA API
+
+Use these URLs to programmatically access this chart's data and configure your requests with the options below. Our documentation provides more information on how to use the API, and you can find a few code examples below.
+
+Download full data, including all entities and time points
+Download only the currently selected data visible in the chart
+Data URL (CSV format)
+https://ourworldindata.org/grapher/soybean-yields.csv?v=1&csvType=full&useColumnShortNames=false
+Metadata URL (JSON format)
+https://ourworldindata.org/grapher/soybean-yields.metadata.json?v=1&csvType=full&useColumnShortNames=false
+Code examples
+
+Examples of how to load this data into different data analysis tools.
+
+Our World in Data is free and accessible for everyone.
+
+Help us do this work by making a donation.
+
+Donate now
+
+Our World in Data is a project of Global Change Data Lab, a nonprofit based in the UK (Reg. Charity No. 1186433). Our charts, articles, and data are licensed under CC BY, unless stated otherwise. The source code for our tools and software is made publicly available for transparency and educational reference under a custom license. Re-use requires permission. Third-party materials, including some charts and data, are subject to third-party licenses. See our FAQs for more details.
+
+EXPLORE
+Topics
+Data
+Insights
+RESOURCES
+Latest
+SDG Tracker
+Teaching with OWID
+ABOUT
+About us
+Organization
+Funding
+Team
+Jobs
+FAQs
+RSS FEEDS
+Research & Writing
+Data Insights
+FOLLOW US
+Privacy policy
+Cookie notice
+Legal disclaimer
+Grapher license
+Send feedback
+Subscribe
+ Feedback
+Cookies help us build a better website
+
+We are a non-profit that relies on reader donations. We never use ads on our website or sell user data.
+
+Reject optional cookies
+Accept optional cookies
+
+We use a small number of cookies and similar technologies to make our website work. Some of these are essential and can't be switched off. Other optional cookies help us better understand how our website is used — by accepting these, you can help us improve our publication for everyone. Read more in our Privacy Policy or manage your cookie settings.

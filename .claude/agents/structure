@@ -1,0 +1,6 @@
+
+
+Food agents for each Food Category / Types
+Food Agents -> Source the information and coordinate with their single type to audit and download the foods
+Dource Downloader downloads the sources
+Source Agent (one per type) varifies sources for foods match the downloaded sources

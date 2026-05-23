@@ -1,6 +1,7 @@
 import { ONE_BILLION, ONE_MILLION, ONE_TRILLION } from './FoodTableCalculations';
 
-const TEN_TRILLION = 1e13;
+const TEN_TRILLION  = 1e13;
+const ONE_HUNDRED_TRILLION = 1e14;
 
 const LOW_EMISSIONS_THRESHOLD  = 2;
 const HIGH_EMISSIONS_THRESHOLD = 10;
@@ -48,4 +49,11 @@ export function getNeuronColor(value: number): string {
   if (value >= ONE_BILLION) return 'text-orange-600';
   if (value >= ONE_MILLION) return 'text-amber-600';
   return 'text-yellow-600';
+}
+
+export function getEcoDestructionColor(value: number): string {
+  if (value >= ONE_HUNDRED_TRILLION) return 'text-red-700 font-medium';
+  if (value >= TEN_TRILLION)         return 'text-red-600 font-medium';
+  if (value >= ONE_TRILLION)         return 'text-orange-600 font-medium';
+  return 'text-amber-600 font-medium';
 }

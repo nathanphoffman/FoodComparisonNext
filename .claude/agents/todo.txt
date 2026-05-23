@@ -1,25 +1,4 @@
 
-NEW SLIDERS 
-Talk about adding 2 sliders: "% Pasture Natural" and "% Cropland Natural" to
- further help pin down actual green water and land use considerations, as if 
- cant be used why count it?  My thought process is to set cropland to 5% as most of it is unnatural and
- set Pasture to some >5% percentage whatever the stats show.  It also leads to 
- implications when we calculate ecosystem destruction based on land use.
-
-ECO SYSTEM DESTRUCTION
-Into the intelligence score we need to roll up all possible deaths due to pesticides 
-and deforestation.  For pesticides we should have the numbers we need to calculate all 
-major general deaths of creatures, and then figure out neuron cost from there. 
-Remember neuron cost here is not divided as it is rolled up into the final score 
-for output set by the three sliders: calorie, protein, weight output. It is treated 
-as if the output was the animals weight and the neurons the intelligence killed, however 
-it is needed to figure out how to roll up the data as 2 small ~= 1 medium in intelligence. We
-have to reverse the 1.5 power.  For deforestation we should discuss general numbers 
-of creatures killed, take into account intelligence lost, then divide it over 
-the amount of time the average crop land has been cleared and used. I was hoping 
-to use a general number for this but if it makes sense to add another column for it fine,
-just know this one I don't care as much about being exact on.
-
 WILD GATHERED PLANTS
 We need to discuss wild plants like Brazil nuts, technically they should have 
 no water use like wild animals correct? I also want us to audit the database and

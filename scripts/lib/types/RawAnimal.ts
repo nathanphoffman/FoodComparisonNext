@@ -71,7 +71,7 @@ export class RawAnimal {
       if (feedRatio == null) continue;
 
       const avgYield = plant.yield_kg_ha.weightedAverage();
-      yieldTotal += avgYield * feedRatio || 0;
+      yieldTotal += (avgYield ?? 0) * feedRatio;
 
       const avgEmissions = plant.emissions_per_kg.weightedAverage();
       const avgWater = plant.water_per_kg.weightedAverage();

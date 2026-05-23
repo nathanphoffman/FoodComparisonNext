@@ -13,18 +13,20 @@ export type WaterDetail = {
 };
 
 export type FoodEthics = {
-  name:               string;
-  slug:               string;
-  nutritionScore:     number | null;
-  nutritionDetail:    NutritionDetail;
-  emissions:          number | null;
-  emissionsBreakdown?: EmissionsBreakdown;
-  landUse:            number | null;
-  landUseDetail:      LandUseDetail;
-  intelligence:       number | null;
-  intelligenceDetail: IntelligenceDetail;
-  water:              number | null;
-  waterDetail:        WaterDetail;
+  name:                  string;
+  slug:                  string;
+  nutritionScore:        number | null;
+  nutritionDetail:       NutritionDetail;
+  emissions:             number | null;
+  emissionsBreakdown?:   EmissionsBreakdown;
+  landUse:               number | null;
+  landUseDetail:         LandUseDetail;
+  intelligence:          number | null;
+  intelligenceDetail:    IntelligenceDetail;
+  water:                 number | null;
+  waterDetail:           WaterDetail;
+  ecoDestruction:        number | null;
+  ecoDestructionDetail:  EcoDestructionDetail;
 };
 
 export type NutritionDetail = {
@@ -50,4 +52,16 @@ export type IntelligenceDetail = {
   neuronCount:   number;
   weightKg:      number | null;
   yieldFraction: number | null;
+};
+
+export type EcoDestructionDetail = {
+    insectScore:               number;
+    beeScore:                  number;
+    wormScore:                 number;
+    deforestationScore:        number;
+    feedInsectScore:           number;
+    feedBeeScore:              number;
+    feedWormScore:             number;
+    feedDeforestationScore:    number;
+    pastureDeforestationScore: number;
 };

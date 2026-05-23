@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync, readdirSync, unlinkSync, statSync } from 'fs';
 import { resolve } from 'path';
 import initSqlJs from 'sql.js';
-import { Food, Animal, Plant, AnimalFeed, Pesticide, PlantAnimalKill, PlantPesticide, Source } from '../lib/types';
+import { Pesticide, Source } from '../lib/types';
 
 import { insert as insertSources }         from './lib/insert-sources';
 import { insert as insertFoods }           from './lib/insert-foods';
@@ -12,6 +12,7 @@ import { insert as insertPlantKills }      from './lib/insert-plant-animal-kills
 import { insert as insertPlantPesticides } from './lib/insert-plant-pesticides';
 import { insert as insertAnimalFeed }      from './lib/insert-animal-feed';
 import { insert as insertFoodsNormalized } from './lib/insert-foods-normalized';
+import { loadCategoryFoods }               from './lib/load-category-foods';
 
 const root = resolve(__dirname, '..');
 const dataDir = resolve(root, 'lib/data/json');
@@ -61,14 +62,9 @@ async function main(): Promise<void> {
   sourceDb.run(readFileSync(resolve(root, 'lib/data/sql/schema.sql'), 'utf8'));
   normalizedDb.run(readFileSync(resolve(root, 'lib/data/sql/schema-normalized.sql'), 'utf8'));
 
-  const sources         = readJsonFile<Source[]>('sources.json');
-  const foods           = readJsonFile<Food[]>('foods.json');
-  const animals         = readJsonFile<Animal[]>('animals.json');
-  const plants          = readJsonFile<Plant[]>('plants.json');
-  const animalFeed      = readJsonFile<AnimalFeed[]>('animal_feed.json');
-  const pesticides      = readJsonFile<Pesticide[]>('pesticides.json');
-  const plantKills      = readJsonFile<PlantAnimalKill[]>('plant_animal_kills.json');
-  const plantPesticides = readJsonFile<PlantPesticide[]>('plant_pesticides.json');
+  const sources = readJsonFile<Source[]>('sources.json');
+  const pesticides = readJsonFile<Pesticide[]>('pesticides.json');
+  const { foods, animals, plants, animalFeed, plantPesticides, plantKills } = loadCategoryFoods(dataDir);
 
   // Tier 1 — no FKs
   insertSources(sourceDb, sources);

@@ -14,11 +14,19 @@ export type RawFood = {
   green_water_per_kg: number | null;
   blue_water_per_kg:  number | null;
   grey_water_per_kg:  number | null;
+  pesticide_insect_paf:      number | null;
+  pesticide_terrestrial_paf: number | null;
+  pesticide_bee_hazard:      number | null;
+  pesticide_kg_per_kg_food:  number | null;
   feed_water_per_kg: number | null;
   feed_emissions_per_kg: number | null;
   feed_green_water_per_kg: number | null;
   feed_blue_water_per_kg:  number | null;
   feed_grey_water_per_kg:  number | null;
+  feed_pesticide_insect_paf:      number | null;
+  feed_pesticide_terrestrial_paf: number | null;
+  feed_pesticide_bee_hazard:      number | null;
+  feed_pesticide_kg_per_kg_food:  number | null;
 };
 
 const QUERY = `
@@ -32,11 +40,15 @@ const QUERY = `
          f.neuron_count, f.weight_kg, f.yield_fraction, f.pasture_ha_per_kg_output,
          f.native_fraction, f.bycatch_amount,
          f.ch4_kg_per_kg_output, f.n2o_kg_per_kg_output, f.co2_kg_per_kg_output,
-         feed.water_per_kg       AS feed_water_per_kg,
-         feed.emissions_per_kg   AS feed_emissions_per_kg,
-         feed.green_water_per_kg AS feed_green_water_per_kg,
-         feed.blue_water_per_kg  AS feed_blue_water_per_kg,
-         feed.grey_water_per_kg  AS feed_grey_water_per_kg
+         feed.water_per_kg             AS feed_water_per_kg,
+         feed.emissions_per_kg         AS feed_emissions_per_kg,
+         feed.green_water_per_kg       AS feed_green_water_per_kg,
+         feed.blue_water_per_kg        AS feed_blue_water_per_kg,
+         feed.grey_water_per_kg        AS feed_grey_water_per_kg,
+         feed.pesticide_insect_paf     AS feed_pesticide_insect_paf,
+         feed.pesticide_terrestrial_paf AS feed_pesticide_terrestrial_paf,
+         feed.pesticide_bee_hazard     AS feed_pesticide_bee_hazard,
+         feed.pesticide_kg_per_kg_food AS feed_pesticide_kg_per_kg_food
   FROM   foods_normalized f
   LEFT JOIN foods_normalized feed ON feed.food_id = f.food_id AND feed.is_feed = 1
   WHERE  f.is_feed = 0

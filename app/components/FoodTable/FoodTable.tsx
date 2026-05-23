@@ -10,6 +10,7 @@ import {
   LandUseCell,
   IntelligenceCell,
   WaterCell,
+  EcoDestructionCell,
   DummyCell,
 } from './FoodTableFields';
 import type { FoodEthics, FoodWeights } from './FoodTableTypes';
@@ -18,7 +19,7 @@ import { computeDivisor, getUnitLabel, effectiveWater } from './FoodTableCalcula
 
 export type { FoodEthics };
 
-type SortKey = 'name' | 'nutritionScore' | 'emissions' | 'landUse' | 'intelligence' | 'water';
+type SortKey = 'name' | 'nutritionScore' | 'emissions' | 'landUse' | 'intelligence' | 'water' | 'ecoDestruction';
 type ColumnKey = SortKey | 'dummy';
 
 const COLUMN_CONFIG: { key: ColumnKey; label: string; sortKey?: SortKey; defaultVisible: boolean }[] = [
@@ -28,6 +29,7 @@ const COLUMN_CONFIG: { key: ColumnKey; label: string; sortKey?: SortKey; default
   { key: 'landUse',        label: 'Land Use (m² / kg)',  sortKey: 'landUse',        defaultVisible: true  },
   { key: 'intelligence',   label: 'Intelligence',         sortKey: 'intelligence',   defaultVisible: true  },
   { key: 'water',          label: 'Water (L / kg)',       sortKey: 'water',          defaultVisible: true  },
+  { key: 'ecoDestruction', label: 'Eco Destruction',      sortKey: 'ecoDestruction', defaultVisible: true  },
   { key: 'dummy',          label: 'Test Column',          sortKey: undefined,        defaultVisible: false },
 ];
 
@@ -76,7 +78,7 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
 
   const rows = data ?? [];
 
-  const WEIGHTED_SORT_KEYS = new Set<SortKey>(['emissions', 'landUse', 'intelligence', 'water']);
+  const WEIGHTED_SORT_KEYS = new Set<SortKey>(['emissions', 'landUse', 'intelligence', 'water', 'ecoDestruction']);
 
   const sorted = sortKey
     ? [...rows].sort((a, b) => {
@@ -98,10 +100,11 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
 
   const unit = getUnitLabel(weights);
   const DYNAMIC_LABELS: Partial<Record<ColumnKey, string>> = {
-    emissions:    `CO₂e (kg / ${unit})`,
-    landUse:      `Land Use (m² / ${unit})`,
-    intelligence: `Intelligence / ${unit}`,
-    water:        `Water (L / ${unit})`,
+    emissions:      `CO₂e (kg / ${unit})`,
+    landUse:        `Land Use (m² / ${unit})`,
+    intelligence:   `Intelligence / ${unit}`,
+    water:          `Water (L / ${unit})`,
+    ecoDestruction: `Eco Destruction / ${unit}`,
   };
 
   const headers = activeCols.map(c => ({
@@ -153,6 +156,7 @@ export function FoodTable({ data }: { data?: FoodEthics[] }) {
                     const ew = effectiveWater(food, greenWaterWeight, greyWaterWeight);
                     return <WaterCell key="water" value={ew != null ? ew / d : null} detail={food.waterDetail} referenceTotal={food.water} />;
                   }
+                  case 'ecoDestruction': return <EcoDestructionCell key="ecoDestruction" value={food.ecoDestruction != null ? food.ecoDestruction / d : null} detail={food.ecoDestructionDetail} />;
                   case 'dummy':          return <DummyCell          key="dummy" />;
                 }
               })}

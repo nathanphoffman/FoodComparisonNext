@@ -4,10 +4,11 @@
 
 import Link from 'next/link';
 import { Cell } from '../Table/Cell';
-import type { EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail, WaterDetail } from './FoodTableTypes';
+import type { EcoDestructionDetail, EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail, WaterDetail } from './FoodTableTypes';
 import { formatNeurons, formatIntelligenceValue } from './FoodTableCalculations';
-import { getIntelligenceColor, getEmissionsColor, getWaterColor, getNutritionScoreColor, getLandUseColor, getNeuronColor } from './FoodTableStyles';
+import { getEcoDestructionColor, getIntelligenceColor, getEmissionsColor, getWaterColor, getNutritionScoreColor, getLandUseColor, getNeuronColor } from './FoodTableStyles';
 import {
+  EcoDestructionTooltip,
   EmissionsTooltip,
   NutritionTooltip,
   LandUseTooltip,
@@ -118,6 +119,24 @@ export function IntelligenceCell({ value, detail }: { value: number | null; deta
       {value != null
         ? <IntelligenceTooltip detail={detail}><IntelligenceValue value={value} /></IntelligenceTooltip>
         : <IntelligenceValue value={null} />
+      }
+    </Cell>
+  );
+}
+
+// ─── Eco Destruction ─────────────────────────────────────────────────────────
+
+export function EcoDestructionValue({ value }: { value: number | null }) {
+  if (value === null || value === 0) return <span className="text-neutral-400">—</span>;
+  return <span className={getEcoDestructionColor(value)}>{formatIntelligenceValue(value)}</span>;
+}
+
+export function EcoDestructionCell({ value, detail }: { value: number | null; detail: EcoDestructionDetail }) {
+  return (
+    <Cell key="ecoDestruction" align="right">
+      {value != null
+        ? <EcoDestructionTooltip detail={detail}><EcoDestructionValue value={value} /></EcoDestructionTooltip>
+        : <EcoDestructionValue value={null} />
       }
     </Cell>
   );

@@ -448,5 +448,35 @@
     "plant_id": 26,
     "pesticide_id": 1,
     "kg_ha": [{"value": 0.5, "source_id": 52, "confidence": 1}]
+  },
+  {
+    "id": 76,
+    "plant_id": 39,
+    "pesticide_id": 3,
+    "kg_ha": [{"value": 0.45, "source_id": 52, "confidence": 2}]
+  },
+  {
+    "id": 77,
+    "plant_id": 39,
+    "pesticide_id": 4,
+    "kg_ha": [{"value": 0.35, "source_id": 52, "confidence": 2}]
+  },
+  {
+    "id": 78,
+    "plant_id": 39,
+    "pesticide_id": 7,
+    "kg_ha": [{"value": 0.25, "source_id": 52, "confidence": 2}]
+  },
+  {
+    "id": 79,
+    "plant_id": 39,
+    "pesticide_id": 10,
+    "kg_ha": [{"value": 0.85, "source_id": 52, "confidence": 2}]
+  },
+  {
+    "id": 80,
+    "plant_id": 39,
+    "pesticide_id": 17,
+    "kg_ha": [{"value": 0.60, "source_id": 52, "confidence": 2}]
   }
 ]

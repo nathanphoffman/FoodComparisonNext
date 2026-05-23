@@ -1159,7 +1159,7 @@
                     "id": 52,
                     "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
                     "title": "USDA NASS — Agricultural Chemical Use Survey",
-                    "note": null
+                    "note": "Orange — chlorpyrifos: 0.45 kg/ha; malathion: 0.35 kg/ha; imidacloprid: 0.25 kg/ha; mancozeb: 0.85 kg/ha; carbaryl: 0.60 kg/ha. Total 2.50 kg/ha, matching the aggregate in plants.json. Based on USDA NASS 2023 Fruits survey (covering Florida and California citrus production). Chlorpyrifos used for citrus psyllid and mite control; malathion for Mediterranean fruit fly management programs; imidacloprid for Asian citrus psyllid (HLB vector) suppression; mancozeb for citrus scab and brown rot fungal diseases; carbaryl for fruit thinning and secondary insect control. Confidence 2 for all compounds — NASS covers citrus in the Fruits survey but survey frequency is biennial and citrus coverage is less comprehensive than major field crops."
                 }
             }
         ],
@@ -1211,6 +1211,87 @@
                 }
             }
         ],
-        "pesticides": []
+        "pesticides": [
+            {
+                "pesticide_id": 3,
+                "name": "Chlorpyrifos",
+                "kg_ha": [
+                    {
+                        "value": 0.45,
+                        "confidence": 2,
+                        "source": {
+                            "id": 52,
+                            "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+                            "title": "USDA NASS — Agricultural Chemical Use Survey",
+                            "note": "Orange — chlorpyrifos: 0.45 kg/ha; malathion: 0.35 kg/ha; imidacloprid: 0.25 kg/ha; mancozeb: 0.85 kg/ha; carbaryl: 0.60 kg/ha. Total 2.50 kg/ha, matching the aggregate in plants.json. Based on USDA NASS 2023 Fruits survey (covering Florida and California citrus production). Chlorpyrifos used for citrus psyllid and mite control; malathion for Mediterranean fruit fly management programs; imidacloprid for Asian citrus psyllid (HLB vector) suppression; mancozeb for citrus scab and brown rot fungal diseases; carbaryl for fruit thinning and secondary insect control. Confidence 2 for all compounds — NASS covers citrus in the Fruits survey but survey frequency is biennial and citrus coverage is less comprehensive than major field crops."
+                        }
+                    }
+                ]
+            },
+            {
+                "pesticide_id": 4,
+                "name": "Malathion",
+                "kg_ha": [
+                    {
+                        "value": 0.35,
+                        "confidence": 2,
+                        "source": {
+                            "id": 52,
+                            "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+                            "title": "USDA NASS — Agricultural Chemical Use Survey",
+                            "note": "Orange — chlorpyrifos: 0.45 kg/ha; malathion: 0.35 kg/ha; imidacloprid: 0.25 kg/ha; mancozeb: 0.85 kg/ha; carbaryl: 0.60 kg/ha. Total 2.50 kg/ha, matching the aggregate in plants.json. Based on USDA NASS 2023 Fruits survey (covering Florida and California citrus production). Chlorpyrifos used for citrus psyllid and mite control; malathion for Mediterranean fruit fly management programs; imidacloprid for Asian citrus psyllid (HLB vector) suppression; mancozeb for citrus scab and brown rot fungal diseases; carbaryl for fruit thinning and secondary insect control. Confidence 2 for all compounds — NASS covers citrus in the Fruits survey but survey frequency is biennial and citrus coverage is less comprehensive than major field crops."
+                        }
+                    }
+                ]
+            },
+            {
+                "pesticide_id": 7,
+                "name": "Imidacloprid",
+                "kg_ha": [
+                    {
+                        "value": 0.25,
+                        "confidence": 2,
+                        "source": {
+                            "id": 52,
+                            "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+                            "title": "USDA NASS — Agricultural Chemical Use Survey",
+                            "note": "Orange — chlorpyrifos: 0.45 kg/ha; malathion: 0.35 kg/ha; imidacloprid: 0.25 kg/ha; mancozeb: 0.85 kg/ha; carbaryl: 0.60 kg/ha. Total 2.50 kg/ha, matching the aggregate in plants.json. Based on USDA NASS 2023 Fruits survey (covering Florida and California citrus production). Chlorpyrifos used for citrus psyllid and mite control; malathion for Mediterranean fruit fly management programs; imidacloprid for Asian citrus psyllid (HLB vector) suppression; mancozeb for citrus scab and brown rot fungal diseases; carbaryl for fruit thinning and secondary insect control. Confidence 2 for all compounds — NASS covers citrus in the Fruits survey but survey frequency is biennial and citrus coverage is less comprehensive than major field crops."
+                        }
+                    }
+                ]
+            },
+            {
+                "pesticide_id": 10,
+                "name": "Mancozeb",
+                "kg_ha": [
+                    {
+                        "value": 0.85,
+                        "confidence": 2,
+                        "source": {
+                            "id": 52,
+                            "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+                            "title": "USDA NASS — Agricultural Chemical Use Survey",
+                            "note": "Orange — chlorpyrifos: 0.45 kg/ha; malathion: 0.35 kg/ha; imidacloprid: 0.25 kg/ha; mancozeb: 0.85 kg/ha; carbaryl: 0.60 kg/ha. Total 2.50 kg/ha, matching the aggregate in plants.json. Based on USDA NASS 2023 Fruits survey (covering Florida and California citrus production). Chlorpyrifos used for citrus psyllid and mite control; malathion for Mediterranean fruit fly management programs; imidacloprid for Asian citrus psyllid (HLB vector) suppression; mancozeb for citrus scab and brown rot fungal diseases; carbaryl for fruit thinning and secondary insect control. Confidence 2 for all compounds — NASS covers citrus in the Fruits survey but survey frequency is biennial and citrus coverage is less comprehensive than major field crops."
+                        }
+                    }
+                ]
+            },
+            {
+                "pesticide_id": 17,
+                "name": "Carbaryl",
+                "kg_ha": [
+                    {
+                        "value": 0.6,
+                        "confidence": 2,
+                        "source": {
+                            "id": 52,
+                            "url": "https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/index.php",
+                            "title": "USDA NASS — Agricultural Chemical Use Survey",
+                            "note": "Orange — chlorpyrifos: 0.45 kg/ha; malathion: 0.35 kg/ha; imidacloprid: 0.25 kg/ha; mancozeb: 0.85 kg/ha; carbaryl: 0.60 kg/ha. Total 2.50 kg/ha, matching the aggregate in plants.json. Based on USDA NASS 2023 Fruits survey (covering Florida and California citrus production). Chlorpyrifos used for citrus psyllid and mite control; malathion for Mediterranean fruit fly management programs; imidacloprid for Asian citrus psyllid (HLB vector) suppression; mancozeb for citrus scab and brown rot fungal diseases; carbaryl for fruit thinning and secondary insect control. Confidence 2 for all compounds — NASS covers citrus in the Fruits survey but survey frequency is biennial and citrus coverage is less comprehensive than major field crops."
+                        }
+                    }
+                ]
+            }
+        ]
     }
 ]

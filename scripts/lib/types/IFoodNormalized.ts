@@ -34,6 +34,7 @@ export interface IFoodNormalized {
   pesticide_insect_paf: number | null;
   pesticide_bee_hazard: number | null;
   pesticide_kg_per_kg_food: number | null;
+  land_m2_per_kg: number | null;
   // animal metrics (NULL for plant foods and feed rows)
   neuron_count: number | null;
   weight_kg: number | null;
@@ -53,6 +54,7 @@ export type PlantNormalizedFields = Pick<IFoodNormalized,
   | 'fertilizer_kg_ha' | 'emissions_per_kg' | 'tillage_events_per_year'
   | 'co2_capture_kg_ha_yr' | 'pesticide_freshwater_paf' | 'pesticide_terrestrial_paf'
   | 'pesticide_insect_paf' | 'pesticide_bee_hazard' | 'pesticide_kg_per_kg_food'
+  | 'land_m2_per_kg'
 >;
 
 export type AnimalNormalizedFields = Pick<IFoodNormalized,
@@ -95,6 +97,7 @@ export class FoodNormalized implements IFoodNormalized {
   pesticide_insect_paf!: number | null;
   pesticide_bee_hazard!: number | null;
   pesticide_kg_per_kg_food!: number | null;
+  land_m2_per_kg!: number | null;
   neuron_count!: number | null;
   weight_kg!: number | null;
   yield_fraction!: number | null;
@@ -122,6 +125,7 @@ export class FoodNormalized implements IFoodNormalized {
       this.fertilizer_kg_ha, this.emissions_per_kg, this.tillage_events_per_year,
       this.co2_capture_kg_ha_yr, this.pesticide_freshwater_paf, this.pesticide_terrestrial_paf,
       this.pesticide_insect_paf, this.pesticide_bee_hazard, this.pesticide_kg_per_kg_food,
+      this.land_m2_per_kg,
       this.neuron_count, this.weight_kg, this.yield_fraction,
       this.pasture_ha_per_kg_output, this.pasture_green_water_l_per_ha, this.native_fraction, this.bycatch_amount,
       this.ch4_kg_per_kg_output, this.n2o_kg_per_kg_output, this.co2_kg_per_kg_output,

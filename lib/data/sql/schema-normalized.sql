@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS foods_normalized (
     pesticide_bee_hazard      REAL,  -- application-weighted bee hazard score derived from bee_ld50 via inverse-weighted formula (higher = more hazardous);
                                      --   NOT a PAF and NOT an LD50 — it is a unitless relative hazard index computed as sum(kg_ha / bee_ld50) / total_kg_ha
     pesticide_kg_per_kg_food REAL,   -- total pesticide application intensity in kg active ingredient per kg food output (pesticide_kg_ha / yield_kg_ha)
+    land_m2_per_kg           REAL,   -- for is_feed=1 rows: sum of (kg_feed_per_kg_output × 10000 / crop_yield_kg_ha) across all feed crops; NULL for plant food rows
     yield_fraction           REAL,  -- fraction of harvested weight that is edible (shell, peel, pit/seed loss etc.);
                                     --   1.0 for foods already measured in edible-weight form;
                                     --   applies to both plant and animal foods

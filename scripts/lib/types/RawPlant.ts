@@ -128,6 +128,7 @@ export class RawPlant {
       pesticide_insect_paf: this.avgPesticideWeightedInsectPaf,
       pesticide_bee_hazard: this.avgPesticideWeightedBeeHazard,
       pesticide_kg_per_kg_food: this.avgPesticideKgPerKgFood,
+      land_m2_per_kg: null,
     };
   }
 }

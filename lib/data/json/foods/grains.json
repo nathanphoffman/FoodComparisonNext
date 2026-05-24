@@ -142,13 +142,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 0.5,
-                "confidence": 4,
+                "value": 1.57,
+                "confidence": 3,
                 "source": {
-                    "id": 9,
-                    "url": "https://ourworldindata.org/grapher/wheat-yields",
-                    "title": "Our World in Data — Wheat Yields",
-                    "note": "Wheat — yield_kg_ha: Source for global average of 2,067 kg/ha."
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": "Wheat — emissions_per_kg: 1.57 kg CO2e/kg global weighted average (farm gate; includes fertilizer N2O, farm energy, and land use change; P&N 2018 Table S5 'Wheat & Rye' category)."
+                }
+            },
+            {
+                "value": 1.57,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Wheat — emissions_per_kg: 1.57 kg CO2e/kg confirmed via OWID chart of P&N 2018 data."
                 }
             }
         ],
@@ -384,13 +394,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 0.4,
-                "confidence": 4,
+                "value": 1.7,
+                "confidence": 3,
                 "source": {
-                    "id": 11,
-                    "url": "https://ourworldindata.org/grapher/maize-yields",
-                    "title": "Our World in Data — Corn (Maize) Yields",
-                    "note": "Corn — yield_kg_ha: Source for world average of ~5,600 kg/ha."
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": "Corn (Maize) — emissions_per_kg: 1.7 kg CO2e/kg global weighted average (farm gate; includes fertilizer N2O from high-N corn production, farm energy, and land use change; P&N 2018 Table S5 'Maize' category)."
+                }
+            },
+            {
+                "value": 1.7,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Corn (Maize) — emissions_per_kg: 1.7 kg CO2e/kg confirmed via OWID chart of P&N 2018 data."
                 }
             }
         ],
@@ -626,13 +646,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 0.3,
-                "confidence": 4,
+                "value": 1.4,
+                "confidence": 3,
                 "source": {
-                    "id": 15,
-                    "url": "https://www.nass.usda.gov/",
-                    "title": "USDA National Agricultural Statistics Service (NASS)",
-                    "note": "Sorghum — yield_kg_ha: Source for US sorghum acreage and yield data."
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": "Sorghum — emissions_per_kg: 1.4 kg CO2e/kg (P&N 2018 dryland cereal range; sorghum is largely rain-fed with lower nitrogen inputs than corn, placing it at the lower end of the cereal GHG range; farm gate including fertilizer N2O and land use change)."
+                }
+            },
+            {
+                "value": 1.4,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Sorghum — emissions_per_kg: ~1.4 kg CO2e/kg per OWID/P&N 2018 'other cereals' grouping for dryland grains."
                 }
             }
         ],
@@ -838,13 +868,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 1.18,
-                "confidence": 4,
+                "value": 2.7,
+                "confidence": 3,
                 "source": {
-                    "id": 29,
-                    "url": "https://ourworldindata.org/grapher/rice-yields",
-                    "title": "Our World in Data — Rice Yields",
-                    "note": "Rice — yield_kg_ha: Global average paddy rice yield of 4,700 kg/ha based on FAO data."
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": "Rice — emissions_per_kg: 2.7 kg CO2e/kg global weighted average (farm gate; notably high due to CH4 from methanogenic bacteria in flooded paddy fields, which contributes ~50% of total rice GHG footprint; also includes fertilizer N2O and farm energy; P&N 2018 Table S5 'Rice' category)."
+                }
+            },
+            {
+                "value": 2.7,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Rice — emissions_per_kg: 2.7 kg CO2e/kg confirmed via OWID chart of P&N 2018 data."
                 }
             }
         ],
@@ -1064,13 +1104,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 0.5,
-                "confidence": 4,
+                "value": 1.58,
+                "confidence": 3,
                 "source": {
-                    "id": 33,
-                    "url": "https://ourworldindata.org/crop-yields",
-                    "title": "Our World in Data — Crop Yields",
-                    "note": "Oats — yield_kg_ha: FAO global average used for yield value."
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": "Oats — emissions_per_kg: 1.58 kg CO2e/kg (P&N 2018 groups oats with 'Wheat & Rye' as temperate small grains sharing a similar fertilizer N2O and land use profile; farm gate including land use change)."
+                }
+            },
+            {
+                "value": 1.58,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Oats — emissions_per_kg: ~1.58 kg CO2e/kg per OWID/P&N 2018 temperate small grains grouping."
                 }
             }
         ],
@@ -1246,7 +1296,7 @@
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": "Quinoa — emissions_per_kg: 1.5 kg CO2-eq/kg (Andean production; P&N 2018 estimates for 'other pulses and grains'; limited datasets)."
+                    "note": "Quinoa — soil_erosion: ~1.5 t/ha/yr (Andean production; P&N 2018 land-use characterization; low-till traditional Andean systems reduce erosion relative to mechanized row crops)."
                 }
             }
         ],
@@ -1306,7 +1356,7 @@
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": "Quinoa — emissions_per_kg: 1.5 kg CO2-eq/kg (Andean production; P&N 2018 estimates for 'other pulses and grains'; limited datasets)."
+                    "note": "Quinoa — co2_capture_kg_ha_yr: ~1,800 kg CO2/ha/yr (Andean production; P&N 2018 land-use characterization for annual grain crops at moderate productivity)."
                 }
             }
         ],
@@ -1425,7 +1475,7 @@
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": "Barley — emissions_per_kg: 0.57 kg CO2-eq/kg (temperate cereal; P&N 2018 global median)."
+                    "note": "Barley — soil_erosion: ~2.5 t/ha/yr (temperate cereal; P&N 2018 land-use characterization; similar to wheat but lower with conservation tillage common in barley production)."
                 }
             }
         ],
@@ -1455,13 +1505,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 0.57,
-                "confidence": 4,
+                "value": 1.5,
+                "confidence": 3,
                 "source": {
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": "Barley — emissions_per_kg: 0.57 kg CO2-eq/kg (temperate cereal; P&N 2018 global median)."
+                    "note": "Barley — emissions_per_kg: 1.5 kg CO2e/kg global weighted average (farm gate; temperate cereal; slightly lower than wheat due to lower average nitrogen application rates; P&N 2018 Table S5 'Barley' category includes fertilizer N2O, farm energy, and land use change). Note: prior value of 0.57 in this dataset was a data entry error inconsistent with the P&N source."
+                }
+            },
+            {
+                "value": 1.5,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Barley — emissions_per_kg: 1.5 kg CO2e/kg confirmed via OWID chart of P&N 2018 data."
                 }
             }
         ],
@@ -1485,7 +1545,7 @@
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": "Barley — emissions_per_kg: 0.57 kg CO2-eq/kg (temperate cereal; P&N 2018 global median)."
+                    "note": "Barley — co2_capture_kg_ha_yr: ~1,800 kg CO2/ha/yr (temperate cereal; consistent with P&N 2018 land-use characterization for short-season annual grain crops)."
                 }
             }
         ],

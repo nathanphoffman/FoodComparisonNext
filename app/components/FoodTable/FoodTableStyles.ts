@@ -51,6 +51,15 @@ export function getNeuronColor(value: number): string {
   return 'text-yellow-600';
 }
 
+const FINAL_SCORE_GOOD_THRESHOLD = 65;
+const FINAL_SCORE_FAIR_THRESHOLD = 40;
+
+export function getFinalScoreColor(score: number): string {
+    if (score >= FINAL_SCORE_GOOD_THRESHOLD) return 'bg-green-100 text-green-700';
+    if (score >= FINAL_SCORE_FAIR_THRESHOLD) return 'bg-yellow-100 text-yellow-700';
+    return 'bg-red-100 text-red-700';
+}
+
 export function getEcoDestructionColor(value: number): string {
   if (value >= ONE_HUNDRED_TRILLION) return 'text-red-700 font-medium';
   if (value >= TEN_TRILLION)         return 'text-red-600 font-medium';

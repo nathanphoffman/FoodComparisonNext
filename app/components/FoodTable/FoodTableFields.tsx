@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Cell } from '../Table/Cell';
 import type { EcoDestructionDetail, EmissionsBreakdown, NutritionDetail, LandUseDetail, IntelligenceDetail, WaterDetail } from './FoodTableTypes';
 import { formatNeurons, formatIntelligenceValue } from './FoodTableCalculations';
-import { getEcoDestructionColor, getIntelligenceColor, getEmissionsColor, getWaterColor, getNutritionScoreColor, getLandUseColor, getNeuronColor } from './FoodTableStyles';
+import { getEcoDestructionColor, getIntelligenceColor, getEmissionsColor, getWaterColor, getNutritionScoreColor, getLandUseColor, getNeuronColor, getFinalScoreColor } from './FoodTableStyles';
 import {
   EcoDestructionTooltip,
   EmissionsTooltip,
@@ -52,13 +52,28 @@ export function WaterValue({ value }: { value: number }) {
   return <span className={getWaterColor(value)}>{value.toLocaleString()}</span>;
 }
 
-export function WaterCell({ value, detail, referenceTotal }: { value: number | null; detail?: WaterDetail; referenceTotal?: number | null }) {
+export function WaterCell({ value, detail, referenceTotal, divisor, unit, greenWaterWeight, greyWaterWeight }: {
+  value: number | null;
+  detail?: WaterDetail;
+  referenceTotal?: number | null;
+  divisor: number;
+  unit: string;
+  greenWaterWeight: number;
+  greyWaterWeight: number;
+}) {
   if (value == null) return <Cell key="water" align="right"><span className="text-neutral-400">—</span></Cell>;
   const hasBreakdown = detail?.green != null || detail?.blue != null;
   if (hasBreakdown) {
     return (
       <Cell key="water" align="right">
-        <WaterTooltip detail={detail!} referenceTotal={referenceTotal ?? null}>
+        <WaterTooltip
+          detail={detail!}
+          referenceTotal={referenceTotal ?? null}
+          divisor={divisor}
+          unit={unit}
+          greenWaterWeight={greenWaterWeight}
+          greyWaterWeight={greyWaterWeight}
+        >
           <WaterValue value={value} />
         </WaterTooltip>
       </Cell>
@@ -95,11 +110,11 @@ export function LandUseValue({ value }: { value: number | null }) {
   return <span className={getLandUseColor(value)}>{value.toFixed(1)}</span>;
 }
 
-export function LandUseCell({ value, detail }: { value: number | null; detail: LandUseDetail }) {
+export function LandUseCell({ value, detail, divisor, unit }: { value: number | null; detail: LandUseDetail; divisor: number; unit: string }) {
   return (
     <Cell key="landUse" align="right">
       {value != null
-        ? <LandUseTooltip detail={detail}><LandUseValue value={value} /></LandUseTooltip>
+        ? <LandUseTooltip detail={detail} divisor={divisor} unit={unit}><LandUseValue value={value} /></LandUseTooltip>
         : <LandUseValue value={null} />
       }
     </Cell>
@@ -140,6 +155,19 @@ export function EcoDestructionCell({ value, detail }: { value: number | null; de
       }
     </Cell>
   );
+}
+
+// ─── Final Score ──────────────────────────────────────────────────────────────
+
+export function FinalScoreCell({ score }: { score: number | null }) {
+    if (score == null) return <Cell key="finalScore" align="right"><span className="text-neutral-400">—</span></Cell>;
+    return (
+        <Cell key="finalScore" align="right">
+            <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${getFinalScoreColor(score)}`}>
+                {Math.round(score)}%
+            </span>
+        </Cell>
+    );
 }
 
 // ─── Dummy ────────────────────────────────────────────────────────────────────

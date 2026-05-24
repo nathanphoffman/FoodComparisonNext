@@ -17,12 +17,14 @@ const LABELS: Record<keyof FoodWeights, string> = {
 const DEFAULT_FOOD_WEIGHTS: FoodWeights = { calories: 34, protein: 33, mass: 33 }
 const DEFAULT_GREEN_WATER = 25;
 const DEFAULT_GREY_WATER = 25;
+const DEFAULT_PHILOSOPHICAL_KILL = 1;
 
-export function FoodTableSliders({ onChange, onGreenWaterChange, onGreyWaterChange }: { onChange?: (w: FoodWeights) => void; onGreenWaterChange?: (w: number) => void; onGreyWaterChange?: (w: number) => void }) {
+export function FoodTableSliders({ onChange, onGreenWaterChange, onGreyWaterChange, onPhilosophicalKillChange }: { onChange?: (w: FoodWeights) => void; onGreenWaterChange?: (w: number) => void; onGreyWaterChange?: (w: number) => void; onPhilosophicalKillChange?: (v: number) => void }) {
 
-    const [ weights, setWeights ]           = useState<FoodWeights>(DEFAULT_FOOD_WEIGHTS);
-    const [ greenWaterWeight, setGreenWater ] = useState(DEFAULT_GREEN_WATER);
-    const [ greyWaterWeight, setGreyWater ]   = useState(DEFAULT_GREY_WATER);
+    const [ weights, setWeights ]                     = useState<FoodWeights>(DEFAULT_FOOD_WEIGHTS);
+    const [ greenWaterWeight, setGreenWater ]          = useState(DEFAULT_GREEN_WATER);
+    const [ greyWaterWeight, setGreyWater ]            = useState(DEFAULT_GREY_WATER);
+    const [ philosophicalKill, setPhilosophicalKill ]  = useState(DEFAULT_PHILOSOPHICAL_KILL);
 
     const splitEvenlyBetweenTwo = (
         updatedWeights: FoodWeights,
@@ -85,6 +87,11 @@ export function FoodTableSliders({ onChange, onGreenWaterChange, onGreyWaterChan
         onGreyWaterChange?.(val);
     };
 
+    const handlePhilosophicalKill = (val: number) => {
+        setPhilosophicalKill(val);
+        onPhilosophicalKillChange?.(val);
+    };
+
     return <div className="flex gap-6 mb-4">
         {KEYS.map(key => (
             <div key={key} className="flex flex-col gap-1 flex-1">
@@ -110,6 +117,14 @@ export function FoodTableSliders({ onChange, onGreenWaterChange, onGreyWaterChan
             </div>
             <Slider min={0} max={100} value={greyWaterWeight} onChange={handleGreyWater} />
             <div className="text-xs text-neutral-400 mt-0.5">how much grey (pollution) water counts</div>
+        </div>
+        <div className="flex flex-col gap-1 flex-1 border-l border-neutral-200 pl-6">
+            <div className="flex justify-between text-xs text-neutral-500">
+                <span>Kill : Accident</span>
+                <span className="font-medium text-neutral-700">{philosophicalKill}×</span>
+            </div>
+            <Slider min={1} max={10000} value={philosophicalKill} onChange={handlePhilosophicalKill} />
+            <div className="text-xs text-neutral-400 mt-0.5">how much worse intentional killing is vs. accidental</div>
         </div>
     </div>
 }

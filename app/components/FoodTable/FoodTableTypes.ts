@@ -46,6 +46,7 @@ export type LandUseDetail = {
   type:                       'plant' | 'animal';
   yieldKilogramsPerHectare:   number | null;
   pastureHectaresPerKilogram: number | null;
+  feedLandM2PerKg:            number | null;
 };
 
 export type IntelligenceDetail = {

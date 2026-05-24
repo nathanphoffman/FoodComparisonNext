@@ -37,6 +37,24 @@ const SATURATED_FAT_SCORE_PENALTY = 2;
 const CALORIE_NORM = 1_000; // kcal/kg — "per 1000 kcal" when cal=100%
 const PROTEIN_NORM = 100;   // g/kg   — "per 100g protein" when protein=100%
 
+// ─── Intelligence lifespan constants (guesstimate natural lifespans, years) ──
+
+const LIFESPAN_YEARS_BY_SLUG: Record<string, number> = {
+  beef:     20,
+  chicken:   8,
+  pork:     12,
+  turkey:   10,
+  lamb:     12,
+  milk:     20,
+  yogurt:   20,
+  egg:       8,
+  salmon:    6,
+  tuna:     20,
+  shrimp:    2,
+  sardines:  4,
+};
+const DEFAULT_LIFESPAN_YEARS = 10;
+
 // ─── Eco Destruction constants ────────────────────────────────────────────────
 
 const INSECT_DENSITY_PER_HA = 1e9;
@@ -68,13 +86,21 @@ const REPTILE_WEIGHT_KG = 0.05;    // ~50 g small lizard
 
 const REF_FEED_PESTICIDE_KG_HA = 2.0;
 
-// Per-organism intelligence: neuron^1.5 / body_weight_kg
-const INSECT_PER_ORG = Math.pow(INSECT_NEURONS, NEURAL_INTERCONNECTIVITY_EXPONENT) / INSECT_WEIGHT_KG;
-const BEE_PER_ORG = Math.pow(BEE_NEURONS, NEURAL_INTERCONNECTIVITY_EXPONENT) / BEE_WEIGHT_KG;
-const WORM_PER_ORG = Math.pow(WORM_NEURONS, NEURAL_INTERCONNECTIVITY_EXPONENT) / WORM_WEIGHT_KG;
-const MAMMAL_PER_ORG = Math.pow(MAMMAL_NEURONS, NEURAL_INTERCONNECTIVITY_EXPONENT) / MAMMAL_WEIGHT_KG;
-const BIRD_PER_ORG = Math.pow(BIRD_NEURONS, NEURAL_INTERCONNECTIVITY_EXPONENT) / BIRD_WEIGHT_KG;
-const REPTILE_PER_ORG = Math.pow(REPTILE_NEURONS, NEURAL_INTERCONNECTIVITY_EXPONENT) / REPTILE_WEIGHT_KG;
+// Guesstimate natural lifespans for eco-destruction organisms (years)
+const INSECT_LIFESPAN_YEARS  = 0.17;  // ~2 months, typical arthropod
+const BEE_LIFESPAN_YEARS     = 0.08;  // ~4 weeks, worker honeybee
+const WORM_LIFESPAN_YEARS    = 5;     // ~5 years, earthworm
+const MAMMAL_LIFESPAN_YEARS  = 2.5;   // ~2.5 years, small field mouse
+const BIRD_LIFESPAN_YEARS    = 3;     // ~3 years, small songbird
+const REPTILE_LIFESPAN_YEARS = 4;     // ~4 years, small lizard
+
+// Per-organism intelligence: neuron^1.5 * lifespan / body_weight_kg
+const INSECT_PER_ORG  = Math.pow(INSECT_NEURONS,  NEURAL_INTERCONNECTIVITY_EXPONENT) * INSECT_LIFESPAN_YEARS  / Math.pow(INSECT_WEIGHT_KG,0.75);
+const BEE_PER_ORG     = Math.pow(BEE_NEURONS,     NEURAL_INTERCONNECTIVITY_EXPONENT) * BEE_LIFESPAN_YEARS     / BEE_WEIGHT_KG;
+const WORM_PER_ORG    = Math.pow(WORM_NEURONS,     NEURAL_INTERCONNECTIVITY_EXPONENT) * WORM_LIFESPAN_YEARS    / WORM_WEIGHT_KG;
+const MAMMAL_PER_ORG  = Math.pow(MAMMAL_NEURONS,  NEURAL_INTERCONNECTIVITY_EXPONENT) * MAMMAL_LIFESPAN_YEARS  / MAMMAL_WEIGHT_KG;
+const BIRD_PER_ORG    = Math.pow(BIRD_NEURONS,     NEURAL_INTERCONNECTIVITY_EXPONENT) * BIRD_LIFESPAN_YEARS    / BIRD_WEIGHT_KG;
+const REPTILE_PER_ORG = Math.pow(REPTILE_NEURONS,  NEURAL_INTERCONNECTIVITY_EXPONENT) * REPTILE_LIFESPAN_YEARS / REPTILE_WEIGHT_KG;
 
 // Combine independent creature-type contributions into one intelligence score.
 // Each contrib = N × (neuron^1.5 / weight_kg) for that type.
@@ -223,6 +249,78 @@ export function effectiveWater(food: FoodEthics, greenWaterWeight: number, greyW
   return food.water;
 }
 
+// ─── Final Score ─────────────────────────────────────────────────────────────
+
+export type FinalScoreDimension = {
+    nutritionScore: number | null;
+    emissions:      number | null;
+    landUse:        number | null;
+    directKill:     number | null;
+    water:          number | null;
+    ecoDestruction: number | null;
+};
+
+export type FinalScoreAverages = {
+    nutritionScore: number | null;
+    emissions:      number | null;
+    landUse:        number | null;
+    directKill:     number | null;
+    water:          number | null;
+    ecoDestruction: number | null;
+};
+
+function averageOfNonNull(values: (number | null)[]): number | null {
+    const valid = values.filter((v): v is number => v != null);
+    if (valid.length === 0) return null;
+    return valid.reduce((a, b) => a + b, 0) / valid.length;
+}
+
+export function computeFinalScoreAverages(dimensions: FinalScoreDimension[]): FinalScoreAverages {
+    return {
+        nutritionScore: averageOfNonNull(dimensions.map(d => d.nutritionScore)),
+        emissions:      averageOfNonNull(dimensions.map(d => d.emissions)),
+        landUse:        averageOfNonNull(dimensions.map(d => d.landUse)),
+        directKill:     averageOfNonNull(dimensions.map(d => d.directKill)),
+        water:          averageOfNonNull(dimensions.map(d => d.water)),
+        ecoDestruction: averageOfNonNull(dimensions.map(d => d.ecoDestruction)),
+    };
+}
+
+// For lower-is-better metrics, score = 50 * (avg / value). At avg → 50. Lower → above 50.
+// For higher-is-better metrics, score = 50 * (value / avg). At avg → 50. Higher → above 50.
+function dimensionScore(value: number, avg: number, lowerIsBetter: boolean): number {
+    if (avg <= 0 || value <= 0) return 50;
+    const raw = lowerIsBetter ? 50 * (avg / value) : 50 * (value / avg);
+    return Math.max(0, Math.min(100, raw));
+}
+
+export function computeFinalScore(dim: FinalScoreDimension, avgs: FinalScoreAverages): number | null {
+    const scores: number[] = [];
+
+    if (dim.nutritionScore != null && avgs.nutritionScore != null) {
+        scores.push(dimensionScore(dim.nutritionScore, avgs.nutritionScore, false));
+    }
+    if (dim.emissions != null && avgs.emissions != null) {
+        scores.push(dimensionScore(dim.emissions, avgs.emissions, true));
+    }
+    if (dim.landUse != null && avgs.landUse != null) {
+        scores.push(dimensionScore(dim.landUse, avgs.landUse, true));
+    }
+    if (dim.directKill != null && avgs.directKill != null) {
+        scores.push(dimensionScore(dim.directKill, avgs.directKill, true));
+    }
+    if (dim.water != null && avgs.water != null) {
+        scores.push(dimensionScore(dim.water, avgs.water, true));
+    }
+    if (dim.ecoDestruction != null && avgs.ecoDestruction != null) {
+        scores.push(dimensionScore(dim.ecoDestruction, avgs.ecoDestruction, true));
+    }
+
+    if (scores.length === 0) return null;
+    const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+    return Math.max(0, Math.min(100, avg));
+}
+
 export function getUnitLabel(weights: FoodWeights): string {
   if (weights.mass === 100) return 'kg';
   if (weights.calories === 100) return '1000 kcal';
@@ -241,9 +339,11 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
   const hasPlantYield = food.yield_kg_ha != null && food.yield_kg_ha > 0;
   const hasPasture = food.pasture_ha_per_kg_output != null;
 
+  const pastureLandM2 = hasPasture ? food.pasture_ha_per_kg_output! * SQUARE_METERS_PER_HECTARE : null;
+  const feedLandM2   = food.feed_land_m2_per_kg ?? null;
   const landUse = isPlant
     ? (hasPlantYield ? SQUARE_METERS_PER_HECTARE / food.yield_kg_ha! : null)
-    : (hasPasture ? food.pasture_ha_per_kg_output! * SQUARE_METERS_PER_HECTARE : null);
+    : ((pastureLandM2 ?? 0) + (feedLandM2 ?? 0)) || null;
 
   let intelligence: number | null = null;
 
@@ -254,22 +354,26 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
   if (hasIntelligenceData) {
     const neuronScore = Math.pow(food.neuron_count, NEURAL_INTERCONNECTIVITY_EXPONENT);
     const edibleMass = food.weight_kg! * food.yield_fraction!;
-    intelligence = neuronScore / edibleMass;
+    const lifespan = LIFESPAN_YEARS_BY_SLUG[food.slug] ?? DEFAULT_LIFESPAN_YEARS;
+    intelligence = (neuronScore * lifespan) / edibleMass;
   }
+
+  const GWP_CH4 = 28;
+  const GWP_N2O = 265;
 
   let emissions: number | null = null;
   let emissionsBreakdown: EmissionsBreakdown | undefined = undefined;
   const hasAnimalGasBreakdown = food.type === 'animal' && food.ch4_kg_per_kg_output != null;
   if (hasAnimalGasBreakdown) {
-    const co2 = food.co2_kg_per_kg_output as number;
-    const ch4 = food.ch4_kg_per_kg_output as number;
-    const n2o = food.n2o_kg_per_kg_output as number;
+    const co2       = food.co2_kg_per_kg_output as number;
+    const ch4Co2e   = (food.ch4_kg_per_kg_output as number) * GWP_CH4;
+    const n2oCo2e   = (food.n2o_kg_per_kg_output as number) * GWP_N2O;
     const feedEmissions = food.feed_emissions_per_kg ?? 0;
-    emissions = co2 + ch4 + n2o + feedEmissions;
+    emissions = co2 + ch4Co2e + n2oCo2e + feedEmissions;
     emissionsBreakdown = {
       co2,
-      ch4,
-      n2o,
+      ch4: ch4Co2e,
+      n2o: n2oCo2e,
       feedEmissions: food.feed_emissions_per_kg ?? undefined,
     };
   } else {
@@ -311,6 +415,7 @@ export function mapRawFoodToFoodEthics(food: RawFood): FoodEthics {
       type: food.type,
       yieldKilogramsPerHectare: food.yield_kg_ha,
       pastureHectaresPerKilogram: food.pasture_ha_per_kg_output,
+      feedLandM2PerKg: food.feed_land_m2_per_kg ?? null,
     },
     intelligence,
     intelligenceDetail: {

@@ -65,6 +65,7 @@ export class RawAnimal {
     let insectPafNumerator = 0, insectPafDenominator = 0;
     let beeHazardNumerator = 0, beeHazardDenominator = 0;
     let yieldTotal = 0;
+    let feedLandM2PerKg = 0;
 
     for (const { feed, plant } of this.feedEntries) {
       const feedRatio = feed.kg_feed_per_kg_output.weightedAverage();
@@ -72,6 +73,9 @@ export class RawAnimal {
 
       const avgYield = plant.yield_kg_ha.weightedAverage();
       yieldTotal += (avgYield ?? 0) * feedRatio;
+      if (avgYield != null && avgYield > 0) {
+        feedLandM2PerKg += feedRatio * 10000 / avgYield;
+      }
 
       const avgEmissions = plant.emissions_per_kg.weightedAverage();
       const avgWater = plant.water_per_kg.weightedAverage();
@@ -127,6 +131,7 @@ export class RawAnimal {
     return {
       yield_kg_ha: null,
       yield_fraction: null,
+      land_m2_per_kg: feedLandM2PerKg || null,
       water_per_kg: (greenWater + blueWater) || null,
       green_water_per_kg: greenWater || null,
       blue_water_per_kg: blueWater || null,

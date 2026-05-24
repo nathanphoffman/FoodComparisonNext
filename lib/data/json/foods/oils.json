@@ -142,13 +142,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 5.4,
-                "confidence": 2,
+                "value": 6.0,
+                "confidence": 3,
                 "source": {
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": null
+                    "note": "Olive oil — emissions_per_kg: ~6.0 kg CO2e/kg (global weighted average from farm to farm gate; includes fertilizer N2O, farm energy, and land use; high value reflects ~10 kg olives needed per kg oil, concentrating upstream crop emissions; P&N 2018 range 3.5–7.5 kg/kg)."
+                }
+            },
+            {
+                "value": 6.0,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Olive oil — emissions_per_kg: ~6.0 kg CO2e/kg per the OWID visualization of Poore & Nemecek (2018) data. Confirms the P&N 2018 global weighted average for olive oil production including upstream olive farming and pressing."
                 }
             }
         ],

@@ -3,7 +3,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   env: {
-    DB_VERSION: 'v67',
+    DB_VERSION: 'v77',
   },
 
   // suppress lockfile warning when nested inside a monorepo-style parent

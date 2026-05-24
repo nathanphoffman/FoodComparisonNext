@@ -27,6 +27,7 @@ export type RawFood = {
   feed_pesticide_terrestrial_paf: number | null;
   feed_pesticide_bee_hazard:      number | null;
   feed_pesticide_kg_per_kg_food:  number | null;
+  feed_land_m2_per_kg:            number | null;
 };
 
 const QUERY = `
@@ -48,7 +49,8 @@ const QUERY = `
          feed.pesticide_insect_paf     AS feed_pesticide_insect_paf,
          feed.pesticide_terrestrial_paf AS feed_pesticide_terrestrial_paf,
          feed.pesticide_bee_hazard     AS feed_pesticide_bee_hazard,
-         feed.pesticide_kg_per_kg_food AS feed_pesticide_kg_per_kg_food
+         feed.pesticide_kg_per_kg_food AS feed_pesticide_kg_per_kg_food,
+         feed.land_m2_per_kg           AS feed_land_m2_per_kg
   FROM   foods_normalized f
   LEFT JOIN foods_normalized feed ON feed.food_id = f.food_id AND feed.is_feed = 1
   WHERE  f.is_feed = 0

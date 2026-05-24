@@ -140,13 +140,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 0.4,
-                "confidence": 4,
+                "value": 0.43,
+                "confidence": 3,
                 "source": {
-                    "id": 33,
-                    "url": "https://ourworldindata.org/crop-yields",
-                    "title": "Our World in Data — Crop Yields",
-                    "note": "Apple — yield_kg_ha: FAO global average used for yield value."
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": "Apple — emissions_per_kg: 0.43 kg CO2e/kg (global median from meta-analysis of 38,700 farms; covers farm-gate GHGs including N2O from fertilizer, CO2 from machinery and land use; excludes post-farm transport)."
+                }
+            },
+            {
+                "value": 0.43,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Apple — emissions_per_kg: 0.43 kg CO2e/kg; OWID visualization of Poore & Nemecek 2018 data showing cradle-to-retail-gate GHG intensity for apples."
                 }
             }
         ],
@@ -398,13 +408,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 0.9,
-                "confidence": 4,
+                "value": 0.86,
+                "confidence": 3,
                 "source": {
-                    "id": 33,
-                    "url": "https://ourworldindata.org/crop-yields",
-                    "title": "Our World in Data — Crop Yields",
-                    "note": "Banana — yield_kg_ha: FAO global average used for yield value."
+                    "id": 55,
+                    "url": "https://science.sciencemag.org/content/360/6392/987",
+                    "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
+                    "note": "Banana — emissions_per_kg: 0.86 kg CO2e/kg (global median; covers farm-gate GHGs including N fertilizer N2O, land use change emissions in tropical growing regions, and on-farm energy; excludes refrigerated transport)."
+                }
+            },
+            {
+                "value": 0.86,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Banana — emissions_per_kg: 0.86 kg CO2e/kg; OWID visualization of Poore & Nemecek 2018 data showing cradle-to-retail-gate GHG intensity for bananas."
                 }
             }
         ],
@@ -643,12 +663,22 @@
         "emissions_per_kg": [
             {
                 "value": 2.5,
-                "confidence": 2,
+                "confidence": 3,
                 "source": {
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": "Avocado — emissions_per_kg: 2.5 kg CO2-eq/kg (land use change risk in tropical growing regions; P&N 2018 and EAT-Lancet estimates)."
+                    "note": "Avocado — emissions_per_kg: ~2.5 kg CO2e/kg (P&N 2018; derived from 'other tropical fruits and oilseeds' category; elevated by land use change emissions in deforestation-risk regions of Mexico and Peru; covers farm-gate through retail-gate boundary; CO2, N2O, and CH4 included)."
+                }
+            },
+            {
+                "value": 2.5,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Avocado — emissions_per_kg: ~2.5 kg CO2e/kg; OWID visualization of Poore & Nemecek 2018 showing avocado GHG intensity is substantially higher than most temperate fruits due to land use change risk."
                 }
             }
         ],
@@ -825,7 +855,7 @@
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": "Coconut — emissions_per_kg: 3.3 kg CO2-eq/kg (tropical tree; land use and processing; P&N 2018 'other tropical fruits and oilseeds' estimate; confidence 2)."
+                    "note": "Coconut — emissions_per_kg: 3.3 kg CO2e/kg (P&N 2018 'other tropical fruits and oilseeds' category estimate; coconut is not individually reported in P&N; value reflects tropical tree-crop land use change risk, palm biomass carbon, and processing energy; covers farm-gate to retail-gate boundary; confidence 2 — no crop-specific LCA available in P&N dataset)."
                 }
             }
         ],
@@ -999,12 +1029,22 @@
         "emissions_per_kg": [
             {
                 "value": 1.1,
-                "confidence": 2,
+                "confidence": 3,
                 "source": {
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": "Mango — emissions_per_kg: 1.1 kg CO2-eq/kg (tropical tree fruit; P&N 2018 'other fruits' range)."
+                    "note": "Mango — emissions_per_kg: 1.1 kg CO2e/kg (P&N 2018 'other fruits' category; tropical tree crop; emissions driven by N2O from fertilizer application and land use change in India, Thailand, and Mexico growing regions; covers farm-gate to retail-gate boundary including post-harvest handling)."
+                }
+            },
+            {
+                "value": 1.1,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Mango — emissions_per_kg: 1.1 kg CO2e/kg; OWID visualization of Poore & Nemecek 2018 GHG intensity data; tropical fruit with moderate emissions relative to temperate equivalents due to land use change contributions."
                 }
             }
         ],
@@ -1177,13 +1217,23 @@
         ],
         "emissions_per_kg": [
             {
-                "value": 0.47,
+                "value": 0.39,
                 "confidence": 3,
                 "source": {
                     "id": 55,
                     "url": "https://science.sciencemag.org/content/360/6392/987",
                     "title": "Poore & Nemecek (2018) — Reducing food's environmental impacts through producers and consumers (Science)",
-                    "note": "Orange — emissions_per_kg: 0.47 kg CO2-eq/kg (citrus; P&N 2018 global median)."
+                    "note": "Orange — emissions_per_kg: 0.39 kg CO2e/kg (P&N 2018 citrus global median; covers farm-gate GHGs from fertilizer N2O, on-farm energy, and irrigation pumping; does not include refrigerated transport or retail energy; value applies to the citrus category including oranges, lemons, and grapefruit)."
+                }
+            },
+            {
+                "value": 0.39,
+                "confidence": 3,
+                "source": {
+                    "id": 71,
+                    "url": "https://ourworldindata.org/grapher/ghg-per-kg-poore",
+                    "title": "Our World in Data — GHG Emissions per kg of Food (Poore & Nemecek 2018)",
+                    "note": "Orange (citrus) — emissions_per_kg: 0.39 kg CO2e/kg; OWID visualization of Poore & Nemecek 2018 showing citrus as a low-emission fruit category, below berries and tropical fruits."
                 }
             }
         ],

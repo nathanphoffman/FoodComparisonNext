@@ -43,15 +43,30 @@ export function NutritionTooltip({ detail, children }: { detail: NutritionDetail
   );
 }
 
-export function LandUseTooltip({ detail, children }: { detail: LandUseDetail; children: React.ReactNode }) {
+export function LandUseTooltip({ detail, divisor, unit, children }: { detail: LandUseDetail; divisor: number; unit: string; children: React.ReactNode }) {
+  const hasBreakdown = detail.type === 'animal'
+    && (detail.pastureHectaresPerKilogram != null || detail.feedLandM2PerKg != null);
+
+  const fmt = (m2PerKg: number) =>
+    (m2PerKg / divisor).toLocaleString(undefined, { maximumFractionDigits: 1 });
+
   return (
     <Tooltip content={
-      <TooltipSection title="Land use">
+      <TooltipSection title="Land use breakdown">
         {detail.type === 'plant' && detail.yieldKilogramsPerHectare != null && (
           <TooltipRow label="Crop yield" value={`${detail.yieldKilogramsPerHectare.toLocaleString()} kg/ha`} />
         )}
-        {detail.type === 'animal' && detail.pastureHectaresPerKilogram != null && (
-          <TooltipRow label="Pasture" value={`${detail.pastureHectaresPerKilogram.toFixed(3)} ha/kg`} />
+        {hasBreakdown && detail.pastureHectaresPerKilogram != null && (
+          <TooltipRow
+            label="Pasture"
+            value={`${fmt(detail.pastureHectaresPerKilogram * 10000)} m²/${unit}`}
+          />
+        )}
+        {hasBreakdown && detail.feedLandM2PerKg != null && (
+          <TooltipRow
+            label="Feed crops"
+            value={`${fmt(detail.feedLandM2PerKg)} m²/${unit}`}
+          />
         )}
       </TooltipSection>
     }>
@@ -60,13 +75,27 @@ export function LandUseTooltip({ detail, children }: { detail: LandUseDetail; ch
   );
 }
 
-export function WaterTooltip({ detail, referenceTotal, children }: { detail: WaterDetail; referenceTotal: number | null; children: React.ReactNode }) {
+export function WaterTooltip({ detail, referenceTotal, divisor, unit, greenWaterWeight, greyWaterWeight, children }: {
+  detail: WaterDetail;
+  referenceTotal: number | null;
+  divisor: number;
+  unit: string;
+  greenWaterWeight: number;
+  greyWaterWeight: number;
+  children: React.ReactNode;
+}) {
+  const fmt = (raw: number) =>
+    (raw / divisor).toLocaleString(undefined, { maximumFractionDigits: 1 });
+
+  const weightedGreen = detail.green != null ? (greenWaterWeight / 100) * detail.green : null;
+  const weightedGrey  = detail.grey  != null ? (greyWaterWeight  / 100) * detail.grey  : null;
+
   return (
     <Tooltip content={
       <TooltipSection title="Water breakdown">
-        {detail.blue  != null && <TooltipRow label="Blue (irrigation)"  value={`${detail.blue.toLocaleString()} L/kg`} />}
-        {detail.green != null && <TooltipRow label="Green (rain)"       value={`${detail.green.toLocaleString()} L/kg`} />}
-        {detail.grey  != null && <TooltipRow label="Grey (pollution)"   value={`${detail.grey.toLocaleString()} L/kg`} />}
+        {detail.blue  != null && <TooltipRow label="Blue (irrigation)"  value={`${fmt(detail.blue)} L/${unit}`} />}
+        {weightedGreen != null && <TooltipRow label="Green (rain)"      value={`${fmt(weightedGreen)} L/${unit}`} />}
+        {weightedGrey  != null && <TooltipRow label="Grey (pollution)"  value={`${fmt(weightedGrey)} L/${unit}`} />}
         {referenceTotal != null && (
           <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">
             Reference total (independent source): {referenceTotal.toLocaleString()} L/kg
@@ -103,17 +132,17 @@ export function EcoDestructionTooltip({ detail, children }: { detail: EcoDestruc
       <>
         {hasPlant && (
           <TooltipSection title="Pesticide &amp; crop impact">
-            {detail.insectScore        > 0 && <TooltipRow label="Insects"           value={formatIntelligenceValue(detail.insectScore)} />}
-            {detail.beeScore           > 0 && <TooltipRow label="Bees"              value={formatIntelligenceValue(detail.beeScore)} />}
-            {detail.wormScore          > 0 && <TooltipRow label="Soil organisms"    value={formatIntelligenceValue(detail.wormScore)} />}
+            {detail.insectScore        > 0 && <TooltipRow label="Insects"            value={formatIntelligenceValue(detail.insectScore)} />}
+            {detail.beeScore           > 0 && <TooltipRow label="Bees"               value={formatIntelligenceValue(detail.beeScore)} />}
+            {detail.wormScore          > 0 && <TooltipRow label="Soil organisms"     value={formatIntelligenceValue(detail.wormScore)} />}
             {detail.deforestationScore > 0 && <TooltipRow label="Crop deforestation" value={formatIntelligenceValue(detail.deforestationScore)} />}
           </TooltipSection>
         )}
         {hasFeed && (
           <TooltipSection title="Feed crop impact">
-            {detail.feedInsectScore        > 0 && <TooltipRow label="Feed insects"           value={formatIntelligenceValue(detail.feedInsectScore)} />}
-            {detail.feedBeeScore           > 0 && <TooltipRow label="Feed bees"              value={formatIntelligenceValue(detail.feedBeeScore)} />}
-            {detail.feedWormScore          > 0 && <TooltipRow label="Feed soil organisms"    value={formatIntelligenceValue(detail.feedWormScore)} />}
+            {detail.feedInsectScore        > 0 && <TooltipRow label="Feed insects"            value={formatIntelligenceValue(detail.feedInsectScore)} />}
+            {detail.feedBeeScore           > 0 && <TooltipRow label="Feed bees"               value={formatIntelligenceValue(detail.feedBeeScore)} />}
+            {detail.feedWormScore          > 0 && <TooltipRow label="Feed soil organisms"     value={formatIntelligenceValue(detail.feedWormScore)} />}
             {detail.feedDeforestationScore > 0 && <TooltipRow label="Feed crop deforestation" value={formatIntelligenceValue(detail.feedDeforestationScore)} />}
           </TooltipSection>
         )}
@@ -122,7 +151,7 @@ export function EcoDestructionTooltip({ detail, children }: { detail: EcoDestruc
             <TooltipRow label="Pasture deforestation" value={formatIntelligenceValue(detail.pastureDeforestationScore)} />
           </TooltipSection>
         )}
-        <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">deaths × neuron_count^1.5, amortized over land lifetime</div>
+        <div className="mt-2 pt-2 border-t border-neutral-700 text-neutral-500 text-xs">deaths × neuron_count^1.5 × lifespan, amortized over land lifetime</div>
       </>
     }>
       {children}
